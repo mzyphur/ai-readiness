@@ -12,7 +12,7 @@
 <p>
   <img alt="License" src="https://img.shields.io/badge/license-CC%20BY%204.0-00547B?style=for-the-badge">
   <img alt="Instruments" src="https://img.shields.io/badge/instruments-13-3092B1?style=for-the-badge">
-  <img alt="Formats" src="https://img.shields.io/badge/formats-DOCX%20%C2%B7%20PDF-00547B?style=for-the-badge">
+  <img alt="Formats" src="https://img.shields.io/badge/formats-HTML%20%C2%B7%20DOCX%20%C2%B7%20PDF%20%C2%B7%20XLSX%20%C2%B7%20ZIP-00547B?style=for-the-badge">
 </p>
 
 <p>
@@ -21,6 +21,14 @@
 </p>
 
 </div>
+
+---
+
+## Download the complete pack
+
+**[Download The Institutional AI Readiness Pack (.zip)](https://mzyphur.github.io/ai-readiness/Instats%20-%20The%20Institutional%20AI%20Readiness%20Pack.zip)**
+
+The ZIP is the complete offline pack. It contains the report and every instrument in HTML, Word, and PDF, the A1 scoring workbook, and the citation and licence files.
 
 ---
 

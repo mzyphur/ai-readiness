@@ -1104,6 +1104,18 @@ pre code {
   color: var(--instats-primary, #00547B);
   transform: translateY(-1px);
 }
+.hero-btn-zip {
+  background: rgba(255, 255, 255, 0.16);
+  color: #FFFFFF;
+  border: 1px solid rgba(255, 255, 255, 0.72);
+  padding: 10px 19px;
+}
+.hero-btn-zip:hover {
+  background: #FFFFFF;
+  color: var(--instats-primary, #00547B);
+  border-color: #FFFFFF;
+  transform: translateY(-1px);
+}
 .hero-btn-repo {
   background: transparent;
   color: #FFFFFF;
