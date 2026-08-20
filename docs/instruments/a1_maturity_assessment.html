@@ -1,0 +1,1424 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>A1 — Institutional AI-Readiness Maturity Self‑Assessment</title>
+  <link rel="stylesheet" href="a1_maturity_assessment.css">
+  <style id="instrument-html-enhancements">
+    .instrument-response-notice {
+      margin: 0 0 1.5rem;
+      padding: 0.85rem 1rem;
+      background: #F5F8FA;
+      border-left: 4px solid #3092B1;
+      color: #1F2024;
+      font-family: var(--sans, sans-serif);
+      font-size: 0.92rem;
+    }
+    fieldset.answer-enhanced {
+      min-inline-size: 0;
+      border: 0;
+      border-left: 3px solid #3092B1;
+    }
+    .answer-options {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.45rem 1rem;
+      letter-spacing: normal;
+      word-spacing: normal;
+    }
+    .answer-option {
+      display: inline-flex;
+      align-items: flex-start;
+      gap: 0.35rem;
+      cursor: pointer;
+    }
+    .answer-option input {
+      margin: 0.2em 0 0;
+      accent-color: #00547B;
+    }
+    .answer-text-input,
+    .answer-textarea {
+      box-sizing: border-box;
+      width: 100%;
+      border: 1px solid #AEB7BE;
+      border-radius: 3px;
+      background: #FFFFFF;
+      color: #1F2024;
+      font: inherit;
+      line-height: 1.45;
+    }
+    .answer-text-input {
+      min-height: 2.55rem;
+      padding: 0.55rem 0.65rem;
+    }
+    .answer-textarea {
+      min-height: 8rem;
+      padding: 0.65rem;
+      resize: vertical;
+    }
+    .answer-legend:not(.visually-hidden) {
+      margin: 0 0 0.45rem;
+      padding: 0;
+      color: #1F2024;
+      font-weight: 600;
+      letter-spacing: normal;
+      word-spacing: normal;
+    }
+    .answer-note {
+      margin: 0.45rem 0 0;
+      letter-spacing: normal;
+      word-spacing: normal;
+    }
+    .visually-hidden {
+      position: absolute !important;
+      width: 1px !important;
+      height: 1px !important;
+      padding: 0 !important;
+      margin: -1px !important;
+      overflow: hidden !important;
+      clip: rect(0, 0, 0, 0) !important;
+      white-space: nowrap !important;
+      border: 0 !important;
+    }
+  </style>
+</head>
+<body>
+
+
+<div id="progress-bar" class="web-only" aria-hidden="true"></div>
+<nav id="sticky-toc" class="sticky-toc web-only" aria-label="Table of contents">
+  <div class="sticky-toc-title">Contents</div>
+  <ol><li><a href="#about-this-instrument">About this instrument</a></li>
+  <li><a href="#11-what-it-is-for-and-why-it-exists">1.1 What it is for, and why it exists</a></li>
+  <li><a href="#12-who-completes-it">1.2 Who completes it</a></li>
+  <li><a href="#13-declare-the-unit-of-assessment-before-you-start">1.3 Declare the unit of assessment before you start</a></li>
+  <li><a href="#14-running-it-as-a-facilitated-session">1.4 Running it as a facilitated session</a></li>
+  <li><a href="#21-the-evidence-rule">2.1 The evidence rule</a></li>
+  <li><a href="#22-the-partial-trap">2.2 The Partial trap</a></li>
+  <li><a href="#23-why-guessing-high-optimistically-defeats-the-purpose">2.3 Why guessing high (optimistically) defeats the purpose</a></li>
+  <li><a href="#31-the-answer-scale">3.1 The answer scale</a></li>
+  <li><a href="#32-from-indicators-to-a-cell-level">3.2 From indicators to a cell level</a></li>
+  <li><a href="#33-from-cells-to-a-dimension-level">3.3 From cells to a dimension level</a></li>
+  <li><a href="#34-the-instrument-refuses-to-produce-a-single-institutional-score">3.4 The instrument refuses to produce a single institutional score</a></li>
+  <li><a href="#35-coverage-and-the-status-of-the-verdict">3.5 Coverage and the status of the verdict</a></li>
+  <li><a href="#dimension-1-human-in-the-loop-discipline">Dimension 1: Human-in-the-loop discipline</a></li>
+  <li><a href="#dimension-2-responsible-use-in-practice">Dimension 2: Responsible use in practice</a></li>
+  <li><a href="#dimension-3-tooling-that-promotes-responsible-use">Dimension 3: Tooling that promotes responsible use</a></li>
+  <li><a href="#dimension-4-ai-literate-humans">Dimension 4: AI-literate humans</a></li>
+  <li><a href="#dimension-5-institutional-benchmarking-grid">Dimension 5: Institutional benchmarking grid</a></li>
+  <li><a href="#51-transferring-answers-to-the-workbook">5.1 Transferring answers to the workbook</a></li>
+  <li><a href="#52-cell-level-sheet">5.2 Cell-level sheet</a></li>
+  <li><a href="#53-dimension-level-sheet">5.3 Dimension-level sheet</a></li>
+  <li><a href="#54-the-profile-readout">5.4 The profile readout</a></li>
+  <li><a href="#55-how-to-read-the-profile">5.5 How to read the profile</a></li>
+  <li><a href="#61-what-this-section-is-and-what-it-is-not">6.1 What this section is, and what it is not</a></li>
+  <li><a href="#62-gate-1-does-a-dedicated-ai-document-exist-for-research-and-research-training">6.2 Gate 1: Does a dedicated AI document exist for research and research training?</a></li>
+  <li><a href="#63-gate-2-does-the-documents-scope-extend-past-misconduct-into-research-integrity">6.3 Gate 2: Does the document's scope extend past misconduct into research integrity?</a></li>
+  <li><a href="#64-gate-3-does-the-document-extend-into-competency-and-examiner-discipline">6.4 Gate 3: Does the document extend into competency and examiner discipline?</a></li>
+  <li><a href="#65-the-published-distribution-to-compare-against">6.5 The published distribution to compare against</a></li></ol>
+</nav>
+
+<section class="hero web-only" aria-label="Report at a glance">
+  <div class="hero-inner">
+    <div class="hero-series">Instats Policy Series</div>
+    <h1 class="hero-title">Institutional AI-Readiness Maturity Self-Assessment</h1>
+    <p class="hero-subtitle">The 20-cell instrument</p>
+    <p class="hero-finding">A university-wide assessment and implementation toolkit that connects institutional policy and priorities with the everyday practices, capabilities, and experiences of researchers and graduate students.</p>
+    <p class="hero-byline"><a class="hero-author-link" href="https://orcid.org/0000-0003-3237-7892" target="_blank" rel="noopener">Michael J. Zyphur, PhD</a> &middot; <span class="hero-author-bio">Director of Instats</span></p>
+    <div class="hero-actions">
+      <a class="hero-btn hero-btn-pdf" href="a1_maturity_assessment.pdf" download>PDF version</a>
+      <a class="hero-btn hero-btn-docx" href="a1_maturity_assessment.docx" download>Word version</a>
+      <a class="hero-btn hero-btn-repo" href="https://github.com/mzyphur/ai-readiness" target="_blank" rel="noopener">View GitHub</a>
+    </div>
+  </div>
+</section>
+
+<div class="wrap">
+<aside class="instrument-response-notice" role="note">These controls are for working through or printing this instrument. Responses are not submitted or saved.</aside>
+<p><a class="brand-mark" href="https://instats.org"><img alt="Instats" src="assets/instats_logo.png" width="1.45in"></a></p>
+<h1 id="a1-institutional-ai-readiness-maturity-selfassessment">A1 — Institutional AI-Readiness Maturity Self‑Assessment</h1>
+<p><em>This is the primary instrument of the Instats AI Readiness Pack accompanying <a href="https://instats.org/publications/responsible-ai-in-academic-research">Responsible AI in Academic Research: A Competency Framework for Research Training</a>. It uses sixty-eight evidence-anchored indicators to place an institution on the twenty-cell maturity grid, dimension by dimension, without reducing the institution to a single uninformative score.</em></p>
+<hr>
+<h2 id="about-this-instrument">About this instrument</h2>
+<table>
+<tbody>
+<tr>
+<td><strong>Purpose</strong></td>
+<td>To establish, from documentary evidence rather than opinion, where [INSTITUTION NAME] sits across each of the five framework dimensions and each of the four institutional axes, and to name the specific axis holding each dimension back.</td>
+</tr>
+<tr>
+<td><strong>Who completes it</strong></td>
+<td>A cross-functional group convened by the Vice President for Research, the Deputy Vice-Chancellor (Research), or equivalent, rather than a single office. See §1.2.</td>
+</tr>
+<tr>
+<td><strong>Time required</strong></td>
+<td>Three to four weeks of evidence assembly before the session, one half-day facilitated session, and a two-week window to resolve any items parked as unverified.</td>
+</tr>
+<tr>
+<td><strong>Related report sections</strong></td>
+<td>Part 2 (§2.1–§2.5), Part 4 (§4.1–§4.3), Appendix A (the full grid), and §1.3 (the Class A–D taxonomy, used in §6 of this instrument).</td>
+</tr>
+<tr>
+<td><strong>Cells touched</strong></td>
+<td>All twenty cells. This is the only instrument in the pack that evaluates the complete grid.</td>
+</tr>
+<tr>
+<td><strong>Companion instruments</strong></td>
+<td>Instrument A4 (the gap-analysis worksheet and sixty-rung action ladder, which lists ordered improvements where each step is a rung) consumes this instrument's output. Instruments A2 and A3 (the doctoral student and supervisor surveys) test whether the institution's paper position matches lived practice. Instrument A5 (the board one-pager) reports the result upward to leadership.</td>
+</tr>
+</tbody>
+</table>
+<div class="tablecaption">
+<p>Table 1. Summary of key operational specifications and structural parameters of the assessment instrument.</p>
+</div>
+<hr>
+<h1 id="1-about-this-instrument">1. About this instrument</h1>
+<h2 id="11-what-it-is-for-and-why-it-exists">1.1 What it is for, and why it exists</h2>
+<p><a href="https://instats.org/publications/responsible-ai-in-academic-research">The report</a>'s Part 4 maturity grid crosses five framework dimensions with four maturity levels, and evaluates each intersection against four institutional axes: policy, people, systems, and process. This instrument turns that grid into practical questions an institution can answer about itself using documents on the table.</p>
+<p>Regarding Dimension 5 (the institution's ability to know where it stands and act on it), <a href="https://instats.org/publications/responsible-ai-in-academic-research">the report</a>'s §4.2 describes that <em>"no university in the sample publishes its own scoring against this framework as of mid-2026, because the framework has just been published in this report, so leading on Dimension 5 is, for now, a forward-looking standard that the framework's adopters can elect to populate."</em></p>
+<p>In other words, <a href="https://instats.org/publications/responsible-ai-in-academic-research">the report</a> names a level of achievement, or "rung" on the developmental ladder, that nobody currently occupies. This instrument is how an institution reaches it. Completing A1 honestly, publishing the result with the method clearly stated, and reviewing it at a regular, declared cadence represents the substantive content of Dimension 5.</p>
+<p>A second reason to use this tool is narrower and more immediate. Two regulatory obligations sit inside Dimension 5 with fixed compliance dates. The first is the EU AI Act Article 27 Fundamental Rights Impact Assessment obligation. This applies from 2 August 2026 to institutions within Article 2's territorial scope that are bodies governed by public law or private entities providing public services and deploy a high-risk system under Article 6(2), such as where AI touches admissions, learning-outcome evaluation, education-level assignment within the institution, or proctoring. The second is the Australian Privacy Act 1988 automated-decision-making transparency obligation, which commences on 10 December 2026 for institutions under that regime. Institutions in other jurisdictions have their own equivalents. This instrument asks whether each obligation has a named owner and a dated plan, because <a href="https://instats.org/publications/responsible-ai-in-academic-research">the report</a>'s §2.5 sets exactly that as Dimension 5's operational test: a named owner for each pressure point, a documented preparation plan, and a published timeline.</p>
+<h2 id="12-who-completes-it">1.2 Who completes it</h2>
+<p>The assessment fails when a single office attempts to complete it alone, because no single office holds all the necessary evidence. Several cells sit outside the research portfolio altogether, in procurement, information security, and privacy. Convene the following roles, or the local equivalent of each:</p>
+<ul>
+<li><strong>Sponsor.</strong> Deputy Vice-Chancellor (Research), Pro-Vice-Chancellor (Research), Vice President for Research, or Deputy Provost. This person chairs the session or formally delegates the chair.</li>
+<li><strong>Dean of the Graduate School</strong> or Associate Dean (Research Training). Holds enrollment, milestone, and examination evidence.</li>
+<li><strong>Director of Research Integrity.</strong> Holds the policy text, the formal adjudication record, and the research-integrity code the institution anchors on.</li>
+<li><strong>An Associate Dean (Research) from a school or college.</strong> Represents what actually happens in a specific discipline, and can provide a realistic check if the central administrative account is overly optimistic. This perspective is very useful.</li>
+<li><strong>Doctoral supervision lead</strong> or chair of the supervisor-development program (advisor development, in US usage). Holds training content and attendance records.</li>
+<li><strong>Academic-integrity adjudicator</strong> or equivalent. Holds the case record and knows how AI matters are currently classified.</li>
+<li><strong>Librarian or research-information specialist.</strong> Holds the AI-literacy provision, citation-verification teaching materials, and reference-management integrations.</li>
+<li><strong>Chief Information Security Officer or delegate.</strong> Holds tenancy configuration records, session-log retention schedules, and the software tool register.</li>
+<li><strong>Data Protection Officer or Privacy Officer.</strong> Holds impact assessments, records of processing, and the regulatory deadline compliance posture.</li>
+<li><strong>Procurement lead for software and AI services.</strong> Holds the procurement gate documentation, vendor contracts, and the exception register.</li>
+<li><strong>A doctoral student representative</strong>, nominated by the graduate student body. This representative should be present for the whole session, not only for the parts that directly concern students.</li>
+<li><strong>A facilitator</strong> who is not one of the above, who manages the scoring process and has no personal stake in the result.</li>
+</ul>
+<blockquote>
+<p><strong>Drafting note (group size).</strong> A group of twelve people is workable for a half-day session, but fifteen is too large. Where roles overlap at [INSTITUTION NAME], you should combine them. Where a role does not exist, record that as a finding, because several cells in Dimension 3 and Dimension 5 test whether the role exists at all.</p>
+</blockquote>
+<h2 id="13-declare-the-unit-of-assessment-before-you-start">1.3 Declare the unit of assessment before you start</h2>
+<p>Score the central institution unless you decide otherwise and formally record the decision. <a href="https://instats.org/publications/responsible-ai-in-academic-research">The report</a>'s worked examples show why this matters: an institution can carry substantial activity at the school and college level while its central position is weak, and averaging the two produces an uninformative number that describes nobody. Where a school or college holds instruments the center does not, log them in the notes column against the relevant cell and score the center on its own evidence.</p>
+<p>A school or college may also run this instrument separately against itself. <a href="https://instats.org/publications/responsible-ai-in-academic-research">The report</a>'s §5.2 treats the difference between a school or college profile and the institutional profile as the most informative diagnostic available. For instance, a school or college at <em>established</em> where the institution is at <em>nascent</em> is doing work the central institution should adopt, while a school or college at <em>absent</em> where the institution is at <em>established</em> clearly needs targeted intervention.</p>
+<h2 id="14-running-it-as-a-facilitated-session">1.4 Running it as a facilitated session</h2>
+<p><strong>Before the session (three to four weeks).</strong> The facilitator circulates this instrument in full and asks each participant to assemble the documentary artifacts for the cells they oversee. This means assembling evidence rather than finalizing answers ahead of time. Participants should send a list of documents rather than a completed self-assessment. The point of this preparation is to make sure every relevant document is in the room on the day.</p>
+<p><strong>Session agenda (four hours).</strong></p>
+<table>
+<thead>
+<tr>
+<th>Time</th>
+<th>Item</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0:00–0:15</td>
+<td>The evidence rule and the Partial rule (§2). The facilitator explains both aloud and takes questions.</td>
+</tr>
+<tr>
+<td>0:15–0:25</td>
+<td>Declare the unit of assessment (§1.3), and record the decision.</td>
+</tr>
+<tr>
+<td>0:25–1:10</td>
+<td>Dimension 1 (fourteen indicators across four axes).</td>
+</tr>
+<tr>
+<td>1:10–1:55</td>
+<td>Dimension 2 (fourteen indicators).</td>
+</tr>
+<tr>
+<td>1:55–2:10</td>
+<td>Break.</td>
+</tr>
+<tr>
+<td>2:10–2:50</td>
+<td>Dimension 3 (fourteen indicators). Expect the procurement and privacy participants to lead this discussion.</td>
+</tr>
+<tr>
+<td>2:50–3:15</td>
+<td>Dimension 4 (thirteen indicators).</td>
+</tr>
+<tr>
+<td>3:15–3:35</td>
+<td>Dimension 5 (thirteen indicators).</td>
+</tr>
+<tr>
+<td>3:35–3:50</td>
+<td>Class A–D placement (§6), consisting of eleven questions answered from the policy text alone.</td>
+</tr>
+<tr>
+<td>3:50–4:00</td>
+<td>Read back the parked items, and assign an owner and a resolution date to each.</td>
+</tr>
+</tbody>
+</table>
+<div class="tablecaption">
+<p>Table 2. Schedule of timed activities and discussion topics for the facilitated evaluation session.</p>
+</div>
+<p><strong>Facilitator's rules.</strong> Only one person answers each indicator: specifically, the person who holds the direct documentary artifact. Nobody else votes. When an artifact is not physically or digitally available during the session, the answer must be recorded as <em>parked</em>, never as a <em>Yes</em>. If two participants disagree about what a document actually says, open the document and check the text together. In my experience, a rigorous session should produce a written explanatory note against roughly one indicator in five. If a session produces no notes at all, it is very likely that the group has not been sufficiently thorough.</p>
+<p><strong>After the session (two weeks).</strong> During the two weeks following the session, the facilitator resolves any parked items against the artifacts, records the final answers, computes the profile according to §3, and returns the completed scoring sheet with the full evidence register attached. Any parked item that remains unresolved stays unanswered, and the final coverage figure reflects that. Do not treat an inability to locate evidence as proof that the underlying practice is absent. The completed profile is then formally tabled at [COMMITTEE], which sets the date for the next assessment. I strongly recommend fixing that date before the group disperses, because a profile without a scheduled review date quickly turns into an administrative exercise that nobody actively owns.</p>
+<hr>
+<h1 id="2-how-to-answer-honestly">2. How to answer honestly</h1>
+<h2 id="21-the-evidence-rule">2.1 The evidence rule</h2>
+<p>Every indicator asks about something an outsider could confirm or refute from documents. That property is what makes the result worth publishing.</p>
+<p>The test to apply to every answer is straightforward: <em>could a skeptical auditor who does not work here confirm or refute this from the artifacts we hold?</em> If the honest answer is that they would have to take our word for it, then the indicator is not satisfied.</p>
+<p><strong>What counts as evidence.</strong> Examples of valid evidence include a published policy document with a specific clause reference and date, a live system screen or form, a training completion record extracted directly from an institutional database, an official committee minute, a signed procedure, a dated register entry, a formal report with a named recipient, an executed contract clause, or a completed assessment or impact-assessment artifact with an explicit completion date.</p>
+<p><strong>What does not count as evidence.</strong> The assessment cannot accept an unfulfilled intention, an unapproved draft, a pilot project with no completion records, an individual's informal recollection of a past decision, a slide from an old presentation, an undated intranet page, or a vendor's marketing claim about its own software. <a href="https://instats.org/publications/responsible-ai-in-academic-research">The report</a>'s §2.3 is very specific on this point: the Stanford RegLab 2024 evaluation measured seventeen to thirty-three percent hallucination rates across three commercial retrieval-augmented tools that were marketed as completely eliminating false citations. A vendor's marketing statement is a claim that needs to be tested, not an artifact that satisfies an institutional indicator.</p>
+<p><strong>Reference every answer to a named artifact.</strong> The evidence line under each indicator specifies the type of artifact expected, and you should fill this in completely. If an indicator is marked as a Yes but leaves the evidence line blank, it is considered unanswered, and the facilitator will treat it as such.</p>
+<p><strong>Accept documented functional equivalents.</strong> An institution does not need to use the document title, system name, or organizational form given in an example. A local artifact qualifies when it performs the same function, covers the same population and scope, and supplies the evidence required by the indicator. Record the equivalence in the evidence line so another reviewer can follow the judgment.</p>
+<h2 id="22-the-partial-trap">2.2 The Partial trap</h2>
+<p><em>Partial</em> is the answer most often misused, because it feels safe. It is not a hedge.</p>
+<p>You should use <em>Partial</em> only where a practice or mechanism genuinely exists but does not yet meet the full standard required by the indicator. For example, use it when a policy document is published but covers only two of the four AI-use modes, when advisor and supervisor training exists but only reaches staff in a single school or college, when an asset register exists but has not been updated in eighteen months, or when an impact assessment is complete for two of the four regulated use cases. In this framework, the gap analysis arranges needed improvements in sequence using a <em>ladder</em> metaphor, and each individual improvement is a <em>rung</em>. A Partial answer identifies unfinished work. Instrument A4 then helps the institution select a relevant planning package and name the exact A1 indicator it intends to rescore. The catalogue is not a one-to-one conversion of every Partial answer into a prewritten action.</p>
+<p><strong>A Partial answer never promotes an institution's level within a cell.</strong> A given rung is met only when every indicator on that rung is answered with a full Yes. If a rung contains a Partial answer and no No or unanswered items, it is recorded as <em>in progress</em> on the scoring sheet. This distinction is consequential for institutional planning, but it does not raise the cell's maturity level. This reflects what <a href="https://instats.org/publications/responsible-ai-in-academic-research">the report</a> calls the cumulative ratchet rule, meaning that advancement builds strictly on solid foundations: every description for the <em>leading</em> level in Appendix A begins with "All of <em>established</em>, plus". As a result, an institution cannot be classified as <em>leading</em> while failing to satisfy the <em>established</em> criteria, and by the same logic, it cannot be classified as <em>established</em> while only half-meeting those requirements.</p>
+<p>Do not use <em>Partial</em> to mean "we intend to do this". An intention is a "No". Similarly, do not use it to mean "this happens informally in some schools or colleges but is not central policy" unless the declared unit of assessment is that specific school or college. At the central institutional level, that situation is a "No", accompanied by an explanatory note naming the specific schools or colleges concerned.</p>
+<h2 id="23-why-guessing-high-optimistically-defeats-the-purpose">2.3 Why guessing high (optimistically) defeats the purpose</h2>
+<p>There are three main reasons why guessing high (optimistically) defeats the entire purpose of this assessment, listed here in ascending order of importance.</p>
+<p>First, the output of this instrument directly informs a practical work plan. Every No and Partial answer identifies work that must be considered. Instrument A4 provides sixty planning packages, but the institution must select and adapt the relevant package, name the exact A1 indicator being addressed, and rescore that indicator after the work. If an institution inflates an answer, necessary work may not be recognized or funded.</p>
+<p>Second, the resulting institutional profile is designed to diagnose constraints rather than serve as a generic report card. <a href="https://instats.org/publications/responsible-ai-in-academic-research">The report</a>'s §4.3 makes this point plainly: the specific dimension where an institution is weakest is often the bottleneck that constrains its overall competency. For example, an institution might appear to be <em>leading</em> on Dimension 1 (human-in-the-loop policy), but if it remains <em>absent</em> on Dimension 3 (procured systems and tooling), it cannot realize the human-in-the-loop discipline in practice because the software tools its researchers actually use do not support it. Inflating the score on Dimension 3 hides the practical constraint that is already undermining Dimension 1. The grid exists to make these institutional bottlenecks visible, and an artificially flattered grid is worse than having no diagnostic at all.</p>
+<p>Third, published scores are publicly verifiable. Moving to the <em>leading</em> level on Dimension 5 requires an institution to publish its self-assessment along with its methodology. This allows peer universities, government regulators, research funders, or doctoral students to evaluate the claim against the same objective criteria. An institution that publishes an inflated assessment creates an easily auditable falsehood. It is far safer, and much more useful developmentally, to publish a <em>nascent</em> rating accompanied by a dated action plan than to claim an <em>established</em> rating without the necessary documentary evidence.</p>
+<p>A related point to keep in mind is that nobody outside the institution is grading this assessment. <a href="https://instats.org/publications/responsible-ai-in-academic-research">The report</a>'s §4.1 is explicitly non-prescriptive about which maturity level any given institution ought to occupy, because institutional missions and contexts vary widely. For instance, <a href="https://instats.org/publications/responsible-ai-in-academic-research">the report</a> notes that a small, humanities-focused doctoral program and a major biomedical research university operating across thirteen regulatory jurisdictions can both be at the <em>established</em> level on Dimension 2, even though their operational implementations look very different. There is no prize for claiming a high score and no penalty for reporting a low one, but there is a real cost to producing an inaccurate assessment.</p>
+<h1 id="3-how-scoring-works">3. How scoring works</h1>
+<h2 id="31-the-answer-scale">3.1 The answer scale</h2>
+<p>Each indicator is answered <strong>Yes (1.0)</strong>, <strong>Partial (0.5)</strong>, or <strong>No (0.0)</strong>. Use No when the evidence establishes that the requirement is not met. If the evidence is unavailable or unresolved, leave the item blank. An unanswered indicator contributes no points and blocks confirmation of its rung, but it does not establish that the practice is absent. The denominator for documentary coverage remains fixed at sixty-eight indicators.</p>
+<p>There is no general Not applicable category. An applicability-conditioned indicator can be answered Yes when a documented scope determination establishes why no relevant obligation or use applies to the declared unit of assessment. Record the decision, its authority, date, scope, and rationale in the evidence line. Without that record, the indicator remains unanswered rather than being removed from the denominator.</p>
+<h2 id="32-from-indicators-to-a-cell-level">3.2 From indicators to a cell level</h2>
+<p>Each cell carries indicators across three developmental rungs: <strong>nascent (N)</strong>, <strong>established (E)</strong>, and <strong>leading (L)</strong>. The <em>absent</em> level has no explicit indicators. Assign it only when the nascent rung is documented as not met or is fully answered but in progress. If an unanswered indicator makes the nascent rung unresolved, record the cell as <strong>Unresolved/not demonstrated</strong> and do not assign a maturity level to that cell.</p>
+<ul>
+<li>A rung is <strong>met</strong> when every indicator on that rung is answered Yes.</li>
+<li>A rung is <strong>in progress</strong> when at least one indicator is Yes or Partial, none is No or unanswered, and the rung is not fully met.</li>
+<li>A rung is <strong>not met</strong> when documentary evidence supports one or more No answers.</li>
+<li>A rung is <strong>unresolved</strong> when an unanswered indicator prevents a determination and no documented No already establishes that the rung is not met.</li>
+</ul>
+<p>The cell level is then the highest rung at which that rung <em>and every rung below it</em> is met:</p>
+<table>
+<thead>
+<tr>
+<th>Cell level</th>
+<th>Condition</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Absent</strong></td>
+<td>The nascent rung is documented as not met or is in progress.</td>
+</tr>
+<tr>
+<td><strong>Nascent</strong></td>
+<td>The nascent rung is met, but the established rung is not.</td>
+</tr>
+<tr>
+<td><strong>Established</strong></td>
+<td>The nascent and established rungs are both met.</td>
+</tr>
+<tr>
+<td><strong>Leading</strong></td>
+<td>The nascent, established, and leading rungs are all met.</td>
+</tr>
+</tbody>
+</table>
+<div class="tablecaption">
+<p>Table 3. Qualifying conditions and progression criteria required for achieving each cell maturity level.</p>
+</div>
+<p>The cumulative ratchet rule is built directly into this scoring structure: satisfying a leading indicator while failing an established one does not raise the cell's maturity level. You should record the leading answer in the evidence register anyway, because it documents good work and will shorten the action ladder later, but it does not move the institution's location within a given cell.</p>
+<p>If an unanswered indicator is what prevents the nascent rung from being demonstrated, do not assign <em>absent</em> on the basis of that blank. Mark the cell <strong>Unresolved/not demonstrated</strong> alongside the provisional documentary profile. This is an evidence-status notation, not a fifth maturity level. If a documented No independently establishes that the nascent rung is not met, the cell may still be recorded as <em>absent</em>, with the unanswered indicator reported separately. For an unresolved higher rung, retain the highest lower level that has been fully demonstrated and mark the next rung unresolved.</p>
+<h2 id="33-from-cells-to-a-dimension-level">3.3 From cells to a dimension level</h2>
+<p><strong>The dimension level is the minimum of its four axis cells.</strong> Not the mean, not the median nor the mode. <a href="https://instats.org/publications/responsible-ai-in-academic-research">The report</a> is explicit that <em>established</em> means policy, people, systems, and process are all in place and operating at a reviewable cadence. As a result, a dimension with three cells at <em>established</em> and one at <em>nascent</em> remains at <em>nascent</em> for that dimension. Advancing along a dimension requires every cell to reach that level.</p>
+<p>If any axis cell is <strong>Unresolved/not demonstrated</strong> at the nascent rung, report the dimension as <strong>Unresolved/not demonstrated</strong> in the provisional profile and list the unresolved axes. Do not assign a binding axis or binding dimension until the missing evidence is resolved, unless a documented lower cell already determines the dimension's minimum independently. Documentary coverage is reported separately. A coverage verdict of Final therefore does not turn an unresolved maturity result into a final maturity level.</p>
+<p><strong>Name the binding axis.</strong> The binding axis is the specific institutional axis (policy, people, systems, or process) that is holding a dimension back, meaning it sits at the lowest level. If two or more axes tie at the minimum level, you should name all of them. Identifying the binding axis is one of the most practically useful outputs of this assessment because it turns a score into a clear operational instruction. For example, if Dimension 4 sits at <em>nascent</em> with a binding axis of <em>people</em>, this tells you that the formal curriculum is not the problem. Instead, the preparation of advisors, supervisors, and examiners (or dissertation committee members, in US usage) is the problem that needs addressing.</p>
+<p><strong>Name the binding dimension.</strong> Across the five dimensions, the binding dimension is the one sitting at the lowest level. If two or more dimensions tie, name the earliest one in the framework sequence. <a href="https://instats.org/publications/responsible-ai-in-academic-research">The report</a>'s §4.1 explains that the five dimensions are interdependent in the order specified by the framework, operating as sequential preconditions. To see why the dimensions work this way, consider how each one depends on the one before it. An institution that has not decided where human judgement must remain mandatory cannot define what responsible use looks like in daily practice. Without a clear operational definition of responsible use, any procurement test to determine whether software promotes responsible behavior is meaningless. Without approved tools and operational standards, an AI-literacy curriculum has no concrete practices to teach. And without all four of those components in place, an institutional benchmarking grid has nothing solid to evaluate.</p>
+<h2 id="34-the-instrument-refuses-to-produce-a-single-institutional-score">3.4 The instrument refuses to produce a single institutional score</h2>
+<p>This instrument does not compute an overall score, a percentage, a star rating, or a grade, and no adaptation of it should. This design choice is not a matter of modesty. It is a direct conclusion from <a href="https://instats.org/publications/responsible-ai-in-academic-research">the report</a>'s research findings.</p>
+<p><a href="https://instats.org/publications/responsible-ai-in-academic-research">The report</a>'s §4.3 concludes from its worked examples that an institution's maturity is rarely uniform across dimensions, and that <em>the diagnostic value of the grid is the dimensional pattern, not a single score</em>. For example, <a href="https://instats.org/publications/responsible-ai-in-academic-research">the report</a> places University College London at <em>established</em> moving to <em>leading</em> on Dimension 1, but at <em>nascent</em> on Dimension 3. Averaging those two ratings into a single number would erase both realities and describe an institution that does not actually exist. An averaged score would also hide the specific bottleneck holding the institution back, and identifying that bottleneck is the entire practical point of running this assessment.</p>
+<p>A single aggregate score also encourages misleading comparisons between institutions with completely different research profiles, disciplinary mixes, and regulatory obligations, using a scale that was never intended for that purpose. Furthermore, it tempts institutional leadership to optimize a single summary number rather than fixing the specific weak cells that create risk. For that reason, this assessment reports the five distinct dimension levels, their binding axes, and the binding dimension. If senior leadership requests a single summary metric, provide them with the five dimension levels and the binding dimension, which fit easily on a single line.</p>
+<h2 id="35-coverage-and-the-status-of-the-verdict">3.5 Coverage and the status of the verdict</h2>
+<p>Coverage is the proportion of the sixty-eight indicators answered Yes, Partial, or No from a named documentary artifact. Parked items and blank entries are treated as unanswered.</p>
+<ul>
+<li><strong>Coverage of 80 percent or more:</strong> The assessment verdict is <strong>Final</strong>. Record the exact coverage percentage alongside the verdict.</li>
+<li><strong>Coverage below 80 percent:</strong> The assessment verdict is <strong>Provisional</strong>. Report the resulting levels, mark them as Provisional, name the specific cells carrying the unanswered indicators, and set a firm deadline to complete them.</li>
+</ul>
+<p>A Provisional verdict is a completely legitimate first-year result. It is not a failure. Rather, it provides an accurate measure of how accessible the institution's own documentary evidence is, which is itself an important systems finding for Dimension 5.</p>
+<hr>
+<h1 id="4-the-instrument">4. The instrument</h1>
+<p>When completing this instrument, answer each indicator directly from documentary artifacts. If the relevant artifact is not available during the session, record the item as parked rather than guessing.</p>
+<hr>
+<h2 id="dimension-1-human-in-the-loop-discipline">Dimension 1: Human-in-the-loop discipline</h2>
+<p><em>This dimension reflects the institutional commitment that the judgment steps defining research remain human. Labor-intensive steps may be augmented by AI, but core judgment steps cannot be outsourced to AI without ceasing to be genuine research. See <a href="https://instats.org/publications/responsible-ai-in-academic-research">the report</a>'s §2.1, Appendix A row 1, and Appendix G, which supplies a working task taxonomy.</em></p>
+<h3 id="d1-policy">D1 · policy</h3>
+<p><strong>D1-policy-N1 · nascent.</strong> Has [INSTITUTION NAME] published a position (in a document that sits outside its student-conduct and assessment-integrity rules) stating that AI-generated content must be verified before use and does not replace expert opinion or judgment?</p>
+<fieldset class="answer answer-enhanced" id="a1_maturity_assessment-answer-1">
+<legend class="answer-legend visually-hidden">D1-policy-N1 · nascent. Has [INSTITUTION NAME] published a position (in a document that sits outside its student-conduct and assessment-integrity rules) stating that AI-generated content must be verified before use and does not replace expert opinion or judgment?</legend>
+<div class="answer-options"><label class="answer-option" for="a1_maturity_assessment-answer-1-option-1"><input type="radio" id="a1_maturity_assessment-answer-1-option-1" name="a1_maturity_assessment-answer-1" value="Yes"> <span>Yes</span></label><label class="answer-option" for="a1_maturity_assessment-answer-1-option-2"><input type="radio" id="a1_maturity_assessment-answer-1-option-2" name="a1_maturity_assessment-answer-1" value="Partial"> <span>Partial</span></label><label class="answer-option" for="a1_maturity_assessment-answer-1-option-3"><input type="radio" id="a1_maturity_assessment-answer-1-option-3" name="a1_maturity_assessment-answer-1" value="No"> <span>No</span></label></div>
+</fieldset>
+<p><em>Evidence: Name the document and the specific clause, provide the URL, state the date of last review, and name the policy-library category under which it is filed.</em></p>
+<p><strong>D1-policy-E1 · established.</strong> Does that document publish a task-level demarcation (a named catalog of research tasks classified as work AI may support versus work AI may not substitute for) rather than relying on a statement of principle alone?</p>
+<fieldset class="answer answer-enhanced" id="a1_maturity_assessment-answer-2">
+<legend class="answer-legend visually-hidden">D1-policy-E1 · established. Does that document publish a task-level demarcation (a named catalog of research tasks classified as work AI may support versus work AI may not substitute for) rather than relying on a statement of principle alone?</legend>
+<div class="answer-options"><label class="answer-option" for="a1_maturity_assessment-answer-2-option-1"><input type="radio" id="a1_maturity_assessment-answer-2-option-1" name="a1_maturity_assessment-answer-2" value="Yes"> <span>Yes</span></label><label class="answer-option" for="a1_maturity_assessment-answer-2-option-2"><input type="radio" id="a1_maturity_assessment-answer-2-option-2" name="a1_maturity_assessment-answer-2" value="Partial"> <span>Partial</span></label><label class="answer-option" for="a1_maturity_assessment-answer-2-option-3"><input type="radio" id="a1_maturity_assessment-answer-2-option-3" name="a1_maturity_assessment-answer-2" value="No"> <span>No</span></label></div>
+</fieldset>
+<p><em>Evidence: Attach the task table or list with its clause reference, and state how many research tasks it classifies.</em></p>
+<p><strong>D1-policy-E2 · established.</strong> Does the demarcation name the anchor instrument through which it is enforced (such as a national research-integrity code, an institutional sworn declaration or affidavit, or the declaration form attached to the thesis or dissertation) together with a regular review cadence, and did the most recent review take place on schedule?</p>
+<fieldset class="answer answer-enhanced" id="a1_maturity_assessment-answer-3">
+<legend class="answer-legend visually-hidden">D1-policy-E2 · established. Does the demarcation name the anchor instrument through which it is enforced (such as a national research-integrity code, an institutional sworn declaration or affidavit, or the declaration form attached to the thesis or dissertation) together with a regular review cadence, and did the most recent review take place on schedule?</legend>
+<div class="answer-options"><label class="answer-option" for="a1_maturity_assessment-answer-3-option-1"><input type="radio" id="a1_maturity_assessment-answer-3-option-1" name="a1_maturity_assessment-answer-3" value="Yes"> <span>Yes</span></label><label class="answer-option" for="a1_maturity_assessment-answer-3-option-2"><input type="radio" id="a1_maturity_assessment-answer-3-option-2" name="a1_maturity_assessment-answer-3" value="Partial"> <span>Partial</span></label><label class="answer-option" for="a1_maturity_assessment-answer-3-option-3"><input type="radio" id="a1_maturity_assessment-answer-3-option-3" name="a1_maturity_assessment-answer-3" value="No"> <span>No</span></label></div>
+</fieldset>
+<p><em>Evidence: The clause naming the anchor instrument, the published review schedule, and the version note or committee minute recording the last review date.</em></p>
+<p><strong>D1-policy-L1 · leading.</strong> Has the institution published its own scored position on this dimension, with the scoring method clearly stated and the date of the next scheduled review published?</p>
+<fieldset class="answer answer-enhanced" id="a1_maturity_assessment-answer-4">
+<legend class="answer-legend visually-hidden">D1-policy-L1 · leading. Has the institution published its own scored position on this dimension, with the scoring method clearly stated and the date of the next scheduled review published?</legend>
+<div class="answer-options"><label class="answer-option" for="a1_maturity_assessment-answer-4-option-1"><input type="radio" id="a1_maturity_assessment-answer-4-option-1" name="a1_maturity_assessment-answer-4" value="Yes"> <span>Yes</span></label><label class="answer-option" for="a1_maturity_assessment-answer-4-option-2"><input type="radio" id="a1_maturity_assessment-answer-4-option-2" name="a1_maturity_assessment-answer-4" value="Partial"> <span>Partial</span></label><label class="answer-option" for="a1_maturity_assessment-answer-4-option-3"><input type="radio" id="a1_maturity_assessment-answer-4-option-3" name="a1_maturity_assessment-answer-4" value="No"> <span>No</span></label></div>
+</fieldset>
+<p><em>Evidence: URL of the published scoring, the method statement, the publication date, and the next review date.</em></p>
+<h3 id="d1-people">D1 · people</h3>
+<p><strong>D1-people-N1 · nascent.</strong> Is a single named role accountable for the labor-versus-judgment demarcation, meaning a position with a specific title and a current occupant rather than a standing committee described in general terms?</p>
+<fieldset class="answer answer-enhanced" id="a1_maturity_assessment-answer-5">
+<legend class="answer-legend visually-hidden">D1-people-N1 · nascent. Is a single named role accountable for the labor-versus-judgment demarcation, meaning a position with a specific title and a current occupant rather than a standing committee described in general terms?</legend>
+<div class="answer-options"><label class="answer-option" for="a1_maturity_assessment-answer-5-option-1"><input type="radio" id="a1_maturity_assessment-answer-5-option-1" name="a1_maturity_assessment-answer-5" value="Yes"> <span>Yes</span></label><label class="answer-option" for="a1_maturity_assessment-answer-5-option-2"><input type="radio" id="a1_maturity_assessment-answer-5-option-2" name="a1_maturity_assessment-answer-5" value="Partial"> <span>Partial</span></label><label class="answer-option" for="a1_maturity_assessment-answer-5-option-3"><input type="radio" id="a1_maturity_assessment-answer-5-option-3" name="a1_maturity_assessment-answer-5" value="No"> <span>No</span></label></div>
+</fieldset>
+<p><em>Evidence: Role title, current occupant, and the terms of reference or formal delegation instrument that assigns this accountability.</em></p>
+<p><strong>D1-people-E1 · established.</strong> Does the development program for doctoral advisors and supervisors include the demarcation as a taught element, with attendance formally recorded against the register of academics currently advising or supervising doctoral students?</p>
+<fieldset class="answer answer-enhanced" id="a1_maturity_assessment-answer-6">
+<legend class="answer-legend visually-hidden">D1-people-E1 · established. Does the development program for doctoral advisors and supervisors include the demarcation as a taught element, with attendance formally recorded against the register of academics currently advising or supervising doctoral students?</legend>
+<div class="answer-options"><label class="answer-option" for="a1_maturity_assessment-answer-6-option-1"><input type="radio" id="a1_maturity_assessment-answer-6-option-1" name="a1_maturity_assessment-answer-6" value="Yes"> <span>Yes</span></label><label class="answer-option" for="a1_maturity_assessment-answer-6-option-2"><input type="radio" id="a1_maturity_assessment-answer-6-option-2" name="a1_maturity_assessment-answer-6" value="Partial"> <span>Partial</span></label><label class="answer-option" for="a1_maturity_assessment-answer-6-option-3"><input type="radio" id="a1_maturity_assessment-answer-6-option-3" name="a1_maturity_assessment-answer-6" value="No"> <span>No</span></label></div>
+</fieldset>
+<p><em>Evidence: The training materials or session outline, the attendance extract, and the proportion of currently active advisors and supervisors who completed the training in the most recent cycle.</em></p>
+<p><strong>D1-people-L1 · leading.</strong> Does the institution publish coverage figures for this dimension (specifically the proportion of advisors, supervisors, and examiners prepared, along with the required refresh interval), and can it name a concrete change made in response to those figures?</p>
+<fieldset class="answer answer-enhanced" id="a1_maturity_assessment-answer-7">
+<legend class="answer-legend visually-hidden">D1-people-L1 · leading. Does the institution publish coverage figures for this dimension (specifically the proportion of advisors, supervisors, and examiners prepared, along with the required refresh interval), and can it name a concrete change made in response to those figures?</legend>
+<div class="answer-options"><label class="answer-option" for="a1_maturity_assessment-answer-7-option-1"><input type="radio" id="a1_maturity_assessment-answer-7-option-1" name="a1_maturity_assessment-answer-7" value="Yes"> <span>Yes</span></label><label class="answer-option" for="a1_maturity_assessment-answer-7-option-2"><input type="radio" id="a1_maturity_assessment-answer-7-option-2" name="a1_maturity_assessment-answer-7" value="Partial"> <span>Partial</span></label><label class="answer-option" for="a1_maturity_assessment-answer-7-option-3"><input type="radio" id="a1_maturity_assessment-answer-7-option-3" name="a1_maturity_assessment-answer-7" value="No"> <span>No</span></label></div>
+</fieldset>
+<p><em>Evidence: The published coverage figures, and the committee paper or minute recording the resulting institutional change.</em></p>
+<h3 id="d1-systems">D1 · systems</h3>
+<p><strong>D1-systems-N1 · nascent.</strong> Does the thesis-submission or doctoral-enrollment system contain a dedicated field in which the student records generative AI use?</p>
+<fieldset class="answer answer-enhanced" id="a1_maturity_assessment-answer-8">
+<legend class="answer-legend visually-hidden">D1-systems-N1 · nascent. Does the thesis-submission or doctoral-enrollment system contain a dedicated field in which the student records generative AI use?</legend>
+<div class="answer-options"><label class="answer-option" for="a1_maturity_assessment-answer-8-option-1"><input type="radio" id="a1_maturity_assessment-answer-8-option-1" name="a1_maturity_assessment-answer-8" value="Yes"> <span>Yes</span></label><label class="answer-option" for="a1_maturity_assessment-answer-8-option-2"><input type="radio" id="a1_maturity_assessment-answer-8-option-2" name="a1_maturity_assessment-answer-8" value="Partial"> <span>Partial</span></label><label class="answer-option" for="a1_maturity_assessment-answer-8-option-3"><input type="radio" id="a1_maturity_assessment-answer-8-option-3" name="a1_maturity_assessment-answer-8" value="No"> <span>No</span></label></div>
+</fieldset>
+<p><em>Evidence: The form or system screen, along with the date the field was introduced.</em></p>
+<p><strong>D1-systems-E1 · established.</strong> Does that system field require the student to record AI use against the published task categories, rather than accepting an unguided free-text note or a simple yes/no acknowledgment?</p>
+<fieldset class="answer answer-enhanced" id="a1_maturity_assessment-answer-9">
+<legend class="answer-legend visually-hidden">D1-systems-E1 · established. Does that system field require the student to record AI use against the published task categories, rather than accepting an unguided free-text note or a simple yes/no acknowledgment?</legend>
+<div class="answer-options"><label class="answer-option" for="a1_maturity_assessment-answer-9-option-1"><input type="radio" id="a1_maturity_assessment-answer-9-option-1" name="a1_maturity_assessment-answer-9" value="Yes"> <span>Yes</span></label><label class="answer-option" for="a1_maturity_assessment-answer-9-option-2"><input type="radio" id="a1_maturity_assessment-answer-9-option-2" name="a1_maturity_assessment-answer-9" value="Partial"> <span>Partial</span></label><label class="answer-option" for="a1_maturity_assessment-answer-9-option-3"><input type="radio" id="a1_maturity_assessment-answer-9-option-3" name="a1_maturity_assessment-answer-9" value="No"> <span>No</span></label></div>
+</fieldset>
+<p><em>Evidence: The form showing the structured task categories, and the completion instructions issued to students.</em></p>
+<p><strong>D1-systems-L1 · leading.</strong> Does the system automatically generate declaration-completion rates and examiner-flag rates as a standing report to a named committee?</p>
+<fieldset class="answer answer-enhanced" id="a1_maturity_assessment-answer-10">
+<legend class="answer-legend visually-hidden">D1-systems-L1 · leading. Does the system automatically generate declaration-completion rates and examiner-flag rates as a standing report to a named committee?</legend>
+<div class="answer-options"><label class="answer-option" for="a1_maturity_assessment-answer-10-option-1"><input type="radio" id="a1_maturity_assessment-answer-10-option-1" name="a1_maturity_assessment-answer-10" value="Yes"> <span>Yes</span></label><label class="answer-option" for="a1_maturity_assessment-answer-10-option-2"><input type="radio" id="a1_maturity_assessment-answer-10-option-2" name="a1_maturity_assessment-answer-10" value="Partial"> <span>Partial</span></label><label class="answer-option" for="a1_maturity_assessment-answer-10-option-3"><input type="radio" id="a1_maturity_assessment-answer-10-option-3" name="a1_maturity_assessment-answer-10" value="No"> <span>No</span></label></div>
+</fieldset>
+<p><em>Evidence: The standing report, the receiving committee, the reporting frequency, and the most recent figures.</em></p>
+<h3 id="d1-process">D1 · process</h3>
+<p><strong>D1-process-N1 · nascent.</strong> Is the demarcation formally discussed with the doctoral student at a defined milestone in the program (such as confirmation, mid-program review, or an equivalent milestone) rather than left entirely to individual advisor or supervisor discretion?</p>
+<fieldset class="answer answer-enhanced" id="a1_maturity_assessment-answer-11">
+<legend class="answer-legend visually-hidden">D1-process-N1 · nascent. Is the demarcation formally discussed with the doctoral student at a defined milestone in the program (such as confirmation, mid-program review, or an equivalent milestone) rather than left entirely to individual advisor or supervisor discretion?</legend>
+<div class="answer-options"><label class="answer-option" for="a1_maturity_assessment-answer-11-option-1"><input type="radio" id="a1_maturity_assessment-answer-11-option-1" name="a1_maturity_assessment-answer-11" value="Yes"> <span>Yes</span></label><label class="answer-option" for="a1_maturity_assessment-answer-11-option-2"><input type="radio" id="a1_maturity_assessment-answer-11-option-2" name="a1_maturity_assessment-answer-11" value="Partial"> <span>Partial</span></label><label class="answer-option" for="a1_maturity_assessment-answer-11-option-3"><input type="radio" id="a1_maturity_assessment-answer-11-option-3" name="a1_maturity_assessment-answer-11" value="No"> <span>No</span></label></div>
+</fieldset>
+<p><em>Evidence: The milestone form or procedure text that mandates this conversation, and the date it was introduced.</em></p>
+<p><strong>D1-process-E1 · established.</strong> Does the doctoral research methods curriculum teach the demarcation as a named learning outcome, complete with a stated assessment point?</p>
+<fieldset class="answer answer-enhanced" id="a1_maturity_assessment-answer-12">
+<legend class="answer-legend visually-hidden">D1-process-E1 · established. Does the doctoral research methods curriculum teach the demarcation as a named learning outcome, complete with a stated assessment point?</legend>
+<div class="answer-options"><label class="answer-option" for="a1_maturity_assessment-answer-12-option-1"><input type="radio" id="a1_maturity_assessment-answer-12-option-1" name="a1_maturity_assessment-answer-12" value="Yes"> <span>Yes</span></label><label class="answer-option" for="a1_maturity_assessment-answer-12-option-2"><input type="radio" id="a1_maturity_assessment-answer-12-option-2" name="a1_maturity_assessment-answer-12" value="Partial"> <span>Partial</span></label><label class="answer-option" for="a1_maturity_assessment-answer-12-option-3"><input type="radio" id="a1_maturity_assessment-answer-12-option-3" name="a1_maturity_assessment-answer-12" value="No"> <span>No</span></label></div>
+</fieldset>
+<p><em>Evidence: The unit or module syllabus showing the learning outcome and how it is assessed, along with the student cohorts it currently reaches.</em></p>
+<p><strong>D1-process-E2 · established.</strong> Are examiners provided with the demarcation as part of their standard appointment pack, and does the examination procedure explain how to raise an AI-related question or concern without it being treated as a misconduct allegation by default?</p>
+<fieldset class="answer answer-enhanced" id="a1_maturity_assessment-answer-13">
+<legend class="answer-legend visually-hidden">D1-process-E2 · established. Are examiners provided with the demarcation as part of their standard appointment pack, and does the examination procedure explain how to raise an AI-related question or concern without it being treated as a misconduct allegation by default?</legend>
+<div class="answer-options"><label class="answer-option" for="a1_maturity_assessment-answer-13-option-1"><input type="radio" id="a1_maturity_assessment-answer-13-option-1" name="a1_maturity_assessment-answer-13" value="Yes"> <span>Yes</span></label><label class="answer-option" for="a1_maturity_assessment-answer-13-option-2"><input type="radio" id="a1_maturity_assessment-answer-13-option-2" name="a1_maturity_assessment-answer-13" value="Partial"> <span>Partial</span></label><label class="answer-option" for="a1_maturity_assessment-answer-13-option-3"><input type="radio" id="a1_maturity_assessment-answer-13-option-3" name="a1_maturity_assessment-answer-13" value="No"> <span>No</span></label></div>
+</fieldset>
+<p><em>Evidence: The examiner appointment pack showing the date the AI section was added, the distribution record for the most recent examination round, and the escalation clause in the examination regulations.</em></p>
+<p><strong>D1-process-L1 · leading.</strong> Does the institution run a periodic audit of doctoral advising and supervision that samples individual student enrollments for evidence that the demarcation was applied in practice, and are those findings published?</p>
+<fieldset class="answer answer-enhanced" id="a1_maturity_assessment-answer-14">
+<legend class="answer-legend visually-hidden">D1-process-L1 · leading. Does the institution run a periodic audit of doctoral advising and supervision that samples individual student enrollments for evidence that the demarcation was applied in practice, and are those findings published?</legend>
+<div class="answer-options"><label class="answer-option" for="a1_maturity_assessment-answer-14-option-1"><input type="radio" id="a1_maturity_assessment-answer-14-option-1" name="a1_maturity_assessment-answer-14" value="Yes"> <span>Yes</span></label><label class="answer-option" for="a1_maturity_assessment-answer-14-option-2"><input type="radio" id="a1_maturity_assessment-answer-14-option-2" name="a1_maturity_assessment-answer-14" value="Partial"> <span>Partial</span></label><label class="answer-option" for="a1_maturity_assessment-answer-14-option-3"><input type="radio" id="a1_maturity_assessment-answer-14-option-3" name="a1_maturity_assessment-answer-14" value="No"> <span>No</span></label></div>
+</fieldset>
+<p><em>Evidence: The audit protocol, the sample size, the most recent findings, and where they were published.</em></p>
+<hr>
+<h2 id="dimension-2-responsible-use-in-practice">Dimension 2: Responsible use in practice</h2>
+<p><em>This dimension evaluates how an institution operationalizes "responsible AI use" from general principles into daily research workflows, specified separately for each of the four AI-use modes: search, co-author, validator, and tutor. See <a href="https://instats.org/publications/responsible-ai-in-academic-research">the report</a>'s §2.2 and Appendix A row 2.</em></p>
+<h3 id="d2-policy">D2 · policy</h3>
+<p><strong>D2-policy-N1 · nascent.</strong> Has the institution published a single standard disclosure template, or an approved form of words, for recording AI use in research outputs across all schools and colleges?</p>
+<fieldset class="answer answer-enhanced" id="a1_maturity_assessment-answer-15">
+<legend class="answer-legend visually-hidden">D2-policy-N1 · nascent. Has the institution published a single standard disclosure template, or an approved form of words, for recording AI use in research outputs across all schools and colleges?</legend>
+<div class="answer-options"><label class="answer-option" for="a1_maturity_assessment-answer-15-option-1"><input type="radio" id="a1_maturity_assessment-answer-15-option-1" name="a1_maturity_assessment-answer-15" value="Yes"> <span>Yes</span></label><label class="answer-option" for="a1_maturity_assessment-answer-15-option-2"><input type="radio" id="a1_maturity_assessment-answer-15-option-2" name="a1_maturity_assessment-answer-15" value="Partial"> <span>Partial</span></label><label class="answer-option" for="a1_maturity_assessment-answer-15-option-3"><input type="radio" id="a1_maturity_assessment-answer-15-option-3" name="a1_maturity_assessment-answer-15" value="No"> <span>No</span></label></div>
+</fieldset>
+<p><em>Evidence: The template, its URL, and the policy clause that mandates its use.</em></p>
+<p><strong>D2-policy-E1 · established.</strong> Do the published rules specify what responsible use means separately for each of the four AI-use modes (search, co-author, validator, and tutor) at the level of specific research tasks rather than as high-level generalities?</p>
+<fieldset class="answer answer-enhanced" id="a1_maturity_assessment-answer-16">
+<legend class="answer-legend visually-hidden">D2-policy-E1 · established. Do the published rules specify what responsible use means separately for each of the four AI-use modes (search, co-author, validator, and tutor) at the level of specific research tasks rather than as high-level generalities?</legend>
+<div class="answer-options"><label class="answer-option" for="a1_maturity_assessment-answer-16-option-1"><input type="radio" id="a1_maturity_assessment-answer-16-option-1" name="a1_maturity_assessment-answer-16" value="Yes"> <span>Yes</span></label><label class="answer-option" for="a1_maturity_assessment-answer-16-option-2"><input type="radio" id="a1_maturity_assessment-answer-16-option-2" name="a1_maturity_assessment-answer-16" value="Partial"> <span>Partial</span></label><label class="answer-option" for="a1_maturity_assessment-answer-16-option-3"><input type="radio" id="a1_maturity_assessment-answer-16-option-3" name="a1_maturity_assessment-answer-16" value="No"> <span>No</span></label></div>
+</fieldset>
+<p><em>Evidence: The rules document, with the clause covering each of the four modes identified individually.</em></p>
+<p><strong>D2-policy-E2 · established.</strong> Does the disclosure standard explain how the institutional template maps onto the various publisher conventions researchers encounter upon submission, such as a declaration section above the references, a methods-section note, an acknowledgments entry, or a structured submission-form field?</p>
+<fieldset class="answer answer-enhanced" id="a1_maturity_assessment-answer-17">
+<legend class="answer-legend visually-hidden">D2-policy-E2 · established. Does the disclosure standard explain how the institutional template maps onto the various publisher conventions researchers encounter upon submission, such as a declaration section above the references, a methods-section note, an acknowledgments entry, or a structured submission-form field?</legend>
+<div class="answer-options"><label class="answer-option" for="a1_maturity_assessment-answer-17-option-1"><input type="radio" id="a1_maturity_assessment-answer-17-option-1" name="a1_maturity_assessment-answer-17" value="Yes"> <span>Yes</span></label><label class="answer-option" for="a1_maturity_assessment-answer-17-option-2"><input type="radio" id="a1_maturity_assessment-answer-17-option-2" name="a1_maturity_assessment-answer-17" value="Partial"> <span>Partial</span></label><label class="answer-option" for="a1_maturity_assessment-answer-17-option-3"><input type="radio" id="a1_maturity_assessment-answer-17-option-3" name="a1_maturity_assessment-answer-17" value="No"> <span>No</span></label></div>
+</fieldset>
+<p><em>Evidence: The mapping table or guidance note, and the specific publisher policies it references.</em></p>
+<p><strong>D2-policy-L1 · leading.</strong> Does the institution review its four-mode rules at a declared cadence against the evolving landscape of publisher and funder policies, and does it publish what changed at each review?</p>
+<fieldset class="answer answer-enhanced" id="a1_maturity_assessment-answer-18">
+<legend class="answer-legend visually-hidden">D2-policy-L1 · leading. Does the institution review its four-mode rules at a declared cadence against the evolving landscape of publisher and funder policies, and does it publish what changed at each review?</legend>
+<div class="answer-options"><label class="answer-option" for="a1_maturity_assessment-answer-18-option-1"><input type="radio" id="a1_maturity_assessment-answer-18-option-1" name="a1_maturity_assessment-answer-18" value="Yes"> <span>Yes</span></label><label class="answer-option" for="a1_maturity_assessment-answer-18-option-2"><input type="radio" id="a1_maturity_assessment-answer-18-option-2" name="a1_maturity_assessment-answer-18" value="Partial"> <span>Partial</span></label><label class="answer-option" for="a1_maturity_assessment-answer-18-option-3"><input type="radio" id="a1_maturity_assessment-answer-18-option-3" name="a1_maturity_assessment-answer-18" value="No"> <span>No</span></label></div>
+</fieldset>
+<p><em>Evidence: The review schedule, the formal record of the last review, and the published change log.</em></p>
+<h3 id="d2-people">D2 · people</h3>
+<p><strong>D2-people-N1 · nascent.</strong> Is a named office responsible for maintaining the AI disclosure template and answering researcher inquiries about it, with a clearly published contact pathway?</p>
+<fieldset class="answer answer-enhanced" id="a1_maturity_assessment-answer-19">
+<legend class="answer-legend visually-hidden">D2-people-N1 · nascent. Is a named office responsible for maintaining the AI disclosure template and answering researcher inquiries about it, with a clearly published contact pathway?</legend>
+<div class="answer-options"><label class="answer-option" for="a1_maturity_assessment-answer-19-option-1"><input type="radio" id="a1_maturity_assessment-answer-19-option-1" name="a1_maturity_assessment-answer-19" value="Yes"> <span>Yes</span></label><label class="answer-option" for="a1_maturity_assessment-answer-19-option-2"><input type="radio" id="a1_maturity_assessment-answer-19-option-2" name="a1_maturity_assessment-answer-19" value="Partial"> <span>Partial</span></label><label class="answer-option" for="a1_maturity_assessment-answer-19-option-3"><input type="radio" id="a1_maturity_assessment-answer-19-option-3" name="a1_maturity_assessment-answer-19" value="No"> <span>No</span></label></div>
+</fieldset>
+<p><em>Evidence: The office name, the contact route, and the webpage that publishes it.</em></p>
+<p><strong>D2-people-E1 · established.</strong> Are the four-mode rules actively taught to doctoral students by designated instructors as part of the formal research-training program, rather than merely circulated as a passive document?</p>
+<fieldset class="answer answer-enhanced" id="a1_maturity_assessment-answer-20">
+<legend class="answer-legend visually-hidden">D2-people-E1 · established. Are the four-mode rules actively taught to doctoral students by designated instructors as part of the formal research-training program, rather than merely circulated as a passive document?</legend>
+<div class="answer-options"><label class="answer-option" for="a1_maturity_assessment-answer-20-option-1"><input type="radio" id="a1_maturity_assessment-answer-20-option-1" name="a1_maturity_assessment-answer-20" value="Yes"> <span>Yes</span></label><label class="answer-option" for="a1_maturity_assessment-answer-20-option-2"><input type="radio" id="a1_maturity_assessment-answer-20-option-2" name="a1_maturity_assessment-answer-20" value="Partial"> <span>Partial</span></label><label class="answer-option" for="a1_maturity_assessment-answer-20-option-3"><input type="radio" id="a1_maturity_assessment-answer-20-option-3" name="a1_maturity_assessment-answer-20" value="No"> <span>No</span></label></div>
+</fieldset>
+<p><em>Evidence: The training session or course module, the delivering unit, and the enrollment or attendance figures for the last cycle.</em></p>
+<p><strong>D2-people-L1 · leading.</strong> Does the institution publish annual evidence showing whether these rules are being followed in practice, such as disclosure-completion rates, citation-verification audit results, or examiner-flag analyses?</p>
+<fieldset class="answer answer-enhanced" id="a1_maturity_assessment-answer-21">
+<legend class="answer-legend visually-hidden">D2-people-L1 · leading. Does the institution publish annual evidence showing whether these rules are being followed in practice, such as disclosure-completion rates, citation-verification audit results, or examiner-flag analyses?</legend>
+<div class="answer-options"><label class="answer-option" for="a1_maturity_assessment-answer-21-option-1"><input type="radio" id="a1_maturity_assessment-answer-21-option-1" name="a1_maturity_assessment-answer-21" value="Yes"> <span>Yes</span></label><label class="answer-option" for="a1_maturity_assessment-answer-21-option-2"><input type="radio" id="a1_maturity_assessment-answer-21-option-2" name="a1_maturity_assessment-answer-21" value="Partial"> <span>Partial</span></label><label class="answer-option" for="a1_maturity_assessment-answer-21-option-3"><input type="radio" id="a1_maturity_assessment-answer-21-option-3" name="a1_maturity_assessment-answer-21" value="No"> <span>No</span></label></div>
+</fieldset>
+<p><em>Evidence: The published figures, the methodology used to produce them, and the publication date.</em></p>
+<h3 id="d2-systems">D2 · systems</h3>
+<p><strong>D2-systems-N1 · nascent.</strong> Is the disclosure template embedded directly inside the digital systems researchers and graduate students use (such as thesis submission portals, repository deposit systems, or ethics applications) rather than only provided as a downloadable document?</p>
+<fieldset class="answer answer-enhanced" id="a1_maturity_assessment-answer-22">
+<legend class="answer-legend visually-hidden">D2-systems-N1 · nascent. Is the disclosure template embedded directly inside the digital systems researchers and graduate students use (such as thesis submission portals, repository deposit systems, or ethics applications) rather than only provided as a downloadable document?</legend>
+<div class="answer-options"><label class="answer-option" for="a1_maturity_assessment-answer-22-option-1"><input type="radio" id="a1_maturity_assessment-answer-22-option-1" name="a1_maturity_assessment-answer-22" value="Yes"> <span>Yes</span></label><label class="answer-option" for="a1_maturity_assessment-answer-22-option-2"><input type="radio" id="a1_maturity_assessment-answer-22-option-2" name="a1_maturity_assessment-answer-22" value="Partial"> <span>Partial</span></label><label class="answer-option" for="a1_maturity_assessment-answer-22-option-3"><input type="radio" id="a1_maturity_assessment-answer-22-option-3" name="a1_maturity_assessment-answer-22" value="No"> <span>No</span></label></div>
+</fieldset>
+<p><em>Evidence: The system screen showing the embedded template or data field.</em></p>
+<p><strong>D2-systems-E1 · established.</strong> Does the institutional repository or thesis archive store the AI disclosure as queryable structured data, rather than burying it as unstructured free text inside the thesis file?</p>
+<fieldset class="answer answer-enhanced" id="a1_maturity_assessment-answer-23">
+<legend class="answer-legend visually-hidden">D2-systems-E1 · established. Does the institutional repository or thesis archive store the AI disclosure as queryable structured data, rather than burying it as unstructured free text inside the thesis file?</legend>
+<div class="answer-options"><label class="answer-option" for="a1_maturity_assessment-answer-23-option-1"><input type="radio" id="a1_maturity_assessment-answer-23-option-1" name="a1_maturity_assessment-answer-23" value="Yes"> <span>Yes</span></label><label class="answer-option" for="a1_maturity_assessment-answer-23-option-2"><input type="radio" id="a1_maturity_assessment-answer-23-option-2" name="a1_maturity_assessment-answer-23" value="Partial"> <span>Partial</span></label><label class="answer-option" for="a1_maturity_assessment-answer-23-option-3"><input type="radio" id="a1_maturity_assessment-answer-23-option-3" name="a1_maturity_assessment-answer-23" value="No"> <span>No</span></label></div>
+</fieldset>
+<p><em>Evidence: The metadata field definition, and a sample query result for the most recent deposit year.</em></p>
+<p><strong>D2-systems-L1 · leading.</strong> Can the institution extract an overall disclosure-completion rate for a given year directly from its administrative systems, and is that figure formally reported to a named committee?</p>
+<fieldset class="answer answer-enhanced" id="a1_maturity_assessment-answer-24">
+<legend class="answer-legend visually-hidden">D2-systems-L1 · leading. Can the institution extract an overall disclosure-completion rate for a given year directly from its administrative systems, and is that figure formally reported to a named committee?</legend>
+<div class="answer-options"><label class="answer-option" for="a1_maturity_assessment-answer-24-option-1"><input type="radio" id="a1_maturity_assessment-answer-24-option-1" name="a1_maturity_assessment-answer-24" value="Yes"> <span>Yes</span></label><label class="answer-option" for="a1_maturity_assessment-answer-24-option-2"><input type="radio" id="a1_maturity_assessment-answer-24-option-2" name="a1_maturity_assessment-answer-24" value="Partial"> <span>Partial</span></label><label class="answer-option" for="a1_maturity_assessment-answer-24-option-3"><input type="radio" id="a1_maturity_assessment-answer-24-option-3" name="a1_maturity_assessment-answer-24" value="No"> <span>No</span></label></div>
+</fieldset>
+<p><em>Evidence: The formal report, the reported figure, the receiving committee, and the date it was tabled.</em></p>
+<h3 id="d2-process">D2 · process</h3>
+<p><strong>D2-process-N1 · nascent.</strong> Is disclosure of AI use required at a defined checkpoint in the research lifecycle (such as an ethics application, annual progress milestone, or thesis submission) rather than left to the researcher's personal discretion?</p>
+<fieldset class="answer answer-enhanced" id="a1_maturity_assessment-answer-25">
+<legend class="answer-legend visually-hidden">D2-process-N1 · nascent. Is disclosure of AI use required at a defined checkpoint in the research lifecycle (such as an ethics application, annual progress milestone, or thesis submission) rather than left to the researcher&#x27;s personal discretion?</legend>
+<div class="answer-options"><label class="answer-option" for="a1_maturity_assessment-answer-25-option-1"><input type="radio" id="a1_maturity_assessment-answer-25-option-1" name="a1_maturity_assessment-answer-25" value="Yes"> <span>Yes</span></label><label class="answer-option" for="a1_maturity_assessment-answer-25-option-2"><input type="radio" id="a1_maturity_assessment-answer-25-option-2" name="a1_maturity_assessment-answer-25" value="Partial"> <span>Partial</span></label><label class="answer-option" for="a1_maturity_assessment-answer-25-option-3"><input type="radio" id="a1_maturity_assessment-answer-25-option-3" name="a1_maturity_assessment-answer-25" value="No"> <span>No</span></label></div>
+</fieldset>
+<p><em>Evidence: The form or procedure that asks the question, and its location within the research workflow.</em></p>
+<p><strong>D2-process-E1 · established.</strong> Does standard supervisory practice require the advisor or supervisor to verify the student's disclosure against the actual research work undertaken, with that verification formally recorded?</p>
+<fieldset class="answer answer-enhanced" id="a1_maturity_assessment-answer-26">
+<legend class="answer-legend visually-hidden">D2-process-E1 · established. Does standard supervisory practice require the advisor or supervisor to verify the student&#x27;s disclosure against the actual research work undertaken, with that verification formally recorded?</legend>
+<div class="answer-options"><label class="answer-option" for="a1_maturity_assessment-answer-26-option-1"><input type="radio" id="a1_maturity_assessment-answer-26-option-1" name="a1_maturity_assessment-answer-26" value="Yes"> <span>Yes</span></label><label class="answer-option" for="a1_maturity_assessment-answer-26-option-2"><input type="radio" id="a1_maturity_assessment-answer-26-option-2" name="a1_maturity_assessment-answer-26" value="Partial"> <span>Partial</span></label><label class="answer-option" for="a1_maturity_assessment-answer-26-option-3"><input type="radio" id="a1_maturity_assessment-answer-26-option-3" name="a1_maturity_assessment-answer-26" value="No"> <span>No</span></label></div>
+</fieldset>
+<p><em>Evidence: The supervision record template showing the verification checkpoint, and a sample of completed records from the current academic year.</em></p>
+<p><strong>D2-process-E2 · established.</strong> Does the examination protocol require the doctoral candidate to be able to explain and defend any AI use during the oral defense, and does the examiner report form provide a specific section to record that this took place?</p>
+<fieldset class="answer answer-enhanced" id="a1_maturity_assessment-answer-27">
+<legend class="answer-legend visually-hidden">D2-process-E2 · established. Does the examination protocol require the doctoral candidate to be able to explain and defend any AI use during the oral defense, and does the examiner report form provide a specific section to record that this took place?</legend>
+<div class="answer-options"><label class="answer-option" for="a1_maturity_assessment-answer-27-option-1"><input type="radio" id="a1_maturity_assessment-answer-27-option-1" name="a1_maturity_assessment-answer-27" value="Yes"> <span>Yes</span></label><label class="answer-option" for="a1_maturity_assessment-answer-27-option-2"><input type="radio" id="a1_maturity_assessment-answer-27-option-2" name="a1_maturity_assessment-answer-27" value="Partial"> <span>Partial</span></label><label class="answer-option" for="a1_maturity_assessment-answer-27-option-3"><input type="radio" id="a1_maturity_assessment-answer-27-option-3" name="a1_maturity_assessment-answer-27" value="No"> <span>No</span></label></div>
+</fieldset>
+<p><em>Evidence: The examination regulation clause, and the examiner report form showing the dedicated field.</em></p>
+<p><strong>D2-process-L1 · leading.</strong> Does the institution contribute its compliance and disclosure data to a sector-level benchmarking initiative, peer consortium, or public research dataset, rather than retaining it only internally?</p>
+<fieldset class="answer answer-enhanced" id="a1_maturity_assessment-answer-28">
+<legend class="answer-legend visually-hidden">D2-process-L1 · leading. Does the institution contribute its compliance and disclosure data to a sector-level benchmarking initiative, peer consortium, or public research dataset, rather than retaining it only internally?</legend>
+<div class="answer-options"><label class="answer-option" for="a1_maturity_assessment-answer-28-option-1"><input type="radio" id="a1_maturity_assessment-answer-28-option-1" name="a1_maturity_assessment-answer-28" value="Yes"> <span>Yes</span></label><label class="answer-option" for="a1_maturity_assessment-answer-28-option-2"><input type="radio" id="a1_maturity_assessment-answer-28-option-2" name="a1_maturity_assessment-answer-28" value="Partial"> <span>Partial</span></label><label class="answer-option" for="a1_maturity_assessment-answer-28-option-3"><input type="radio" id="a1_maturity_assessment-answer-28-option-3" name="a1_maturity_assessment-answer-28" value="No"> <span>No</span></label></div>
+</fieldset>
+<p><em>Evidence: The name of the benchmarking exercise or peer group, the data contribution made, and the date of submission.</em></p>
+<hr>
+<h2 id="dimension-3-tooling-that-promotes-responsible-use">Dimension 3: Tooling that promotes responsible use</h2>
+<p><em>This dimension reflects the institutional commitment to select, procure, and deploy AI tools that support responsible use by design rather than by good intentions alone, evaluated against six observable properties. See <a href="https://instats.org/publications/responsible-ai-in-academic-research">the report</a>'s §2.3, Appendix A row 3, and Appendix C, which describes the eleven software tool classes the standard must cover.</em></p>
+<h3 id="d3-policy">D3 · policy</h3>
+<p><strong>D3-policy-N1 · nascent.</strong> Does a published institutional procurement pathway exist through which AI tools intended for research must pass before enterprise deployment?</p>
+<fieldset class="answer answer-enhanced" id="a1_maturity_assessment-answer-29">
+<legend class="answer-legend visually-hidden">D3-policy-N1 · nascent. Does a published institutional procurement pathway exist through which AI tools intended for research must pass before enterprise deployment?</legend>
+<div class="answer-options"><label class="answer-option" for="a1_maturity_assessment-answer-29-option-1"><input type="radio" id="a1_maturity_assessment-answer-29-option-1" name="a1_maturity_assessment-answer-29" value="Yes"> <span>Yes</span></label><label class="answer-option" for="a1_maturity_assessment-answer-29-option-2"><input type="radio" id="a1_maturity_assessment-answer-29-option-2" name="a1_maturity_assessment-answer-29" value="Partial"> <span>Partial</span></label><label class="answer-option" for="a1_maturity_assessment-answer-29-option-3"><input type="radio" id="a1_maturity_assessment-answer-29-option-3" name="a1_maturity_assessment-answer-29" value="No"> <span>No</span></label></div>
+</fieldset>
+<p><em>Evidence: The procurement policy clause covering AI tools, and the published entry point for the procurement gate.</em></p>
+<p><strong>D3-policy-E1 · established.</strong> Does the published procurement standard evaluate all six observable properties: verifiable citation and resolvability, data residency and governance over training-on-input, first-class uncertainty reporting, reproducibility at a known model version, auditability via session logs, and open-source or local options where the research workload supports them?</p>
+<fieldset class="answer answer-enhanced" id="a1_maturity_assessment-answer-30">
+<legend class="answer-legend visually-hidden">D3-policy-E1 · established. Does the published procurement standard evaluate all six observable properties: verifiable citation and resolvability, data residency and governance over training-on-input, first-class uncertainty reporting, reproducibility at a known model version, auditability via session logs, and open-source or local options where the research workload supports them?</legend>
+<div class="answer-options"><label class="answer-option" for="a1_maturity_assessment-answer-30-option-1"><input type="radio" id="a1_maturity_assessment-answer-30-option-1" name="a1_maturity_assessment-answer-30" value="Yes"> <span>Yes</span></label><label class="answer-option" for="a1_maturity_assessment-answer-30-option-2"><input type="radio" id="a1_maturity_assessment-answer-30-option-2" name="a1_maturity_assessment-answer-30" value="Partial"> <span>Partial</span></label><label class="answer-option" for="a1_maturity_assessment-answer-30-option-3"><input type="radio" id="a1_maturity_assessment-answer-30-option-3" name="a1_maturity_assessment-answer-30" value="No"> <span>No</span></label></div>
+</fieldset>
+<p><em>Evidence: The procurement standard, identifying the specific clause covering each of the six properties. Answer Partial if fewer than six are covered, and list the missing properties.</em></p>
+<p><strong>D3-policy-E2 · established.</strong> Does the standard include a documented exception process for specialized research workloads that genuinely require consumer-grade tools, clearly naming who approves an exception and under what conditions?</p>
+<fieldset class="answer answer-enhanced" id="a1_maturity_assessment-answer-31">
+<legend class="answer-legend visually-hidden">D3-policy-E2 · established. Does the standard include a documented exception process for specialized research workloads that genuinely require consumer-grade tools, clearly naming who approves an exception and under what conditions?</legend>
+<div class="answer-options"><label class="answer-option" for="a1_maturity_assessment-answer-31-option-1"><input type="radio" id="a1_maturity_assessment-answer-31-option-1" name="a1_maturity_assessment-answer-31" value="Yes"> <span>Yes</span></label><label class="answer-option" for="a1_maturity_assessment-answer-31-option-2"><input type="radio" id="a1_maturity_assessment-answer-31-option-2" name="a1_maturity_assessment-answer-31" value="Partial"> <span>Partial</span></label><label class="answer-option" for="a1_maturity_assessment-answer-31-option-3"><input type="radio" id="a1_maturity_assessment-answer-31-option-3" name="a1_maturity_assessment-answer-31" value="No"> <span>No</span></label></div>
+</fieldset>
+<p><em>Evidence: The exception clause, the designated approver role, and the register of exceptions granted over the last twelve months.</em></p>
+<p><strong>D3-policy-L1 · leading.</strong> Does the institution publish its tooling-procurement audit at a regular, stated cadence, and does the published audit explicitly name the software tools sampled?</p>
+<fieldset class="answer answer-enhanced" id="a1_maturity_assessment-answer-32">
+<legend class="answer-legend visually-hidden">D3-policy-L1 · leading. Does the institution publish its tooling-procurement audit at a regular, stated cadence, and does the published audit explicitly name the software tools sampled?</legend>
+<div class="answer-options"><label class="answer-option" for="a1_maturity_assessment-answer-32-option-1"><input type="radio" id="a1_maturity_assessment-answer-32-option-1" name="a1_maturity_assessment-answer-32" value="Yes"> <span>Yes</span></label><label class="answer-option" for="a1_maturity_assessment-answer-32-option-2"><input type="radio" id="a1_maturity_assessment-answer-32-option-2" name="a1_maturity_assessment-answer-32" value="Partial"> <span>Partial</span></label><label class="answer-option" for="a1_maturity_assessment-answer-32-option-3"><input type="radio" id="a1_maturity_assessment-answer-32-option-3" name="a1_maturity_assessment-answer-32" value="No"> <span>No</span></label></div>
+</fieldset>
+<p><em>Evidence: The published audit, its stated cadence, the sample list of tools, and the publication date.</em></p>
+<h3 id="d3-people">D3 · people</h3>
+<p><strong>D3-people-N1 · nascent.</strong> Is a named role held accountable for deciding whether an AI tool may be approved for research use, as distinct from general administrative software procurement?</p>
+<fieldset class="answer answer-enhanced" id="a1_maturity_assessment-answer-33">
+<legend class="answer-legend visually-hidden">D3-people-N1 · nascent. Is a named role held accountable for deciding whether an AI tool may be approved for research use, as distinct from general administrative software procurement?</legend>
+<div class="answer-options"><label class="answer-option" for="a1_maturity_assessment-answer-33-option-1"><input type="radio" id="a1_maturity_assessment-answer-33-option-1" name="a1_maturity_assessment-answer-33" value="Yes"> <span>Yes</span></label><label class="answer-option" for="a1_maturity_assessment-answer-33-option-2"><input type="radio" id="a1_maturity_assessment-answer-33-option-2" name="a1_maturity_assessment-answer-33" value="Partial"> <span>Partial</span></label><label class="answer-option" for="a1_maturity_assessment-answer-33-option-3"><input type="radio" id="a1_maturity_assessment-answer-33-option-3" name="a1_maturity_assessment-answer-33" value="No"> <span>No</span></label></div>
+</fieldset>
+<p><em>Evidence: The role title, the current occupant, and the formal delegation instrument.</em></p>
+<p><strong>D3-people-E1 · established.</strong> Does the review panel include the data protection officer, the research integrity officer, and at least one research-active academic, with the committee membership publicly listed?</p>
+<fieldset class="answer answer-enhanced" id="a1_maturity_assessment-answer-34">
+<legend class="answer-legend visually-hidden">D3-people-E1 · established. Does the review panel include the data protection officer, the research integrity officer, and at least one research-active academic, with the committee membership publicly listed?</legend>
+<div class="answer-options"><label class="answer-option" for="a1_maturity_assessment-answer-34-option-1"><input type="radio" id="a1_maturity_assessment-answer-34-option-1" name="a1_maturity_assessment-answer-34" value="Yes"> <span>Yes</span></label><label class="answer-option" for="a1_maturity_assessment-answer-34-option-2"><input type="radio" id="a1_maturity_assessment-answer-34-option-2" name="a1_maturity_assessment-answer-34" value="Partial"> <span>Partial</span></label><label class="answer-option" for="a1_maturity_assessment-answer-34-option-3"><input type="radio" id="a1_maturity_assessment-answer-34-option-3" name="a1_maturity_assessment-answer-34" value="No"> <span>No</span></label></div>
+</fieldset>
+<p><em>Evidence: The terms of reference and the current published membership list.</em></p>
+<p><strong>D3-people-L1 · leading.</strong> Does the institution commission independent testing of vendor performance claims on a sample of deployed tools, rather than relying exclusively on vendor sales documentation?</p>
+<fieldset class="answer answer-enhanced" id="a1_maturity_assessment-answer-35">
+<legend class="answer-legend visually-hidden">D3-people-L1 · leading. Does the institution commission independent testing of vendor performance claims on a sample of deployed tools, rather than relying exclusively on vendor sales documentation?</legend>
+<div class="answer-options"><label class="answer-option" for="a1_maturity_assessment-answer-35-option-1"><input type="radio" id="a1_maturity_assessment-answer-35-option-1" name="a1_maturity_assessment-answer-35" value="Yes"> <span>Yes</span></label><label class="answer-option" for="a1_maturity_assessment-answer-35-option-2"><input type="radio" id="a1_maturity_assessment-answer-35-option-2" name="a1_maturity_assessment-answer-35" value="Partial"> <span>Partial</span></label><label class="answer-option" for="a1_maturity_assessment-answer-35-option-3"><input type="radio" id="a1_maturity_assessment-answer-35-option-3" name="a1_maturity_assessment-answer-35" value="No"> <span>No</span></label></div>
+</fieldset>
+<p><em>Evidence: The commissioning record, the external verifier, the evaluation report, and the specific tools evaluated.</em></p>
+<h3 id="d3-systems">D3 · systems</h3>
+<p><strong>D3-systems-N1 · nascent.</strong> Is there an actively maintained institutional register of AI tools approved for research use that is accessible to all researchers?</p>
+<fieldset class="answer answer-enhanced" id="a1_maturity_assessment-answer-36">
+<legend class="answer-legend visually-hidden">D3-systems-N1 · nascent. Is there an actively maintained institutional register of AI tools approved for research use that is accessible to all researchers?</legend>
+<div class="answer-options"><label class="answer-option" for="a1_maturity_assessment-answer-36-option-1"><input type="radio" id="a1_maturity_assessment-answer-36-option-1" name="a1_maturity_assessment-answer-36" value="Yes"> <span>Yes</span></label><label class="answer-option" for="a1_maturity_assessment-answer-36-option-2"><input type="radio" id="a1_maturity_assessment-answer-36-option-2" name="a1_maturity_assessment-answer-36" value="Partial"> <span>Partial</span></label><label class="answer-option" for="a1_maturity_assessment-answer-36-option-3"><input type="radio" id="a1_maturity_assessment-answer-36-option-3" name="a1_maturity_assessment-answer-36" value="No"> <span>No</span></label></div>
+</fieldset>
+<p><em>Evidence: The register, its location, and the date it was last updated.</em></p>
+<p><strong>D3-systems-E1 · established.</strong> Are enterprise-tenanted deployments with training-on-input disabled available for research projects involving unpublished or confidential data, and does the tool register state the data-residency status for each tool?</p>
+<fieldset class="answer answer-enhanced" id="a1_maturity_assessment-answer-37">
+<legend class="answer-legend visually-hidden">D3-systems-E1 · established. Are enterprise-tenanted deployments with training-on-input disabled available for research projects involving unpublished or confidential data, and does the tool register state the data-residency status for each tool?</legend>
+<div class="answer-options"><label class="answer-option" for="a1_maturity_assessment-answer-37-option-1"><input type="radio" id="a1_maturity_assessment-answer-37-option-1" name="a1_maturity_assessment-answer-37" value="Yes"> <span>Yes</span></label><label class="answer-option" for="a1_maturity_assessment-answer-37-option-2"><input type="radio" id="a1_maturity_assessment-answer-37-option-2" name="a1_maturity_assessment-answer-37" value="Partial"> <span>Partial</span></label><label class="answer-option" for="a1_maturity_assessment-answer-37-option-3"><input type="radio" id="a1_maturity_assessment-answer-37-option-3" name="a1_maturity_assessment-answer-37" value="No"> <span>No</span></label></div>
+</fieldset>
+<p><em>Evidence: The tenancy configuration record, and the register entries showing residency and training-on-input status for each tool.</em></p>
+<p><strong>D3-systems-E2 · established.</strong> Does the institution retain AI interaction session logs for a clearly articulated retention window, and is that retention schedule published?</p>
+<fieldset class="answer answer-enhanced" id="a1_maturity_assessment-answer-38">
+<legend class="answer-legend visually-hidden">D3-systems-E2 · established. Does the institution retain AI interaction session logs for a clearly articulated retention window, and is that retention schedule published?</legend>
+<div class="answer-options"><label class="answer-option" for="a1_maturity_assessment-answer-38-option-1"><input type="radio" id="a1_maturity_assessment-answer-38-option-1" name="a1_maturity_assessment-answer-38" value="Yes"> <span>Yes</span></label><label class="answer-option" for="a1_maturity_assessment-answer-38-option-2"><input type="radio" id="a1_maturity_assessment-answer-38-option-2" name="a1_maturity_assessment-answer-38" value="Partial"> <span>Partial</span></label><label class="answer-option" for="a1_maturity_assessment-answer-38-option-3"><input type="radio" id="a1_maturity_assessment-answer-38-option-3" name="a1_maturity_assessment-answer-38" value="No"> <span>No</span></label></div>
+</fieldset>
+<p><em>Evidence: The records-governance schedule entry, the retention period, and the list of systems it covers.</em></p>
+<p><strong>D3-systems-L1 · leading.</strong> Does the institution periodically re-test deployed tools against standard citation and source resolvability tests on a stated cadence, recording the empirical result for each tool at each specific model version?</p>
+<fieldset class="answer answer-enhanced" id="a1_maturity_assessment-answer-39">
+<legend class="answer-legend visually-hidden">D3-systems-L1 · leading. Does the institution periodically re-test deployed tools against standard citation and source resolvability tests on a stated cadence, recording the empirical result for each tool at each specific model version?</legend>
+<div class="answer-options"><label class="answer-option" for="a1_maturity_assessment-answer-39-option-1"><input type="radio" id="a1_maturity_assessment-answer-39-option-1" name="a1_maturity_assessment-answer-39" value="Yes"> <span>Yes</span></label><label class="answer-option" for="a1_maturity_assessment-answer-39-option-2"><input type="radio" id="a1_maturity_assessment-answer-39-option-2" name="a1_maturity_assessment-answer-39" value="Partial"> <span>Partial</span></label><label class="answer-option" for="a1_maturity_assessment-answer-39-option-3"><input type="radio" id="a1_maturity_assessment-answer-39-option-3" name="a1_maturity_assessment-answer-39" value="No"> <span>No</span></label></div>
+</fieldset>
+<p><em>Evidence: The re-testing schedule, the most recent evaluation results, and the specific model versions tested.</em></p>
+<h3 id="d3-process">D3 · process</h3>
+<p><strong>D3-process-N1 · nascent.</strong> Does a researcher who wishes to evaluate a new AI tool on research data have a published pathway to request approval, accompanied by a stated service turnaround time?</p>
+<fieldset class="answer answer-enhanced" id="a1_maturity_assessment-answer-40">
+<legend class="answer-legend visually-hidden">D3-process-N1 · nascent. Does a researcher who wishes to evaluate a new AI tool on research data have a published pathway to request approval, accompanied by a stated service turnaround time?</legend>
+<div class="answer-options"><label class="answer-option" for="a1_maturity_assessment-answer-40-option-1"><input type="radio" id="a1_maturity_assessment-answer-40-option-1" name="a1_maturity_assessment-answer-40" value="Yes"> <span>Yes</span></label><label class="answer-option" for="a1_maturity_assessment-answer-40-option-2"><input type="radio" id="a1_maturity_assessment-answer-40-option-2" name="a1_maturity_assessment-answer-40" value="Partial"> <span>Partial</span></label><label class="answer-option" for="a1_maturity_assessment-answer-40-option-3"><input type="radio" id="a1_maturity_assessment-answer-40-option-3" name="a1_maturity_assessment-answer-40" value="No"> <span>No</span></label></div>
+</fieldset>
+<p><em>Evidence: The request form or service-catalog entry, and the published service level agreement.</em></p>
+<p><strong>D3-process-E1 · established.</strong> Is the formal impact assessment required by the institution's relevant jurisdictions complete for every regulated use? For institutions operating in or serving the EU market, this requires a Fundamental Rights Impact Assessment under EU AI Act Article 27 for high-risk applications including admissions, learning-outcome evaluation, education-level assignment within the institution, and proctoring, registered as required against the 2 August 2026 application date. For institutions under the Australian legal regime, this requires the automated-decision-making disclosure posture mandated from 10 December 2026. For other jurisdictions, name and complete the local statutory equivalent. A dated, authorized determination that no relevant statutory regime or regulated use applies satisfies this indicator under §3.1 when its authority, scope, and rationale are recorded in the evidence line.</p>
+<fieldset class="answer answer-enhanced" id="a1_maturity_assessment-answer-41">
+<legend class="answer-legend visually-hidden">D3-process-E1 · established. Is the formal impact assessment required by the institution&#x27;s relevant jurisdictions complete for every regulated use? For institutions operating in or serving the EU market, this requires a Fundamental Rights Impact Assessment under EU AI Act Article 27 for high-risk applications including admissions, learning-outcome evaluation, education-level assignment within the institution, and proctoring, registered as required against the 2 August 2026 application date. For institutions under the Australian legal regime, this requires the automated-decision-making disclosure posture mandated from 10 December 2026. For other jurisdictions, name and complete the local statutory equivalent. A dated, authorized determination that no relevant statutory regime or regulated use applies satisfies this indicator under §3.1 when its authority, scope, and rationale are recorded in the evidence line.</legend>
+<div class="answer-options"><label class="answer-option" for="a1_maturity_assessment-answer-41-option-1"><input type="radio" id="a1_maturity_assessment-answer-41-option-1" name="a1_maturity_assessment-answer-41" value="Yes"> <span>Yes</span></label><label class="answer-option" for="a1_maturity_assessment-answer-41-option-2"><input type="radio" id="a1_maturity_assessment-answer-41-option-2" name="a1_maturity_assessment-answer-41" value="Partial"> <span>Partial</span></label><label class="answer-option" for="a1_maturity_assessment-answer-41-option-3"><input type="radio" id="a1_maturity_assessment-answer-41-option-3" name="a1_maturity_assessment-answer-41" value="No"> <span>No</span></label></div>
+</fieldset>
+<p><em>Evidence: The completed assessments, the official registration record where applicable, the completion dates, and the list of regulated use cases covered by each assessment.</em></p>
+<p><strong>D3-process-L1 · leading.</strong> Does the institution contribute its empirical tool-resolvability test results to a sector-level reference benchmark or shared evaluation consortium, rather than keeping the findings confidential internally?</p>
+<fieldset class="answer answer-enhanced" id="a1_maturity_assessment-answer-42">
+<legend class="answer-legend visually-hidden">D3-process-L1 · leading. Does the institution contribute its empirical tool-resolvability test results to a sector-level reference benchmark or shared evaluation consortium, rather than keeping the findings confidential internally?</legend>
+<div class="answer-options"><label class="answer-option" for="a1_maturity_assessment-answer-42-option-1"><input type="radio" id="a1_maturity_assessment-answer-42-option-1" name="a1_maturity_assessment-answer-42" value="Yes"> <span>Yes</span></label><label class="answer-option" for="a1_maturity_assessment-answer-42-option-2"><input type="radio" id="a1_maturity_assessment-answer-42-option-2" name="a1_maturity_assessment-answer-42" value="Partial"> <span>Partial</span></label><label class="answer-option" for="a1_maturity_assessment-answer-42-option-3"><input type="radio" id="a1_maturity_assessment-answer-42-option-3" name="a1_maturity_assessment-answer-42" value="No"> <span>No</span></label></div>
+</fieldset>
+<p><em>Evidence: The named benchmark or consortium, the data contribution made, and the date of submission.</em></p>
+<blockquote>
+<p><strong>Drafting note (jurisdiction).</strong> Indicator D3-process-E1 is designed to be answered once, against whichever regulatory regime binds [INSTITUTION NAME]. An institution operating across multiple jurisdictions can answer Yes only when every applicable regime is fully satisfied, and it should name each regime in the evidence line. If no relevant statutory regime or regulated use applies, record the dated, authorized scope determination described in §3.1. An institution may also adopt a voluntary standard, but doing so is not required to satisfy this indicator.</p>
+</blockquote>
+<hr>
+<h2 id="dimension-4-ai-literate-humans">Dimension 4: AI-literate humans</h2>
+<p><em>This dimension evaluates the institutional commitment to ensure that doctoral researchers, their advisors and supervisors, their examiners, and research-training staff possess the practical competencies required for AI-augmented research. See <a href="https://instats.org/publications/responsible-ai-in-academic-research">the report</a>'s §2.4 and Appendix A row 4.</em></p>
+<h3 id="d4-policy">D4 · policy</h3>
+<p><strong>D4-policy-N1 · nascent.</strong> Does a published institutional document state that doctoral students and their advisors or supervisors are expected to maintain specific AI-related research competencies, explicitly naming those competencies rather than referring to AI literacy in vague terms?</p>
+<fieldset class="answer answer-enhanced" id="a1_maturity_assessment-answer-43">
+<legend class="answer-legend visually-hidden">D4-policy-N1 · nascent. Does a published institutional document state that doctoral students and their advisors or supervisors are expected to maintain specific AI-related research competencies, explicitly naming those competencies rather than referring to AI literacy in vague terms?</legend>
+<div class="answer-options"><label class="answer-option" for="a1_maturity_assessment-answer-43-option-1"><input type="radio" id="a1_maturity_assessment-answer-43-option-1" name="a1_maturity_assessment-answer-43" value="Yes"> <span>Yes</span></label><label class="answer-option" for="a1_maturity_assessment-answer-43-option-2"><input type="radio" id="a1_maturity_assessment-answer-43-option-2" name="a1_maturity_assessment-answer-43" value="Partial"> <span>Partial</span></label><label class="answer-option" for="a1_maturity_assessment-answer-43-option-3"><input type="radio" id="a1_maturity_assessment-answer-43-option-3" name="a1_maturity_assessment-answer-43" value="No"> <span>No</span></label></div>
+</fieldset>
+<p><em>Evidence: The policy document, the relevant clause, and the list of competencies as published.</em></p>
+<p><strong>D4-policy-E1 · established.</strong> Are the six core competencies (citation verification, model and parameter specification, prompt design as an analytical choice, model heterogeneity in adversarial review, sycophancy detection with human verification, and structured failure-mode reporting) established as required learning outcomes in the doctoral research methods curriculum, framed as essential additions to the existing canon of research validity and reproducibility rather than replacements for it?</p>
+<fieldset class="answer answer-enhanced" id="a1_maturity_assessment-answer-44">
+<legend class="answer-legend visually-hidden">D4-policy-E1 · established. Are the six core competencies (citation verification, model and parameter specification, prompt design as an analytical choice, model heterogeneity in adversarial review, sycophancy detection with human verification, and structured failure-mode reporting) established as required learning outcomes in the doctoral research methods curriculum, framed as essential additions to the existing canon of research validity and reproducibility rather than replacements for it?</legend>
+<div class="answer-options"><label class="answer-option" for="a1_maturity_assessment-answer-44-option-1"><input type="radio" id="a1_maturity_assessment-answer-44-option-1" name="a1_maturity_assessment-answer-44" value="Yes"> <span>Yes</span></label><label class="answer-option" for="a1_maturity_assessment-answer-44-option-2"><input type="radio" id="a1_maturity_assessment-answer-44-option-2" name="a1_maturity_assessment-answer-44" value="Partial"> <span>Partial</span></label><label class="answer-option" for="a1_maturity_assessment-answer-44-option-3"><input type="radio" id="a1_maturity_assessment-answer-44-option-3" name="a1_maturity_assessment-answer-44" value="No"> <span>No</span></label></div>
+</fieldset>
+<p><em>Evidence: The curriculum syllabus showing each of the six learning outcomes, along with the text establishing their relationship to traditional research methods. Answer Partial if fewer than six are named, and list the missing ones.</em></p>
+<p><strong>D4-policy-L1 · leading.</strong> Does the institution publish evidence on provision, reach, and selected aligned performance outcomes from the approved competency curriculum, on a regular, published schedule?</p>
+<fieldset class="answer answer-enhanced" id="a1_maturity_assessment-answer-45">
+<legend class="answer-legend visually-hidden">D4-policy-L1 · leading. Does the institution publish evidence on provision, reach, and selected aligned performance outcomes from the approved competency curriculum, on a regular, published schedule?</legend>
+<div class="answer-options"><label class="answer-option" for="a1_maturity_assessment-answer-45-option-1"><input type="radio" id="a1_maturity_assessment-answer-45-option-1" name="a1_maturity_assessment-answer-45" value="Yes"> <span>Yes</span></label><label class="answer-option" for="a1_maturity_assessment-answer-45-option-2"><input type="radio" id="a1_maturity_assessment-answer-45-option-2" name="a1_maturity_assessment-answer-45" value="Partial"> <span>Partial</span></label><label class="answer-option" for="a1_maturity_assessment-answer-45-option-3"><input type="radio" id="a1_maturity_assessment-answer-45-option-3" name="a1_maturity_assessment-answer-45" value="No"> <span>No</span></label></div>
+</fieldset>
+<p><em>Evidence: The published provision and participation figures, the aligned assessment method and selected performance results, and the publication date. Graduate surveys, thesis disclosures, and advisor self-assessments may describe reach, experience, or practice, but they do not by themselves demonstrate competency acquisition.</em></p>
+<h3 id="d4-people">D4 · people</h3>
+<p><strong>D4-people-N1 · nascent.</strong> Is there an institutional AI-literacy training offering available to doctoral students (such as an online course, a library workshop series, or regular seminars) with a clearly named operational owner?</p>
+<fieldset class="answer answer-enhanced" id="a1_maturity_assessment-answer-46">
+<legend class="answer-legend visually-hidden">D4-people-N1 · nascent. Is there an institutional AI-literacy training offering available to doctoral students (such as an online course, a library workshop series, or regular seminars) with a clearly named operational owner?</legend>
+<div class="answer-options"><label class="answer-option" for="a1_maturity_assessment-answer-46-option-1"><input type="radio" id="a1_maturity_assessment-answer-46-option-1" name="a1_maturity_assessment-answer-46" value="Yes"> <span>Yes</span></label><label class="answer-option" for="a1_maturity_assessment-answer-46-option-2"><input type="radio" id="a1_maturity_assessment-answer-46-option-2" name="a1_maturity_assessment-answer-46" value="Partial"> <span>Partial</span></label><label class="answer-option" for="a1_maturity_assessment-answer-46-option-3"><input type="radio" id="a1_maturity_assessment-answer-46-option-3" name="a1_maturity_assessment-answer-46" value="No"> <span>No</span></label></div>
+</fieldset>
+<p><em>Evidence: The training program, its designated owner, and student participation figures from the most recent cycle.</em></p>
+<p><strong>D4-people-E1 · established.</strong> Is that AI training a mandatory component of the doctoral curriculum rather than an optional elective, with formal completion recorded on each student's official enrollment record?</p>
+<fieldset class="answer answer-enhanced" id="a1_maturity_assessment-answer-47">
+<legend class="answer-legend visually-hidden">D4-people-E1 · established. Is that AI training a mandatory component of the doctoral curriculum rather than an optional elective, with formal completion recorded on each student&#x27;s official enrollment record?</legend>
+<div class="answer-options"><label class="answer-option" for="a1_maturity_assessment-answer-47-option-1"><input type="radio" id="a1_maturity_assessment-answer-47-option-1" name="a1_maturity_assessment-answer-47" value="Yes"> <span>Yes</span></label><label class="answer-option" for="a1_maturity_assessment-answer-47-option-2"><input type="radio" id="a1_maturity_assessment-answer-47-option-2" name="a1_maturity_assessment-answer-47" value="Partial"> <span>Partial</span></label><label class="answer-option" for="a1_maturity_assessment-answer-47-option-3"><input type="radio" id="a1_maturity_assessment-answer-47-option-3" name="a1_maturity_assessment-answer-47" value="No"> <span>No</span></label></div>
+</fieldset>
+<p><em>Evidence: The academic program regulation establishing the requirement, along with completion rates for the most recent cohort.</em></p>
+<p><strong>D4-people-E2 · established.</strong> Do advisors and supervisors receive professional development covering the same six core competencies, and do dissertation examiners receive targeted training on the corresponding verification skills?</p>
+<fieldset class="answer answer-enhanced" id="a1_maturity_assessment-answer-48">
+<legend class="answer-legend visually-hidden">D4-people-E2 · established. Do advisors and supervisors receive professional development covering the same six core competencies, and do dissertation examiners receive targeted training on the corresponding verification skills?</legend>
+<div class="answer-options"><label class="answer-option" for="a1_maturity_assessment-answer-48-option-1"><input type="radio" id="a1_maturity_assessment-answer-48-option-1" name="a1_maturity_assessment-answer-48" value="Yes"> <span>Yes</span></label><label class="answer-option" for="a1_maturity_assessment-answer-48-option-2"><input type="radio" id="a1_maturity_assessment-answer-48-option-2" name="a1_maturity_assessment-answer-48" value="Partial"> <span>Partial</span></label><label class="answer-option" for="a1_maturity_assessment-answer-48-option-3"><input type="radio" id="a1_maturity_assessment-answer-48-option-3" name="a1_maturity_assessment-answer-48" value="No"> <span>No</span></label></div>
+</fieldset>
+<p><em>Evidence: Both training programs, a curriculum map comparing them against the six competencies, and separate completion figures for advisors and examiners.</em></p>
+<p><strong>D4-people-L1 · leading.</strong> Does the institution run an ongoing curriculum-improvement cycle for this training informed by external peer review, and can it point to a concrete curricular change resulting from that review?</p>
+<fieldset class="answer answer-enhanced" id="a1_maturity_assessment-answer-49">
+<legend class="answer-legend visually-hidden">D4-people-L1 · leading. Does the institution run an ongoing curriculum-improvement cycle for this training informed by external peer review, and can it point to a concrete curricular change resulting from that review?</legend>
+<div class="answer-options"><label class="answer-option" for="a1_maturity_assessment-answer-49-option-1"><input type="radio" id="a1_maturity_assessment-answer-49-option-1" name="a1_maturity_assessment-answer-49" value="Yes"> <span>Yes</span></label><label class="answer-option" for="a1_maturity_assessment-answer-49-option-2"><input type="radio" id="a1_maturity_assessment-answer-49-option-2" name="a1_maturity_assessment-answer-49" value="Partial"> <span>Partial</span></label><label class="answer-option" for="a1_maturity_assessment-answer-49-option-3"><input type="radio" id="a1_maturity_assessment-answer-49-option-3" name="a1_maturity_assessment-answer-49" value="No"> <span>No</span></label></div>
+</fieldset>
+<p><em>Evidence: The external review report, the continuous improvement documentation, and the specific curricular changes made.</em></p>
+<h3 id="d4-systems">D4 · systems</h3>
+<p><strong>D4-systems-N1 · nascent.</strong> Is AI-literacy instruction delivered through a system that officially tracks completion for each individual student, advisor, or supervisor, rather than offered on an untracked open-access website?</p>
+<fieldset class="answer answer-enhanced" id="a1_maturity_assessment-answer-50">
+<legend class="answer-legend visually-hidden">D4-systems-N1 · nascent. Is AI-literacy instruction delivered through a system that officially tracks completion for each individual student, advisor, or supervisor, rather than offered on an untracked open-access website?</legend>
+<div class="answer-options"><label class="answer-option" for="a1_maturity_assessment-answer-50-option-1"><input type="radio" id="a1_maturity_assessment-answer-50-option-1" name="a1_maturity_assessment-answer-50" value="Yes"> <span>Yes</span></label><label class="answer-option" for="a1_maturity_assessment-answer-50-option-2"><input type="radio" id="a1_maturity_assessment-answer-50-option-2" name="a1_maturity_assessment-answer-50" value="Partial"> <span>Partial</span></label><label class="answer-option" for="a1_maturity_assessment-answer-50-option-3"><input type="radio" id="a1_maturity_assessment-answer-50-option-3" name="a1_maturity_assessment-answer-50" value="No"> <span>No</span></label></div>
+</fieldset>
+<p><em>Evidence: The learning management system or administrative training record, and an extract showing verified completions.</em></p>
+<p><strong>D4-systems-E1 · established.</strong> Do institutional systems support delivery of the approved competency curriculum through versioned content, aligned assessments, and retrievable completion records for the relevant student and staff populations?</p>
+<fieldset class="answer answer-enhanced" id="a1_maturity_assessment-answer-51">
+<legend class="answer-legend visually-hidden">D4-systems-E1 · established. Do institutional systems support delivery of the approved competency curriculum through versioned content, aligned assessments, and retrievable completion records for the relevant student and staff populations?</legend>
+<div class="answer-options"><label class="answer-option" for="a1_maturity_assessment-answer-51-option-1"><input type="radio" id="a1_maturity_assessment-answer-51-option-1" name="a1_maturity_assessment-answer-51" value="Yes"> <span>Yes</span></label><label class="answer-option" for="a1_maturity_assessment-answer-51-option-2"><input type="radio" id="a1_maturity_assessment-answer-51-option-2" name="a1_maturity_assessment-answer-51" value="Partial"> <span>Partial</span></label><label class="answer-option" for="a1_maturity_assessment-answer-51-option-3"><input type="radio" id="a1_maturity_assessment-answer-51-option-3" name="a1_maturity_assessment-answer-51" value="No"> <span>No</span></label></div>
+</fieldset>
+<p><em>Evidence: The supported delivery platform, approved curriculum version, assessment mapping, and retrievable completion records. A corpus-grounded tutoring environment may support delivery, but it is optional and is not required to satisfy this indicator.</em></p>
+<p><strong>D4-systems-L1 · leading.</strong> Can the institution generate automated reports on competency coverage by student cohort, by academic department, and across the advisor population directly from its administrative databases, without needing a manual survey?</p>
+<fieldset class="answer answer-enhanced" id="a1_maturity_assessment-answer-52">
+<legend class="answer-legend visually-hidden">D4-systems-L1 · leading. Can the institution generate automated reports on competency coverage by student cohort, by academic department, and across the advisor population directly from its administrative databases, without needing a manual survey?</legend>
+<div class="answer-options"><label class="answer-option" for="a1_maturity_assessment-answer-52-option-1"><input type="radio" id="a1_maturity_assessment-answer-52-option-1" name="a1_maturity_assessment-answer-52" value="Yes"> <span>Yes</span></label><label class="answer-option" for="a1_maturity_assessment-answer-52-option-2"><input type="radio" id="a1_maturity_assessment-answer-52-option-2" name="a1_maturity_assessment-answer-52" value="Partial"> <span>Partial</span></label><label class="answer-option" for="a1_maturity_assessment-answer-52-option-3"><input type="radio" id="a1_maturity_assessment-answer-52-option-3" name="a1_maturity_assessment-answer-52" value="No"> <span>No</span></label></div>
+</fieldset>
+<p><em>Evidence: The automated report definition and its most recent data output.</em></p>
+<h3 id="d4-process">D4 · process</h3>
+<p><strong>D4-process-N1 · nascent.</strong> Is AI literacy formally introduced during orientation for new doctoral students and during onboarding for new advisors and supervisors?</p>
+<fieldset class="answer answer-enhanced" id="a1_maturity_assessment-answer-53">
+<legend class="answer-legend visually-hidden">D4-process-N1 · nascent. Is AI literacy formally introduced during orientation for new doctoral students and during onboarding for new advisors and supervisors?</legend>
+<div class="answer-options"><label class="answer-option" for="a1_maturity_assessment-answer-53-option-1"><input type="radio" id="a1_maturity_assessment-answer-53-option-1" name="a1_maturity_assessment-answer-53" value="Yes"> <span>Yes</span></label><label class="answer-option" for="a1_maturity_assessment-answer-53-option-2"><input type="radio" id="a1_maturity_assessment-answer-53-option-2" name="a1_maturity_assessment-answer-53" value="Partial"> <span>Partial</span></label><label class="answer-option" for="a1_maturity_assessment-answer-53-option-3"><input type="radio" id="a1_maturity_assessment-answer-53-option-3" name="a1_maturity_assessment-answer-53" value="No"> <span>No</span></label></div>
+</fieldset>
+<p><em>Evidence: The student orientation agenda and the advisor appointment onboarding checklist, both dated.</em></p>
+<p><strong>D4-process-E1 · established.</strong> Is the AI methods curriculum reviewed at a regular, stated cadence to keep pace with developments in AI tooling, with the reviewing committee named and the last review meeting dated?</p>
+<fieldset class="answer answer-enhanced" id="a1_maturity_assessment-answer-54">
+<legend class="answer-legend visually-hidden">D4-process-E1 · established. Is the AI methods curriculum reviewed at a regular, stated cadence to keep pace with developments in AI tooling, with the reviewing committee named and the last review meeting dated?</legend>
+<div class="answer-options"><label class="answer-option" for="a1_maturity_assessment-answer-54-option-1"><input type="radio" id="a1_maturity_assessment-answer-54-option-1" name="a1_maturity_assessment-answer-54" value="Yes"> <span>Yes</span></label><label class="answer-option" for="a1_maturity_assessment-answer-54-option-2"><input type="radio" id="a1_maturity_assessment-answer-54-option-2" name="a1_maturity_assessment-answer-54" value="Partial"> <span>Partial</span></label><label class="answer-option" for="a1_maturity_assessment-answer-54-option-3"><input type="radio" id="a1_maturity_assessment-answer-54-option-3" name="a1_maturity_assessment-answer-54" value="No"> <span>No</span></label></div>
+</fieldset>
+<p><em>Evidence: The review schedule, the minutes from the most recent review meeting, and the resulting curricular updates.</em></p>
+<p><strong>D4-process-L1 · leading.</strong> Does the institution share its competency-outcome data with sector-level benchmarking initiatives rather than keeping the information purely internal?</p>
+<fieldset class="answer answer-enhanced" id="a1_maturity_assessment-answer-55">
+<legend class="answer-legend visually-hidden">D4-process-L1 · leading. Does the institution share its competency-outcome data with sector-level benchmarking initiatives rather than keeping the information purely internal?</legend>
+<div class="answer-options"><label class="answer-option" for="a1_maturity_assessment-answer-55-option-1"><input type="radio" id="a1_maturity_assessment-answer-55-option-1" name="a1_maturity_assessment-answer-55" value="Yes"> <span>Yes</span></label><label class="answer-option" for="a1_maturity_assessment-answer-55-option-2"><input type="radio" id="a1_maturity_assessment-answer-55-option-2" name="a1_maturity_assessment-answer-55" value="Partial"> <span>Partial</span></label><label class="answer-option" for="a1_maturity_assessment-answer-55-option-3"><input type="radio" id="a1_maturity_assessment-answer-55-option-3" name="a1_maturity_assessment-answer-55" value="No"> <span>No</span></label></div>
+</fieldset>
+<p><em>Evidence: The benchmarking initiative named, the specific data submitted, and the date of contribution.</em></p>
+<hr>
+<h2 id="dimension-5-institutional-benchmarking-grid">Dimension 5: Institutional benchmarking grid</h2>
+<p><em>This dimension measures the institution's capacity to evaluate its maturity across the four preceding dimensions and take strategic action on the findings, treating all four axes as an integrated system. See <a href="https://instats.org/publications/responsible-ai-in-academic-research">the report</a>'s §2.5 and Appendix A row 5.</em></p>
+<h3 id="d5-policy">D5 · policy</h3>
+<p><strong>D5-policy-N1 · nascent.</strong> Does a published institutional document formally commit [INSTITUTION NAME] to evaluating its own maturity regarding AI in research and research training, naming the specific governance body that oversees the assessment?</p>
+<fieldset class="answer answer-enhanced" id="a1_maturity_assessment-answer-56">
+<legend class="answer-legend visually-hidden">D5-policy-N1 · nascent. Does a published institutional document formally commit [INSTITUTION NAME] to evaluating its own maturity regarding AI in research and research training, naming the specific governance body that oversees the assessment?</legend>
+<div class="answer-options"><label class="answer-option" for="a1_maturity_assessment-answer-56-option-1"><input type="radio" id="a1_maturity_assessment-answer-56-option-1" name="a1_maturity_assessment-answer-56" value="Yes"> <span>Yes</span></label><label class="answer-option" for="a1_maturity_assessment-answer-56-option-2"><input type="radio" id="a1_maturity_assessment-answer-56-option-2" name="a1_maturity_assessment-answer-56" value="Partial"> <span>Partial</span></label><label class="answer-option" for="a1_maturity_assessment-answer-56-option-3"><input type="radio" id="a1_maturity_assessment-answer-56-option-3" name="a1_maturity_assessment-answer-56" value="No"> <span>No</span></label></div>
+</fieldset>
+<p><em>Evidence: The governing document, the relevant clause, and the designated oversight body.</em></p>
+<p><strong>D5-policy-E1 · established.</strong> Does the institution formally evaluate itself against a recognized AI maturity framework across all four preceding dimensions at a stated cadence, with the most recent evaluation dated?</p>
+<fieldset class="answer answer-enhanced" id="a1_maturity_assessment-answer-57">
+<legend class="answer-legend visually-hidden">D5-policy-E1 · established. Does the institution formally evaluate itself against a recognized AI maturity framework across all four preceding dimensions at a stated cadence, with the most recent evaluation dated?</legend>
+<div class="answer-options"><label class="answer-option" for="a1_maturity_assessment-answer-57-option-1"><input type="radio" id="a1_maturity_assessment-answer-57-option-1" name="a1_maturity_assessment-answer-57" value="Yes"> <span>Yes</span></label><label class="answer-option" for="a1_maturity_assessment-answer-57-option-2"><input type="radio" id="a1_maturity_assessment-answer-57-option-2" name="a1_maturity_assessment-answer-57" value="Partial"> <span>Partial</span></label><label class="answer-option" for="a1_maturity_assessment-answer-57-option-3"><input type="radio" id="a1_maturity_assessment-answer-57-option-3" name="a1_maturity_assessment-answer-57" value="No"> <span>No</span></label></div>
+</fieldset>
+<p><em>Evidence: The completed evaluation document, its completion date, and the published evaluation schedule.</em></p>
+<p><strong>D5-policy-E2 · established.</strong> Is there a documented preparation plan for each regulatory obligation applicable to the institution's jurisdictions, complete with a named owner and milestone dates for each?</p>
+<fieldset class="answer answer-enhanced" id="a1_maturity_assessment-answer-58">
+<legend class="answer-legend visually-hidden">D5-policy-E2 · established. Is there a documented preparation plan for each regulatory obligation applicable to the institution&#x27;s jurisdictions, complete with a named owner and milestone dates for each?</legend>
+<div class="answer-options"><label class="answer-option" for="a1_maturity_assessment-answer-58-option-1"><input type="radio" id="a1_maturity_assessment-answer-58-option-1" name="a1_maturity_assessment-answer-58" value="Yes"> <span>Yes</span></label><label class="answer-option" for="a1_maturity_assessment-answer-58-option-2"><input type="radio" id="a1_maturity_assessment-answer-58-option-2" name="a1_maturity_assessment-answer-58" value="Partial"> <span>Partial</span></label><label class="answer-option" for="a1_maturity_assessment-answer-58-option-3"><input type="radio" id="a1_maturity_assessment-answer-58-option-3" name="a1_maturity_assessment-answer-58" value="No"> <span>No</span></label></div>
+</fieldset>
+<p><em>Evidence: The plan, the assigned owner for each obligation, and the specific milestone deadlines. Name each regulatory obligation that applies to the institution. For instance, <a href="https://instats.org/publications/responsible-ai-in-academic-research">the report</a> highlights two: the EU AI Act Article 27 Fundamental Rights Impact Assessment obligation, applying from 2 August 2026 to institutions operating in or serving the EU market, and the Australian Privacy Act 1988 automated-decision-making transparency obligation, commencing 10 December 2026 for institutions subject to that regime. Other jurisdictions have their own statutory deadlines.</em></p>
+<p><strong>D5-policy-L1 · leading.</strong> Does the institution publish its self-assessment scores along with an explicit description of its methodology, allowing an independent third party to reproduce and verify the evaluation?</p>
+<fieldset class="answer answer-enhanced" id="a1_maturity_assessment-answer-59">
+<legend class="answer-legend visually-hidden">D5-policy-L1 · leading. Does the institution publish its self-assessment scores along with an explicit description of its methodology, allowing an independent third party to reproduce and verify the evaluation?</legend>
+<div class="answer-options"><label class="answer-option" for="a1_maturity_assessment-answer-59-option-1"><input type="radio" id="a1_maturity_assessment-answer-59-option-1" name="a1_maturity_assessment-answer-59" value="Yes"> <span>Yes</span></label><label class="answer-option" for="a1_maturity_assessment-answer-59-option-2"><input type="radio" id="a1_maturity_assessment-answer-59-option-2" name="a1_maturity_assessment-answer-59" value="Partial"> <span>Partial</span></label><label class="answer-option" for="a1_maturity_assessment-answer-59-option-3"><input type="radio" id="a1_maturity_assessment-answer-59-option-3" name="a1_maturity_assessment-answer-59" value="No"> <span>No</span></label></div>
+</fieldset>
+<p><em>Evidence: The published assessment, the methodology statement, the public URL, and the publication date.</em></p>
+<h3 id="d5-people">D5 · people</h3>
+<p><strong>D5-people-N1 · nascent.</strong> Is there an assigned individual owner for the policy axis, meaning a specific person with a job title who is held accountable for the AI-in-research policy document and its periodic review?</p>
+<fieldset class="answer answer-enhanced" id="a1_maturity_assessment-answer-60">
+<legend class="answer-legend visually-hidden">D5-people-N1 · nascent. Is there an assigned individual owner for the policy axis, meaning a specific person with a job title who is held accountable for the AI-in-research policy document and its periodic review?</legend>
+<div class="answer-options"><label class="answer-option" for="a1_maturity_assessment-answer-60-option-1"><input type="radio" id="a1_maturity_assessment-answer-60-option-1" name="a1_maturity_assessment-answer-60" value="Yes"> <span>Yes</span></label><label class="answer-option" for="a1_maturity_assessment-answer-60-option-2"><input type="radio" id="a1_maturity_assessment-answer-60-option-2" name="a1_maturity_assessment-answer-60" value="Partial"> <span>Partial</span></label><label class="answer-option" for="a1_maturity_assessment-answer-60-option-3"><input type="radio" id="a1_maturity_assessment-answer-60-option-3" name="a1_maturity_assessment-answer-60" value="No"> <span>No</span></label></div>
+</fieldset>
+<p><em>Evidence: The job title, the current role occupant, and the formal instrument assigning this accountability.</em></p>
+<p><strong>D5-people-E1 · established.</strong> Is a named operational owner assigned to each of the four axes across all five dimensions (covering all twenty cells, which may be distributed among a smaller group of individuals), and is that ownership matrix published?</p>
+<fieldset class="answer answer-enhanced" id="a1_maturity_assessment-answer-61">
+<legend class="answer-legend visually-hidden">D5-people-E1 · established. Is a named operational owner assigned to each of the four axes across all five dimensions (covering all twenty cells, which may be distributed among a smaller group of individuals), and is that ownership matrix published?</legend>
+<div class="answer-options"><label class="answer-option" for="a1_maturity_assessment-answer-61-option-1"><input type="radio" id="a1_maturity_assessment-answer-61-option-1" name="a1_maturity_assessment-answer-61" value="Yes"> <span>Yes</span></label><label class="answer-option" for="a1_maturity_assessment-answer-61-option-2"><input type="radio" id="a1_maturity_assessment-answer-61-option-2" name="a1_maturity_assessment-answer-61" value="Partial"> <span>Partial</span></label><label class="answer-option" for="a1_maturity_assessment-answer-61-option-3"><input type="radio" id="a1_maturity_assessment-answer-61-option-3" name="a1_maturity_assessment-answer-61" value="No"> <span>No</span></label></div>
+</fieldset>
+<p><em>Evidence: The responsibility matrix covering all twenty cells, along with the date it was last verified.</em></p>
+<p><strong>D5-people-L1 · leading.</strong> Does the institution submit its maturity scoring to external peer review or independent audit at a stated cadence, with the evaluating organization publicly identified?</p>
+<fieldset class="answer answer-enhanced" id="a1_maturity_assessment-answer-62">
+<legend class="answer-legend visually-hidden">D5-people-L1 · leading. Does the institution submit its maturity scoring to external peer review or independent audit at a stated cadence, with the evaluating organization publicly identified?</legend>
+<div class="answer-options"><label class="answer-option" for="a1_maturity_assessment-answer-62-option-1"><input type="radio" id="a1_maturity_assessment-answer-62-option-1" name="a1_maturity_assessment-answer-62" value="Yes"> <span>Yes</span></label><label class="answer-option" for="a1_maturity_assessment-answer-62-option-2"><input type="radio" id="a1_maturity_assessment-answer-62-option-2" name="a1_maturity_assessment-answer-62" value="Partial"> <span>Partial</span></label><label class="answer-option" for="a1_maturity_assessment-answer-62-option-3"><input type="radio" id="a1_maturity_assessment-answer-62-option-3" name="a1_maturity_assessment-answer-62" value="No"> <span>No</span></label></div>
+</fieldset>
+<p><em>Evidence: The external review agreement, the evaluating body, the date of the last review, and the resulting report.</em></p>
+<h3 id="d5-systems">D5 · systems</h3>
+<p><strong>D5-systems-N1 · nascent.</strong> Is the documentary evidence supporting the institution's AI readiness maintained in a single central repository, rather than gathered piecemeal from different departments upon request?</p>
+<fieldset class="answer answer-enhanced" id="a1_maturity_assessment-answer-63">
+<legend class="answer-legend visually-hidden">D5-systems-N1 · nascent. Is the documentary evidence supporting the institution&#x27;s AI readiness maintained in a single central repository, rather than gathered piecemeal from different departments upon request?</legend>
+<div class="answer-options"><label class="answer-option" for="a1_maturity_assessment-answer-63-option-1"><input type="radio" id="a1_maturity_assessment-answer-63-option-1" name="a1_maturity_assessment-answer-63" value="Yes"> <span>Yes</span></label><label class="answer-option" for="a1_maturity_assessment-answer-63-option-2"><input type="radio" id="a1_maturity_assessment-answer-63-option-2" name="a1_maturity_assessment-answer-63" value="Partial"> <span>Partial</span></label><label class="answer-option" for="a1_maturity_assessment-answer-63-option-3"><input type="radio" id="a1_maturity_assessment-answer-63-option-3" name="a1_maturity_assessment-answer-63" value="No"> <span>No</span></label></div>
+</fieldset>
+<p><em>Evidence: The central register or repository, along with its index of contents.</em></p>
+<p><strong>D5-systems-E1 · established.</strong> Can the institution quickly retrieve, from a single system, the core artifacts an auditor or regulator would request, including impact assessments, the approved AI tool register, session-log retention policies, disclosure records, and training completion files?</p>
+<fieldset class="answer answer-enhanced" id="a1_maturity_assessment-answer-64">
+<legend class="answer-legend visually-hidden">D5-systems-E1 · established. Can the institution quickly retrieve, from a single system, the core artifacts an auditor or regulator would request, including impact assessments, the approved AI tool register, session-log retention policies, disclosure records, and training completion files?</legend>
+<div class="answer-options"><label class="answer-option" for="a1_maturity_assessment-answer-64-option-1"><input type="radio" id="a1_maturity_assessment-answer-64-option-1" name="a1_maturity_assessment-answer-64" value="Yes"> <span>Yes</span></label><label class="answer-option" for="a1_maturity_assessment-answer-64-option-2"><input type="radio" id="a1_maturity_assessment-answer-64-option-2" name="a1_maturity_assessment-answer-64" value="Partial"> <span>Partial</span></label><label class="answer-option" for="a1_maturity_assessment-answer-64-option-3"><input type="radio" id="a1_maturity_assessment-answer-64-option-3" name="a1_maturity_assessment-answer-64" value="No"> <span>No</span></label></div>
+</fieldset>
+<p><em>Evidence: The central register, and the documented results of a retrieval audit recording the specific artifacts produced and the time taken.</em></p>
+<p><strong>D5-systems-L1 · leading.</strong> Does the institution publish its maturity scoring as a machine-readable, versioned data extract that identifies each cell, its level, its evidence references, and the assessment date?</p>
+<fieldset class="answer answer-enhanced" id="a1_maturity_assessment-answer-65">
+<legend class="answer-legend visually-hidden">D5-systems-L1 · leading. Does the institution publish its maturity scoring as a machine-readable, versioned data extract that identifies each cell, its level, its evidence references, and the assessment date?</legend>
+<div class="answer-options"><label class="answer-option" for="a1_maturity_assessment-answer-65-option-1"><input type="radio" id="a1_maturity_assessment-answer-65-option-1" name="a1_maturity_assessment-answer-65" value="Yes"> <span>Yes</span></label><label class="answer-option" for="a1_maturity_assessment-answer-65-option-2"><input type="radio" id="a1_maturity_assessment-answer-65-option-2" name="a1_maturity_assessment-answer-65" value="Partial"> <span>Partial</span></label><label class="answer-option" for="a1_maturity_assessment-answer-65-option-3"><input type="radio" id="a1_maturity_assessment-answer-65-option-3" name="a1_maturity_assessment-answer-65" value="No"> <span>No</span></label></div>
+</fieldset>
+<p><em>Evidence: The published data extract, its schema documentation, and its version history.</em></p>
+<h3 id="d5-process">D5 · process</h3>
+<p><strong>D5-process-N1 · nascent.</strong> Has the institution formally documented its applicable AI regulatory obligations and deadlines in a paper presented to a central governing body, even if operational owners have not yet been assigned to each obligation?</p>
+<fieldset class="answer answer-enhanced" id="a1_maturity_assessment-answer-66">
+<legend class="answer-legend visually-hidden">D5-process-N1 · nascent. Has the institution formally documented its applicable AI regulatory obligations and deadlines in a paper presented to a central governing body, even if operational owners have not yet been assigned to each obligation?</legend>
+<div class="answer-options"><label class="answer-option" for="a1_maturity_assessment-answer-66-option-1"><input type="radio" id="a1_maturity_assessment-answer-66-option-1" name="a1_maturity_assessment-answer-66" value="Yes"> <span>Yes</span></label><label class="answer-option" for="a1_maturity_assessment-answer-66-option-2"><input type="radio" id="a1_maturity_assessment-answer-66-option-2" name="a1_maturity_assessment-answer-66" value="Partial"> <span>Partial</span></label><label class="answer-option" for="a1_maturity_assessment-answer-66-option-3"><input type="radio" id="a1_maturity_assessment-answer-66-option-3" name="a1_maturity_assessment-answer-66" value="No"> <span>No</span></label></div>
+</fieldset>
+<p><em>Evidence: The committee paper, the receiving governance body, and the meeting date.</em></p>
+<p><strong>D5-process-E1 · established.</strong> Are the self-assessment results, together with the regulatory compliance plan, formally tabled at the university council (or governing board), at school and college research committees, and at the research integrity committee on a declared schedule?</p>
+<fieldset class="answer answer-enhanced" id="a1_maturity_assessment-answer-67">
+<legend class="answer-legend visually-hidden">D5-process-E1 · established. Are the self-assessment results, together with the regulatory compliance plan, formally tabled at the university council (or governing board), at school and college research committees, and at the research integrity committee on a declared schedule?</legend>
+<div class="answer-options"><label class="answer-option" for="a1_maturity_assessment-answer-67-option-1"><input type="radio" id="a1_maturity_assessment-answer-67-option-1" name="a1_maturity_assessment-answer-67" value="Yes"> <span>Yes</span></label><label class="answer-option" for="a1_maturity_assessment-answer-67-option-2"><input type="radio" id="a1_maturity_assessment-answer-67-option-2" name="a1_maturity_assessment-answer-67" value="Partial"> <span>Partial</span></label><label class="answer-option" for="a1_maturity_assessment-answer-67-option-3"><input type="radio" id="a1_maturity_assessment-answer-67-option-3" name="a1_maturity_assessment-answer-67" value="No"> <span>No</span></label></div>
+</fieldset>
+<p><em>Evidence: The committee papers and meeting dates for each of the three governance bodies separately.</em></p>
+<p><strong>D5-process-L1 · leading.</strong> Does the institution contribute its assessment methods and evaluation findings to sector-level standardization efforts, such as higher education representative bodies, national policy consultations, or published methodological white papers?</p>
+<fieldset class="answer answer-enhanced" id="a1_maturity_assessment-answer-68">
+<legend class="answer-legend visually-hidden">D5-process-L1 · leading. Does the institution contribute its assessment methods and evaluation findings to sector-level standardization efforts, such as higher education representative bodies, national policy consultations, or published methodological white papers?</legend>
+<div class="answer-options"><label class="answer-option" for="a1_maturity_assessment-answer-68-option-1"><input type="radio" id="a1_maturity_assessment-answer-68-option-1" name="a1_maturity_assessment-answer-68" value="Yes"> <span>Yes</span></label><label class="answer-option" for="a1_maturity_assessment-answer-68-option-2"><input type="radio" id="a1_maturity_assessment-answer-68-option-2" name="a1_maturity_assessment-answer-68" value="Partial"> <span>Partial</span></label><label class="answer-option" for="a1_maturity_assessment-answer-68-option-3"><input type="radio" id="a1_maturity_assessment-answer-68-option-3" name="a1_maturity_assessment-answer-68" value="No"> <span>No</span></label></div>
+</fieldset>
+<p><em>Evidence: The specific contribution, the recipient organization, and the date of submission.</em></p>
+<hr>
+<h1 id="5-scoring-sheet">5. Scoring sheet</h1>
+<h2 id="51-transferring-answers-to-the-workbook">5.1 Transferring answers to the workbook</h2>
+<p>The companion workbook carries one row per indicator on the entry tab, in the order printed above. Enter Yes, Partial, or No in the answer column and the artifact reference in the evidence column. The workbook automatically computes the rung results, the twenty cell levels, the five dimension levels, the binding axes, the binary Dimension 5 assurance status, and the coverage figure. Nothing else needs to be entered.</p>
+<p>Where the assessment is completed on paper, transcribe your answers into the two summary tables below.</p>
+<p><strong>Rule reminders when transcribing.</strong> A developmental rung is met only when every indicator on that rung is answered with a full Yes. A Partial answer never promotes an institution's level within a cell. An unanswered indicator contributes no points, remains in the fixed denominator for documentary coverage, and blocks confirmation of its rung, but it is not a documented No. Any leading-level answers recorded above an unmet established rung should be documented in the evidence register, but they do not raise the cell's maturity level until the established rung is fully satisfied.</p>
+<h2 id="52-cell-level-sheet">5.2 Cell-level sheet</h2>
+<table>
+<thead>
+<tr>
+<th>Cell</th>
+<th>Nascent rung</th>
+<th>Established rung</th>
+<th>Leading rung</th>
+<th>Cell level</th>
+<th>Binding evidence gap</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>D1-policy</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>D1-people</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>D1-systems</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>D1-process</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>D2-policy</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>D2-people</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>D2-systems</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>D2-process</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>D3-policy</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>D3-people</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>D3-systems</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>D3-process</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>D4-policy</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>D4-people</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>D4-systems</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>D4-process</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>D5-policy</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>D5-people</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>D5-systems</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>D5-process</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<div class="tablecaption">
+<p>Table 4. Worksheet for recording rung evaluations, cell levels, and binding evidence gaps.</p>
+</div>
+<p><em>Rung columns take one of: met · in progress · not met · unresolved. Cell level takes one of: Absent · Nascent · Established · Leading, or records the evidence status Unresolved/not demonstrated when the nascent rung cannot be determined. Unresolved/not demonstrated is not a fifth maturity level. The binding evidence gap names the single artifact whose absence is doing the most damage in that cell.</em></p>
+<h2 id="53-dimension-level-sheet">5.3 Dimension-level sheet</h2>
+<table>
+<thead>
+<tr>
+<th>Dimension</th>
+<th>policy</th>
+<th>people</th>
+<th>systems</th>
+<th>process</th>
+<th>Dimension level (minimum)</th>
+<th>Binding axis</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>D1 Human-in-the-loop discipline</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>D2 Responsible use in practice</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>D3 Tooling that promotes responsible use</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>D4 AI-literate humans</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>D5 Institutional benchmarking grid</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<div class="tablecaption">
+<p>Table 5. Summary sheet showing institutional axis scores, overall dimension levels, and binding axes.</p>
+</div>
+<p><em>Dimension level takes one of: Absent · Nascent · Established · Leading, or the evidence status Unresolved/not demonstrated. Use that evidence status when an unresolved nascent rung prevents one or more axis cells from receiving a maturity level. In that case, list the unresolved axes and leave the binding dimension unassigned until the evidence is resolved, unless another documented cell already fixes the minimum independently.</em></p>
+<h2 id="54-the-profile-readout">5.4 The profile readout</h2>
+<p>Record these seven lines, and no others, as the formal result of the assessment.</p>
+<ul>
+<li><strong>Assessment date:</strong> [DATE] · <strong>Unit of assessment:</strong> [INSTITUTION NAME] (central) or [SCHOOL OR COLLEGE]</li>
+<li><strong>Dimension levels:</strong> D1 ___ · D2 ___ · D3 ___ · D4 ___ · D5 ___</li>
+<li><strong>Binding axis by dimension:</strong> D1 ___ · D2 ___ · D3 ___ · D4 ___ · D5 ___</li>
+<li><strong>Binding dimension:</strong> ___ (the lowest level, and on a tie, the earliest dimension in the framework sequence)</li>
+<li><strong>Dimension 5 assurance status:</strong> Assured / Unassured (record <strong>Assured</strong> only when Dimension 5 is <em>Established</em> or <em>Leading</em>, and otherwise record <strong>Unassured</strong>)</li>
+<li><strong>Coverage:</strong> ___ percent · <strong>Verdict:</strong> Final / Provisional</li>
+<li><strong>Received by:</strong> [COMMITTEE] on [DATE] · <strong>Next assessment due:</strong> [DATE]</li>
+</ul>
+<p>The last line is not mere administrative detail. An assessment profile with no receiving committee and no scheduled follow-up date is just an academic exercise. In contrast, a profile formally tabled at a named committee with a declared review schedule represents the actual substance of Dimension 5, and indicators D5-policy-E1 and D5-process-E1 are answered directly from it.</p>
+<h2 id="55-how-to-read-the-profile">5.5 How to read the profile</h2>
+<p><strong>Read the binding dimension first.</strong> This dimension represents your primary institutional constraint. Spending time and resources elsewhere will yield lower returns until this constraint is addressed, because the framework's dimensions are designed as sequential preconditions for one another.</p>
+<p><strong>Read the binding axis second.</strong> Identifying the binding axis turns an abstract maturity level into a practical operational instruction. The four axes tend to fall short in predictable ways, and each requires a different remedy:</p>
+<ul>
+<li><strong>When Policy is binding:</strong> Staff and researchers may already be doing the work informally, but they lack an approved institutional document that defines or authorizes it. The remedy here is policy drafting, which is typically the fastest and least expensive improvement on the ladder. You can draw directly on the model policy in companion instrument P1 and the disclosure standard in P2.</li>
+<li><strong>When People is binding:</strong> A policy document exists on paper, but no specific individual is accountable for implementing or maintaining it. This is the single most common finding at the <em>nascent</em> level, and it is frequently underestimated. Formally assigning a named operational owner costs nothing in budget and immediately unblocks progress across several cells at once.</li>
+<li><strong>When Systems is binding:</strong> The policy rules exist, but the institution cannot extract or verify the necessary records from its software systems. In this situation, the institution is also unlikely to be able to satisfy an external auditor or regulator. This is usually the most resource-intensive axis to upgrade, so planning for systems integration should begin as early as possible.</li>
+<li><strong>When Process is binding:</strong> Policies, owners, and systems are in place, but they have not been integrated into the everyday workflows of supervision, advising, student milestones, or thesis defense. In other words, good institutional work has been done, but it is not actually reaching graduate students or faculty. The remedy is to insert explicit checkpoints into existing administrative workflows rather than attempting to build brand-new processes from scratch.</li>
+</ul>
+<p><strong>Analyze the overall developmental pattern across dimensions rather than relying on an average.</strong> Four characteristic institutional patterns tend to recur:</p>
+<ul>
+<li><em>Flat at absent or nascent across all five dimensions.</em> This is a common and completely normal starting baseline. In this situation, you should sequence your improvement efforts in order from Dimension 1 through Dimension 5, focusing initial efforts during the first year on the policy and people axes.</li>
+<li><em>Policy running far ahead of everything else.</em> The institution has published an AI policy, but there are no named operational owners, no retrievable system records, and no integration into academic workflows. <a href="https://instats.org/publications/responsible-ai-in-academic-research">The report</a> identifies publishing a single AI policy and declaring the issue resolved as the most common institutional misstep of 2026. The framework addresses this directly: a written policy is only one row in a comprehensive competency grid, not the entire grid.</li>
+<li><em>Strong on Dimensions 1 and 2, but weak on Dimension 3.</em> The institution has clearly articulated the human-judgment demarcation and responsible-use rules, but the software tools researchers actually use every day do not support those standards. This corresponds to the University College London case study discussed in <a href="https://instats.org/publications/responsible-ai-in-academic-research">the report</a>'s §4.3. In this scenario, the human-in-the-loop discipline cannot be realized at scale until an effective IT procurement gate is put in place.</li>
+<li><em>Substantial school and college activity alongside a weak central administration.</em> This decentralized pattern corresponds to the third case study in <a href="https://instats.org/publications/responsible-ai-in-academic-research">the report</a>'s §4.3, which <a href="https://instats.org/publications/responsible-ai-in-academic-research">the report</a> associates with the US Ivy-Plus and Association of American Universities cluster. In these environments, the central administration may receive a low score, but the institution as a whole is not as weak as that central score suggests. The diagnostic finding is that excellent local practices have not yet been adopted across the wider institution. You should document these school-level instruments in the notes column and focus on scaling them up as a central policy-axis initiative.</li>
+</ul>
+<p><strong>Do not compare your profile to another university without confirming the unit of assessment.</strong> An assessment evaluating a central university administration and one evaluating a single graduate school are measuring two fundamentally different things.</p>
+<hr>
+<h1 id="6-class-ad-placement">6. Class A–D placement</h1>
+<h2 id="61-what-this-section-is-and-what-it-is-not">6.1 What this section is, and what it is not</h2>
+<p>The Class A–D taxonomy classifies the <em>substantive scope</em> of an institution's AI policy documents. This is an entirely separate measurement from the maturity grid, and one should never be derived from the other. For instance, an institution classified as Class C on policy scope can easily sit at the <em>nascent</em> level on Dimension 3 if its published research-integrity policy lacks an active IT procurement gate. Conversely, an institution with a Class B policy scope might achieve an <em>established</em> rating on Dimension 3 because its central IT and procurement controls are highly mature, even though its written policy covers nothing beyond basic plagiarism rules. Both situations happen frequently in practice. You should record both measurements independently, and avoid inferring one from the other.</p>
+<p>Answer the questions in this section strictly from the written text of the policy documents, not from informal institutional practice. Lived practice is what the maturity grid in §4 is designed to measure.</p>
+<p><strong>Declare the unit of assessment.</strong> Record clearly whether you are evaluating the central institution or a specific school, college, or graduate school. In <a href="https://instats.org/publications/responsible-ai-in-academic-research">the report</a>, the Class D institutions include documents issued directly by doctoral schools rather than central university administrations, so specifying the exact unit of assessment is essential for an accurate evaluation.</p>
+<h2 id="62-gate-1-does-a-dedicated-ai-document-exist-for-research-and-research-training">6.2 Gate 1: Does a dedicated AI document exist for research and research training?</h2>
+<p><strong>P1.1.</strong> Does an AI-specific policy or guidance document exist that is distinct from the general academic-integrity or student-conduct rules?</p>
+<fieldset class="answer answer-enhanced" id="a1_maturity_assessment-answer-69">
+<legend class="answer-legend visually-hidden">P1.1. Does an AI-specific policy or guidance document exist that is distinct from the general academic-integrity or student-conduct rules?</legend>
+<div class="answer-options"><label class="answer-option" for="a1_maturity_assessment-answer-69-option-1"><input type="radio" id="a1_maturity_assessment-answer-69-option-1" name="a1_maturity_assessment-answer-69" value="Yes"> <span>Yes</span></label><label class="answer-option" for="a1_maturity_assessment-answer-69-option-2"><input type="radio" id="a1_maturity_assessment-answer-69-option-2" name="a1_maturity_assessment-answer-69" value="Partial"> <span>Partial</span></label><label class="answer-option" for="a1_maturity_assessment-answer-69-option-3"><input type="radio" id="a1_maturity_assessment-answer-69-option-3" name="a1_maturity_assessment-answer-69" value="No"> <span>No</span></label></div>
+</fieldset>
+<p><em>Evidence: The document title, URL, issuing body, and date of issue.</em></p>
+<p><strong>P1.2.</strong> Does that document apply specifically to doctoral research and research training, rather than only to undergraduate or coursework assessment?</p>
+<fieldset class="answer answer-enhanced" id="a1_maturity_assessment-answer-70">
+<legend class="answer-legend visually-hidden">P1.2. Does that document apply specifically to doctoral research and research training, rather than only to undergraduate or coursework assessment?</legend>
+<div class="answer-options"><label class="answer-option" for="a1_maturity_assessment-answer-70-option-1"><input type="radio" id="a1_maturity_assessment-answer-70-option-1" name="a1_maturity_assessment-answer-70" value="Yes"> <span>Yes</span></label><label class="answer-option" for="a1_maturity_assessment-answer-70-option-2"><input type="radio" id="a1_maturity_assessment-answer-70-option-2" name="a1_maturity_assessment-answer-70" value="Partial"> <span>Partial</span></label><label class="answer-option" for="a1_maturity_assessment-answer-70-option-3"><input type="radio" id="a1_maturity_assessment-answer-70-option-3" name="a1_maturity_assessment-answer-70" value="No"> <span>No</span></label></div>
+</fieldset>
+<p><em>Evidence: The scope clause, quoted directly.</em></p>
+<p><strong>P1.3.</strong> Is the document issued centrally or by the graduate school, rather than by a single academic department acting on its own?</p>
+<fieldset class="answer answer-enhanced" id="a1_maturity_assessment-answer-71">
+<legend class="answer-legend visually-hidden">P1.3. Is the document issued centrally or by the graduate school, rather than by a single academic department acting on its own?</legend>
+<div class="answer-options"><label class="answer-option" for="a1_maturity_assessment-answer-71-option-1"><input type="radio" id="a1_maturity_assessment-answer-71-option-1" name="a1_maturity_assessment-answer-71" value="Yes"> <span>Yes</span></label><label class="answer-option" for="a1_maturity_assessment-answer-71-option-2"><input type="radio" id="a1_maturity_assessment-answer-71-option-2" name="a1_maturity_assessment-answer-71" value="Partial"> <span>Partial</span></label><label class="answer-option" for="a1_maturity_assessment-answer-71-option-3"><input type="radio" id="a1_maturity_assessment-answer-71-option-3" name="a1_maturity_assessment-answer-71" value="No"> <span>No</span></label></div>
+</fieldset>
+<p><em>Evidence: The issuing authority and the specific institutional population bound by the document.</em></p>
+<blockquote>
+<p><strong>If P1.1 or P1.2 is No, the placement is Class A.</strong> If P1.3 is No or Partial, either redefine the assessment unit to the issuing unit and restart this section, or exclude that document from the declared unit's classification. A department-only document cannot establish the central institution's Class B, C, or D placement.</p>
+</blockquote>
+<h2 id="63-gate-2-does-the-documents-scope-extend-past-misconduct-into-research-integrity">6.3 Gate 2: Does the document's scope extend past misconduct into research integrity?</h2>
+<p><strong>P2.1.</strong> Does the policy explicitly address the validity and reproducibility of AI-augmented research, rather than focusing solely on author attribution and plagiarism?</p>
+<fieldset class="answer answer-enhanced" id="a1_maturity_assessment-answer-72">
+<legend class="answer-legend visually-hidden">P2.1. Does the policy explicitly address the validity and reproducibility of AI-augmented research, rather than focusing solely on author attribution and plagiarism?</legend>
+<div class="answer-options"><label class="answer-option" for="a1_maturity_assessment-answer-72-option-1"><input type="radio" id="a1_maturity_assessment-answer-72-option-1" name="a1_maturity_assessment-answer-72" value="Yes"> <span>Yes</span></label><label class="answer-option" for="a1_maturity_assessment-answer-72-option-2"><input type="radio" id="a1_maturity_assessment-answer-72-option-2" name="a1_maturity_assessment-answer-72" value="Partial"> <span>Partial</span></label><label class="answer-option" for="a1_maturity_assessment-answer-72-option-3"><input type="radio" id="a1_maturity_assessment-answer-72-option-3" name="a1_maturity_assessment-answer-72" value="No"> <span>No</span></label></div>
+</fieldset>
+<p><em>Evidence: The relevant clause, quoted with its exact document reference.</em></p>
+<p><strong>P2.2.</strong> Does it address fabrication risks in AI outputs (such as hallucinated citations, synthetic data, or generated images) and mandate verification against primary sources?</p>
+<fieldset class="answer answer-enhanced" id="a1_maturity_assessment-answer-73">
+<legend class="answer-legend visually-hidden">P2.2. Does it address fabrication risks in AI outputs (such as hallucinated citations, synthetic data, or generated images) and mandate verification against primary sources?</legend>
+<div class="answer-options"><label class="answer-option" for="a1_maturity_assessment-answer-73-option-1"><input type="radio" id="a1_maturity_assessment-answer-73-option-1" name="a1_maturity_assessment-answer-73" value="Yes"> <span>Yes</span></label><label class="answer-option" for="a1_maturity_assessment-answer-73-option-2"><input type="radio" id="a1_maturity_assessment-answer-73-option-2" name="a1_maturity_assessment-answer-73" value="Partial"> <span>Partial</span></label><label class="answer-option" for="a1_maturity_assessment-answer-73-option-3"><input type="radio" id="a1_maturity_assessment-answer-73-option-3" name="a1_maturity_assessment-answer-73" value="No"> <span>No</span></label></div>
+</fieldset>
+<p><em>Evidence: The relevant clause, quoted directly.</em></p>
+<p><strong>P2.3.</strong> Does it define rules for using AI as an analytical validator or checker of the researcher's own work, as distinct from using AI simply as an editorial writing aid?</p>
+<fieldset class="answer answer-enhanced" id="a1_maturity_assessment-answer-74">
+<legend class="answer-legend visually-hidden">P2.3. Does it define rules for using AI as an analytical validator or checker of the researcher&#x27;s own work, as distinct from using AI simply as an editorial writing aid?</legend>
+<div class="answer-options"><label class="answer-option" for="a1_maturity_assessment-answer-74-option-1"><input type="radio" id="a1_maturity_assessment-answer-74-option-1" name="a1_maturity_assessment-answer-74" value="Yes"> <span>Yes</span></label><label class="answer-option" for="a1_maturity_assessment-answer-74-option-2"><input type="radio" id="a1_maturity_assessment-answer-74-option-2" name="a1_maturity_assessment-answer-74" value="Partial"> <span>Partial</span></label><label class="answer-option" for="a1_maturity_assessment-answer-74-option-3"><input type="radio" id="a1_maturity_assessment-answer-74-option-3" name="a1_maturity_assessment-answer-74" value="No"> <span>No</span></label></div>
+</fieldset>
+<p><em>Evidence: The relevant clause, quoted directly.</em></p>
+<p><strong>P2.4.</strong> Does it require explicit disclosure of AI use on research outputs, rather than restricting disclosure rules to assessed coursework?</p>
+<fieldset class="answer answer-enhanced" id="a1_maturity_assessment-answer-75">
+<legend class="answer-legend visually-hidden">P2.4. Does it require explicit disclosure of AI use on research outputs, rather than restricting disclosure rules to assessed coursework?</legend>
+<div class="answer-options"><label class="answer-option" for="a1_maturity_assessment-answer-75-option-1"><input type="radio" id="a1_maturity_assessment-answer-75-option-1" name="a1_maturity_assessment-answer-75" value="Yes"> <span>Yes</span></label><label class="answer-option" for="a1_maturity_assessment-answer-75-option-2"><input type="radio" id="a1_maturity_assessment-answer-75-option-2" name="a1_maturity_assessment-answer-75" value="Partial"> <span>Partial</span></label><label class="answer-option" for="a1_maturity_assessment-answer-75-option-3"><input type="radio" id="a1_maturity_assessment-answer-75-option-3" name="a1_maturity_assessment-answer-75" value="No"> <span>No</span></label></div>
+</fieldset>
+<p><em>Evidence: The disclosure clause and the specific research outputs it covers.</em></p>
+<blockquote>
+<p><strong>If any of P2.1 through P2.4 is answered No or Partial, the institutional placement is Class B.</strong> In this case, a dedicated AI policy exists, but its substantive scope is limited to student misconduct and plagiarism framing, extended at most to the standard rule that an AI tool cannot be credited as an author.</p>
+</blockquote>
+<h2 id="64-gate-3-does-the-document-extend-into-competency-and-examiner-discipline">6.4 Gate 3: Does the document extend into competency and examiner discipline?</h2>
+<p><strong>P3.1.</strong> Does the policy state explicit research competency expectations for doctoral students, detailing what a student is expected to understand and do rather than solely listing prohibited behaviors?</p>
+<fieldset class="answer answer-enhanced" id="a1_maturity_assessment-answer-76">
+<legend class="answer-legend visually-hidden">P3.1. Does the policy state explicit research competency expectations for doctoral students, detailing what a student is expected to understand and do rather than solely listing prohibited behaviors?</legend>
+<div class="answer-options"><label class="answer-option" for="a1_maturity_assessment-answer-76-option-1"><input type="radio" id="a1_maturity_assessment-answer-76-option-1" name="a1_maturity_assessment-answer-76" value="Yes"> <span>Yes</span></label><label class="answer-option" for="a1_maturity_assessment-answer-76-option-2"><input type="radio" id="a1_maturity_assessment-answer-76-option-2" name="a1_maturity_assessment-answer-76" value="Partial"> <span>Partial</span></label><label class="answer-option" for="a1_maturity_assessment-answer-76-option-3"><input type="radio" id="a1_maturity_assessment-answer-76-option-3" name="a1_maturity_assessment-answer-76" value="No"> <span>No</span></label></div>
+</fieldset>
+<p><em>Evidence: The clause, quoted directly, along with the specific competencies it defines.</em></p>
+<p><strong>P3.2.</strong> Does it establish clear AI competency expectations for doctoral advisors and supervisors?</p>
+<fieldset class="answer answer-enhanced" id="a1_maturity_assessment-answer-77">
+<legend class="answer-legend visually-hidden">P3.2. Does it establish clear AI competency expectations for doctoral advisors and supervisors?</legend>
+<div class="answer-options"><label class="answer-option" for="a1_maturity_assessment-answer-77-option-1"><input type="radio" id="a1_maturity_assessment-answer-77-option-1" name="a1_maturity_assessment-answer-77" value="Yes"> <span>Yes</span></label><label class="answer-option" for="a1_maturity_assessment-answer-77-option-2"><input type="radio" id="a1_maturity_assessment-answer-77-option-2" name="a1_maturity_assessment-answer-77" value="Partial"> <span>Partial</span></label><label class="answer-option" for="a1_maturity_assessment-answer-77-option-3"><input type="radio" id="a1_maturity_assessment-answer-77-option-3" name="a1_maturity_assessment-answer-77" value="No"> <span>No</span></label></div>
+</fieldset>
+<p><em>Evidence: The relevant clause, quoted directly.</em></p>
+<p><strong>P3.3.</strong> Does it link to an approved curriculum or a named training pathway designed to develop those competencies?</p>
+<fieldset class="answer answer-enhanced" id="a1_maturity_assessment-answer-78">
+<legend class="answer-legend visually-hidden">P3.3. Does it link to an approved curriculum or a named training pathway designed to develop those competencies?</legend>
+<div class="answer-options"><label class="answer-option" for="a1_maturity_assessment-answer-78-option-1"><input type="radio" id="a1_maturity_assessment-answer-78-option-1" name="a1_maturity_assessment-answer-78" value="Yes"> <span>Yes</span></label><label class="answer-option" for="a1_maturity_assessment-answer-78-option-2"><input type="radio" id="a1_maturity_assessment-answer-78-option-2" name="a1_maturity_assessment-answer-78" value="Partial"> <span>Partial</span></label><label class="answer-option" for="a1_maturity_assessment-answer-78-option-3"><input type="radio" id="a1_maturity_assessment-answer-78-option-3" name="a1_maturity_assessment-answer-78" value="No"> <span>No</span></label></div>
+</fieldset>
+<p><em>Evidence: The clause, along with the specific program or pathway it identifies.</em></p>
+<p><strong>P3.4.</strong> Does it define explicit examiner-side rules for the doctoral oral examination and thesis declaration, detailing what examiners must review, what they must confirm, and what they are not permitted to do?</p>
+<fieldset class="answer answer-enhanced" id="a1_maturity_assessment-answer-79">
+<legend class="answer-legend visually-hidden">P3.4. Does it define explicit examiner-side rules for the doctoral oral examination and thesis declaration, detailing what examiners must review, what they must confirm, and what they are not permitted to do?</legend>
+<div class="answer-options"><label class="answer-option" for="a1_maturity_assessment-answer-79-option-1"><input type="radio" id="a1_maturity_assessment-answer-79-option-1" name="a1_maturity_assessment-answer-79" value="Yes"> <span>Yes</span></label><label class="answer-option" for="a1_maturity_assessment-answer-79-option-2"><input type="radio" id="a1_maturity_assessment-answer-79-option-2" name="a1_maturity_assessment-answer-79" value="Partial"> <span>Partial</span></label><label class="answer-option" for="a1_maturity_assessment-answer-79-option-3"><input type="radio" id="a1_maturity_assessment-answer-79-option-3" name="a1_maturity_assessment-answer-79" value="No"> <span>No</span></label></div>
+</fieldset>
+<p><em>Evidence: The examiner clause, quoted directly, and the declaration instrument to which it refers.</em></p>
+<blockquote>
+<p><strong>If any of P3.1 through P3.4 is answered No or Partial, the institutional placement is Class C.</strong> In this case, the policy addresses research integrity, validity, reproducibility, and disclosure, but stops short of defining formal competency standards and examiner verification rules.</p>
+<p><strong>If all four questions (P3.1 through P3.4) are answered Yes, the institutional placement is Class D.</strong></p>
+</blockquote>
+<h2 id="65-the-published-distribution-to-compare-against">6.5 The published distribution to compare against</h2>
+<p><a href="https://instats.org/publications/responsible-ai-in-academic-research">The report</a> classified thirty-eight top-tier doctoral universities across fifteen countries and jurisdictions.</p>
+<table>
+<thead>
+<tr>
+<th>Class</th>
+<th>Substantive scope</th>
+<th>Institutions</th>
+<th>Share</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>A</strong></td>
+<td>Generic student-conduct policy with an AI clause appended</td>
+<td>4 of 38</td>
+<td>approx. 11 percent</td>
+</tr>
+<tr>
+<td><strong>B</strong></td>
+<td>AI-specific policy whose scope ends at plagiarism and the no-AI-author rule</td>
+<td>11 of 38</td>
+<td>approx. 29 percent</td>
+</tr>
+<tr>
+<td><strong>C</strong></td>
+<td>AI-specific policy extending into research integrity and reproducibility</td>
+<td>17 of 38</td>
+<td>approx. 45 percent</td>
+</tr>
+<tr>
+<td><strong>D</strong></td>
+<td>AI-specific policy extending into AI literacy, competency, and examiner discipline</td>
+<td>6 of 38</td>
+<td>approx. 16 percent</td>
+</tr>
+</tbody>
+</table>
+<div class="tablecaption">
+<p>Table 6. Distribution and classification of surveyed doctoral universities by policy substantive scope.</p>
+</div>
+<p>Class C is the modal posture across the sample. Taken together, Class C and Class D account for twenty-three of the thirty-eight institutions evaluated (around three in five), while the remaining two in five remain limited to basic plagiarism and student-conduct framing. Approximately one in six institutions in the sample achieves Class D.</p>
+<p>Two practical points matter when discussing your own institution's result. First, the operational difference between Class C and Class D is very narrow and specific: it requires adding codified competency expectations for doctoral candidates, advisors, and supervisors, alongside explicit examiner rules for the oral defense and thesis declaration. Because policy class is evaluated strictly from the written document, bridging the gap from Class C to Class D is essentially a drafting task, which makes it one of the most achievable policy updates available. However, actually delivering the training and competencies promised in that policy is an operational question for Dimension 4, which <a href="https://instats.org/publications/responsible-ai-in-academic-research">the report</a>'s §5.1 identifies as the largest ongoing institutional investment. Second, policy maturity varies widely even within traditional university groupings. For example, <a href="https://instats.org/publications/responsible-ai-in-academic-research">the report</a> found that the UK Russell Group spans from Cambridge at Class B to University College London and King's College London at Class D. Comparing your institution to peers based on general academic reputation rather than documented policy scope will give you a misleading picture.</p>
+<hr>
+<h1 id="7-crosswalk">7. Crosswalk</h1>
+<p>Every indicator in this instrument maps to a named section of <em><a href="https://instats.org/publications/responsible-ai-in-academic-research">Responsible AI in Academic Research: A Competency Framework for Research Training</a></em>.</p>
+<table>
+<thead>
+<tr>
+<th>Instrument item</th>
+<th>Indicator IDs</th>
+<th>Report section</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>§1.1 Purpose and the unoccupied rung</td>
+<td>—</td>
+<td>§2.5, §4.2, §4.1</td>
+</tr>
+<tr>
+<td>§1.3 Unit of assessment</td>
+<td>—</td>
+<td>§4.3, §5.2</td>
+</tr>
+<tr>
+<td>§2 Evidence rule and the Partial trap</td>
+<td>—</td>
+<td>§4.1, Appendix A</td>
+</tr>
+<tr>
+<td>§3.2 Cumulative ratchet</td>
+<td>—</td>
+<td>Appendix A (leading cells: "All of <em>established</em>, plus…")</td>
+</tr>
+<tr>
+<td>§3.3 Dimension = minimum over axes</td>
+<td>—</td>
+<td>§4.1, §2.5</td>
+</tr>
+<tr>
+<td>§3.4 Refusal of a single score</td>
+<td>—</td>
+<td>§4.3</td>
+</tr>
+<tr>
+<td>D1 · policy</td>
+<td>D1-policy-N1, E1, E2, L1</td>
+<td>§2.1, §4.2, Appendix A row 1, Appendix G</td>
+</tr>
+<tr>
+<td>D1 · people</td>
+<td>D1-people-N1, E1, L1</td>
+<td>§2.1, §2.5 (people axis), §5.3</td>
+</tr>
+<tr>
+<td>D1 · systems</td>
+<td>D1-systems-N1, E1, L1</td>
+<td>§2.1, §2.5 (systems axis), Appendix A row 1</td>
+</tr>
+<tr>
+<td>D1 · process</td>
+<td>D1-process-N1, E1, E2, L1</td>
+<td>§2.1, §2.5 (process axis), §5.3, Appendix A row 1</td>
+</tr>
+<tr>
+<td>D2 · policy</td>
+<td>D2-policy-N1, E1, E2, L1</td>
+<td>§2.2, §3.3, Appendix A row 2</td>
+</tr>
+<tr>
+<td>D2 · people</td>
+<td>D2-people-N1, E1, L1</td>
+<td>§2.2, §2.5 (people axis), §5.3</td>
+</tr>
+<tr>
+<td>D2 · systems</td>
+<td>D2-systems-N1, E1, L1</td>
+<td>§2.2, §2.5 (systems axis)</td>
+</tr>
+<tr>
+<td>D2 · process</td>
+<td>D2-process-N1, E1, E2, L1</td>
+<td>§2.2, §2.5 (process axis), §5.3, §5.4</td>
+</tr>
+<tr>
+<td>D3 · policy</td>
+<td>D3-policy-N1, E1, E2, L1</td>
+<td>§2.3, §4.2, Appendix A row 3, Appendix C</td>
+</tr>
+<tr>
+<td>D3 · people</td>
+<td>D3-people-N1, E1, L1</td>
+<td>§2.3, §2.5 (people axis), §5.1</td>
+</tr>
+<tr>
+<td>D3 · systems</td>
+<td>D3-systems-N1, E1, E2, L1</td>
+<td>§2.3, §2.5 (systems axis), Appendix C</td>
+</tr>
+<tr>
+<td>D3 · process</td>
+<td>D3-process-N1, E1, L1</td>
+<td>§2.3, §2.5 (process axis), §5.4</td>
+</tr>
+<tr>
+<td>D4 · policy</td>
+<td>D4-policy-N1, E1, L1</td>
+<td>§2.4, Appendix A row 4</td>
+</tr>
+<tr>
+<td>D4 · people</td>
+<td>D4-people-N1, E1, E2, L1</td>
+<td>§2.4, §5.3, Appendix A row 4</td>
+</tr>
+<tr>
+<td>D4 · systems</td>
+<td>D4-systems-N1, E1, L1</td>
+<td>§2.4, §2.3 (tutor-mode tooling), Appendix C</td>
+</tr>
+<tr>
+<td>D4 · process</td>
+<td>D4-process-N1, E1, L1</td>
+<td>§2.4, §5.2, §5.3</td>
+</tr>
+<tr>
+<td>D5 · policy</td>
+<td>D5-policy-N1, E1, E2, L1</td>
+<td>§2.5, §4.2, §5.1, Appendix A row 5</td>
+</tr>
+<tr>
+<td>D5 · people</td>
+<td>D5-people-N1, E1, L1</td>
+<td>§2.5, §5.1</td>
+</tr>
+<tr>
+<td>D5 · systems</td>
+<td>D5-systems-N1, E1, L1</td>
+<td>§2.5, Appendix A row 5</td>
+</tr>
+<tr>
+<td>D5 · process</td>
+<td>D5-process-N1, E1, L1</td>
+<td>§2.5, §5.1, §5.4, §5.5</td>
+</tr>
+<tr>
+<td>§5.5 Reading the profile</td>
+<td>—</td>
+<td>§4.3</td>
+</tr>
+<tr>
+<td>§6 Class A–D placement, gates 1–3</td>
+<td>P1.1–P1.3, P2.1–P2.4, P3.1–P3.4</td>
+<td>§1.3</td>
+</tr>
+<tr>
+<td>§6.5 Published distribution</td>
+<td>—</td>
+<td>§1.3, "The finding"</td>
+</tr>
+</tbody>
+</table>
+<div class="tablecaption">
+<p>Table 7. Mapping of assessment instrument items and indicator identifiers to framework report sections.</p>
+</div>
+<p>In total, this instrument includes sixty-eight maturity indicators across twenty cells, and eleven policy placement questions across three gates.</p>
+<hr>
+<p><a class="brand-mark-small" href="https://instats.org"><img alt="Instats" src="assets/instats_logo.png" width="1.0in"></a></p>
+<p><strong>Michael J. Zyphur, PhD</strong> · Professor and Director, Instats · <a href="https://instats.org">instats.org</a> · <a href="mailto:support@instats.org">support@instats.org</a></p>
+<p><em>Part of the Instats AI Readiness Pack · <a href="https://instats.org/publications/ai-readiness">instats.org/publications/ai-readiness</a> · CC BY 4.0 — adapt freely for institutional use, with attribution. Companion to</em> <a href="https://instats.org/publications/responsible-ai-in-academic-research">Responsible AI in Academic Research: A Competency Framework for Research Training</a> <em>(DOI 10.61700/t31oy23grr).</em></p>
+</div>
+
+<script>
+(function() {
+  // v0.22.31+: showHeader scroll-tracking removed along with the
+  // sticky-header element. Progress bar + sticky TOC remain.
+
+  const bar = document.getElementById('progress-bar');
+  if (bar) {
+    const update = () => {
+      const h = document.documentElement;
+      const max = h.scrollHeight - h.clientHeight;
+      bar.style.width = (max > 0 ? (h.scrollTop / max) * 100 : 0) + '%';
+    };
+    document.addEventListener('scroll', update, { passive: true });
+    update();
+  }
+  const tocEl = document.querySelector('#sticky-toc ol');
+  if (tocEl) {
+    // The rail is server-rendered at build time (per v2.2.0 design
+    // review §6 #1) — if it already has children, this JS only does
+    // scroll-spy `.active` highlighting on top. The legacy
+    // client-side populate runs ONLY as a fallback for HTML files
+    // built before the server-rendered TOC landed.
+    if (tocEl.children.length === 0) {
+      const skip = ['cover', 'colophon', 'toc', 'exec', 'abstract'];
+      const h2s = [...document.querySelectorAll('h2')].filter(h => {
+        let n = h.parentElement;
+        while (n) {
+          if (n.classList && skip.some(c => n.classList.contains(c))) return false;
+          n = n.parentElement;
+        }
+        return true;
+      });
+      h2s.forEach((h, idx) => {
+        if (!h.id) h.id = 'sec-' + idx;
+        const li = document.createElement('li');
+        const a = document.createElement('a');
+        a.href = '#' + h.id;
+        a.textContent = h.textContent.trim();
+        li.appendChild(a);
+        tocEl.appendChild(li);
+      });
+    }
+    const links = [...tocEl.querySelectorAll('a')];
+    const targets = links.map(a => document.getElementById(a.getAttribute('href').slice(1)));
+    const onScroll = () => {
+      const y = window.scrollY + 120;
+      let active = 0;
+      targets.forEach((t, i) => { if (t && t.offsetTop <= y) active = i; });
+      links.forEach((a, i) => a.classList.toggle('active', i === active));
+    };
+    document.addEventListener('scroll', onScroll, { passive: true });
+    onScroll();
+  }
+})();
+</script>
+
+</body>
+</html>

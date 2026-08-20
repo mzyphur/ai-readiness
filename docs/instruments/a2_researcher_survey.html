@@ -1,0 +1,1293 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>A2 — Researcher and Doctoral-Student Survey</title>
+  <link rel="stylesheet" href="a2_researcher_survey.css">
+  <style id="instrument-html-enhancements">
+    .instrument-response-notice {
+      margin: 0 0 1.5rem;
+      padding: 0.85rem 1rem;
+      background: #F5F8FA;
+      border-left: 4px solid #3092B1;
+      color: #1F2024;
+      font-family: var(--sans, sans-serif);
+      font-size: 0.92rem;
+    }
+    fieldset.answer-enhanced {
+      min-inline-size: 0;
+      border: 0;
+      border-left: 3px solid #3092B1;
+    }
+    .answer-options {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.45rem 1rem;
+      letter-spacing: normal;
+      word-spacing: normal;
+    }
+    .answer-option {
+      display: inline-flex;
+      align-items: flex-start;
+      gap: 0.35rem;
+      cursor: pointer;
+    }
+    .answer-option input {
+      margin: 0.2em 0 0;
+      accent-color: #00547B;
+    }
+    .answer-text-input,
+    .answer-textarea {
+      box-sizing: border-box;
+      width: 100%;
+      border: 1px solid #AEB7BE;
+      border-radius: 3px;
+      background: #FFFFFF;
+      color: #1F2024;
+      font: inherit;
+      line-height: 1.45;
+    }
+    .answer-text-input {
+      min-height: 2.55rem;
+      padding: 0.55rem 0.65rem;
+    }
+    .answer-textarea {
+      min-height: 8rem;
+      padding: 0.65rem;
+      resize: vertical;
+    }
+    .answer-legend:not(.visually-hidden) {
+      margin: 0 0 0.45rem;
+      padding: 0;
+      color: #1F2024;
+      font-weight: 600;
+      letter-spacing: normal;
+      word-spacing: normal;
+    }
+    .answer-note {
+      margin: 0.45rem 0 0;
+      letter-spacing: normal;
+      word-spacing: normal;
+    }
+    .visually-hidden {
+      position: absolute !important;
+      width: 1px !important;
+      height: 1px !important;
+      padding: 0 !important;
+      margin: -1px !important;
+      overflow: hidden !important;
+      clip: rect(0, 0, 0, 0) !important;
+      white-space: nowrap !important;
+      border: 0 !important;
+    }
+  </style>
+</head>
+<body>
+
+
+<div id="progress-bar" class="web-only" aria-hidden="true"></div>
+<nav id="sticky-toc" class="sticky-toc web-only" aria-label="Table of contents">
+  <div class="sticky-toc-title">Contents</div>
+  <ol><li><a href="#about-this-instrument">About this instrument</a></li>
+  <li><a href="#the-response-scale">The response scale</a></li>
+  <li><a href="#before-you-begin-how-your-answers-are-used">Before you begin: how your answers are used</a></li>
+  <li><a href="#a-note-on-words">A note on words</a></li>
+  <li><a href="#key-to-the-markings">Key to the markings</a></li>
+  <li><a href="#administration-notes-not-for-respondents">Administration notes (not for respondents)</a></li>
+  <li><a href="#crosswalk-item-to-report-section">Crosswalk: item to report section</a></li>
+  <li><a href="#plain-text-version-for-survey-platform-import">Plain-text version for survey-platform import</a></li></ol>
+</nav>
+
+<section class="hero web-only" aria-label="Report at a glance">
+  <div class="hero-inner">
+    <div class="hero-series">Instats Policy Series</div>
+    <h1 class="hero-title">Researcher and Doctoral-Student Survey</h1>
+
+    <p class="hero-finding">A university-wide assessment and implementation toolkit that connects institutional policy and priorities with the everyday practices, capabilities, and experiences of researchers and graduate students.</p>
+    <p class="hero-byline"><a class="hero-author-link" href="https://orcid.org/0000-0003-3237-7892" target="_blank" rel="noopener">Michael J. Zyphur, PhD</a> &middot; <span class="hero-author-bio">Director of Instats</span></p>
+    <div class="hero-actions">
+      <a class="hero-btn hero-btn-pdf" href="a2_researcher_survey.pdf" download>PDF version</a>
+      <a class="hero-btn hero-btn-docx" href="a2_researcher_survey.docx" download>Word version</a>
+      <a class="hero-btn hero-btn-repo" href="https://github.com/mzyphur/ai-readiness" target="_blank" rel="noopener">View GitHub</a>
+    </div>
+  </div>
+</section>
+
+<div class="wrap">
+<aside class="instrument-response-notice" role="note">These controls are for working through or printing this instrument. Responses are not submitted or saved.</aside>
+<p><a class="brand-mark" href="https://instats.org"><img alt="Instats" src="assets/instats_logo.png" width="1.45in"></a></p>
+<h1 id="a2-researcher-and-doctoral-student-survey">A2 — Researcher and Doctoral-Student Survey</h1>
+<p><em>Self-reported AI practices, exposure, knowledge, and context among doctoral students, so leadership's documentary account can be compared with respondents' accounts.</em></p>
+<hr>
+<h2 id="about-this-instrument">About this instrument</h2>
+<table>
+<tbody>
+<tr>
+<td><strong>Purpose</strong></td>
+<td>To collect self-reported practices, exposure, knowledge, and context, making discrepancies with the institutional self-assessment (A1) visible and measurable.</td>
+</tr>
+<tr>
+<td><strong>Who completes it</strong></td>
+<td>All doctoral students at every stage of their program. Invite the full eligible population rather than drawing a sample, and report the achieved response rate and respondent profile.</td>
+</tr>
+<tr>
+<td><strong>Time required</strong></td>
+<td>10 minutes for the 42 closed items and one short-text item, while the two optional open-comment items add two to three minutes. The 24-item short form (★) takes about five minutes.</td>
+</tr>
+<tr>
+<td><strong>Related report sections</strong></td>
+<td>§1.1, §1.2, §1.3, §2.1, §2.2, §2.3, §2.4, §2.5, §3.1, §3.3, §4.2, §5.3, §5.5, Appendix A, Appendix C, Appendix G.</td>
+</tr>
+<tr>
+<td><strong>Grid cells touched</strong></td>
+<td>Nine of the twenty: D1-people, D1-process, D2-people, D2-process, D3-people, D3-systems, D3-process, D4-people, and D4-process.</td>
+</tr>
+<tr>
+<td><strong>Cells deliberately not touched</strong></td>
+<td>The five policy-axis cells. Whether a policy exists is a documentary question answered by whether A1 can produce the document. A2 records whether respondents report that the policy reached them in practice.</td>
+</tr>
+<tr>
+<td><strong>Companion instruments</strong></td>
+<td>A1 (institutional self-assessment), A3 (supervisor survey, with twelve items addressing related topics), A4 (gap-analysis worksheet, where the three sources are reconciled).</td>
+</tr>
+<tr>
+<td><strong>What a respondent sees</strong></td>
+<td>The two statements below, followed by Sections 1 to 10. Everything after Section 10 is for the analyst and contains the answer key, so it should not be printed or shown to respondents.</td>
+</tr>
+</tbody>
+</table>
+<div class="tablecaption">
+<p>Table 1. Key specifications, purpose, and administrative details of the survey instrument.</p>
+</div>
+<p><strong>Dimension key.</strong> D1 human-in-the-loop discipline · D2 responsible use in practice · D3 tooling that promotes responsible use · D4 AI-literate humans · D5 institutional benchmarking grid. Each is scored across four axes (policy, people, systems, process), giving the twenty cells.</p>
+<p><strong>Why this instrument exists.</strong> Appendix A of <a href="https://instats.org/publications/responsible-ai-in-academic-research">the report</a> names "a graduate-research survey instrument" among the evidence an institution needs to reach <em>leading</em> on Dimension 4. This is that instrument.</p>
+<hr>
+<h2 id="the-response-scale">The response scale</h2>
+<p><strong>Scale A.</strong> Yes · Partial · No · I don't know (used for Q10, Q12, and Q39, with Q20, Q25, and Q33 using slight variants). <em>Partial</em> means true in part, sometimes, or for one piece of work but not others. <em>I don't know</em> is a valid and important answer that is reported separately and never added to <em>No</em>. An institution whose graduate students cannot find its rule has a very different problem from an institution that has no rule at all.</p>
+<p><strong>Scale B (how often).</strong> Q4 to Q7: Never · A few times in the past three months · About once a month · About once a week · Most days</p>
+<p><strong>Scale C (how much).</strong> Q16: All · Most · About half · A few · None · I have not done this</p>
+<p><strong>Check-all lists.</strong> Q9, Q13, Q21, Q23, Q36, and Q41, marked <em>(tick all that apply)</em>.</p>
+<p><strong>Q35 and Q40 ask what you think</strong> rather than what you did, so that beliefs can be compared with self-reported practices. Every other item asks about self-reported practice, exposure, knowledge, or what you have been told.</p>
+<hr>
+<h2 id="before-you-begin-how-your-answers-are-used">Before you begin: how your answers are used</h2>
+<p>Getting honest answers depends on making this clear.</p>
+<p><strong>Anonymous.</strong> The survey does not ask for your name, student number, the name of your advisor or supervisor, department, or year of entry. Please do not write those in the open comments.</p>
+<p><strong>Reported in groups of at least ten.</strong> Smaller groups are combined before anything is reported, and results for a school or college will appear only when it has at least ten responses.</p>
+<p><strong>Open comments are edited before reporting.</strong> Any detail that could identify you, your advisor or supervisor, or a specific project is removed.</p>
+<p><strong>Your answers cannot be used against you.</strong> They form no part of any progress review or milestone, your examination, or any research-misconduct or academic-integrity process. [INSTITUTION NAME] has confirmed this in writing in [NAME OF CONFIRMING DOCUMENT, DATE], readable at [URL].</p>
+<p><strong>Some questions ask about things you may have been told not to do.</strong> Please answer them honestly, as covered in the assurance above. If that protection is not formally in place at your institution, you should not run this survey.</p>
+<p><strong>Where your answers are held.</strong> Responses are collected by [SURVEY PLATFORM], stored in [COUNTRY OR REGION], held by [OFFICE], and will be destroyed on [DATE]. Only [NAMED ROLE] and [NAMED ROLE] see raw responses.</p>
+<p><strong>Voluntary.</strong> You may skip any question and stop at any time. Partial responses are still counted.</p>
+<p><strong>What happens next.</strong> A summary goes to [COMMITTEE] on [DATE] and the same summary goes to every doctoral student. If the results are not shared with you, this survey has not been run properly.</p>
+<blockquote>
+<p><strong>Drafting note for the institution.</strong> Secure the no-detriment confirmation <em>in writing</em> from your research integrity office and graduate school before the survey opens, and name the document above. Q36 to Q39 ask respondents to describe how they handle unpublished and participant data. Without a clear written amnesty, those four items will be underreported, and underreporting there is worse than not asking at all because it gives a false sense of reassurance. If [SURVEY PLATFORM] moves responses outside your jurisdiction, make sure to state that clearly above.</p>
+</blockquote>
+<hr>
+<h2 id="a-note-on-words">A note on words</h2>
+<p><strong>Doctoral student</strong> is used throughout and covers every stage of enrollment: graduate student, PhD student, doctoral candidate, higher degree by research (HDR) candidate, research student, postgraduate researcher, doctoral researcher, <em>Doktorand</em>, and <em>doctorant</em> all refer to the same person.</p>
+<p><strong>Thesis</strong> means the thesis or dissertation (the major written work you submit at the end), whichever term your institution uses. <strong>Examination</strong> covers however that work is assessed, including examiners' written reports, an oral examination, or a defense.</p>
+<p><strong>AI tool</strong> means any tool that generates text, code, images, summaries, transcripts, translations, or citations for you, whether or not it is marketed as artificial intelligence.</p>
+<p><strong>Supervisor</strong> and <strong>advisor</strong> mean the same person here: your principal supervisor, main advisor, dissertation advisor, <em>Doktorvater</em> or <em>Doktormutter</em>, or whoever signs off on your progress.</p>
+<p>Items are kept short and plain because the framework behind this survey covers thirty-eight universities across fifteen countries and jurisdictions (<a href="https://instats.org/publications/responsible-ai-in-academic-research">the report</a> §1.3), and many respondents do not speak English as their first language. If you translate this survey, please translate both the question stems and response options together, and keep the original option order.</p>
+<hr>
+<h2 id="key-to-the-markings">Key to the markings</h2>
+<ul>
+<li><strong>★</strong>: Part of the 24-item short form.</li>
+<li><strong>⇄ PAR-XXXX</strong>: A topic-link key. A3 uses a subset of these keys to connect related student and supervisor items. The key supports joining the two files, but it does not establish that the items are directly comparable. Keys marked <strong>(core)</strong> identify priority topics when an institution creates a shorter local A3.</li>
+<li><strong><em>Cells</em></strong>: The maturity-grid cells that this item informs.</li>
+<li><strong><em>Evidence anchor</em></strong>: The institutional record used to interpret or check the aggregate answer. This is for the analyst and is <strong>not shown to respondents</strong>. A survey answer on its own is not auditor-grade evidence, so the anchor identifies the relevant document or record.</li>
+</ul>
+<hr>
+<h1 id="section-1-about-you-3-items">Section 1: About you (3 items)</h1>
+<p><strong>Q1 ★</strong>
+Where are you in your doctorate?</p>
+<fieldset class="answer answer-enhanced" id="a2_researcher_survey-answer-1">
+<legend class="answer-legend visually-hidden">Q1 ★ Where are you in your doctorate?</legend>
+<div class="answer-options"><label class="answer-option" for="a2_researcher_survey-answer-1-option-1"><input type="radio" id="a2_researcher_survey-answer-1-option-1" name="a2_researcher_survey-answer-1" value="First year, before my first formal progress review or milestone"> <span>First year, before my first formal progress review or milestone</span></label><label class="answer-option" for="a2_researcher_survey-answer-1-option-2"><input type="radio" id="a2_researcher_survey-answer-1-option-2" name="a2_researcher_survey-answer-1" value="Past that first review, in the middle years"> <span>Past that first review, in the middle years</span></label><label class="answer-option" for="a2_researcher_survey-answer-1-option-3"><input type="radio" id="a2_researcher_survey-answer-1-option-3" name="a2_researcher_survey-answer-1" value="Final year"> <span>Final year</span></label><label class="answer-option" for="a2_researcher_survey-answer-1-option-4"><input type="radio" id="a2_researcher_survey-answer-1-option-4" name="a2_researcher_survey-answer-1" value="Submitted, waiting for examination"> <span>Submitted, waiting for examination</span></label><label class="answer-option" for="a2_researcher_survey-answer-1-option-5"><input type="radio" id="a2_researcher_survey-answer-1-option-5" name="a2_researcher_survey-answer-1" value="Other"> <span>Other</span></label></div>
+</fieldset>
+<p><em>Cells: D1-process · Evidence anchor: Enrollment records, used to check response rates by stage against the overall student population.</em></p>
+<p><strong>Q2 ★</strong>
+Which best describes your field?</p>
+<fieldset class="answer answer-enhanced" id="a2_researcher_survey-answer-2">
+<legend class="answer-legend visually-hidden">Q2 ★ Which best describes your field?</legend>
+<div class="answer-options"><label class="answer-option" for="a2_researcher_survey-answer-2-option-1"><input type="radio" id="a2_researcher_survey-answer-2-option-1" name="a2_researcher_survey-answer-2" value="Humanities"> <span>Humanities</span></label><label class="answer-option" for="a2_researcher_survey-answer-2-option-2"><input type="radio" id="a2_researcher_survey-answer-2-option-2" name="a2_researcher_survey-answer-2" value="Social sciences"> <span>Social sciences</span></label><label class="answer-option" for="a2_researcher_survey-answer-2-option-3"><input type="radio" id="a2_researcher_survey-answer-2-option-3" name="a2_researcher_survey-answer-2" value="Business, law, economics"> <span>Business, law, economics</span></label><label class="answer-option" for="a2_researcher_survey-answer-2-option-4"><input type="radio" id="a2_researcher_survey-answer-2-option-4" name="a2_researcher_survey-answer-2" value="Life and health sciences"> <span>Life and health sciences</span></label><label class="answer-option" for="a2_researcher_survey-answer-2-option-5"><input type="radio" id="a2_researcher_survey-answer-2-option-5" name="a2_researcher_survey-answer-2" value="Physical sciences, engineering, computing"> <span>Physical sciences, engineering, computing</span></label><label class="answer-option" for="a2_researcher_survey-answer-2-option-6"><input type="radio" id="a2_researcher_survey-answer-2-option-6" name="a2_researcher_survey-answer-2" value="Creative and performing arts"> <span>Creative and performing arts</span></label><label class="answer-option" for="a2_researcher_survey-answer-2-option-7"><input type="radio" id="a2_researcher_survey-answer-2-option-7" name="a2_researcher_survey-answer-2" value="Other"> <span>Other</span></label></div>
+</fieldset>
+<p><em>Cells: D4-process · Evidence anchor: Enrollment counts by school or college. Report by these seven broad groups only, because department-level reporting risks identifying individual respondents.</em></p>
+<p><strong>Q3</strong>
+Is English your first language?</p>
+<fieldset class="answer answer-enhanced" id="a2_researcher_survey-answer-3">
+<legend class="answer-legend visually-hidden">Q3 Is English your first language?</legend>
+<div class="answer-options"><label class="answer-option" for="a2_researcher_survey-answer-3-option-1"><input type="radio" id="a2_researcher_survey-answer-3-option-1" name="a2_researcher_survey-answer-3" value="Yes"> <span>Yes</span></label><label class="answer-option" for="a2_researcher_survey-answer-3-option-2"><input type="radio" id="a2_researcher_survey-answer-3-option-2" name="a2_researcher_survey-answer-3" value="No"> <span>No</span></label><label class="answer-option" for="a2_researcher_survey-answer-3-option-3"><input type="radio" id="a2_researcher_survey-answer-3-option-3" name="a2_researcher_survey-answer-3" value="One of several first languages"> <span>One of several first languages</span></label></div>
+</fieldset>
+<p><em>Cells: D3-systems, D4-people · Evidence anchor: None at the institutional level. This item exists because transcription tools and AI-detection tools carry documented bias against speakers whose first language is not English (<a href="https://instats.org/publications/responsible-ai-in-academic-research">the report</a> Appendix C, Classes 10 and 11), so all other survey results should be analyzed across this split.</em></p>
+<hr>
+<h1 id="section-2-which-ai-tools-you-use-6-items">Section 2: Which AI tools you use (6 items)</h1>
+<p>Q4 to Q7 use <strong>Scale B</strong> and cover the four modes of AI use identified in <a href="https://instats.org/publications/responsible-ai-in-academic-research">the report</a>: search, co-author, validator, and tutor.</p>
+<p><strong>Q4 ★ ⇄ PAR-MODE-SEARCH</strong>
+In the past three months, how often have you used an AI tool to <strong>find or scope literature</strong>?</p>
+<fieldset class="answer answer-enhanced" id="a2_researcher_survey-answer-4">
+<legend class="answer-legend visually-hidden">Q4 ★ ⇄ PAR-MODE-SEARCH In the past three months, how often have you used an AI tool to find or scope literature?</legend>
+<div class="answer-options"><label class="answer-option" for="a2_researcher_survey-answer-4-option-1"><input type="radio" id="a2_researcher_survey-answer-4-option-1" name="a2_researcher_survey-answer-4" value="Never"> <span>Never</span></label><label class="answer-option" for="a2_researcher_survey-answer-4-option-2"><input type="radio" id="a2_researcher_survey-answer-4-option-2" name="a2_researcher_survey-answer-4" value="A few times in the past three months"> <span>A few times in the past three months</span></label><label class="answer-option" for="a2_researcher_survey-answer-4-option-3"><input type="radio" id="a2_researcher_survey-answer-4-option-3" name="a2_researcher_survey-answer-4" value="About once a month"> <span>About once a month</span></label><label class="answer-option" for="a2_researcher_survey-answer-4-option-4"><input type="radio" id="a2_researcher_survey-answer-4-option-4" name="a2_researcher_survey-answer-4" value="About once a week"> <span>About once a week</span></label><label class="answer-option" for="a2_researcher_survey-answer-4-option-5"><input type="radio" id="a2_researcher_survey-answer-4-option-5" name="a2_researcher_survey-answer-4" value="Most days"> <span>Most days</span></label></div>
+</fieldset>
+<p><em>Cells: D2-people, D3-systems · Evidence anchor: Institutional license and seat-usage reports for AI search and retrieval tools, as well as library discovery service logs.</em></p>
+<p><strong>Q5 ★ ⇄ PAR-MODE-COAUTHOR</strong>
+In the past three months, how often have you used an AI tool to <strong>draft, rewrite, shorten or polish your own writing</strong>?</p>
+<fieldset class="answer answer-enhanced" id="a2_researcher_survey-answer-5">
+<legend class="answer-legend visually-hidden">Q5 ★ ⇄ PAR-MODE-COAUTHOR In the past three months, how often have you used an AI tool to draft, rewrite, shorten or polish your own writing?</legend>
+<div class="answer-options"><label class="answer-option" for="a2_researcher_survey-answer-5-option-1"><input type="radio" id="a2_researcher_survey-answer-5-option-1" name="a2_researcher_survey-answer-5" value="Never"> <span>Never</span></label><label class="answer-option" for="a2_researcher_survey-answer-5-option-2"><input type="radio" id="a2_researcher_survey-answer-5-option-2" name="a2_researcher_survey-answer-5" value="A few times in the past three months"> <span>A few times in the past three months</span></label><label class="answer-option" for="a2_researcher_survey-answer-5-option-3"><input type="radio" id="a2_researcher_survey-answer-5-option-3" name="a2_researcher_survey-answer-5" value="About once a month"> <span>About once a month</span></label><label class="answer-option" for="a2_researcher_survey-answer-5-option-4"><input type="radio" id="a2_researcher_survey-answer-5-option-4" name="a2_researcher_survey-answer-5" value="About once a week"> <span>About once a week</span></label><label class="answer-option" for="a2_researcher_survey-answer-5-option-5"><input type="radio" id="a2_researcher_survey-answer-5-option-5" name="a2_researcher_survey-answer-5" value="Most days"> <span>Most days</span></label></div>
+</fieldset>
+<p><em>Cells: D2-people, D2-process · Evidence anchor: Thesis submission form disclosure fields, and disclosure statements on submitted manuscripts held by the research office.</em></p>
+<p><strong>Q6 ★ ⇄ PAR-MODE-VALIDATOR</strong>
+In the past three months, how often have you used an AI tool to <strong>check, critique or find errors in your own argument, method or results</strong>?</p>
+<fieldset class="answer answer-enhanced" id="a2_researcher_survey-answer-6">
+<legend class="answer-legend visually-hidden">Q6 ★ ⇄ PAR-MODE-VALIDATOR In the past three months, how often have you used an AI tool to check, critique or find errors in your own argument, method or results?</legend>
+<div class="answer-options"><label class="answer-option" for="a2_researcher_survey-answer-6-option-1"><input type="radio" id="a2_researcher_survey-answer-6-option-1" name="a2_researcher_survey-answer-6" value="Never"> <span>Never</span></label><label class="answer-option" for="a2_researcher_survey-answer-6-option-2"><input type="radio" id="a2_researcher_survey-answer-6-option-2" name="a2_researcher_survey-answer-6" value="A few times in the past three months"> <span>A few times in the past three months</span></label><label class="answer-option" for="a2_researcher_survey-answer-6-option-3"><input type="radio" id="a2_researcher_survey-answer-6-option-3" name="a2_researcher_survey-answer-6" value="About once a month"> <span>About once a month</span></label><label class="answer-option" for="a2_researcher_survey-answer-6-option-4"><input type="radio" id="a2_researcher_survey-answer-6-option-4" name="a2_researcher_survey-answer-6" value="About once a week"> <span>About once a week</span></label><label class="answer-option" for="a2_researcher_survey-answer-6-option-5"><input type="radio" id="a2_researcher_survey-answer-6-option-5" name="a2_researcher_survey-answer-6" value="Most days"> <span>Most days</span></label></div>
+</fieldset>
+<p><em>Cells: D2-people, D4-people · Evidence anchor: None directly available. This is the mode of AI use that is least visible to the institution and least covered by existing disclosure rules, which is why this survey asks students directly.</em></p>
+<p><strong>Q7 ★ ⇄ PAR-MODE-TUTOR</strong>
+In the past three months, how often have you used an AI tool to <strong>explain a concept, a method or a piece of statistics to you</strong>?</p>
+<fieldset class="answer answer-enhanced" id="a2_researcher_survey-answer-7">
+<legend class="answer-legend visually-hidden">Q7 ★ ⇄ PAR-MODE-TUTOR In the past three months, how often have you used an AI tool to explain a concept, a method or a piece of statistics to you?</legend>
+<div class="answer-options"><label class="answer-option" for="a2_researcher_survey-answer-7-option-1"><input type="radio" id="a2_researcher_survey-answer-7-option-1" name="a2_researcher_survey-answer-7" value="Never"> <span>Never</span></label><label class="answer-option" for="a2_researcher_survey-answer-7-option-2"><input type="radio" id="a2_researcher_survey-answer-7-option-2" name="a2_researcher_survey-answer-7" value="A few times in the past three months"> <span>A few times in the past three months</span></label><label class="answer-option" for="a2_researcher_survey-answer-7-option-3"><input type="radio" id="a2_researcher_survey-answer-7-option-3" name="a2_researcher_survey-answer-7" value="About once a month"> <span>About once a month</span></label><label class="answer-option" for="a2_researcher_survey-answer-7-option-4"><input type="radio" id="a2_researcher_survey-answer-7-option-4" name="a2_researcher_survey-answer-7" value="About once a week"> <span>About once a week</span></label><label class="answer-option" for="a2_researcher_survey-answer-7-option-5"><input type="radio" id="a2_researcher_survey-answer-7-option-5" name="a2_researcher_survey-answer-7" value="Most days"> <span>Most days</span></label></div>
+</fieldset>
+<p><em>Cells: D4-people, D4-process · Evidence anchor: Enrollment and completion records for institutional methods training. High usage of tutor mode paired with low methods training enrollment is a curriculum signal rather than a compliance issue.</em></p>
+<p><strong>Q8 ★</strong>
+Which account do you mostly use for research work?</p>
+<fieldset class="answer answer-enhanced" id="a2_researcher_survey-answer-8">
+<legend class="answer-legend visually-hidden">Q8 ★ Which account do you mostly use for research work?</legend>
+<div class="answer-options"><label class="answer-option" for="a2_researcher_survey-answer-8-option-1"><input type="radio" id="a2_researcher_survey-answer-8-option-1" name="a2_researcher_survey-answer-8" value="An account [INSTITUTION NAME] provides"> <span>An account [INSTITUTION NAME] provides</span></label><label class="answer-option" for="a2_researcher_survey-answer-8-option-2"><input type="radio" id="a2_researcher_survey-answer-8-option-2" name="a2_researcher_survey-answer-8" value="A free personal account"> <span>A free personal account</span></label><label class="answer-option" for="a2_researcher_survey-answer-8-option-3"><input type="radio" id="a2_researcher_survey-answer-8-option-3" name="a2_researcher_survey-answer-8" value="A paid personal account I pay for myself"> <span>A paid personal account I pay for myself</span></label><label class="answer-option" for="a2_researcher_survey-answer-8-option-4"><input type="radio" id="a2_researcher_survey-answer-8-option-4" name="a2_researcher_survey-answer-8" value="An account provided by a collaborator or an external partner"> <span>An account provided by a collaborator or an external partner</span></label><label class="answer-option" for="a2_researcher_survey-answer-8-option-5"><input type="radio" id="a2_researcher_survey-answer-8-option-5" name="a2_researcher_survey-answer-8" value="A tool that runs on my own computer"> <span>A tool that runs on my own computer</span></label><label class="answer-option" for="a2_researcher_survey-answer-8-option-6"><input type="radio" id="a2_researcher_survey-answer-8-option-6" name="a2_researcher_survey-answer-8" value="I do not use AI tools for research"> <span>I do not use AI tools for research</span></label></div>
+</fieldset>
+<p><em>Cells: D3-systems, D3-process · Evidence anchor: The institutional AI tenant's seat and license reports, IT expenditure records, and service-desk tickets concerning unsupported tools.</em></p>
+<p><strong>Q9</strong>
+Which of these have you used for research work in the past three months? <em>(tick all that apply)</em></p>
+<fieldset class="answer answer-enhanced" id="a2_researcher_survey-answer-9">
+<legend class="answer-legend visually-hidden">Q9 Which of these have you used for research work in the past three months? (tick all that apply)</legend>
+<div class="answer-options"><label class="answer-option" for="a2_researcher_survey-answer-9-option-1"><input type="checkbox" id="a2_researcher_survey-answer-9-option-1" name="a2_researcher_survey-answer-9" value="Writing or fixing code, or building an analysis pipeline"> <span>Writing or fixing code, or building an analysis pipeline</span></label><label class="answer-option" for="a2_researcher_survey-answer-9-option-2"><input type="checkbox" id="a2_researcher_survey-answer-9-option-2" name="a2_researcher_survey-answer-9" value="Screening titles and abstracts for a review"> <span>Screening titles and abstracts for a review</span></label><label class="answer-option" for="a2_researcher_survey-answer-9-option-3"><input type="checkbox" id="a2_researcher_survey-answer-9-option-3" name="a2_researcher_survey-answer-9" value="Transcribing interviews, focus groups or fieldnotes"> <span>Transcribing interviews, focus groups or fieldnotes</span></label><label class="answer-option" for="a2_researcher_survey-answer-9-option-4"><input type="checkbox" id="a2_researcher_survey-answer-9-option-4" name="a2_researcher_survey-answer-9" value="Translating text"> <span>Translating text</span></label><label class="answer-option" for="a2_researcher_survey-answer-9-option-5"><input type="checkbox" id="a2_researcher_survey-answer-9-option-5" name="a2_researcher_survey-answer-9" value="Making images or diagrams for talks or teaching"> <span>Making images or diagrams for talks or teaching</span></label><label class="answer-option" for="a2_researcher_survey-answer-9-option-6"><input type="checkbox" id="a2_researcher_survey-answer-9-option-6" name="a2_researcher_survey-answer-9" value="Making images or figures that present data"> <span>Making images or figures that present data</span></label><label class="answer-option" for="a2_researcher_survey-answer-9-option-7"><input type="checkbox" id="a2_researcher_survey-answer-9-option-7" name="a2_researcher_survey-answer-9" value="AI features inside tools I do not think of as AI tools: search-engine answers, reference-manager summaries, meeting transcription, writing assistants in email or word processors"> <span>AI features inside tools I do not think of as AI tools: search-engine answers, reference-manager summaries, meeting transcription, writing assistants in email or word processors</span></label><label class="answer-option" for="a2_researcher_survey-answer-9-option-8"><input type="checkbox" id="a2_researcher_survey-answer-9-option-8" name="a2_researcher_survey-answer-9" value="None of these"> <span>None of these</span></label></div>
+</fieldset>
+<p><em>Cells: D3-systems, D2-people · Evidence anchor: The institutional tool register and procurement records. Tools selected here that do not appear on the official register represent unapproved shadow IT use. Look at the data-figure option first, because academic publishers are broadly converging against any AI-generated data figures (<a href="https://instats.org/publications/responsible-ai-in-academic-research">the report</a> Appendix C, Class 9).</em></p>
+<hr>
+<h1 id="section-3-what-you-have-been-told-6-items">Section 3: What you have been told (6 items)</h1>
+<p><strong>Q10 ★ ⇄ PAR-POLICY-KNOWN (core)</strong>
+Does [INSTITUTION NAME] have a written rule or policy about using AI in doctoral research?</p>
+<fieldset class="answer answer-enhanced" id="a2_researcher_survey-answer-10">
+<legend class="answer-legend visually-hidden">Q10 ★ ⇄ PAR-POLICY-KNOWN (core) Does [INSTITUTION NAME] have a written rule or policy about using AI in doctoral research?</legend>
+<div class="answer-options"><label class="answer-option" for="a2_researcher_survey-answer-10-option-1"><input type="radio" id="a2_researcher_survey-answer-10-option-1" name="a2_researcher_survey-answer-10" value="Yes"> <span>Yes</span></label><label class="answer-option" for="a2_researcher_survey-answer-10-option-2"><input type="radio" id="a2_researcher_survey-answer-10-option-2" name="a2_researcher_survey-answer-10" value="Partial"> <span>Partial</span></label><label class="answer-option" for="a2_researcher_survey-answer-10-option-3"><input type="radio" id="a2_researcher_survey-answer-10-option-3" name="a2_researcher_survey-answer-10" value="No"> <span>No</span></label><label class="answer-option" for="a2_researcher_survey-answer-10-option-4"><input type="radio" id="a2_researcher_survey-answer-10-option-4" name="a2_researcher_survey-answer-10" value="I don&#x27;t know"> <span>I don't know</span></label></div>
+</fieldset>
+<p><em>Cells: D2-people, D1-people · Evidence anchor: The policy document itself, along with its original publication date and last review date. Any gap between the proportion of students answering Yes and the actual existence of the document indicates a communication breakdown rather than an absence of policy.</em></p>
+<p><strong>Q11 ⇄ PAR-POLICY-LOCATE (core)</strong>
+If yes or partial: what is it called, or where is it? <em>(Short text: a title, a web address, or a description such as "a page on the graduate school site" is enough. Write "cannot find it" if that is the honest answer.)</em></p>
+<fieldset class="answer answer-enhanced" id="a2_researcher_survey-answer-11">
+<legend class="answer-legend visually-hidden">Q11 ⇄ PAR-POLICY-LOCATE (core) If yes or partial: what is it called, or where is it? (Short text: a title, a web address, or a description such as &quot;a page on the graduate school site&quot; is enough. Write &quot;cannot find it&quot; if that is the honest answer.)</legend>
+<label class="visually-hidden" for="a2_researcher_survey-answer-11-text">Q11 ⇄ PAR-POLICY-LOCATE (core) If yes or partial: what is it called, or where is it? (Short text: a title, a web address, or a description such as &quot;a page on the graduate school site&quot; is enough. Write &quot;cannot find it&quot; if that is the honest answer.)</label>
+<input class="answer-text-input" type="text" id="a2_researcher_survey-answer-11-text" name="a2_researcher_survey-answer-11" autocomplete="off">
+</fieldset>
+<p><em>Cells: D2-people · Evidence anchor: The actual policy title and official URL. Analysts should code each response as correct, wrong document, or vague. A respondent who can name the correct document has demonstrably located it.</em></p>
+<p><strong>Q12 ★ ⇄ PAR-TASK-RULES (core)</strong>
+Have you been told <strong>in writing</strong> which research tasks you may use AI for and which you may not?</p>
+<fieldset class="answer answer-enhanced" id="a2_researcher_survey-answer-12">
+<legend class="answer-legend visually-hidden">Q12 ★ ⇄ PAR-TASK-RULES (core) Have you been told in writing which research tasks you may use AI for and which you may not?</legend>
+<div class="answer-options"><label class="answer-option" for="a2_researcher_survey-answer-12-option-1"><input type="radio" id="a2_researcher_survey-answer-12-option-1" name="a2_researcher_survey-answer-12" value="Yes"> <span>Yes</span></label><label class="answer-option" for="a2_researcher_survey-answer-12-option-2"><input type="radio" id="a2_researcher_survey-answer-12-option-2" name="a2_researcher_survey-answer-12" value="Partial"> <span>Partial</span></label><label class="answer-option" for="a2_researcher_survey-answer-12-option-3"><input type="radio" id="a2_researcher_survey-answer-12-option-3" name="a2_researcher_survey-answer-12" value="No"> <span>No</span></label><label class="answer-option" for="a2_researcher_survey-answer-12-option-4"><input type="radio" id="a2_researcher_survey-answer-12-option-4" name="a2_researcher_survey-answer-12" value="I don&#x27;t know"> <span>I don't know</span></label></div>
+</fieldset>
+<p><em>Cells: D1-people, D1-process · Evidence anchor: The institution's published labor-versus-judgment guidelines (<a href="https://instats.org/publications/responsible-ai-in-academic-research">the report</a> §2.1, Appendix G), the orientation packet, and the supervision agreement template.</em></p>
+<p><strong>Q13 ★</strong>
+Where did you learn what the rules are? <em>(tick all that apply)</em></p>
+<fieldset class="answer answer-enhanced" id="a2_researcher_survey-answer-13">
+<legend class="answer-legend visually-hidden">Q13 ★ Where did you learn what the rules are? (tick all that apply)</legend>
+<div class="answer-options"><label class="answer-option" for="a2_researcher_survey-answer-13-option-1"><input type="checkbox" id="a2_researcher_survey-answer-13-option-1" name="a2_researcher_survey-answer-13" value="Induction or orientation"> <span>Induction or orientation</span></label><label class="answer-option" for="a2_researcher_survey-answer-13-option-2"><input type="checkbox" id="a2_researcher_survey-answer-13-option-2" name="a2_researcher_survey-answer-13" value="A methods or research-training course"> <span>A methods or research-training course</span></label><label class="answer-option" for="a2_researcher_survey-answer-13-option-3"><input type="checkbox" id="a2_researcher_survey-answer-13-option-3" name="a2_researcher_survey-answer-13" value="My advisor or supervisor"> <span>My advisor or supervisor</span></label><label class="answer-option" for="a2_researcher_survey-answer-13-option-4"><input type="checkbox" id="a2_researcher_survey-answer-13-option-4" name="a2_researcher_survey-answer-13" value="The thesis submission form"> <span>The thesis submission form</span></label><label class="answer-option" for="a2_researcher_survey-answer-13-option-5"><input type="checkbox" id="a2_researcher_survey-answer-13-option-5" name="a2_researcher_survey-answer-13" value="An email or a web page from my school or college, or from the graduate school"> <span>An email or a web page from my school or college, or from the graduate school</span></label><label class="answer-option" for="a2_researcher_survey-answer-13-option-6"><input type="checkbox" id="a2_researcher_survey-answer-13-option-6" name="a2_researcher_survey-answer-13" value="Other doctoral students"> <span>Other doctoral students</span></label><label class="answer-option" for="a2_researcher_survey-answer-13-option-7"><input type="checkbox" id="a2_researcher_survey-answer-13-option-7" name="a2_researcher_survey-answer-13" value="The AI tool&#x27;s own terms or warnings"> <span>The AI tool's own terms or warnings</span></label><label class="answer-option" for="a2_researcher_survey-answer-13-option-8"><input type="checkbox" id="a2_researcher_survey-answer-13-option-8" name="a2_researcher_survey-answer-13" value="A journal or funder, not my institution"> <span>A journal or funder, not my institution</span></label><label class="answer-option" for="a2_researcher_survey-answer-13-option-9"><input type="checkbox" id="a2_researcher_survey-answer-13-option-9" name="a2_researcher_survey-answer-13" value="I have not learned them"> <span>I have not learned them</span></label></div>
+</fieldset>
+<p><em>Cells: D2-people, D4-process · Evidence anchor: Orientation agendas and attendance records, methods course outlines, and graduate school communication logs. When "other doctoral students" ranks higher than formal institutional channels, it shows that policies are being communicated primarily through informal word of mouth.</em></p>
+<p><strong>Q14 ★ ⇄ PAR-THESIS-DECLARE (core)</strong>
+Do you know whether you must declare AI use when you submit your thesis?</p>
+<fieldset class="answer answer-enhanced" id="a2_researcher_survey-answer-14">
+<legend class="answer-legend visually-hidden">Q14 ★ ⇄ PAR-THESIS-DECLARE (core) Do you know whether you must declare AI use when you submit your thesis?</legend>
+<div class="answer-options"><label class="answer-option" for="a2_researcher_survey-answer-14-option-1"><input type="radio" id="a2_researcher_survey-answer-14-option-1" name="a2_researcher_survey-answer-14" value="Yes, and I know what I must declare"> <span>Yes, and I know what I must declare</span></label><label class="answer-option" for="a2_researcher_survey-answer-14-option-2"><input type="radio" id="a2_researcher_survey-answer-14-option-2" name="a2_researcher_survey-answer-14" value="Yes, but I do not know what I must declare"> <span>Yes, but I do not know what I must declare</span></label><label class="answer-option" for="a2_researcher_survey-answer-14-option-3"><input type="radio" id="a2_researcher_survey-answer-14-option-3" name="a2_researcher_survey-answer-14" value="No, there is no requirement"> <span>No, there is no requirement</span></label><label class="answer-option" for="a2_researcher_survey-answer-14-option-4"><input type="radio" id="a2_researcher_survey-answer-14-option-4" name="a2_researcher_survey-answer-14" value="I don&#x27;t know"> <span>I don't know</span></label></div>
+</fieldset>
+<p><em>Cells: D1-process, D2-process · Evidence anchor: The thesis declaration form or affidavit and its AI disclosure clause, along with the completion rate for that clause over the last two submission cycles.</em></p>
+<p><strong>Q15</strong>
+Do you know what the rules are for using AI in <strong>grant or scholarship applications</strong>, and in <strong>manuscripts you submit to journals</strong>?</p>
+<fieldset class="answer answer-enhanced" id="a2_researcher_survey-answer-15">
+<legend class="answer-legend visually-hidden">Q15 Do you know what the rules are for using AI in grant or scholarship applications, and in manuscripts you submit to journals?</legend>
+<div class="answer-options"><label class="answer-option" for="a2_researcher_survey-answer-15-option-1"><input type="radio" id="a2_researcher_survey-answer-15-option-1" name="a2_researcher_survey-answer-15" value="Yes, both"> <span>Yes, both</span></label><label class="answer-option" for="a2_researcher_survey-answer-15-option-2"><input type="radio" id="a2_researcher_survey-answer-15-option-2" name="a2_researcher_survey-answer-15" value="One but not the other"> <span>One but not the other</span></label><label class="answer-option" for="a2_researcher_survey-answer-15-option-3"><input type="radio" id="a2_researcher_survey-answer-15-option-3" name="a2_researcher_survey-answer-15" value="No"> <span>No</span></label><label class="answer-option" for="a2_researcher_survey-answer-15-option-4"><input type="radio" id="a2_researcher_survey-answer-15-option-4" name="a2_researcher_survey-answer-15" value="I don&#x27;t know"> <span>I don't know</span></label><label class="answer-option" for="a2_researcher_survey-answer-15-option-5"><input type="radio" id="a2_researcher_survey-answer-15-option-5" name="a2_researcher_survey-answer-15" value="Not relevant to me yet"> <span>Not relevant to me yet</span></label></div>
+</fieldset>
+<p><em>Cells: D2-people, D2-process · Evidence anchor: Funder policy summaries held by the research office, as well as publisher guidance issued by the library or research office. External funder and publisher rules bind researchers directly, regardless of internal institutional guidance.</em></p>
+<hr>
+<h1 id="section-4-checking-what-the-tool-gives-you-6-items">Section 4: Checking what the tool gives you (6 items)</h1>
+<p><strong>Q16 ★ ⇄ PAR-CITE-CHECK (core)</strong>
+In your most recent literature search that used an AI tool: how many of the references it gave you did you open and read at the original source?</p>
+<fieldset class="answer answer-enhanced" id="a2_researcher_survey-answer-16">
+<legend class="answer-legend visually-hidden">Q16 ★ ⇄ PAR-CITE-CHECK (core) In your most recent literature search that used an AI tool: how many of the references it gave you did you open and read at the original source?</legend>
+<div class="answer-options"><label class="answer-option" for="a2_researcher_survey-answer-16-option-1"><input type="radio" id="a2_researcher_survey-answer-16-option-1" name="a2_researcher_survey-answer-16" value="All"> <span>All</span></label><label class="answer-option" for="a2_researcher_survey-answer-16-option-2"><input type="radio" id="a2_researcher_survey-answer-16-option-2" name="a2_researcher_survey-answer-16" value="Most"> <span>Most</span></label><label class="answer-option" for="a2_researcher_survey-answer-16-option-3"><input type="radio" id="a2_researcher_survey-answer-16-option-3" name="a2_researcher_survey-answer-16" value="About half"> <span>About half</span></label><label class="answer-option" for="a2_researcher_survey-answer-16-option-4"><input type="radio" id="a2_researcher_survey-answer-16-option-4" name="a2_researcher_survey-answer-16" value="A few"> <span>A few</span></label><label class="answer-option" for="a2_researcher_survey-answer-16-option-5"><input type="radio" id="a2_researcher_survey-answer-16-option-5" name="a2_researcher_survey-answer-16" value="None"> <span>None</span></label><label class="answer-option" for="a2_researcher_survey-answer-16-option-6"><input type="radio" id="a2_researcher_survey-answer-16-option-6" name="a2_researcher_survey-answer-16" value="I have not done this"> <span>I have not done this</span></label></div>
+</fieldset>
+<p><em>Cells: D4-people, D2-process · Evidence anchor: Reference manager libraries attached to progress reviews or mid-program submissions, as well as attendance records for library research instruction.</em></p>
+<p><strong>Q17 ⇄ PAR-FAKE-REF-SEEN</strong>
+Have you ever found that a reference an AI tool gave you did not exist, or did not say what the tool claimed it said?</p>
+<fieldset class="answer answer-enhanced" id="a2_researcher_survey-answer-17">
+<legend class="answer-legend visually-hidden">Q17 ⇄ PAR-FAKE-REF-SEEN Have you ever found that a reference an AI tool gave you did not exist, or did not say what the tool claimed it said?</legend>
+<div class="answer-options"><label class="answer-option" for="a2_researcher_survey-answer-17-option-1"><input type="radio" id="a2_researcher_survey-answer-17-option-1" name="a2_researcher_survey-answer-17" value="Yes"> <span>Yes</span></label><label class="answer-option" for="a2_researcher_survey-answer-17-option-2"><input type="radio" id="a2_researcher_survey-answer-17-option-2" name="a2_researcher_survey-answer-17" value="No"> <span>No</span></label><label class="answer-option" for="a2_researcher_survey-answer-17-option-3"><input type="radio" id="a2_researcher_survey-answer-17-option-3" name="a2_researcher_survey-answer-17" value="I have not checked closely enough to know"> <span>I have not checked closely enough to know</span></label></div>
+</fieldset>
+<p><em>Cells: D4-people · Evidence anchor: None at the institutional level, because this measures self-reported incidence. The third option ("I have not checked closely enough to know") provides an important finding. Measured citation fabrication rates range from 18 percent to 55 percent depending on the AI model (<a href="https://instats.org/publications/responsible-ai-in-academic-research">the report</a> §2.4, competency 1). A low "yes" rate is not evidence that the tools are infallible. Interpret it alongside Q16 and Q18 before drawing conclusions about reference verification.</em></p>
+<p><strong>Q18 ★ ⇄ PAR-CITE-PROBE (core)</strong>
+Which <strong>one</strong> of these confirms that a reference is real and says what an AI tool claims it says?</p>
+<fieldset class="answer answer-enhanced" id="a2_researcher_survey-answer-18">
+<legend class="answer-legend visually-hidden">Q18 ★ ⇄ PAR-CITE-PROBE (core) Which one of these confirms that a reference is real and says what an AI tool claims it says?</legend>
+<div class="answer-options"><label class="answer-option" for="a2_researcher_survey-answer-18-option-1"><input type="radio" id="a2_researcher_survey-answer-18-option-1" name="a2_researcher_survey-answer-18" value="The tool gave a DOI or a link"> <span>The tool gave a DOI or a link</span></label><label class="answer-option" for="a2_researcher_survey-answer-18-option-2"><input type="radio" id="a2_researcher_survey-answer-18-option-2" name="a2_researcher_survey-answer-18" value="The reference appears in the tool&#x27;s list of sources"> <span>The reference appears in the tool's list of sources</span></label><label class="answer-option" for="a2_researcher_survey-answer-18-option-3"><input type="radio" id="a2_researcher_survey-answer-18-option-3" name="a2_researcher_survey-answer-18" value="You opened the source and read the passage that supports the claim"> <span>You opened the source and read the passage that supports the claim</span></label><label class="answer-option" for="a2_researcher_survey-answer-18-option-4"><input type="radio" id="a2_researcher_survey-answer-18-option-4" name="a2_researcher_survey-answer-18" value="A second AI tool agreed that the reference is correct"> <span>A second AI tool agreed that the reference is correct</span></label></div>
+</fieldset>
+<p><em>Cells: D4-people, D4-process · Evidence anchor: Methods curriculum learning outcomes related to citation verification. The correct answer is provided in the administration notes below.</em></p>
+<p><strong>Q19 ⇄ PAR-MODEL-HETERO (core)</strong>
+When you use an AI tool to challenge or check your own argument, do you use a tool based on a <strong>different underlying model family</strong> from the one that helped you produce the argument?</p>
+<fieldset class="answer answer-enhanced" id="a2_researcher_survey-answer-19">
+<legend class="answer-legend visually-hidden">Q19 ⇄ PAR-MODEL-HETERO (core) When you use an AI tool to challenge or check your own argument, do you use a tool based on a different underlying model family from the one that helped you produce the argument?</legend>
+<div class="answer-options"><label class="answer-option" for="a2_researcher_survey-answer-19-option-1"><input type="radio" id="a2_researcher_survey-answer-19-option-1" name="a2_researcher_survey-answer-19" value="Yes, always"> <span>Yes, always</span></label><label class="answer-option" for="a2_researcher_survey-answer-19-option-2"><input type="radio" id="a2_researcher_survey-answer-19-option-2" name="a2_researcher_survey-answer-19" value="Sometimes"> <span>Sometimes</span></label><label class="answer-option" for="a2_researcher_survey-answer-19-option-3"><input type="radio" id="a2_researcher_survey-answer-19-option-3" name="a2_researcher_survey-answer-19" value="No"> <span>No</span></label><label class="answer-option" for="a2_researcher_survey-answer-19-option-4"><input type="radio" id="a2_researcher_survey-answer-19-option-4" name="a2_researcher_survey-answer-19" value="I had not thought about this"> <span>I had not thought about this</span></label><label class="answer-option" for="a2_researcher_survey-answer-19-option-5"><input type="radio" id="a2_researcher_survey-answer-19-option-5" name="a2_researcher_survey-answer-19" value="I do not use AI to check my arguments"> <span>I do not use AI to check my arguments</span></label></div>
+</fieldset>
+<p><em>A different product or company may still use the same underlying model. Check the model name and provider rather than relying on the product brand.</em></p>
+<p><em>Cells: D4-people · Evidence anchor: Methods curriculum coverage of model heterogeneity in adversarial review (<a href="https://instats.org/publications/responsible-ai-in-academic-research">the report</a> §2.4, competency 4). Report "I had not thought about this" as its own distinct category.</em></p>
+<p><strong>Q20 ★</strong>
+Have you ever included AI output in a thesis chapter, a manuscript or an application when you could not check it yourself?</p>
+<fieldset class="answer answer-enhanced" id="a2_researcher_survey-answer-20">
+<legend class="answer-legend visually-hidden">Q20 ★ Have you ever included AI output in a thesis chapter, a manuscript or an application when you could not check it yourself?</legend>
+<div class="answer-options"><label class="answer-option" for="a2_researcher_survey-answer-20-option-1"><input type="radio" id="a2_researcher_survey-answer-20-option-1" name="a2_researcher_survey-answer-20" value="Yes"> <span>Yes</span></label><label class="answer-option" for="a2_researcher_survey-answer-20-option-2"><input type="radio" id="a2_researcher_survey-answer-20-option-2" name="a2_researcher_survey-answer-20" value="Partial (I checked some of it)"> <span>Partial (I checked some of it)</span></label><label class="answer-option" for="a2_researcher_survey-answer-20-option-3"><input type="radio" id="a2_researcher_survey-answer-20-option-3" name="a2_researcher_survey-answer-20" value="No"> <span>No</span></label><label class="answer-option" for="a2_researcher_survey-answer-20-option-4"><input type="radio" id="a2_researcher_survey-answer-20-option-4" name="a2_researcher_survey-answer-20" value="I would rather not answer"> <span>I would rather not answer</span></label></div>
+</fieldset>
+<p><em>Cells: D1-people, D2-process · Evidence anchor: None, by design. This item measures the core threshold of the competency framework (specifically whether an AI tool is generating research content that the researcher cannot independently verify, <a href="https://instats.org/publications/responsible-ai-in-academic-research">the report</a> §2.2, co-author mode), which is why an explicit written amnesty is essential.</em></p>
+<p><strong>Q21</strong>
+The last time an AI tool gave you an answer that sounded confident and turned out to be wrong, what did you do? <em>(tick all that apply)</em></p>
+<fieldset class="answer answer-enhanced" id="a2_researcher_survey-answer-21">
+<legend class="answer-legend visually-hidden">Q21 The last time an AI tool gave you an answer that sounded confident and turned out to be wrong, what did you do? (tick all that apply)</legend>
+<div class="answer-options"><label class="answer-option" for="a2_researcher_survey-answer-21-option-1"><input type="checkbox" id="a2_researcher_survey-answer-21-option-1" name="a2_researcher_survey-answer-21" value="Checked it against the source and corrected it"> <span>Checked it against the source and corrected it</span></label><label class="answer-option" for="a2_researcher_survey-answer-21-option-2"><input type="checkbox" id="a2_researcher_survey-answer-21-option-2" name="a2_researcher_survey-answer-21" value="Asked the same tool again"> <span>Asked the same tool again</span></label><label class="answer-option" for="a2_researcher_survey-answer-21-option-3"><input type="checkbox" id="a2_researcher_survey-answer-21-option-3" name="a2_researcher_survey-answer-21" value="Asked a different tool"> <span>Asked a different tool</span></label><label class="answer-option" for="a2_researcher_survey-answer-21-option-4"><input type="checkbox" id="a2_researcher_survey-answer-21-option-4" name="a2_researcher_survey-answer-21" value="Asked my advisor, supervisor or a colleague"> <span>Asked my advisor, supervisor or a colleague</span></label><label class="answer-option" for="a2_researcher_survey-answer-21-option-5"><input type="checkbox" id="a2_researcher_survey-answer-21-option-5" name="a2_researcher_survey-answer-21" value="Stopped using that tool for that kind of task"> <span>Stopped using that tool for that kind of task</span></label><label class="answer-option" for="a2_researcher_survey-answer-21-option-6"><input type="checkbox" id="a2_researcher_survey-answer-21-option-6" name="a2_researcher_survey-answer-21" value="Reported it to someone at [INSTITUTION NAME]"> <span>Reported it to someone at [INSTITUTION NAME]</span></label><label class="answer-option" for="a2_researcher_survey-answer-21-option-7"><input type="checkbox" id="a2_researcher_survey-answer-21-option-7" name="a2_researcher_survey-answer-21" value="This has not happened to me"> <span>This has not happened to me</span></label><label class="answer-option" for="a2_researcher_survey-answer-21-option-8"><input type="checkbox" id="a2_researcher_survey-answer-21-option-8" name="a2_researcher_survey-answer-21" value="It happened, but I only noticed later"> <span>It happened, but I only noticed later</span></label><label class="answer-option" for="a2_researcher_survey-answer-21-option-9"><input type="checkbox" id="a2_researcher_survey-answer-21-option-9" name="a2_researcher_survey-answer-21" value="I would rather not answer"> <span>I would rather not answer</span></label></div>
+</fieldset>
+<p><em>Cells: D4-people · Evidence anchor: The institution's formal failure reporting channel and its incident log. If no respondents check "Reported it to someone," you should investigate whether an accessible reporting channel actually exists. Structured failure-mode reporting (<a href="https://instats.org/publications/responsible-ai-in-academic-research">the report</a> §2.4, competency 6) requires a clear institutional mechanism to receive and log those reports.</em></p>
+<hr>
+<h1 id="section-5-telling-people-you-used-it-4-items">Section 5: Telling people you used it (4 items)</h1>
+<p><strong>Q22 ★ ⇄ PAR-DISCLOSE-LAST (core)</strong>
+In the most recent piece of written work you submitted to anyone (advisor or supervisor, milestone panel, journal, funder), did you say that you had used an AI tool?</p>
+<fieldset class="answer answer-enhanced" id="a2_researcher_survey-answer-22">
+<legend class="answer-legend visually-hidden">Q22 ★ ⇄ PAR-DISCLOSE-LAST (core) In the most recent piece of written work you submitted to anyone (advisor or supervisor, milestone panel, journal, funder), did you say that you had used an AI tool?</legend>
+<div class="answer-options"><label class="answer-option" for="a2_researcher_survey-answer-22-option-1"><input type="radio" id="a2_researcher_survey-answer-22-option-1" name="a2_researcher_survey-answer-22" value="Yes, in the document itself"> <span>Yes, in the document itself</span></label><label class="answer-option" for="a2_researcher_survey-answer-22-option-2"><input type="radio" id="a2_researcher_survey-answer-22-option-2" name="a2_researcher_survey-answer-22" value="Yes, on a form"> <span>Yes, on a form</span></label><label class="answer-option" for="a2_researcher_survey-answer-22-option-3"><input type="radio" id="a2_researcher_survey-answer-22-option-3" name="a2_researcher_survey-answer-22" value="Yes, verbally only"> <span>Yes, verbally only</span></label><label class="answer-option" for="a2_researcher_survey-answer-22-option-4"><input type="radio" id="a2_researcher_survey-answer-22-option-4" name="a2_researcher_survey-answer-22" value="No"> <span>No</span></label><label class="answer-option" for="a2_researcher_survey-answer-22-option-5"><input type="radio" id="a2_researcher_survey-answer-22-option-5" name="a2_researcher_survey-answer-22" value="I did not use an AI tool on that piece of work"> <span>I did not use an AI tool on that piece of work</span></label></div>
+</fieldset>
+<p><em>Cells: D2-process · Evidence anchor: Thesis submission disclosure fields, milestone review paperwork, and disclosure statements on submitted manuscripts. When the British Medical Journal introduced a structured disclosure field, it registered 5.7 percent compliance across 25,114 submissions to 49 BMJ journals in its first seven months (<a href="https://instats.org/publications/responsible-ai-in-academic-research">the report</a> §1.1). You should expect a similar pattern here.</em></p>
+<p><strong>Q23 ⇄ PAR-DISCLOSE-CONTENT (core)</strong>
+If you disclosed, what did you record? <em>(tick all that apply)</em></p>
+<fieldset class="answer answer-enhanced" id="a2_researcher_survey-answer-23">
+<legend class="answer-legend visually-hidden">Q23 ⇄ PAR-DISCLOSE-CONTENT (core) If you disclosed, what did you record? (tick all that apply)</legend>
+<div class="answer-options"><label class="answer-option" for="a2_researcher_survey-answer-23-option-1"><input type="checkbox" id="a2_researcher_survey-answer-23-option-1" name="a2_researcher_survey-answer-23" value="The name of the tool"> <span>The name of the tool</span></label><label class="answer-option" for="a2_researcher_survey-answer-23-option-2"><input type="checkbox" id="a2_researcher_survey-answer-23-option-2" name="a2_researcher_survey-answer-23" value="The version of the tool"> <span>The version of the tool</span></label><label class="answer-option" for="a2_researcher_survey-answer-23-option-3"><input type="checkbox" id="a2_researcher_survey-answer-23-option-3" name="a2_researcher_survey-answer-23" value="The date you used it"> <span>The date you used it</span></label><label class="answer-option" for="a2_researcher_survey-answer-23-option-4"><input type="checkbox" id="a2_researcher_survey-answer-23-option-4" name="a2_researcher_survey-answer-23" value="What you used it for"> <span>What you used it for</span></label><label class="answer-option" for="a2_researcher_survey-answer-23-option-5"><input type="checkbox" id="a2_researcher_survey-answer-23-option-5" name="a2_researcher_survey-answer-23" value="Which step of the work it touched"> <span>Which step of the work it touched</span></label><label class="answer-option" for="a2_researcher_survey-answer-23-option-6"><input type="checkbox" id="a2_researcher_survey-answer-23-option-6" name="a2_researcher_survey-answer-23" value="The prompt or prompts you used"> <span>The prompt or prompts you used</span></label><label class="answer-option" for="a2_researcher_survey-answer-23-option-7"><input type="checkbox" id="a2_researcher_survey-answer-23-option-7" name="a2_researcher_survey-answer-23" value="A general statement that AI was used, with no detail"> <span>A general statement that AI was used, with no detail</span></label></div>
+</fieldset>
+<p><em>Cells: D2-process, D4-people · Evidence anchor: The institutional disclosure template and a sample of completed disclosure forms. The first five options reflect the established standard used by the University of Helsinki's research guidelines: tool name, version, date of use, how the tool was used, and the specific research step involved. <a href="https://instats.org/publications/responsible-ai-in-academic-research">the report</a> §1.3 identifies Helsinki as one of six Class D institutions.</em></p>
+<p><strong>Q24</strong>
+Do you keep a record of your prompts and the tool's outputs?</p>
+<fieldset class="answer answer-enhanced" id="a2_researcher_survey-answer-24">
+<legend class="answer-legend visually-hidden">Q24 Do you keep a record of your prompts and the tool&#x27;s outputs?</legend>
+<div class="answer-options"><label class="answer-option" for="a2_researcher_survey-answer-24-option-1"><input type="radio" id="a2_researcher_survey-answer-24-option-1" name="a2_researcher_survey-answer-24" value="Yes, systematically"> <span>Yes, systematically</span></label><label class="answer-option" for="a2_researcher_survey-answer-24-option-2"><input type="radio" id="a2_researcher_survey-answer-24-option-2" name="a2_researcher_survey-answer-24" value="Sometimes"> <span>Sometimes</span></label><label class="answer-option" for="a2_researcher_survey-answer-24-option-3"><input type="radio" id="a2_researcher_survey-answer-24-option-3" name="a2_researcher_survey-answer-24" value="No"> <span>No</span></label><label class="answer-option" for="a2_researcher_survey-answer-24-option-4"><input type="radio" id="a2_researcher_survey-answer-24-option-4" name="a2_researcher_survey-answer-24" value="I did not know this was expected"> <span>I did not know this was expected</span></label></div>
+</fieldset>
+<p><em>Cells: D4-people, D3-process · Evidence anchor: Research data management plans submitted for the doctoral program, as well as institutional records governance policies regarding the retention of AI session logs (<a href="https://instats.org/publications/responsible-ai-in-academic-research">the report</a> §2.3, auditability).</em></p>
+<p><strong>Q25</strong>
+Have you ever chosen <strong>not</strong> to say you used an AI tool because you were unsure whether it was allowed, or worried about how it would look?</p>
+<fieldset class="answer answer-enhanced" id="a2_researcher_survey-answer-25">
+<legend class="answer-legend visually-hidden">Q25 Have you ever chosen not to say you used an AI tool because you were unsure whether it was allowed, or worried about how it would look?</legend>
+<div class="answer-options"><label class="answer-option" for="a2_researcher_survey-answer-25-option-1"><input type="radio" id="a2_researcher_survey-answer-25-option-1" name="a2_researcher_survey-answer-25" value="Yes"> <span>Yes</span></label><label class="answer-option" for="a2_researcher_survey-answer-25-option-2"><input type="radio" id="a2_researcher_survey-answer-25-option-2" name="a2_researcher_survey-answer-25" value="No"> <span>No</span></label><label class="answer-option" for="a2_researcher_survey-answer-25-option-3"><input type="radio" id="a2_researcher_survey-answer-25-option-3" name="a2_researcher_survey-answer-25" value="I would rather not answer"> <span>I would rather not answer</span></label></div>
+</fieldset>
+<p><em>Cells: D2-process, D2-people · Evidence anchor: None. This is a composite indication of disclosure reluctance. The item does not distinguish uncertainty about the rule from concern about how disclosure would be received, so investigate those possible explanations separately before choosing a remedy.</em></p>
+<hr>
+<h1 id="section-6-what-you-have-been-taught-6-items">Section 6: What you have been taught (6 items)</h1>
+<p>These six items cover the six foundational research competencies detailed in §2.4 of <a href="https://instats.org/publications/responsible-ai-in-academic-research">the report</a>.</p>
+<p><strong>For every item in this section:</strong></p>
+<div class="answer">
+<p>☐ Yes, in a formal course or workshop ☐ Yes, informally (my advisor, supervisor or a colleague) ☐ No ☐ I do not know what this means</p>
+</div>
+<p><strong>Q26 ★ ⇄ PAR-COMP-1 (core)</strong> - <strong>citation verification</strong>
+<em>Checking every reference an AI tool gives you against the original source before you use it.</em>
+Has anyone at [INSTITUTION NAME] taught you this?
+<em>Cells: D4-people, D4-process · Evidence anchor: Methods curriculum learning outcomes and the library's research skills program. An answer of "I do not know what this means" indicates that the concept was not recognized by the respondent. Report it separately, never merge it into "No", and do not treat it as a direct measure of competence.</em></p>
+<p><strong>Q27 ★ ⇄ PAR-COMP-2 (core)</strong> - <strong>model-and-parameter specification</strong>
+<em>Recording which AI model and version you used, on what date, with which settings, so that someone else could repeat what you did.</em>
+Has anyone at [INSTITUTION NAME] taught you this?
+<em>Cells: D4-people, D4-process · Evidence anchor: Methods curriculum outcomes and research data management plan templates.</em></p>
+<p><strong>Q28 ⇄ PAR-COMP-3 (core)</strong> - <strong>prompt-as-fork-in-the-garden discipline</strong>
+<em>Deciding your prompts in advance, and testing whether a different wording changes the result.</em>
+Has anyone at [INSTITUTION NAME] taught you this?
+<em>Cells: D4-people, D4-process · Evidence anchor: Methods curriculum outcomes covering preregistration and researcher degrees of freedom, as well as formal preregistration templates that explicitly incorporate prompt design.</em></p>
+<p><strong>Q29 ⇄ PAR-COMP-4 (core)</strong> - <strong>model-heterogeneity in adversarial review</strong>
+<em>Using a tool based on a different underlying model family to challenge work you produced with the first one. A different product or company may still use the same model.</em>
+Has anyone at [INSTITUTION NAME] taught you this?
+<em>Cells: D4-people, D4-process · Evidence anchor: Methods curriculum learning outcomes. These results should be cross-referenced against Q19, where students report whether they apply this practice.</em></p>
+<p><strong>Q30 ★ ⇄ PAR-COMP-5 (core)</strong> - <strong>sycophancy detection and human-as-verifier discipline</strong>
+<em>Recognizing that an AI tool agreeing with you is not evidence that you are right, and that you remain the person who checks.</em>
+Has anyone at [INSTITUTION NAME] taught you this?
+<em>Cells: D4-people, D4-process · Evidence anchor: Methods curriculum learning outcomes. These results should be read directly alongside responses to Q42.</em></p>
+<p><strong>Q31 ⇄ PAR-COMP-6 (core)</strong> - <strong>structured failure-mode reporting</strong>
+<em>Reporting how an AI-assisted method can fail, and how often it did, in the same way you report any other method.</em>
+Has anyone at [INSTITUTION NAME] taught you this?
+<em>Cells: D4-people, D4-process · Evidence anchor: Methods curriculum learning outcomes. These results should be compared directly with responses to Q21.</em></p>
+<hr>
+<h1 id="section-7-your-supervisor-4-items">Section 7: Your supervisor (4 items)</h1>
+<p><strong>Q32 ★ ⇄ PAR-SUPERVISION-DISCUSSED (core)</strong>
+Has your advisor or supervisor ever discussed AI use with you?</p>
+<fieldset class="answer answer-enhanced" id="a2_researcher_survey-answer-27">
+<legend class="answer-legend visually-hidden">Q32 ★ ⇄ PAR-SUPERVISION-DISCUSSED (core) Has your advisor or supervisor ever discussed AI use with you?</legend>
+<div class="answer-options"><label class="answer-option" for="a2_researcher_survey-answer-27-option-1"><input type="radio" id="a2_researcher_survey-answer-27-option-1" name="a2_researcher_survey-answer-27" value="Never"> <span>Never</span></label><label class="answer-option" for="a2_researcher_survey-answer-27-option-2"><input type="radio" id="a2_researcher_survey-answer-27-option-2" name="a2_researcher_survey-answer-27" value="Once, briefly"> <span>Once, briefly</span></label><label class="answer-option" for="a2_researcher_survey-answer-27-option-3"><input type="radio" id="a2_researcher_survey-answer-27-option-3" name="a2_researcher_survey-answer-27" value="More than once"> <span>More than once</span></label><label class="answer-option" for="a2_researcher_survey-answer-27-option-4"><input type="radio" id="a2_researcher_survey-answer-27-option-4" name="a2_researcher_survey-answer-27" value="We have discussed it and written down what we agreed"> <span>We have discussed it and written down what we agreed</span></label></div>
+</fieldset>
+<p><em>Cells: D1-people, D1-process · Evidence anchor: Records of advisor and supervisor meetings, as well as the official supervision agreement template to see if it includes an explicit AI clause. Compare these responses directly with supervisor answers in A3. If supervisors predominantly report discussing AI "more than once" while students report "never," record a discrepancy between the two anonymous cohort reports. It is not a comparison of perceived with actual supervisory practice.</em></p>
+<p><strong>Q33 ★ ⇄ PAR-WRITTEN-AGREEMENT (core)</strong>
+Do you and your advisor or supervisor have a <strong>written</strong> record of what you agreed about AI use?</p>
+<fieldset class="answer answer-enhanced" id="a2_researcher_survey-answer-28">
+<legend class="answer-legend visually-hidden">Q33 ★ ⇄ PAR-WRITTEN-AGREEMENT (core) Do you and your advisor or supervisor have a written record of what you agreed about AI use?</legend>
+<div class="answer-options"><label class="answer-option" for="a2_researcher_survey-answer-28-option-1"><input type="radio" id="a2_researcher_survey-answer-28-option-1" name="a2_researcher_survey-answer-28" value="Yes"> <span>Yes</span></label><label class="answer-option" for="a2_researcher_survey-answer-28-option-2"><input type="radio" id="a2_researcher_survey-answer-28-option-2" name="a2_researcher_survey-answer-28" value="Partial (some of it is written down)"> <span>Partial (some of it is written down)</span></label><label class="answer-option" for="a2_researcher_survey-answer-28-option-3"><input type="radio" id="a2_researcher_survey-answer-28-option-3" name="a2_researcher_survey-answer-28" value="No"> <span>No</span></label><label class="answer-option" for="a2_researcher_survey-answer-28-option-4"><input type="radio" id="a2_researcher_survey-answer-28-option-4" name="a2_researcher_survey-answer-28" value="I don&#x27;t know"> <span>I don't know</span></label></div>
+</fieldset>
+<p><em>Cells: D1-process, D1-people · Evidence anchor: Signed supervision agreements held by the graduate school, specifically the count of agreements that contain an AI clause. This item measures baseline demand for instrument G1 (the supervisor-student agreement) and tracks its adoption over time.</em></p>
+<p><strong>Q34 ⇄ PAR-ESCALATION-OWNER</strong>
+If you and your advisor or supervisor disagreed about whether a particular AI use was allowed, do you know who decides?</p>
+<fieldset class="answer answer-enhanced" id="a2_researcher_survey-answer-29">
+<legend class="answer-legend visually-hidden">Q34 ⇄ PAR-ESCALATION-OWNER If you and your advisor or supervisor disagreed about whether a particular AI use was allowed, do you know who decides?</legend>
+<div class="answer-options"><label class="answer-option" for="a2_researcher_survey-answer-29-option-1"><input type="radio" id="a2_researcher_survey-answer-29-option-1" name="a2_researcher_survey-answer-29" value="Yes, and I could name the role or office"> <span>Yes, and I could name the role or office</span></label><label class="answer-option" for="a2_researcher_survey-answer-29-option-2"><input type="radio" id="a2_researcher_survey-answer-29-option-2" name="a2_researcher_survey-answer-29" value="I think so, but I am not sure"> <span>I think so, but I am not sure</span></label><label class="answer-option" for="a2_researcher_survey-answer-29-option-3"><input type="radio" id="a2_researcher_survey-answer-29-option-3" name="a2_researcher_survey-answer-29" value="No"> <span>No</span></label><label class="answer-option" for="a2_researcher_survey-answer-29-option-4"><input type="radio" id="a2_researcher_survey-answer-29-option-4" name="a2_researcher_survey-answer-29" value="I don&#x27;t know"> <span>I don't know</span></label></div>
+</fieldset>
+<p><em>Cells: D5-people, D1-people · Evidence anchor: The designated decision-maker specified in institutional policy, such as the research integrity office, the graduate school, or the associate dean for research. While Dimension 5 checks whether these formal roles are defined on paper, this question tests whether that information has actually reached the students who would need to use it.</em></p>
+<p><strong>Q35 ⇄ PAR-SAFE-TO-TELL</strong>
+Would you feel able to tell your advisor or supervisor that you had used an AI tool in a way you were later unsure about?</p>
+<fieldset class="answer answer-enhanced" id="a2_researcher_survey-answer-30">
+<legend class="answer-legend visually-hidden">Q35 ⇄ PAR-SAFE-TO-TELL Would you feel able to tell your advisor or supervisor that you had used an AI tool in a way you were later unsure about?</legend>
+<div class="answer-options"><label class="answer-option" for="a2_researcher_survey-answer-30-option-1"><input type="radio" id="a2_researcher_survey-answer-30-option-1" name="a2_researcher_survey-answer-30" value="Yes"> <span>Yes</span></label><label class="answer-option" for="a2_researcher_survey-answer-30-option-2"><input type="radio" id="a2_researcher_survey-answer-30-option-2" name="a2_researcher_survey-answer-30" value="Probably"> <span>Probably</span></label><label class="answer-option" for="a2_researcher_survey-answer-30-option-3"><input type="radio" id="a2_researcher_survey-answer-30-option-3" name="a2_researcher_survey-answer-30" value="No"> <span>No</span></label><label class="answer-option" for="a2_researcher_survey-answer-30-option-4"><input type="radio" id="a2_researcher_survey-answer-30-option-4" name="a2_researcher_survey-answer-30" value="I would rather not answer"> <span>I would rather not answer</span></label></div>
+</fieldset>
+<p><em>Cells: D1-people, D2-process · Evidence anchor: None. When researchers fear disclosing their AI use, the institution gets compliant-looking paperwork but zero real insight into practice. These responses should be analyzed alongside Q25.</em></p>
+<hr>
+<h1 id="section-8-data-you-have-put-into-ai-tools-4-items">Section 8: Data you have put into AI tools (4 items)</h1>
+<p><em>These questions ask what you report has happened in practice, not what should have happened. As noted in the opening statement, your answers cannot be used against you.</em></p>
+<p><strong>Q36 ★ ⇄ PAR-DATA-ENTERED (core)</strong>
+Which of these have you entered into an AI tool that [INSTITUTION NAME] does <strong>not</strong> provide? <em>(tick all that apply)</em></p>
+<fieldset class="answer answer-enhanced" id="a2_researcher_survey-answer-31">
+<legend class="answer-legend visually-hidden">Q36 ★ ⇄ PAR-DATA-ENTERED (core) Which of these have you entered into an AI tool that [INSTITUTION NAME] does not provide? (tick all that apply)</legend>
+<div class="answer-options"><label class="answer-option" for="a2_researcher_survey-answer-31-option-1"><input type="checkbox" id="a2_researcher_survey-answer-31-option-1" name="a2_researcher_survey-answer-31" value="My own unpublished data or results"> <span>My own unpublished data or results</span></label><label class="answer-option" for="a2_researcher_survey-answer-31-option-2"><input type="checkbox" id="a2_researcher_survey-answer-31-option-2" name="a2_researcher_survey-answer-31" value="Data about research participants, with names and identifying details removed"> <span>Data about research participants, with names and identifying details removed</span></label><label class="answer-option" for="a2_researcher_survey-answer-31-option-3"><input type="checkbox" id="a2_researcher_survey-answer-31-option-3" name="a2_researcher_survey-answer-31" value="Data about research participants that could identify someone"> <span>Data about research participants that could identify someone</span></label><label class="answer-option" for="a2_researcher_survey-answer-31-option-4"><input type="checkbox" id="a2_researcher_survey-answer-31-option-4" name="a2_researcher_survey-answer-31" value="Someone else&#x27;s unpublished manuscript, thesis or grant application"> <span>Someone else's unpublished manuscript, thesis or grant application</span></label><label class="answer-option" for="a2_researcher_survey-answer-31-option-5"><input type="checkbox" id="a2_researcher_survey-answer-31-option-5" name="a2_researcher_survey-answer-31" value="Material covered by a confidentiality agreement or an industry partner&#x27;s terms"> <span>Material covered by a confidentiality agreement or an industry partner's terms</span></label><label class="answer-option" for="a2_researcher_survey-answer-31-option-6"><input type="checkbox" id="a2_researcher_survey-answer-31-option-6" name="a2_researcher_survey-answer-31" value="My own unpublished draft writing"> <span>My own unpublished draft writing</span></label><label class="answer-option" for="a2_researcher_survey-answer-31-option-7"><input type="checkbox" id="a2_researcher_survey-answer-31-option-7" name="a2_researcher_survey-answer-31" value="Nothing from this list"> <span>Nothing from this list</span></label><label class="answer-option" for="a2_researcher_survey-answer-31-option-8"><input type="checkbox" id="a2_researcher_survey-answer-31-option-8" name="a2_researcher_survey-answer-31" value="I would rather not answer"> <span>I would rather not answer</span></label></div>
+</fieldset>
+<p><em>Cells: D3-systems, D3-process · Evidence anchor: The institutional AI tenant's configuration settings for data residency and training on user inputs (<a href="https://instats.org/publications/responsible-ai-in-academic-research">the report</a> §2.3), as well as the documented exception process for research projects that genuinely require consumer-tier tools (<a href="https://instats.org/publications/responsible-ai-in-academic-research">the report</a> §4.2, Dimension 3). This item establishes only that the institution did not provide the tool. Compare each reported tool with the approved-tool register and exception records before classifying any use as unapproved or as a data-governance event.</em></p>
+<p><strong>Q37 ★ ⇄ PAR-DATA-CHECKED</strong>
+Before using an AI tool with research data, have you checked where the data is stored and whether the company uses it to train its models?</p>
+<fieldset class="answer answer-enhanced" id="a2_researcher_survey-answer-32">
+<legend class="answer-legend visually-hidden">Q37 ★ ⇄ PAR-DATA-CHECKED Before using an AI tool with research data, have you checked where the data is stored and whether the company uses it to train its models?</legend>
+<div class="answer-options"><label class="answer-option" for="a2_researcher_survey-answer-32-option-1"><input type="radio" id="a2_researcher_survey-answer-32-option-1" name="a2_researcher_survey-answer-32" value="Always"> <span>Always</span></label><label class="answer-option" for="a2_researcher_survey-answer-32-option-2"><input type="radio" id="a2_researcher_survey-answer-32-option-2" name="a2_researcher_survey-answer-32" value="Sometimes"> <span>Sometimes</span></label><label class="answer-option" for="a2_researcher_survey-answer-32-option-3"><input type="radio" id="a2_researcher_survey-answer-32-option-3" name="a2_researcher_survey-answer-32" value="Never"> <span>Never</span></label><label class="answer-option" for="a2_researcher_survey-answer-32-option-4"><input type="radio" id="a2_researcher_survey-answer-32-option-4" name="a2_researcher_survey-answer-32" value="I did not know I could check"> <span>I did not know I could check</span></label><label class="answer-option" for="a2_researcher_survey-answer-32-option-5"><input type="radio" id="a2_researcher_survey-answer-32-option-5" name="a2_researcher_survey-answer-32" value="I have not used an AI tool with research data"> <span>I have not used an AI tool with research data</span></label></div>
+</fieldset>
+<p><em>Cells: D3-people, D3-systems · Evidence anchor: Institutional guidance on approved tools and its distribution logs, along with formal procurement standards governing data residency and the use of inputs for model training (<a href="https://instats.org/publications/responsible-ai-in-academic-research">the report</a> §2.3). Report the non-use option separately and exclude it from the applicable denominator.</em></p>
+<p><strong>Q38 ⇄ PAR-ETHICS-COVERS-AI (core)</strong>
+Does your ethics approval or your participants' consent cover having their data processed by an outside AI service?</p>
+<fieldset class="answer answer-enhanced" id="a2_researcher_survey-answer-33">
+<legend class="answer-legend visually-hidden">Q38 ⇄ PAR-ETHICS-COVERS-AI (core) Does your ethics approval or your participants&#x27; consent cover having their data processed by an outside AI service?</legend>
+<div class="answer-options"><label class="answer-option" for="a2_researcher_survey-answer-33-option-1"><input type="radio" id="a2_researcher_survey-answer-33-option-1" name="a2_researcher_survey-answer-33" value="Yes"> <span>Yes</span></label><label class="answer-option" for="a2_researcher_survey-answer-33-option-2"><input type="radio" id="a2_researcher_survey-answer-33-option-2" name="a2_researcher_survey-answer-33" value="No"> <span>No</span></label><label class="answer-option" for="a2_researcher_survey-answer-33-option-3"><input type="radio" id="a2_researcher_survey-answer-33-option-3" name="a2_researcher_survey-answer-33" value="I don&#x27;t know"> <span>I don't know</span></label><label class="answer-option" for="a2_researcher_survey-answer-33-option-4"><input type="radio" id="a2_researcher_survey-answer-33-option-4" name="a2_researcher_survey-answer-33" value="I have not used an outside AI service with personal data"> <span>I have not used an outside AI service with personal data</span></label><label class="answer-option" for="a2_researcher_survey-answer-33-option-5"><input type="radio" id="a2_researcher_survey-answer-33-option-5" name="a2_researcher_survey-answer-33" value="My research does not involve personal data"> <span>My research does not involve personal data</span></label></div>
+</fieldset>
+<p><em>Cells: D3-process · Evidence anchor: The institutional human research ethics application form, specifically whether it includes an explicit question regarding third-party AI data processing. If the ethics application lacks this question, an answer of "I don't know" reflects an institutional oversight rather than student neglect.</em></p>
+<p><strong>Q39 ⇄ PAR-APPROVED-TOOLS</strong>
+Has anyone at [INSTITUTION NAME] told you which AI tools are approved for unpublished or participant data?</p>
+<fieldset class="answer answer-enhanced" id="a2_researcher_survey-answer-34">
+<legend class="answer-legend visually-hidden">Q39 ⇄ PAR-APPROVED-TOOLS Has anyone at [INSTITUTION NAME] told you which AI tools are approved for unpublished or participant data?</legend>
+<div class="answer-options"><label class="answer-option" for="a2_researcher_survey-answer-34-option-1"><input type="radio" id="a2_researcher_survey-answer-34-option-1" name="a2_researcher_survey-answer-34" value="Yes"> <span>Yes</span></label><label class="answer-option" for="a2_researcher_survey-answer-34-option-2"><input type="radio" id="a2_researcher_survey-answer-34-option-2" name="a2_researcher_survey-answer-34" value="Partial"> <span>Partial</span></label><label class="answer-option" for="a2_researcher_survey-answer-34-option-3"><input type="radio" id="a2_researcher_survey-answer-34-option-3" name="a2_researcher_survey-answer-34" value="No"> <span>No</span></label><label class="answer-option" for="a2_researcher_survey-answer-34-option-4"><input type="radio" id="a2_researcher_survey-answer-34-option-4" name="a2_researcher_survey-answer-34" value="I don&#x27;t know"> <span>I don't know</span></label></div>
+</fieldset>
+<p><em>Cells: D3-people, D3-process · Evidence anchor: The official approved tools list, its publication date, and the documented record of how it was distributed to graduate students.</em></p>
+<hr>
+<h1 id="section-9-confidence-and-knowledge-4-items">Section 9: Confidence and knowledge (4 items)</h1>
+<p><em>The first question asks what you feel confident explaining, while the next two questions test specific knowledge with objective right answers. The main goal here is to compare self-reported confidence against demonstrated understanding.</em></p>
+<p><strong>Q40 ★ ⇄ PAR-CONFIDENCE (core)</strong>
+"I could explain to a new doctoral student how to use AI responsibly in research."</p>
+<fieldset class="answer answer-enhanced" id="a2_researcher_survey-answer-35">
+<legend class="answer-legend visually-hidden">Q40 ★ ⇄ PAR-CONFIDENCE (core) &quot;I could explain to a new doctoral student how to use AI responsibly in research.&quot;</legend>
+<div class="answer-options"><label class="answer-option" for="a2_researcher_survey-answer-35-option-1"><input type="radio" id="a2_researcher_survey-answer-35-option-1" name="a2_researcher_survey-answer-35" value="Yes"> <span>Yes</span></label><label class="answer-option" for="a2_researcher_survey-answer-35-option-2"><input type="radio" id="a2_researcher_survey-answer-35-option-2" name="a2_researcher_survey-answer-35" value="Partly"> <span>Partly</span></label><label class="answer-option" for="a2_researcher_survey-answer-35-option-3"><input type="radio" id="a2_researcher_survey-answer-35-option-3" name="a2_researcher_survey-answer-35" value="No"> <span>No</span></label></div>
+</fieldset>
+<p><em>Cells: D4-people · Evidence anchor: None, because this is intentionally a self-assessment item. Its analytical value comes from comparing these ratings with the self-reported checking practice in Q16 and the knowledge probes in Q18, Q41, and Q42, while keeping those forms of evidence distinct.</em></p>
+<p><strong>Q41 ⇄ PAR-REPRO-PROBE</strong>
+An AI tool helped with part of your analysis. Which of these must you record so that another researcher could repeat what you did? <em>(tick all that apply)</em></p>
+<fieldset class="answer answer-enhanced" id="a2_researcher_survey-answer-36">
+<legend class="answer-legend visually-hidden">Q41 ⇄ PAR-REPRO-PROBE An AI tool helped with part of your analysis. Which of these must you record so that another researcher could repeat what you did? (tick all that apply)</legend>
+<div class="answer-options"><label class="answer-option" for="a2_researcher_survey-answer-36-option-1"><input type="checkbox" id="a2_researcher_survey-answer-36-option-1" name="a2_researcher_survey-answer-36" value="The name and version of the model"> <span>The name and version of the model</span></label><label class="answer-option" for="a2_researcher_survey-answer-36-option-2"><input type="checkbox" id="a2_researcher_survey-answer-36-option-2" name="a2_researcher_survey-answer-36" value="The date you used it"> <span>The date you used it</span></label><label class="answer-option" for="a2_researcher_survey-answer-36-option-3"><input type="checkbox" id="a2_researcher_survey-answer-36-option-3" name="a2_researcher_survey-answer-36" value="The prompt you used"> <span>The prompt you used</span></label><label class="answer-option" for="a2_researcher_survey-answer-36-option-4"><input type="checkbox" id="a2_researcher_survey-answer-36-option-4" name="a2_researcher_survey-answer-36" value="Settings such as temperature or seed, where the tool shows them"> <span>Settings such as temperature or seed, where the tool shows them</span></label><label class="answer-option" for="a2_researcher_survey-answer-36-option-5"><input type="checkbox" id="a2_researcher_survey-answer-36-option-5" name="a2_researcher_survey-answer-36" value="Other wordings of the prompt that you tried"> <span>Other wordings of the prompt that you tried</span></label><label class="answer-option" for="a2_researcher_survey-answer-36-option-6"><input type="checkbox" id="a2_researcher_survey-answer-36-option-6" name="a2_researcher_survey-answer-36" value="None of these are needed if the result is correct"> <span>None of these are needed if the result is correct</span></label></div>
+</fieldset>
+<p><em>Cells: D4-people, D4-process · Evidence anchor: Methods curriculum learning outcomes related to computational reproducibility. Correct scoring criteria are detailed in the administration notes below.</em></p>
+<p><strong>Q42 ★ ⇄ PAR-CONFIDENT-TONE-PROBE</strong>
+An AI tool gives you an answer in a confident tone, with no hedging. What does the confident tone tell you about whether the answer is correct?</p>
+<fieldset class="answer answer-enhanced" id="a2_researcher_survey-answer-37">
+<legend class="answer-legend visually-hidden">Q42 ★ ⇄ PAR-CONFIDENT-TONE-PROBE An AI tool gives you an answer in a confident tone, with no hedging. What does the confident tone tell you about whether the answer is correct?</legend>
+<div class="answer-options"><label class="answer-option" for="a2_researcher_survey-answer-37-option-1"><input type="radio" id="a2_researcher_survey-answer-37-option-1" name="a2_researcher_survey-answer-37" value="Nothing: a confident tone is not evidence"> <span>Nothing: a confident tone is not evidence</span></label><label class="answer-option" for="a2_researcher_survey-answer-37-option-2"><input type="radio" id="a2_researcher_survey-answer-37-option-2" name="a2_researcher_survey-answer-37" value="It makes the answer more likely to be correct"> <span>It makes the answer more likely to be correct</span></label><label class="answer-option" for="a2_researcher_survey-answer-37-option-3"><input type="radio" id="a2_researcher_survey-answer-37-option-3" name="a2_researcher_survey-answer-37" value="It makes the answer less likely to be correct"> <span>It makes the answer less likely to be correct</span></label><label class="answer-option" for="a2_researcher_survey-answer-37-option-4"><input type="radio" id="a2_researcher_survey-answer-37-option-4" name="a2_researcher_survey-answer-37" value="It depends which tool it is"> <span>It depends which tool it is</span></label></div>
+</fieldset>
+<p><em>Cells: D4-people · Evidence anchor: Methods curriculum outcomes covering sycophancy detection and the requirement for human verification. Correct scoring criteria are detailed in the administration notes below.</em></p>
+<p><strong>Q43</strong>
+In the past three months, how many times did you decide <strong>not</strong> to use an AI tool for a research task because you judged it was not the right thing to do?</p>
+<fieldset class="answer answer-enhanced" id="a2_researcher_survey-answer-38">
+<legend class="answer-legend visually-hidden">Q43 In the past three months, how many times did you decide not to use an AI tool for a research task because you judged it was not the right thing to do?</legend>
+<div class="answer-options"><label class="answer-option" for="a2_researcher_survey-answer-38-option-1"><input type="radio" id="a2_researcher_survey-answer-38-option-1" name="a2_researcher_survey-answer-38" value="Never"> <span>Never</span></label><label class="answer-option" for="a2_researcher_survey-answer-38-option-2"><input type="radio" id="a2_researcher_survey-answer-38-option-2" name="a2_researcher_survey-answer-38" value="Once or twice"> <span>Once or twice</span></label><label class="answer-option" for="a2_researcher_survey-answer-38-option-3"><input type="radio" id="a2_researcher_survey-answer-38-option-3" name="a2_researcher_survey-answer-38" value="Several times"> <span>Several times</span></label><label class="answer-option" for="a2_researcher_survey-answer-38-option-4"><input type="radio" id="a2_researcher_survey-answer-38-option-4" name="a2_researcher_survey-answer-38" value="Often"> <span>Often</span></label><label class="answer-option" for="a2_researcher_survey-answer-38-option-5"><input type="radio" id="a2_researcher_survey-answer-38-option-5" name="a2_researcher_survey-answer-38" value="I have not used AI tools for research"> <span>I have not used AI tools for research</span></label></div>
+</fieldset>
+<p><em>Cells: D1-people · Evidence anchor: None. This is the closest single measure of whether <a href="https://instats.org/publications/responsible-ai-in-academic-research">the report</a>'s labor-versus-judgment distinction (§2.1) is functioning in daily student practice rather than existing only as a written policy. An answer of "Never" from a student who frequently uses AI is a significant finding.</em></p>
+<hr>
+<h1 id="section-10-open-comments-2-items-optional">Section 10: Open comments (2 items, optional)</h1>
+<p><strong>Q44</strong> <em>(optional, about 80 words)</em>
+Describe one time an AI tool was confidently wrong in your research work, and what you did next.</p>
+<fieldset class="answer answer-enhanced" id="a2_researcher_survey-answer-39">
+<legend class="answer-legend visually-hidden">Q44 (optional, about 80 words) Describe one time an AI tool was confidently wrong in your research work, and what you did next.</legend>
+<label class="visually-hidden" for="a2_researcher_survey-answer-39-text">Q44 (optional, about 80 words) Describe one time an AI tool was confidently wrong in your research work, and what you did next.</label>
+<textarea class="answer-textarea" id="a2_researcher_survey-answer-39-text" name="a2_researcher_survey-answer-39" rows="5"></textarea>
+</fieldset>
+<p><em>Cells: D4-people · Evidence anchor: Responses should be coded against the institution's taxonomy of research AI failures. These qualitative accounts provide useful input for curriculum design and case material for executive reports.</em></p>
+<p><strong>Q45</strong> <em>(optional, about 40 words)</em>
+What one thing would help you most with using AI well in your research?</p>
+<fieldset class="answer answer-enhanced" id="a2_researcher_survey-answer-40">
+<legend class="answer-legend visually-hidden">Q45 (optional, about 40 words) What one thing would help you most with using AI well in your research?</legend>
+<label class="visually-hidden" for="a2_researcher_survey-answer-40-text">Q45 (optional, about 40 words) What one thing would help you most with using AI well in your research?</label>
+<textarea class="answer-textarea" id="a2_researcher_survey-answer-40-text" name="a2_researcher_survey-answer-40" rows="5"></textarea>
+</fieldset>
+<p><em>Cells: D4-process · Evidence anchor: None. Responses should be coded into thematic categories, with the most common priorities informing action planning in instrument A4 (the gap-analysis worksheet).</em></p>
+<hr>
+<h2 id="administration-notes-not-for-respondents">Administration notes (not for respondents)</h2>
+<h3 id="answer-key-for-the-three-knowledge-items">Answer key for the three knowledge items</h3>
+<p><strong>Q18.</strong> Correct: <em>You opened the source and read the passage that supports the claim.</em> A DOI, a link, or an entry in the tool's source list proves only that a reference was generated, not that the paper actually exists or supports the claim being made. Retrieval augmentation (RAG) often shifts AI errors from completely fabricated citations to real papers that are misattributed or misinterpreted, which is much harder to spot (<a href="https://instats.org/publications/responsible-ai-in-academic-research">the report</a> §2.3). Having a second AI tool agree with the first is not independent verification.</p>
+<p><strong>Q41.</strong> Required options: <em>The name and version of the model</em>, <em>The date you used it</em>, <em>The prompt you used</em>, and <em>Settings such as temperature or seed, where the tool shows them</em>. Credited but not strictly required: <em>Other wordings of the prompt that you tried</em> (reflecting the discipline of testing whether small prompt changes alter results). Incorrect option: <em>None of these are needed if the result is correct</em>. Score the response as correct only if all four required options are selected and the incorrect option is not selected.</p>
+<p><strong>Q42.</strong> Correct: <em>Nothing: a confident tone is not evidence.</em> The other options are incorrect. Confidence of tone is not a valid basis for changing the probability that an answer is correct.</p>
+<p><strong>Do not circulate this key with the survey, and do not publish it while the survey is open.</strong></p>
+<h3 id="fielding">Fielding</h3>
+<ul>
+<li>Run A2 and A3 in the exact same time window and close them on the same day. Comparing student and supervisor responses is valid only if both groups are reporting on the same academic period.</li>
+<li>Attempt a census by inviting the full doctoral population. Do not describe the achieved respondent group as representative without comparing its composition with the eligible population.</li>
+<li>Avoid fielding the survey in the two weeks leading up to major thesis submission dates or milestone review deadlines. Keep the survey open for three weeks and send two follow-up reminders.</li>
+<li>Always report the response rate alongside every finding and compare respondents with the eligible population by program stage and broad field where disclosure risk permits. The direction of nonresponse bias cannot be inferred from response rate alone.</li>
+<li>Report every "I don't know" response as its own distinct category. Never combine it with "No", because not knowing the policy represents a communication problem rather than an absence of rules.</li>
+<li>Re-run the survey annually during the same calendar week using identical item wording. Changing a question breaks your longitudinal trend line, so if you need to adjust a topic, retire the old item and add a new one rather than editing an existing question in place.</li>
+</ul>
+<h3 id="classify-items-before-analysis">Classify items before analysis</h3>
+<p>The cell tags show where an item is conceptually relevant. They are not instructions to average every tagged response into a cell score. Before opening the survey, classify each item by its intended analytic use and record whether a higher response indicates stronger practice, greater exposure, greater risk, or no readiness direction at all.</p>
+<ul>
+<li><strong>Criterion-aligned self-reported operational indicators:</strong> Q10–Q12, Q14, Q16, Q32–Q33, and Q39. These may test a specific A1 operational claim when the item, population, referent, and time period align. Q20, Q22–Q24, and Q36–Q38 remain contextual unless a local analysis plan defines a directly matching criterion, denominator, referent, and time period before fielding.</li>
+<li><strong>Training-exposure indicators:</strong> Q26–Q31. Report these as evidence of whether training reached respondents. They do not by themselves demonstrate competence.</li>
+<li><strong>Knowledge probes:</strong> Q18, Q41, and Q42. Score and report each probe separately. Do not combine them with exposure, self-reported practice, or confidence items as if they formed one scale.</li>
+<li><strong>Context, use, belief, and qualitative indicators:</strong> all remaining items. Use these to describe the population, interpret direct operational findings, and plan improvements. Do not use them to raise or lower a maturity level by arithmetic.</li>
+</ul>
+<p>Only a predeclared, directly aligned operational indicator may enter the criterion-specific checks in A4. Report the response distribution and eligible number for every item used. Never calculate a cell-level mean across unlike items simply because they share a cell tag.</p>
+<h3 id="the-three-gaps-this-survey-exists-to-examine">The three gaps this survey exists to examine</h3>
+<p><strong>Gap 1: The document-to-student implementation gap (A1 against A2).</strong> For each directly observable criterion that A1 rates as <em>established</em> or <em>leading</em>, check whether the aligned student item supports the claim. Keep exposure, knowledge, and contextual items beside that comparison rather than averaging them into it. Important comparisons include written task boundaries against Q12, disclosure operation against Q22 and Q23, and approved-tool communication against Q39.</p>
+<p><strong>Gap 2: The student-supervisor cohort gap (A3 against A2).</strong> Compare aligned parallel-form items across the two respondent groups. These are anonymous cohort comparisons, not matched student-supervisor pairs. A difference is most directly interpretable when both groups report on the same recipient-facing practice, such as whether AI was discussed or recorded. Questions Q32 and Q33 are the primary indicators here. For policy, system, or supervisor-only facts, report the two perspectives side by side and investigate the reason for the difference.</p>
+<p><strong>Gap 3: The confidence pattern (inside A2).</strong> Cross-tabulate Q40 with Q16, Q18, Q41, and Q42, while keeping the self-reported practice and knowledge results separate. A respondent who reports confidence but misses a knowledge probe may need different support from someone who knows the rule but does not apply it. Report those patterns without treating the five items as a single confidence or competence score.</p>
+<p><strong>How gaps are incorporated into the grid.</strong> A2 does not automatically overwrite an A1 documentary level. A4 tests individual operational criteria against predeclared, directly aligned survey evidence and records any discrepancy. [COMMITTEE] then records the resulting level and its reasoning. Context, training exposure, knowledge, and qualitative responses remain important diagnostic evidence, but they are not pooled into a maturity score. When presenting findings, report the maturity levels across all five dimensions along with the binding axis for each, rather than reducing the institution to a single uninformative score.</p>
+<h3 id="parallel-form-register">Parallel-form register</h3>
+<p>This register records the topic-link keys available in A2. A3 currently uses a subset of them across twelve supervisor items, and several A3 items refer to more than one A2 key. The <strong>core</strong> marker identifies priority topics for local adaptation. A shared key is not, by itself, evidence that two response distributions can be compared directly.</p>
+<table>
+<thead>
+<tr>
+<th>Key</th>
+<th>A2 item</th>
+<th>What A3 asks the supervisor</th>
+<th>Core</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>PAR-MODE-SEARCH</td>
+<td>Q4</td>
+<td>Own use, and belief about students' use</td>
+<td></td>
+</tr>
+<tr>
+<td>PAR-MODE-COAUTHOR</td>
+<td>Q5</td>
+<td>Own use, and belief about students' use</td>
+<td></td>
+</tr>
+<tr>
+<td>PAR-MODE-VALIDATOR</td>
+<td>Q6</td>
+<td>Own use, and belief about students' use</td>
+<td></td>
+</tr>
+<tr>
+<td>PAR-MODE-TUTOR</td>
+<td>Q7</td>
+<td>Own use, and belief about students' use</td>
+<td></td>
+</tr>
+<tr>
+<td>PAR-POLICY-KNOWN</td>
+<td>Q10</td>
+<td>Whether a written policy exists</td>
+<td>●</td>
+</tr>
+<tr>
+<td>PAR-POLICY-LOCATE</td>
+<td>Q11</td>
+<td>Name or locate it</td>
+<td>●</td>
+</tr>
+<tr>
+<td>PAR-TASK-RULES</td>
+<td>Q12</td>
+<td>Whether they have been told, in writing, which tasks are permitted</td>
+<td>●</td>
+</tr>
+<tr>
+<td>PAR-THESIS-DECLARE</td>
+<td>Q14</td>
+<td>Whether AI use must be declared at submission, and what must be declared</td>
+<td>●</td>
+</tr>
+<tr>
+<td>PAR-CITE-CHECK</td>
+<td>Q16</td>
+<td>Proportion of AI-supplied references checked at source in their own recent work</td>
+<td>●</td>
+</tr>
+<tr>
+<td>PAR-FAKE-REF-SEEN</td>
+<td>Q17</td>
+<td>Whether they have seen a fabricated or misattributed reference</td>
+<td></td>
+</tr>
+<tr>
+<td>PAR-CITE-PROBE</td>
+<td>Q18</td>
+<td>Identical knowledge item, identical options</td>
+<td>●</td>
+</tr>
+<tr>
+<td>PAR-MODEL-HETERO</td>
+<td>Q19</td>
+<td>Whether they use a different model family to challenge their own work</td>
+<td>●</td>
+</tr>
+<tr>
+<td>PAR-DISCLOSE-LAST</td>
+<td>Q22</td>
+<td>Disclosure on their own most recent submitted work</td>
+<td>●</td>
+</tr>
+<tr>
+<td>PAR-DISCLOSE-CONTENT</td>
+<td>Q23</td>
+<td>What they recorded</td>
+<td>●</td>
+</tr>
+<tr>
+<td>PAR-COMP-1 … PAR-COMP-6</td>
+<td>Q26–Q31</td>
+<td>Whether they have been <em>trained</em> on each competency, and whether they teach it</td>
+<td>●</td>
+</tr>
+<tr>
+<td>PAR-SUPERVISION-DISCUSSED</td>
+<td>Q32</td>
+<td>Whether they have discussed AI with their doctoral students</td>
+<td>●</td>
+</tr>
+<tr>
+<td>PAR-WRITTEN-AGREEMENT</td>
+<td>Q33</td>
+<td>Whether anything is written down</td>
+<td>●</td>
+</tr>
+<tr>
+<td>PAR-ESCALATION-OWNER</td>
+<td>Q34</td>
+<td>Who decides a disagreement</td>
+<td></td>
+</tr>
+<tr>
+<td>PAR-SAFE-TO-TELL</td>
+<td>Q35</td>
+<td>Whether they believe a doctoral student would tell them</td>
+<td></td>
+</tr>
+<tr>
+<td>PAR-DATA-ENTERED</td>
+<td>Q36</td>
+<td>What they have entered into non-institutional tools</td>
+<td>●</td>
+</tr>
+<tr>
+<td>PAR-DATA-CHECKED</td>
+<td>Q37</td>
+<td>Whether they check storage and training-on-input</td>
+<td></td>
+</tr>
+<tr>
+<td>PAR-ETHICS-COVERS-AI</td>
+<td>Q38</td>
+<td>Whether ethics approval covers third-party AI processing</td>
+<td>●</td>
+</tr>
+<tr>
+<td>PAR-APPROVED-TOOLS</td>
+<td>Q39</td>
+<td>Whether they know the approved-tool list</td>
+<td></td>
+</tr>
+<tr>
+<td>PAR-CONFIDENCE</td>
+<td>Q40</td>
+<td>"I could explain to a new doctoral student how to use AI responsibly in research."</td>
+<td>●</td>
+</tr>
+<tr>
+<td>PAR-REPRO-PROBE</td>
+<td>Q41</td>
+<td>Identical knowledge item</td>
+<td></td>
+</tr>
+<tr>
+<td>PAR-CONFIDENT-TONE-PROBE</td>
+<td>Q42</td>
+<td>Identical knowledge item</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<div class="tablecaption">
+<p>Table 2. Alignment of parallel survey items and core priority designations across instruments.</p>
+</div>
+<p><em>The supervisor survey (A3) is authored independently. Use the key to locate related items, then record differences in wording, referent, time period, denominator, and response scale before analysis. Report items side by side when those features do not align.</em></p>
+<h3 id="the-24-item-short-form">The 24-item short form</h3>
+<p>The short form includes the 24 items marked with ★: Q1, Q2, Q4, Q5, Q6, Q7, Q8, Q10, Q12, Q13, Q14, Q16, Q18, Q20, Q22, Q26, Q27, Q30, Q32, Q33, Q36, Q37, Q40, and Q42. It takes approximately five minutes to complete. You should use this shorter version when institutional survey fatigue makes the full survey impractical, or during alternate years in an ongoing evaluation cycle. Be sure to document in your final report which version was fielded.</p>
+<hr>
+<h2 id="crosswalk-item-to-report-section">Crosswalk: item to report section</h2>
+<p><em>This crosswalk records conceptual relevance. A grid-cell entry does not make an item a scored indicator for that cell. Use the analytic classification above and the criterion-specific rules in A4 before drawing any maturity inference.</em></p>
+<table>
+<thead>
+<tr>
+<th>Item</th>
+<th>Topic</th>
+<th>Report section</th>
+<th>Grid cells</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Q1</td>
+<td>Stage of doctoral program</td>
+<td>§2.5 (process axis: progression milestones)</td>
+<td>D1-process</td>
+</tr>
+<tr>
+<td>Q2</td>
+<td>Field</td>
+<td>Appendix G (discipline-specific extension)</td>
+<td>D4-process</td>
+</tr>
+<tr>
+<td>Q3</td>
+<td>First language</td>
+<td>Appendix C, Classes 10 and 11</td>
+<td>D3-systems, D4-people</td>
+</tr>
+<tr>
+<td>Q4</td>
+<td>Search mode use</td>
+<td>§2.2 (search)</td>
+<td>D2-people, D3-systems</td>
+</tr>
+<tr>
+<td>Q5</td>
+<td>Co-author mode use</td>
+<td>§2.2 (co-author)</td>
+<td>D2-people, D2-process</td>
+</tr>
+<tr>
+<td>Q6</td>
+<td>Validator mode use</td>
+<td>§2.2 (validator)</td>
+<td>D2-people, D4-people</td>
+</tr>
+<tr>
+<td>Q7</td>
+<td>Tutor mode use</td>
+<td>§2.2 (tutor)</td>
+<td>D4-people, D4-process</td>
+</tr>
+<tr>
+<td>Q8</td>
+<td>Account tier</td>
+<td>§2.3 (data residency and training-on-input)</td>
+<td>D3-systems, D3-process</td>
+</tr>
+<tr>
+<td>Q9</td>
+<td>Specialized and embedded uses</td>
+<td>Appendix C, Classes 5, 7, 9, 10</td>
+<td>D3-systems, D2-people</td>
+</tr>
+<tr>
+<td>Q10</td>
+<td>Policy exists</td>
+<td>§1.3, §2.5</td>
+<td>D2-people, D1-people</td>
+</tr>
+<tr>
+<td>Q11</td>
+<td>Policy locatable</td>
+<td>§1.3, §2.5</td>
+<td>D2-people</td>
+</tr>
+<tr>
+<td>Q12</td>
+<td>Task-level rules in writing</td>
+<td>§2.1, Appendix G</td>
+<td>D1-people, D1-process</td>
+</tr>
+<tr>
+<td>Q13</td>
+<td>Where the rules were learned</td>
+<td>§2.4, §4.2</td>
+<td>D2-people, D4-process</td>
+</tr>
+<tr>
+<td>Q14</td>
+<td>Thesis declaration</td>
+<td>§2.1, Appendix A (D1 <em>established</em>)</td>
+<td>D1-process, D2-process</td>
+</tr>
+<tr>
+<td>Q15</td>
+<td>Funder and publisher rules</td>
+<td>§3.1, §3.3</td>
+<td>D2-people, D2-process</td>
+</tr>
+<tr>
+<td>Q16</td>
+<td>References checked at source</td>
+<td>§2.4 (competency 1), §2.2 (search)</td>
+<td>D4-people, D2-process</td>
+</tr>
+<tr>
+<td>Q17</td>
+<td>Fabricated or misattributed reference seen</td>
+<td>§2.2 (search), §2.4 (competency 1)</td>
+<td>D4-people</td>
+</tr>
+<tr>
+<td>Q18</td>
+<td>Knowledge probe: verification</td>
+<td>§2.4 (competency 1), §2.3</td>
+<td>D4-people, D4-process</td>
+</tr>
+<tr>
+<td>Q19</td>
+<td>Different model family for critique</td>
+<td>§2.4 (competency 4)</td>
+<td>D4-people</td>
+</tr>
+<tr>
+<td>Q20</td>
+<td>Used output that could not be checked</td>
+<td>§2.2 (co-author)</td>
+<td>D1-people, D2-process</td>
+</tr>
+<tr>
+<td>Q21</td>
+<td>Response to a confident error</td>
+<td>§2.4 (competency 6), Appendix C Class 3</td>
+<td>D4-people</td>
+</tr>
+<tr>
+<td>Q22</td>
+<td>Disclosure on last output</td>
+<td>§2.2, §3.3, §1.1</td>
+<td>D2-process</td>
+</tr>
+<tr>
+<td>Q23</td>
+<td>Content of the disclosure</td>
+<td>§2.2, §2.4 (competency 2), §1.3</td>
+<td>D2-process, D4-people</td>
+</tr>
+<tr>
+<td>Q24</td>
+<td>Prompt and output records</td>
+<td>§2.3 (auditability), §2.4 (competency 2)</td>
+<td>D4-people, D3-process</td>
+</tr>
+<tr>
+<td>Q25</td>
+<td>Chose not to disclose</td>
+<td>§1.1, §2.2</td>
+<td>D2-process, D2-people</td>
+</tr>
+<tr>
+<td>Q26</td>
+<td>Taught: citation verification</td>
+<td>§2.4 (competency 1)</td>
+<td>D4-people, D4-process</td>
+</tr>
+<tr>
+<td>Q27</td>
+<td>Taught: model-and-parameter specification</td>
+<td>§2.4 (competency 2)</td>
+<td>D4-people, D4-process</td>
+</tr>
+<tr>
+<td>Q28</td>
+<td>Taught: prompt-as-fork-in-the-garden discipline</td>
+<td>§2.4 (competency 3)</td>
+<td>D4-people, D4-process</td>
+</tr>
+<tr>
+<td>Q29</td>
+<td>Taught: model-heterogeneity in adversarial review</td>
+<td>§2.4 (competency 4)</td>
+<td>D4-people, D4-process</td>
+</tr>
+<tr>
+<td>Q30</td>
+<td>Taught: sycophancy detection and human-as-verifier discipline</td>
+<td>§2.4 (competency 5)</td>
+<td>D4-people, D4-process</td>
+</tr>
+<tr>
+<td>Q31</td>
+<td>Taught: structured failure-mode reporting</td>
+<td>§2.4 (competency 6)</td>
+<td>D4-people, D4-process</td>
+</tr>
+<tr>
+<td>Q32</td>
+<td>Supervisor discussed AI</td>
+<td>§2.1, §4.2 (D1)</td>
+<td>D1-people, D1-process</td>
+</tr>
+<tr>
+<td>Q33</td>
+<td>Written record with supervisor</td>
+<td>§2.1, Appendix G (supervisor-approval rows)</td>
+<td>D1-process, D1-people</td>
+</tr>
+<tr>
+<td>Q34</td>
+<td>Who decides a disagreement</td>
+<td>§2.5 (people axis)</td>
+<td>D1-people</td>
+</tr>
+<tr>
+<td>Q35</td>
+<td>Safe to tell the supervisor</td>
+<td>§2.5 (process axis), §1.2 (transparent)</td>
+<td>D1-people, D2-process</td>
+</tr>
+<tr>
+<td>Q36</td>
+<td>Data entered into non-institutional tools</td>
+<td>§2.3 (data residency), §4.2 (Dimension 3)</td>
+<td>D3-systems, D3-process</td>
+</tr>
+<tr>
+<td>Q37</td>
+<td>Checked storage and training-on-input</td>
+<td>§2.3</td>
+<td>D3-people, D3-systems</td>
+</tr>
+<tr>
+<td>Q38</td>
+<td>Ethics approval covers third-party AI</td>
+<td>§2.3, §2.5 (regulatory pressure points)</td>
+<td>D3-process</td>
+</tr>
+<tr>
+<td>Q39</td>
+<td>Approved-tool list known</td>
+<td>§2.3 (procurement gate)</td>
+<td>D3-people, D3-process</td>
+</tr>
+<tr>
+<td>Q40</td>
+<td>Confidence self-report</td>
+<td>§2.4</td>
+<td>D4-people</td>
+</tr>
+<tr>
+<td>Q41</td>
+<td>Knowledge probe: reproducibility</td>
+<td>§2.4 (competency 2)</td>
+<td>D4-people, D4-process</td>
+</tr>
+<tr>
+<td>Q42</td>
+<td>Knowledge probe: confident tone</td>
+<td>§2.4 (competency 5), Appendix C Class 3</td>
+<td>D4-people</td>
+</tr>
+<tr>
+<td>Q43</td>
+<td>Declined to use AI on judgment grounds</td>
+<td>§2.1</td>
+<td>D1-people</td>
+</tr>
+<tr>
+<td>Q44</td>
+<td>Open: a confident error</td>
+<td>§2.4 (competency 6)</td>
+<td>D4-people</td>
+</tr>
+<tr>
+<td>Q45</td>
+<td>Open: what would help</td>
+<td>§5.3, §5.5</td>
+<td>D4-process</td>
+</tr>
+</tbody>
+</table>
+<div class="tablecaption">
+<p>Table 3. Mapping of individual survey items and topics to report sections and grid cells.</p>
+</div>
+<hr>
+<h2 id="plain-text-version-for-survey-platform-import">Plain-text version for survey-platform import</h2>
+<p>Each question block represents a single survey item, and <code>SHOW_IF</code> lines specify display and skip logic. Make sure to replace <code>[INSTITUTION NAME]</code> and any other bracketed fields before importing. Evidence anchors, cell mappings, ★ marks, and ⇄ parallel keys are omitted here intentionally because respondents must not see them. Keep the <code>PARKEY</code> line intact, because it serves as a metadata comment for your analysis file and most survey platforms will import it directly into a question-notes field.</p>
+<pre><code>SURVEY TITLE: AI use in doctoral research at [INSTITUTION NAME]
+INTRO PAGE: [paste the &quot;Before you begin&quot; and &quot;A note on words&quot; sections here, unedited]
+
+SCALE_A = Yes | Partial | No | I don't know
+SCALE_B = Never | A few times in the past three months | About once a month | About once a week | Most days
+SCALE_C = All | Most | About half | A few | None | I have not done this
+
+PAGE 1 - About you
+
+[Q1] TYPE=single
+TEXT: Where are you in your doctorate?
+OPTIONS: First year, before my first formal progress review or milestone | Past that first review, in the middle years | Final year | Submitted, waiting for examination | Other
+
+[Q2] TYPE=single
+TEXT: Which best describes your field?
+OPTIONS: Humanities | Social sciences | Business, law, economics | Life and health sciences | Physical sciences, engineering, computing | Creative and performing arts | Other
+
+[Q3] TYPE=single
+TEXT: Is English your first language?
+OPTIONS: Yes | No | One of several first languages
+
+PAGE 2 - Which AI tools you use
+PAGE TEXT: &quot;AI tool&quot; means any tool that generates text, code, images, summaries, transcripts, translations or citations for you, whether or not it is sold as artificial intelligence.
+
+[Q4] TYPE=single | SCALE=B | PARKEY=PAR-MODE-SEARCH
+TEXT: In the past three months, how often have you used an AI tool to find or scope literature?
+
+[Q5] TYPE=single | SCALE=B | PARKEY=PAR-MODE-COAUTHOR
+TEXT: In the past three months, how often have you used an AI tool to draft, rewrite, shorten or polish your own writing?
+
+[Q6] TYPE=single | SCALE=B | PARKEY=PAR-MODE-VALIDATOR
+TEXT: In the past three months, how often have you used an AI tool to check, critique or find errors in your own argument, method or results?
+
+[Q7] TYPE=single | SCALE=B | PARKEY=PAR-MODE-TUTOR
+TEXT: In the past three months, how often have you used an AI tool to explain a concept, a method or a piece of statistics to you?
+
+[Q8] TYPE=single
+TEXT: Which account do you mostly use for research work?
+OPTIONS: An account [INSTITUTION NAME] provides | A free personal account | A paid personal account I pay for myself | An account provided by a collaborator or an external partner | A tool that runs on my own computer | I do not use AI tools for research
+
+[Q9] TYPE=multi
+TEXT: Which of these have you used for research work in the past three months? Tick all that apply.
+OPTIONS: Writing or fixing code, or building an analysis pipeline | Screening titles and abstracts for a review | Transcribing interviews, focus groups or fieldnotes | Translating text | Making images or diagrams for talks or teaching | Making images or figures that present data | AI features inside tools I do not think of as AI tools (search-engine answers, reference-manager summaries, meeting transcription, writing assistants in email or word processors) | None of these
+EXCLUSIVE: None of these
+
+PAGE 3 - What you have been told
+
+[Q10] TYPE=single | SCALE=A | PARKEY=PAR-POLICY-KNOWN
+TEXT: Does [INSTITUTION NAME] have a written rule or policy about using AI in doctoral research?
+
+[Q11] TYPE=text_short | REQUIRED=no | SHOW_IF=Q10 IN (Yes, Partial) | PARKEY=PAR-POLICY-LOCATE
+TEXT: What is it called, or where is it? A title, a web address, or a description such as &quot;a page on the graduate school site&quot; is enough. Write &quot;cannot find it&quot; if that is the honest answer.
+
+[Q12] TYPE=single | SCALE=A | PARKEY=PAR-TASK-RULES
+TEXT: Have you been told in writing which research tasks you may use AI for and which you may not?
+
+[Q13] TYPE=multi
+TEXT: Where did you learn what the rules are? Tick all that apply.
+OPTIONS: Induction or orientation | A methods or research-training course | My advisor or supervisor | The thesis submission form | An email or a web page from my school or college, or from the graduate school | Other doctoral students | The AI tool's own terms or warnings | A journal or funder, not my institution | I have not learned them
+EXCLUSIVE: I have not learned them
+
+[Q14] TYPE=single | PARKEY=PAR-THESIS-DECLARE
+TEXT: Do you know whether you must declare AI use when you submit your thesis?
+OPTIONS: Yes, and I know what I must declare | Yes, but I do not know what I must declare | No, there is no requirement | I don't know
+
+[Q15] TYPE=single
+TEXT: Do you know what the rules are for using AI in grant or scholarship applications, and in manuscripts you submit to journals?
+OPTIONS: Yes, both | One but not the other | No | I don't know | Not relevant to me yet
+
+PAGE 4 - Checking what the tool gives you
+
+[Q16] TYPE=single | SCALE=C | PARKEY=PAR-CITE-CHECK
+TEXT: In your most recent literature search that used an AI tool: how many of the references it gave you did you open and read at the original source?
+
+[Q17] TYPE=single | PARKEY=PAR-FAKE-REF-SEEN
+TEXT: Have you ever found that a reference an AI tool gave you did not exist, or did not say what the tool claimed it said?
+OPTIONS: Yes | No | I have not checked closely enough to know
+
+[Q18] TYPE=single | PARKEY=PAR-CITE-PROBE
+TEXT: Which one of these confirms that a reference is real and says what an AI tool claims it says?
+OPTIONS: The tool gave a DOI or a link | The reference appears in the tool's list of sources | You opened the source and read the passage that supports the claim | A second AI tool agreed that the reference is correct
+RANDOMIZE: yes
+
+[Q19] TYPE=single | PARKEY=PAR-MODEL-HETERO
+TEXT: When you use an AI tool to challenge or check your own argument, do you use a tool based on a different underlying model family from the one that helped you produce the argument? A different product or company may still use the same underlying model.
+OPTIONS: Yes, always | Sometimes | No | I had not thought about this | I do not use AI to check my arguments
+
+[Q20] TYPE=single
+TEXT: Have you ever included AI output in a thesis chapter, a manuscript or an application when you could not check it yourself?
+OPTIONS: Yes | Partial - I checked some of it | No | I would rather not answer
+
+[Q21] TYPE=multi
+TEXT: The last time an AI tool gave you an answer that sounded confident and turned out to be wrong, what did you do? Tick all that apply.
+OPTIONS: Checked it against the source and corrected it | Asked the same tool again | Asked a different tool | Asked my advisor, supervisor or a colleague | Stopped using that tool for that kind of task | Reported it to someone at [INSTITUTION NAME] | This has not happened to me | It happened, but I only noticed later | I would rather not answer
+EXCLUSIVE: This has not happened to me, I would rather not answer
+
+PAGE 5 - Telling people you used it
+
+[Q22] TYPE=single | PARKEY=PAR-DISCLOSE-LAST
+TEXT: In the most recent piece of written work you submitted to anyone - advisor or supervisor, milestone panel, journal, funder - did you say that you had used an AI tool?
+OPTIONS: Yes, in the document itself | Yes, on a form | Yes, verbally only | No | I did not use an AI tool on that piece of work
+
+[Q23] TYPE=multi | SHOW_IF=Q22 IN (&quot;Yes, in the document itself&quot;, &quot;Yes, on a form&quot;, &quot;Yes, verbally only&quot;) | PARKEY=PAR-DISCLOSE-CONTENT
+TEXT: What did you record? Tick all that apply.
+OPTIONS: The name of the tool | The version of the tool | The date you used it | What you used it for | Which step of the work it touched | The prompt or prompts you used | A general statement that AI was used, with no detail
+
+[Q24] TYPE=single
+TEXT: Do you keep a record of your prompts and the tool's outputs?
+OPTIONS: Yes, systematically | Sometimes | No | I did not know this was expected
+
+[Q25] TYPE=single
+TEXT: Have you ever chosen not to say you used an AI tool because you were unsure whether it was allowed, or worried about how it would look?
+OPTIONS: Yes | No | I would rather not answer
+
+PAGE 6 - What you have been taught
+PAGE TEXT: For each one, choose the option that fits best.
+GRID OPTIONS (all six rows): Yes, in a formal course or workshop | Yes, informally - my advisor, supervisor or a colleague | No | I do not know what this means
+
+[Q26] TYPE=grid_row | PARKEY=PAR-COMP-1
+TEXT: Citation verification - checking every reference an AI tool gives you against the original source before you use it. Has anyone at [INSTITUTION NAME] taught you this?
+
+[Q27] TYPE=grid_row | PARKEY=PAR-COMP-2
+TEXT: Model-and-parameter specification - recording which AI model and version you used, on what date, with which settings, so that someone else could repeat what you did. Has anyone at [INSTITUTION NAME] taught you this?
+
+[Q28] TYPE=grid_row | PARKEY=PAR-COMP-3
+TEXT: Prompt-as-fork-in-the-garden discipline - deciding your prompts in advance, and testing whether a different wording changes the result. Has anyone at [INSTITUTION NAME] taught you this?
+
+[Q29] TYPE=grid_row | PARKEY=PAR-COMP-4
+TEXT: Model-heterogeneity in adversarial review - using a tool based on a different underlying model family to challenge work you produced with the first one. A different product or company may still use the same model. Has anyone at [INSTITUTION NAME] taught you this?
+
+[Q30] TYPE=grid_row | PARKEY=PAR-COMP-5
+TEXT: Sycophancy detection and human-as-verifier discipline - recognizing that an AI tool agreeing with you is not evidence that you are right, and that you remain the person who checks. Has anyone at [INSTITUTION NAME] taught you this?
+
+[Q31] TYPE=grid_row | PARKEY=PAR-COMP-6
+TEXT: Structured failure-mode reporting - reporting how an AI-assisted method can fail, and how often it did, in the same way you report any other method. Has anyone at [INSTITUTION NAME] taught you this?
+
+PAGE 7 - Your supervisor
+
+[Q32] TYPE=single | PARKEY=PAR-SUPERVISION-DISCUSSED
+TEXT: Has your advisor or supervisor ever discussed AI use with you?
+OPTIONS: Never | Once, briefly | More than once | We have discussed it and written down what we agreed
+
+[Q33] TYPE=single | PARKEY=PAR-WRITTEN-AGREEMENT
+TEXT: Do you and your advisor or supervisor have a written record of what you agreed about AI use?
+OPTIONS: Yes | Partial - some of it is written down | No | I don't know
+
+[Q34] TYPE=single | PARKEY=PAR-ESCALATION-OWNER
+TEXT: If you and your advisor or supervisor disagreed about whether a particular AI use was allowed, do you know who decides?
+OPTIONS: Yes, and I could name the role or office | I think so, but I am not sure | No | I don't know
+
+[Q35] TYPE=single | PARKEY=PAR-SAFE-TO-TELL
+TEXT: Would you feel able to tell your advisor or supervisor that you had used an AI tool in a way you were later unsure about?
+OPTIONS: Yes | Probably | No | I would rather not answer
+
+PAGE 8 - Data you have put into AI tools
+PAGE TEXT: These questions ask what you report has happened, not what should have happened. Your answers cannot be used against you - see the statement at the start.
+
+[Q36] TYPE=multi | PARKEY=PAR-DATA-ENTERED
+TEXT: Which of these have you entered into an AI tool that [INSTITUTION NAME] does not provide? Tick all that apply.
+OPTIONS: My own unpublished data or results | Data about research participants, with names and identifying details removed | Data about research participants that could identify someone | Someone else's unpublished manuscript, thesis or grant application | Material covered by a confidentiality agreement or an industry partner's terms | My own unpublished draft writing | Nothing from this list | I would rather not answer
+EXCLUSIVE: Nothing from this list, I would rather not answer
+
+[Q37] TYPE=single | PARKEY=PAR-DATA-CHECKED
+TEXT: Before using an AI tool with research data, have you checked where the data is stored and whether the company uses it to train its models?
+OPTIONS: Always | Sometimes | Never | I did not know I could check
+
+[Q38] TYPE=single | PARKEY=PAR-ETHICS-COVERS-AI
+TEXT: Does your ethics approval or your participants' consent cover having their data processed by an outside AI service?
+OPTIONS: Yes | No | I don't know | I have not used an outside AI service with personal data | My research does not involve personal data
+
+[Q39] TYPE=single | SCALE=A | PARKEY=PAR-APPROVED-TOOLS
+TEXT: Has anyone at [INSTITUTION NAME] told you which AI tools are approved for unpublished or participant data?
+
+PAGE 9 - Confidence and knowledge
+
+[Q40] TYPE=single | PARKEY=PAR-CONFIDENCE
+TEXT: &quot;I could explain to a new doctoral student how to use AI responsibly in research.&quot;
+OPTIONS: Yes | Partly | No
+
+[Q41] TYPE=multi | PARKEY=PAR-REPRO-PROBE
+TEXT: An AI tool helped with part of your analysis. Which of these must you record so that another researcher could repeat what you did? Tick all that apply.
+OPTIONS: The name and version of the model | The date you used it | The prompt you used | Settings such as temperature or seed, where the tool shows them | Other wordings of the prompt that you tried | None of these are needed if the result is correct
+EXCLUSIVE: None of these are needed if the result is correct
+
+[Q42] TYPE=single | PARKEY=PAR-CONFIDENT-TONE-PROBE
+TEXT: An AI tool gives you an answer in a confident tone, with no hedging. What does the confident tone tell you about whether the answer is correct?
+OPTIONS: Nothing - a confident tone is not evidence | It makes the answer more likely to be correct | It makes the answer less likely to be correct | It depends which tool it is
+RANDOMIZE: yes
+
+[Q43] TYPE=single
+TEXT: In the past three months, how many times did you decide not to use an AI tool for a research task because you judged it was not the right thing to do?
+OPTIONS: Never | Once or twice | Several times | Often | I have not used AI tools for research
+
+PAGE 10 - Open comments (optional)
+
+[Q44] TYPE=text_long | REQUIRED=no | MAXWORDS=80
+TEXT: Describe one time an AI tool was confidently wrong in your research work, and what you did next.
+
+[Q45] TYPE=text_long | REQUIRED=no | MAXWORDS=40
+TEXT: What one thing would help you most with using AI well in your research?
+
+CLOSING PAGE: Thank you. A summary of the results goes to [COMMITTEE] on [DATE] and the same summary goes to every doctoral student. If you want to raise something this survey did not cover, contact [ROLE] at [EMAIL].
+</code></pre>
+<hr>
+<p><a class="brand-mark-small" href="https://instats.org"><img alt="Instats" src="assets/instats_logo.png" width="1.0in"></a></p>
+<p><strong>Michael J. Zyphur, PhD</strong> · Professor and Director, Instats · <a href="https://instats.org">instats.org</a> · <a href="mailto:support@instats.org">support@instats.org</a></p>
+<p><em>Part of the Instats AI Readiness Pack · <a href="https://instats.org/publications/ai-readiness">instats.org/publications/ai-readiness</a> · CC BY 4.0 - adapt freely for institutional use, with attribution. Companion to</em> <a href="https://instats.org/publications/responsible-ai-in-academic-research">Responsible AI in Academic Research: A Competency Framework for Research Training</a> <em>(DOI 10.61700/t31oy23grr).</em></p>
+</div>
+
+<script>
+(function() {
+  // v0.22.31+: showHeader scroll-tracking removed along with the
+  // sticky-header element. Progress bar + sticky TOC remain.
+
+  const bar = document.getElementById('progress-bar');
+  if (bar) {
+    const update = () => {
+      const h = document.documentElement;
+      const max = h.scrollHeight - h.clientHeight;
+      bar.style.width = (max > 0 ? (h.scrollTop / max) * 100 : 0) + '%';
+    };
+    document.addEventListener('scroll', update, { passive: true });
+    update();
+  }
+  const tocEl = document.querySelector('#sticky-toc ol');
+  if (tocEl) {
+    // The rail is server-rendered at build time (per v2.2.0 design
+    // review §6 #1) — if it already has children, this JS only does
+    // scroll-spy `.active` highlighting on top. The legacy
+    // client-side populate runs ONLY as a fallback for HTML files
+    // built before the server-rendered TOC landed.
+    if (tocEl.children.length === 0) {
+      const skip = ['cover', 'colophon', 'toc', 'exec', 'abstract'];
+      const h2s = [...document.querySelectorAll('h2')].filter(h => {
+        let n = h.parentElement;
+        while (n) {
+          if (n.classList && skip.some(c => n.classList.contains(c))) return false;
+          n = n.parentElement;
+        }
+        return true;
+      });
+      h2s.forEach((h, idx) => {
+        if (!h.id) h.id = 'sec-' + idx;
+        const li = document.createElement('li');
+        const a = document.createElement('a');
+        a.href = '#' + h.id;
+        a.textContent = h.textContent.trim();
+        li.appendChild(a);
+        tocEl.appendChild(li);
+      });
+    }
+    const links = [...tocEl.querySelectorAll('a')];
+    const targets = links.map(a => document.getElementById(a.getAttribute('href').slice(1)));
+    const onScroll = () => {
+      const y = window.scrollY + 120;
+      let active = 0;
+      targets.forEach((t, i) => { if (t && t.offsetTop <= y) active = i; });
+      links.forEach((a, i) => a.classList.toggle('active', i === active));
+    };
+    document.addEventListener('scroll', onScroll, { passive: true });
+    onScroll();
+  }
+})();
+</script>
+
+</body>
+</html>

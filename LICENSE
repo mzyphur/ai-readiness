@@ -1,0 +1,75 @@
+Creative Commons Attribution 4.0 International (CC BY 4.0)
+==========================================================
+
+Copyright (c) 2026 Instats (instats.org)
+
+The Institutional AI Readiness Pack — every instrument, template, survey,
+policy model, agreement, worksheet and accompanying document in this
+repository — is licensed under the Creative Commons Attribution 4.0
+International License (CC BY 4.0).
+
+Full legal code: https://creativecommons.org/licenses/by/4.0/legalcode
+Human-readable summary: https://creativecommons.org/licenses/by/4.0/
+
+
+WHY THIS LICENCE
+----------------
+
+This pack is a toolkit, not a position paper. Its entire purpose is for a
+university to take an instrument, change the words to match its own statutes,
+committees and terminology, and adopt the result as institutional policy. A
+licence that forbade modification would make the pack useless for the thing it
+was built to do.
+
+So you are explicitly encouraged to:
+
+  * adapt, rewrite, shorten, extend and re-order any instrument;
+  * translate it into any language;
+  * embed the text directly into internal institutional policy, handbooks,
+    candidature agreements, training materials and survey platforms;
+  * redistribute the original or your adaptation, including commercially.
+
+The only condition is attribution.
+
+
+HOW TO ATTRIBUTE
+----------------
+
+For an adapted instrument used internally or published, a line such as:
+
+    Adapted from The Institutional AI Readiness Pack (Instats, 2026),
+    CC BY 4.0. https://instats.org/publications/ai-readiness
+
+For the pack as a whole, please cite it — see CITATION.cff.
+
+You do not need to ask permission. You do not need to tell us. We would like
+to hear about it, but that is a request, not a condition.
+
+
+WHAT THIS LICENCE DOES NOT COVER
+--------------------------------
+
+1. THE INSTATS NAME AND LOGO. Trade marks and the Instats visual identity,
+   including the logo files in assets/, are not licensed under CC BY 4.0. You
+   may not use them to imply that Instats endorses your adaptation, or that
+   your adapted document is an Instats publication. Remove the logo from
+   adaptations, or make the adaptation's authorship unambiguous.
+
+2. THE COMPANION REPORT. This pack accompanies "Responsible AI in Academic
+   Research: A Competency Framework for Research Training" (Instats Policy
+   Series, DOI 10.61700/t31oy23grr), which is licensed separately under
+   CC BY-NC-ND 4.0. This pack cites and builds on that report; it does not
+   relicense it. Quoting the report remains subject to the report's own terms.
+
+3. THIRD-PARTY MATERIAL. Where an instrument quotes or cites an external
+   source, that source remains under its own licence and its own terms.
+
+
+NO WARRANTY
+-----------
+
+These instruments are provided as-is. They are professional tools, not legal
+advice. An institution adopting a model policy, agreement or disclosure
+standard from this pack is responsible for ensuring it complies with the laws,
+regulations, funder conditions and industrial instruments applicable in its own
+jurisdiction, and should have it reviewed accordingly before adoption.

@@ -1,0 +1,60 @@
+cff-version: 1.2.0
+doi: "10.61700/bv2nulyhht"
+title: "The Institutional AI Readiness Pack: Self-Assessment and Implementation Tools for Responsible AI in Academic Research"
+message: "If you use this work, please cite it using the metadata below."
+type: report
+authors:
+  - family-names: "Zyphur"
+    given-names: "Michael J."
+    affiliation: "Instats"
+    email: "support@instats.org"
+    orcid: "https://orcid.org/0000-0003-3237-7892"
+repository-code: "https://github.com/mzyphur/ai-readiness"
+url: "https://instats.org/publications/ai-readiness/"
+abstract: >-
+  An openly licensed institutional toolkit for assessing and improving
+  readiness for responsible AI use in research and research training.
+  Operationalises the five-dimension competency framework and four-level
+  maturity grid set out in Responsible AI in Academic Research: A Competency
+  Framework for Research Training (Instats Policy Series, DOI
+  10.61700/t31oy23grr) into instruments a university can actually run.
+  Contains a twenty-cell institutional self-assessment scored across four
+  axes (policy, people, systems, process); parallel researcher and supervisor
+  surveys designed so the gap between what leadership believes and what
+  doctoral candidates report becomes the finding; a gap-analysis worksheet
+  with a named action for every transition between maturity levels; role
+  briefings for executive research leadership, faculty deans, graduate-school
+  leadership, research-integrity committees, and graduate-student
+  representative bodies; a model institutional AI-in-research policy; an
+  AI-use disclosure standard with ready-to-use statement templates; and a
+  supervisor-candidate AI-use agreement built on a labour-versus-judgement
+  task taxonomy. Licensed CC BY 4.0 so institutions can adapt every
+  instrument, translate it, and embed it in local policy.
+keywords:
+  - artificial intelligence
+  - higher education
+  - research training
+  - doctoral education
+  - AI readiness
+  - self-assessment
+  - maturity model
+  - institutional governance
+  - research integrity
+  - AI literacy
+  - responsible AI
+  - research policy
+  - open educational resources
+  - INSTATS-PS-2026-05
+license: CC-BY-4.0
+date-released: "2026-08-21"
+version: "1.0.0"
+references:
+  - type: report
+    title: "Responsible AI in Academic Research: A Competency Framework for Research Training"
+    authors:
+      - family-names: "Zyphur"
+        given-names: "Michael J."
+        affiliation: "Instats"
+    doi: "10.61700/t31oy23grr"
+    year: 2026
+    notes: "The companion report this pack operationalises."

@@ -1,0 +1,866 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>P2 — AI-Use Disclosure Standard</title>
+  <link rel="stylesheet" href="p2_disclosure_standard.css">
+  <style id="instrument-html-enhancements">
+    .instrument-response-notice {
+      margin: 0 0 1.5rem;
+      padding: 0.85rem 1rem;
+      background: #F5F8FA;
+      border-left: 4px solid #3092B1;
+      color: #1F2024;
+      font-family: var(--sans, sans-serif);
+      font-size: 0.92rem;
+    }
+    fieldset.answer-enhanced {
+      min-inline-size: 0;
+      border: 0;
+      border-left: 3px solid #3092B1;
+    }
+    .answer-options {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.45rem 1rem;
+      letter-spacing: normal;
+      word-spacing: normal;
+    }
+    .answer-option {
+      display: inline-flex;
+      align-items: flex-start;
+      gap: 0.35rem;
+      cursor: pointer;
+    }
+    .answer-option input {
+      margin: 0.2em 0 0;
+      accent-color: #00547B;
+    }
+    .answer-text-input,
+    .answer-textarea {
+      box-sizing: border-box;
+      width: 100%;
+      border: 1px solid #AEB7BE;
+      border-radius: 3px;
+      background: #FFFFFF;
+      color: #1F2024;
+      font: inherit;
+      line-height: 1.45;
+    }
+    .answer-text-input {
+      min-height: 2.55rem;
+      padding: 0.55rem 0.65rem;
+    }
+    .answer-textarea {
+      min-height: 8rem;
+      padding: 0.65rem;
+      resize: vertical;
+    }
+    .answer-legend:not(.visually-hidden) {
+      margin: 0 0 0.45rem;
+      padding: 0;
+      color: #1F2024;
+      font-weight: 600;
+      letter-spacing: normal;
+      word-spacing: normal;
+    }
+    .answer-note {
+      margin: 0.45rem 0 0;
+      letter-spacing: normal;
+      word-spacing: normal;
+    }
+    .visually-hidden {
+      position: absolute !important;
+      width: 1px !important;
+      height: 1px !important;
+      padding: 0 !important;
+      margin: -1px !important;
+      overflow: hidden !important;
+      clip: rect(0, 0, 0, 0) !important;
+      white-space: nowrap !important;
+      border: 0 !important;
+    }
+  </style>
+</head>
+<body>
+
+
+<div id="progress-bar" class="web-only" aria-hidden="true"></div>
+<nav id="sticky-toc" class="sticky-toc web-only" aria-label="Table of contents">
+  <div class="sticky-toc-title">Contents</div>
+  <ol><li><a href="#about-this-instrument">About this instrument</a></li>
+  <li><a href="#section-1-what-disclosure-is-for-and-what-it-is-not">Section 1: What disclosure is for, and what it is not</a></li>
+  <li><a href="#section-2-the-disclosure-threshold">Section 2: The disclosure threshold</a></li>
+  <li><a href="#section-3-what-a-disclosure-must-contain">Section 3: What a disclosure must contain</a></li>
+  <li><a href="#section-4-where-the-disclosure-goes-by-artifact-type">Section 4: Where the disclosure goes, by artifact type</a></li>
+  <li><a href="#section-5-statement-templates">Section 5: Statement templates</a></li>
+  <li><a href="#section-6-how-this-interacts-with-publisher-policies">Section 6: How this interacts with publisher policies</a></li>
+  <li><a href="#section-7-how-this-interacts-with-funder-requirements">Section 7: How this interacts with funder requirements</a></li>
+  <li><a href="#section-8-a-good-disclosure-and-three-bad-examples">Section 8: A good disclosure and three bad examples</a></li>
+  <li><a href="#section-9-what-not-to-require">Section 9: What not to require</a></li>
+  <li><a href="#section-10-adoption-checklist">Section 10: Adoption checklist</a></li>
+  <li><a href="#crosswalk-to-the-responsible-ai-framework">Crosswalk to the Responsible AI framework</a></li>
+  <li><a href="#scope-note">Scope note</a></li></ol>
+</nav>
+
+<section class="hero web-only" aria-label="Report at a glance">
+  <div class="hero-inner">
+    <div class="hero-series">Instats Policy Series</div>
+    <h1 class="hero-title">AI-Use Disclosure Standard</h1>
+
+    <p class="hero-finding">A university-wide assessment and implementation toolkit that connects institutional policy and priorities with the everyday practices, capabilities, and experiences of researchers and graduate students.</p>
+    <p class="hero-byline"><a class="hero-author-link" href="https://orcid.org/0000-0003-3237-7892" target="_blank" rel="noopener">Michael J. Zyphur, PhD</a> &middot; <span class="hero-author-bio">Director of Instats</span></p>
+    <div class="hero-actions">
+      <a class="hero-btn hero-btn-pdf" href="p2_disclosure_standard.pdf" download>PDF version</a>
+      <a class="hero-btn hero-btn-docx" href="p2_disclosure_standard.docx" download>Word version</a>
+      <a class="hero-btn hero-btn-repo" href="https://github.com/mzyphur/ai-readiness" target="_blank" rel="noopener">View GitHub</a>
+    </div>
+  </div>
+</section>
+
+<div class="wrap">
+<aside class="instrument-response-notice" role="note">These controls are for working through or printing this instrument. Responses are not submitted or saved.</aside>
+<p><a class="brand-mark" href="https://instats.org"><img alt="Instats" src="assets/instats_logo.png" width="1.45in"></a></p>
+<h1 id="p2-ai-use-disclosure-standard">P2 — AI-Use Disclosure Standard</h1>
+<p><em>One institutional rule for what must be disclosed about AI use in research, what it must say, and where it goes for each kind of output, with statement templates a researcher can use unedited.</em></p>
+<hr>
+<h2 id="about-this-instrument">About this instrument</h2>
+<table>
+<tbody>
+<tr>
+<td><strong>Purpose</strong></td>
+<td>To give [INSTITUTION NAME] one defensible disclosure rule across theses and dissertations, journal articles, grant applications, conference papers, data and code releases, and research reports. Where this standard says <em>thesis</em>, it means the thesis or dissertation, whichever the institution calls it.</td>
+</tr>
+<tr>
+<td><strong>Who completes it</strong></td>
+<td>Nobody "completes" this form. Instead, [COMMITTEE] adopts it as an institutional standard, researchers, advisors, supervisors, and graduate students apply it, and the graduate school and research office check it at the points named in Section 4.</td>
+</tr>
+<tr>
+<td><strong>Time required</strong></td>
+<td>It takes about 45 minutes to read and mark local decisions, about 90 minutes of [COMMITTEE] time to adopt, and about three minutes for a researcher to write a disclosure once it is in force.</td>
+</tr>
+<tr>
+<td><strong>Related report sections</strong></td>
+<td>§1.2 (what "responsible" means: ethical, valid, reproducible, transparent), §2.1 (Dimension 1, human-in-the-loop discipline), §2.2 (Dimension 2, responsible use in practice, and the four AI-use modes), §2.3 (Dimension 3, tooling that promotes responsible use: auditability and reproducibility at a known model version), §2.4 (Dimension 4, AI-literate humans: competencies 1 and 2), §2.5 (Dimension 5, institutional benchmarking grid), §3.1 (funder positions), §3.3 (publisher convergence), Appendix C (the eleven AI tool classes), and Appendix G (labor-versus-judgment task taxonomy).</td>
+</tr>
+<tr>
+<td><strong>Cells of the 20-cell grid this instrument touches</strong></td>
+<td><code>D1-policy</code>, <code>D2-policy</code>, <code>D2-systems</code>, <code>D2-process</code>, <code>D4-people</code>, <code>D5-process</code>.</td>
+</tr>
+<tr>
+<td><strong>Companion instruments</strong></td>
+<td>P1 (model institutional AI-in-research policy), where P2 serves as the disclosure clause of P1 written to stand alone. G1 (supervisor-student AI-use agreement), where G1 decides what is permitted, while P2 explains how it is recorded.</td>
+</tr>
+<tr>
+<td><strong>What it produces</strong></td>
+<td>An adopted standard, a disclosure statement on each covered output, and a retained log where AI touched an analysis. All three are inspectable by an examiner (or dissertation committee member, in US usage), editor, auditor, or funder.</td>
+</tr>
+</tbody>
+</table>
+<div class="tablecaption">
+<p>Table 1. Overview of the policy instrument purpose, scope, and operational background.</p>
+</div>
+<blockquote>
+<p><strong>Drafting note for [INSTITUTION NAME].</strong> This standard is written to be adopted as-is. Four decisions must be made locally before it is issued: <strong>(a)</strong> The retention period and custodian for AI-use logs, in Clause 14. <strong>(b)</strong> Whether translation of a researcher's own text is disclosable and permitted, or prohibited outright, in Clause 6. Institutions in the sample split on this. <strong>(c)</strong> Which office receives disclosures that describe a prohibited use, in Clause 29 (which should not be the misconduct office by default). <strong>(d)</strong> Whether the thesis declaration is a positive statement of use, a two-option declaration, or an amendment to an existing sworn instrument, in Clause 17.</p>
+</blockquote>
+<hr>
+<h2 id="section-1-what-disclosure-is-for-and-what-it-is-not">Section 1: What disclosure is for, and what it is not</h2>
+<p>Disclosure exists for two reasons.</p>
+<p>The first is <strong>reproducibility</strong>. A reader has to be able to work out which parts of an output depend on a tool whose behavior is not fully repeatable and whose version will eventually be retired or withdrawn. Setting a model's temperature to zero does not make it deterministic. Floating-point non-associativity, batch-invariance failure, framework optimizations, and infrastructure-level variation mean that the exact same prompt with the exact same settings can return different output across runs. In addition, providers deprecate model versions on schedules ranging from months to years. This means an analysis reported against a general model name without a specific version number is, within a year or two, an analysis that nobody can re-run (§2.4, competency 2). If this information is not recorded, that irreproducibility remains invisible.</p>
+<p>The second reason is <strong>honest provenance</strong>. A tool cannot bear responsibility for research work, so it cannot bear authorship of it. This principle represents the core of the no-AI-co-author rule on which every major publisher has converged (§1.1, §3.3). Disclosure is simply the positive form of that same claim: it states which parts a human generated, which parts a human verified, and who ultimately stands behind the result.</p>
+<p><strong>Disclosure is not a confession, and it is not a penalty.</strong> That sentence belongs in your institutional standard in those exact words. UK Research and Innovation states this point directly: applicants are expected to be transparent about generative-AI use, and "this information will not affect the assessment process." The way an institution frames disclosure directly influences how researchers behave. For example, the British Medical Journal moved AI disclosure into a structured submission-form field (the first publisher to do so), and recorded a 5.7 percent disclosure rate across 25,114 submissions to 49 BMJ journals in the seven months that followed. During that same period, AI assistance was becoming widely embedded in literature searching, drafting, and code development at scale (§1.1, §3.3). That gap will not close by making disclosure harder to write or more dangerous to file.</p>
+<p><strong>Disclosure is also not the whole of responsible use.</strong> Publishers converged on disclosure, but their standards "do not test whether the AI use was responsibly conducted" (§2.2). Responsible use means AI use that is ethical, valid, reproducible, and transparent, and no three of these properties can substitute for the fourth (§1.2). Disclosure delivers transparency and serves as a precondition for reproducibility. Verification is what makes a use valid, and a disclosure records that obligation without replacing it.</p>
+<hr>
+<h2 id="section-2-the-disclosure-threshold">Section 2: The disclosure threshold</h2>
+<p>An undefined threshold produces two failures at once: researchers who disclose nothing because they cannot tell what counts, and researchers who disclose everything, which buries the disclosures that matter.</p>
+<p><strong>The rule, in one sentence.</strong></p>
+<blockquote>
+<p>Disclose any AI use that a competent reader would need to know about to judge the work, reproduce it, or rely on it.</p>
+</blockquote>
+<p>Clauses 1 to 8 make that sentence operational. They rest on the labor-versus-judgment demarcation that the framework requires institutions to publish (§2.1, Appendix G). In this framework, <em>labor</em> refers to work an AI tool can handle where an error is visible and easily corrected. In contrast, <em>judgment</em> refers to work where substituting AI silently degrades the quality and integrity of the research product.</p>
+<p><strong>Clause 1: The three-part test.</strong> A use is disclosable if the answer to any of the following is yes.</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Test</th>
+<th>Question</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>1a</strong></td>
+<td><em>Trace</em></td>
+<td>Did any AI output survive into the finished artifact: text, code, a figure, a transcript, a screening decision, a reference, or a data value?</td>
+</tr>
+<tr>
+<td><strong>1b</strong></td>
+<td><em>Judgment</em></td>
+<td>Did an AI tool touch a task on the judgment side of the institution's labor-versus-judgment demarcation, even as a scaffold rather than a primary decision-maker?</td>
+</tr>
+<tr>
+<td><strong>1c</strong></td>
+<td><em>Reproducibility</em></td>
+<td>Would another researcher, given the same inputs, need to know the specific tool and its version to arrive within a stated tolerance of the same output?</td>
+</tr>
+</tbody>
+</table>
+<div class="tablecaption">
+<p>Table 2. Evaluation criteria and diagnostic questions for the three-part disclosure threshold test.</p>
+</div>
+<p>If all three answers are no, no disclosure is required. This is the <strong>no-trace exemption</strong>, stated positively in Clause 6 so that researchers can rely on it with confidence.</p>
+<p><em>Evidence this clause is operating: The published standard contains the three-part test, and a sample of ten disclosures shows researchers applying it rather than disclosing indiscriminately.</em></p>
+<p><strong>Clause 2: Trace triggers a disclosure.</strong> Except for the uses exempted under Clause 6, where AI output survives into the artifact, the use must be disclosed. The test is survival into the final record, not whether the author believes it was significant. Significance is a judgment that the reader is entitled to make.</p>
+<p><em>Evidence: Disclosure statements on a sample of recent outputs name the specific sections in which AI output survives.</em></p>
+<p><strong>Clause 3: Judgment triggers a disclosure even where nothing survives.</strong> If an AI tool scaffolded a judgment task (such as generating candidate interpretations of an unexpected result, proposing analytic options, running a devil's-advocate pass, or suggesting inclusion criteria), the use is disclosed even if none of the tool's actual words appear in the finished artifact. The reader assessing that judgment is entitled to know that a tool was used in the process. This requirement is what distinguishes a research disclosure standard from a simple plagiarism rule.</p>
+<p><em>Evidence: The standard explicitly names validator-mode use as disclosable, and a sample of theses using AI adversarial review carries a corresponding statement.</em></p>
+<p><strong>Clause 4: Reproducibility triggers the extended content set.</strong> Where the AI use touched the analysis rather than the writing (such as classification, coding, extraction, screening, statistical work, or code that produced a reported result), the disclosure must include the four additional fields set out in Clause 13.</p>
+<p><em>Evidence: Outputs reporting AI-mediated analysis carry the model version, parameters, prompt deposit, and a re-run stability result.</em></p>
+<p><strong>Clause 5: The four AI-use modes, applied.</strong> The framework's four modes (<strong>search, co-author, validator, tutor</strong>) sit at different points on the disclosure threshold.</p>
+<table>
+<thead>
+<tr>
+<th>Mode</th>
+<th>Default disclosure position</th>
+<th>Why</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><em>Search</em></td>
+<td>Disclose when AI-surfaced sources are cited in the artifact. Do not disclose when the tool only reordered search results that the researcher then found and read independently.</td>
+<td>Studies have measured citation fabrication at 18 to 55 percent, along with a collective error rate above 60 percent across eight consumer AI search engines on 1,600 queries. This makes the provenance of any citation list a critical fact for readers (§2.2, §2.4, and Appendix C, Class 1).</td>
+</tr>
+<tr>
+<td><em>Co-author</em></td>
+<td>Disclose when AI-generated or AI-substantially-altered text survives into the artifact. Do not disclose spelling and grammar correction of the researcher's own sentences (Clause 6).</td>
+<td>This is where publisher rules apply directly, and where the trace test is easiest to apply.</td>
+</tr>
+<tr>
+<td><em>Validator</em></td>
+<td>Disclose. Always.</td>
+<td>This is inherently judgment-adjacent work, and it remains completely invisible in the finished text unless disclosed (Clause 3).</td>
+</tr>
+<tr>
+<td><em>Tutor</em></td>
+<td>Do not disclose in research outputs. Tutor use is a learning activity, not a research method, and belongs in the advising or supervision record.</td>
+<td>Disclosing background learning generates unnecessary volume without informing the reader.</td>
+</tr>
+</tbody>
+</table>
+<div class="tablecaption">
+<p>Table 3. Default disclosure positions and rationales across the four artificial intelligence use modes.</p>
+</div>
+<p><em>Evidence: The standard reproduces this table, and advisors and supervisors can explain these four positions without needing to consult the document.</em></p>
+<p><strong>Clause 6: What need not be disclosed (the no-trace exemption).</strong> The following uses are exempt from disclosure:</p>
+<ul>
+<li>Spelling, grammar, and punctuation correction applied to sentences the researcher wrote.</li>
+<li>Predictive text, autocomplete, and keyboard suggestions.</li>
+<li>Reference-style formatting and bibliography generation from records the researcher selected.</li>
+<li>Typesetting, layout, and the accessibility features of ordinary software.</li>
+<li>Search-engine ranking, database relevance ordering, and reference-manager deduplication.</li>
+<li>Plagiarism-similarity checking run by the institution as part of its own administrative process.</li>
+<li>Tutor-mode use for the researcher's own personal learning, where no output enters the artifact.</li>
+</ul>
+<p>Publishing and academic sectors support each of these exemptions. The Association for Computing Machinery treats "basic word processing systems" as an exception to its disclosure requirement. The Institute of Electrical and Electronics Engineers places editing and grammar enhancement outside the intent of its policy. Springer Nature states that AI-assisted copy-editing does not need to be declared. SAGE is the only publisher in <a href="https://instats.org/publications/responsible-ai-in-academic-research">the report</a>'s sample with an explicit assistive-versus-generative threshold, exempting tools "that make suggestions to improve or enhance your own work" (§3.3).</p>
+<blockquote>
+<p><strong>Local decision.</strong> Translation of a researcher's own text between languages is treated in Appendix G as labor with an audit trail and a researcher signature. However, at least one institution in <a href="https://instats.org/publications/responsible-ai-in-academic-research">the report</a>'s 38-university sample prohibits AI translation of text drafted in another language outright. [INSTITUTION NAME] must choose between <em>disclosable and permitted</em> or <em>prohibited</em>. Do not leave this unstated.</p>
+</blockquote>
+<p><em>Evidence: The exemption list appears in the published standard, and a researcher survey shows the list is widely known.</em></p>
+<p><strong>Clause 7: A disclosure obligation is not a permission.</strong> Where an institutional policy, funder condition, publisher rule, or ethics approval prohibits a specific use, that prohibition governs. In those cases, a disclosure serves as evidence of a policy breach rather than a cure for it. The clearest example is AI-generated data figures, which nine major publishers prohibit as a category (§3.3, Appendix C, Class 9).</p>
+<p><em>Evidence: The standard clearly states this rule, and the institution can name where a disclosed-but-prohibited use would be routed (Clause 29).</em></p>
+<p><strong>Clause 8: The standard binds everyone who produces research.</strong> This standard applies on identical terms to graduate students, research staff, advisors, supervisors, and professional staff producing research outputs. If an institution applies disclosure rules only to students, it is simply running a plagiarism policy under a research-integrity label. Across the 38 top-tier doctoral universities in 15 countries and jurisdictions surveyed for <a href="https://instats.org/publications/responsible-ai-in-academic-research">the report</a>, around 40 percent of institutional AI policies stop at that ceiling (§1.3).</p>
+<p><em>Evidence: The scope clause of the published standard explicitly names both staff and students, and at least one staff-authored output carries a disclosure.</em></p>
+<hr>
+<h2 id="section-3-what-a-disclosure-must-contain">Section 3: What a disclosure must contain</h2>
+<p><strong>Clause 9: The five required fields.</strong> Every disclosure must include these five fields, in any order and in any format the target destination allows.</p>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>Field</th>
+<th>What it means</th>
+<th>Why a reader needs it</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>1</strong></td>
+<td><strong>Tool class</strong></td>
+<td>Which of the eleven AI tool classes in Appendix C was used: search, co-author, validator, tutor, coder, retrieval-augmented assistant, literature-synthesis, specialized research assistant, image generation, voice and transcription, or AI detection.</td>
+<td>It identifies the specific failure mode to look for. For example, a transcription tool tends to fail by inventing content, while a retrieval-augmented assistant tends to misattribute a real source.</td>
+</tr>
+<tr>
+<td><strong>2</strong></td>
+<td><strong>Model and version</strong></td>
+<td>The named model and its version or date-stamped endpoint. Where the provider does not expose a version number, state that clearly and give the date of access.</td>
+<td>Model-version drift makes a disclosure without a version number unreproducible within a year.</td>
+</tr>
+<tr>
+<td><strong>3</strong></td>
+<td><strong>Date or date range of use</strong></td>
+<td>When the tool was used, to the specific day or across a date range.</td>
+<td>It pins the disclosure to the specific model state that existed at that time.</td>
+</tr>
+<tr>
+<td><strong>4</strong></td>
+<td><strong>What it was used for</strong></td>
+<td>The task, described in the researcher's own words, tied directly to the part of the artifact affected.</td>
+<td>This is the field the reader actually relies on to evaluate the work.</td>
+</tr>
+<tr>
+<td><strong>5</strong></td>
+<td><strong>What verification was performed</strong></td>
+<td>The specific check that was performed, who performed it, and its result.</td>
+<td>Verification is the actual obligation, and the disclosure is simply its record.</td>
+</tr>
+</tbody>
+</table>
+<div class="tablecaption">
+<p>Table 4. Definitions and reader rationales for the five required disclosure fields.</p>
+</div>
+<p>Fields 1 to 4 match what the more operationally developed institutions and publishers already ask for. The University of Helsinki requires "the name of the tool and the version used, the date of use, how the tool was used, and for what step or purpose." TU Delft requires name, version, model, and source. Taylor &amp; Francis requires tool name, version, purpose, and manner of use. Oxford University Press requires the location of each use, the tool and version, the manner of use, the justification, and the steps taken to validate the outputs. The Public Library of Science requires the tools used, how the authors evaluated the validity of the outputs, and which aspects of the article were affected (§3.3).</p>
+<p>Field 5 is the one that most publisher templates only imply. It is mandatory here because Dimension 1 makes human verification an institutional commitment, and the first competency under Dimension 4 (citation verification) makes it the researcher's direct responsibility (§2.1, §2.4). A disclosure that describes what a tool did without stating what a human checked tells only half the story.</p>
+<p><em>Evidence: A sample of ten disclosures scored against the five fields, and the institution can state the completion rate per field.</em></p>
+<p><strong>Clause 10: The minimal form.</strong> Where the target destination permits a single sentence, the five fields compress into one (Section 5). The minimal form is not an inferior option. It is the appropriate form for AI use that leaves a trace in the text but has no analytical consequence.</p>
+<p><strong>Clause 11: The full form.</strong> Where the AI use touched more than one part of the artifact, or where the destination requires a dedicated section, the disclosure is written for each part separately rather than as a single global sentence (see the bad example in Section 8).</p>
+<p><strong>Clause 12: Name a human for each verification.</strong> In multi-author work, field 5 must name which specific author performed the verification. While collective responsibility is the default for any shared output, the verification check itself was performed by an individual.</p>
+<p><em>Evidence: Multi-author disclosures name an individual verifier for each task.</em></p>
+<p><strong>Clause 13: The reproducibility set (four additional fields), required where Clause 4 applies.</strong></p>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>Field</th>
+<th>Requirement</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>6</strong></td>
+<td><strong>Prompt or prompt set</strong></td>
+<td>Provided verbatim in an appendix, or deposited in a named repository with a resolvable identifier. Where a prompt contains personal or confidential data, deposit it under controlled access and disclose the location, never the private content itself (Clause 30).</td>
+</tr>
+<tr>
+<td><strong>7</strong></td>
+<td><strong>Parameters</strong></td>
+<td>Temperature, random seed where the provider exposes one, and any retrieval corpus or system configuration. Where a parameter is not exposed, state that explicitly.</td>
+</tr>
+<tr>
+<td><strong>8</strong></td>
+<td><strong>Re-run stability check</strong></td>
+<td>The number of re-runs performed, and the observed agreement between them. Report the result even when agreement is poor, especially when it is poor.</td>
+</tr>
+<tr>
+<td><strong>9</strong></td>
+<td><strong>Deposit location</strong></td>
+<td>Where the prompts, outputs, logs, and code live, and how long they will remain accessible there.</td>
+</tr>
+</tbody>
+</table>
+<div class="tablecaption">
+<p>Table 5. Requirements for the four additional fields in the reproducibility disclosure set.</p>
+</div>
+<p>Field 8 is not just decorative paperwork. AI models are rarely deterministic at the raw output level, and they are rarely fully stable across even five re-runs at identical settings. Prompt choice is a significant researcher degree of freedom. A systematic evaluation of 13 million model-generated labels across 18 models found that prompt and model choices alone produced incorrect conclusions in 31 to 50 percent of cases, even when using highly capable models (§2.4, competency 3). A disclosure of an AI-mediated analysis that omits a stability check leaves out that analysis's largest known source of uncertainty.</p>
+<p><strong>Clause 14: Retention.</strong> The institution retains the material behind field 9 for [RETENTION PERIOD], under the custody of [CUSTODIAN]. This requirement should be established as a clear rule in the standard rather than decided case by case. Auditability through session logs is one of the six tool properties that Dimension 3 includes in the procurement test (§2.3). Having a clear retention rule turns that technical property into a practical institutional capability.</p>
+<blockquote>
+<p><strong>Local decision.</strong> Set [RETENTION PERIOD] to match the institution's existing research-data retention schedule rather than inventing a new one. Align [CUSTODIAN] with the research-data-management function, not with the academic integrity office.</p>
+</blockquote>
+<p><em>Evidence: The records schedule names AI-use logs with a designated retention period and a custodian.</em></p>
+<hr>
+<h2 id="section-4-where-the-disclosure-goes-by-artifact-type">Section 4: Where the disclosure goes, by artifact type</h2>
+<p><strong>Clause 15: The destination's rule on <em>location</em> governs, while this standard's rule on <em>content</em> serves as the baseline.</strong> Where a publisher, funder, or examination regulation specifies where the disclosure must sit, that placement rule governs. If the destination asks for less content than Clause 9, the researcher supplies all five fields anyway. If it asks for more, the researcher supplies the additional details.</p>
+<p><strong>Clause 16: The map.</strong></p>
+<table>
+<thead>
+<tr>
+<th>Artifact</th>
+<th>Where the disclosure goes</th>
+<th>Who checks it, and when</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Doctoral thesis</strong></td>
+<td>The thesis declaration page, plus a statement in the methods or an appendix wherever AI touched the analysis.</td>
+<td>Advisor or supervisor at submission, examiners during examination, and the graduate school at final submission.</td>
+</tr>
+<tr>
+<td><strong>Journal article</strong></td>
+<td>The destination journal's mandated location (see Clause 19).</td>
+<td>Corresponding author before submission, and editor at triage.</td>
+</tr>
+<tr>
+<td><strong>Grant application</strong></td>
+<td>The funder's specified field or section. Where the funder specifies none, the disclosure goes in the institution's internal pre-award record, <strong>not</strong> in the application text.</td>
+<td>Research office at internal sign-off.</td>
+</tr>
+<tr>
+<td><strong>Conference paper</strong></td>
+<td>The venue's policy where it has one. Otherwise, use the journal-article form.</td>
+<td>Corresponding author, as well as the program chair if the venue requests it.</td>
+</tr>
+<tr>
+<td><strong>Dataset or code release</strong></td>
+<td>The README, plus a machine-readable field in the metadata record, plus the prompt set and model version deposited with the artifact.</td>
+<td>Data steward at deposit.</td>
+</tr>
+<tr>
+<td><strong>Research report or commissioned study</strong></td>
+<td>A named disclosure section, at the front or immediately before the references.</td>
+<td>Report owner at sign-off, and the commissioning body as specified by contract.</td>
+</tr>
+<tr>
+<td><strong>Preprint</strong></td>
+<td>A statement in the methods or an equivalent section. No preprint server in <a href="https://instats.org/publications/responsible-ai-in-academic-research">the report</a>'s sample mandates a specific section name, and none permits AI as an author.</td>
+<td>Corresponding author.</td>
+</tr>
+<tr>
+<td><strong>Ethics application</strong></td>
+<td>The application's own AI field where one exists. Otherwise, use a paragraph in the methods description.</td>
+<td>Ethics committee.</td>
+</tr>
+<tr>
+<td><strong>Peer-review report</strong></td>
+<td>Follow the journal's reviewer policy, which is more restrictive than its author policy at most publishers. Never upload a manuscript under review to a tool without the publisher's explicit permission.</td>
+<td>Handling editor.</td>
+</tr>
+<tr>
+<td><strong>Examiner report</strong></td>
+<td>Not applicable. AI may not participate as an examiner, and examination materials remain outside the AI-tool workflow under P1 Clause 11 and Appendix G.</td>
+<td>Graduate school.</td>
+</tr>
+</tbody>
+</table>
+<div class="tablecaption">
+<p>Table 6. Disclosure placement locations and review responsibilities across different research artifact types.</p>
+</div>
+<p><em>Evidence: The institution can produce, for each row, the form or template that carries the disclosure and the office that checks it.</em></p>
+<p><strong>Clause 17: The thesis declaration is the anchor instrument.</strong> Where an institution already has a sworn or signed declaration at thesis submission, AI disclosure should be added directly to it rather than created as a separate instrument. Germany's <em>eidesstattliche Versicherung</em> tradition is the clearest working example. The affidavit long predated generative AI, and disclosure was added directly to it with established legal standing. Institutions that require doctoral students to state "when, where, why, and to what extent" AI was used inside that existing affidavit have the strongest instrument in <a href="https://instats.org/publications/responsible-ai-in-academic-research">the report</a>'s global sample, at no additional administrative cost (§1.3, §3.2).</p>
+<blockquote>
+<p><strong>Local decision.</strong> Choose one of three forms: <strong>(i)</strong> an amendment to an existing sworn declaration (the strongest approach where such traditions exist), <strong>(ii)</strong> a two-option declaration where the doctoral student selects either no AI use or acknowledged AI use, with the acknowledgment providing the five required fields (currently in use at one Class D institution in <a href="https://instats.org/publications/responsible-ai-in-academic-research">the report</a>'s sample), or <strong>(iii)</strong> a positive statement of use appended to the thesis preliminary pages and prompted in the online submission form (used at institutions in Australia and Canada). Do not create a separate standalone form when an existing instrument can easily carry the clause.</p>
+</blockquote>
+<p><em>Evidence: The thesis declaration text, and the completion rate at final submission for the most recent [DATE] cohort.</em></p>
+<p><strong>Clause 18: The doctoral student must be able to defend the disclosure orally.</strong> Where an institution examines by oral examination (the viva or thesis defense), the doctoral student is expected to describe and defend any AI use, and examiners may ask about it. This is already the rule at institutions in <a href="https://instats.org/publications/responsible-ai-in-academic-research">the report</a>'s sample, and it is what gives practical force to the written disclosure. Examiners are not expected to act as forensic detectors of AI use, but they are fully entitled to ask candidates to explain and defend whatever was declared.</p>
+<p><em>Evidence: The examiner briefing note includes the question, and examiner reports from the most recent cycle show it being asked.</em></p>
+<hr>
+<h2 id="section-5-statement-templates">Section 5: Statement templates</h2>
+<p>Twelve templates follow: six artifact types, each presented in a <strong>minimal</strong> one-sentence form and a <strong>full</strong> form. Both comply with this standard, and [INSTITUTION NAME] can choose which format serves as its baseline requirement (see the drafting note at the end of this section).</p>
+<p>These templates were written for this pack to satisfy the content requirements publishers and institutions state. They are not copied or adapted from any publisher's sample text. If a target venue mandates its own specific wording, researchers should use that wording and simply add whichever of the five required fields in this standard it leaves out.</p>
+<p>Square brackets indicate fill-in fields. Delete any sentence that does not apply, but do not delete field 5 (verification).</p>
+<h3 id="51-doctoral-thesis">5.1 Doctoral thesis</h3>
+<p><strong>Minimal</strong></p>
+<blockquote>
+<p><strong>Declaration of AI use.</strong> In preparing this thesis I used [MODEL AND VERSION], a [TOOL CLASS] tool, between [DATE] and [DATE], to [TASK, e.g. convert my own bullet-point notes into draft paragraphs in Chapters 3 and 5]. I checked every resulting passage against my own notes and sources before it entered the thesis. Every claim, interpretation, and conclusion in this thesis is mine, and I am responsible for all of them.</p>
+</blockquote>
+<p><strong>Full</strong></p>
+<blockquote>
+<p><strong>Declaration of AI use.</strong> This declaration covers all use of artificial-intelligence tools in the research and writing of this thesis, in accordance with the [INSTITUTION NAME] AI-Use Disclosure Standard.</p>
+<p><em>Literature searching.</em> I used [MODEL AND VERSION], a retrieval-augmented research assistant, between [DATE] and [DATE], to scope the literature in [FIELD] and to assemble a candidate reading list. I resolved every citation that survived into Chapter 2 to its primary source and read each source in full. [NUMBER] candidate references returned by the tool did not resolve to a real source and were discarded.</p>
+<p><em>Drafting.</em> I used [MODEL AND VERSION], a large-language-model co-author tool, between [DATE] and [DATE], to convert my own outlines and notes into draft prose in Chapters [N] and [N], and to shorten passages I had already written. No section of this thesis contains substantive content I could not have produced and cannot independently defend. I revised all AI-assisted text.</p>
+<p><em>Analysis.</em> I used [MODEL AND VERSION] to [ANALYTICAL TASK, e.g. apply a coding frame to 412 interview excerpts] in Chapter [N], at temperature [VALUE] and seed [VALUE or "not exposed by the provider"]. The prompt set is reproduced at Appendix [X] and deposited at [REPOSITORY, IDENTIFIER]. I re-ran the task [NUMBER] times, and agreement between runs was [RESULT]. I hand-coded a [PERCENTAGE] random sample against the model output, where agreement was [RESULT]. All disagreements were resolved by me and are documented at [LOCATION].</p>
+<p><em>Adversarial review.</em> I used [MODEL AND VERSION], from a different model family than the tools above, to run a devil's-advocate pass on the argument in Chapter [N]. I treated its output as a source of questions, not as validation. [NUMBER] of its objections led to changes in the chapter, and those changes are described at [LOCATION].</p>
+<p><em>Verification and responsibility.</em> [NAME] performed the verification described above. The research questions, the design, the interpretation of results, and the conclusions are my own work. No AI tool is an author of this thesis, and no AI tool made any research judgment recorded in it.</p>
+<p>Signed: [NAME], [DATE].</p>
+</blockquote>
+<h3 id="52-journal-article">5.2 Journal article</h3>
+<p><strong>Minimal</strong></p>
+<blockquote>
+<p><strong>Declaration of AI use.</strong> The authors used [MODEL AND VERSION], a [TOOL CLASS] tool, on [DATE], to [TASK], in the [SECTION] section. [AUTHOR INITIALS] reviewed and verified all resulting content. The authors are responsible for the content of this article. No AI tool is an author.</p>
+</blockquote>
+<p><strong>Full</strong></p>
+<blockquote>
+<p><strong>Declaration of AI use.</strong> In preparing this manuscript the authors used the tools listed below. [AUTHOR INITIALS] verified all AI-assisted content before submission, and the authors take responsibility for the whole of the article, including its references.</p>
+<ol>
+<li>[MODEL AND VERSION] ([TOOL CLASS]), used on [DATE] to [TASK] in [SECTION]. Verification: [CHECK PERFORMED, BY WHOM, RESULT].</li>
+<li>[MODEL AND VERSION] ([TOOL CLASS]), used between [DATE] and [DATE] to [TASK] in [SECTION]. Verification: [CHECK PERFORMED, BY WHOM, RESULT].</li>
+</ol>
+<p>Where AI tools contributed to the analysis, the model version, parameters, prompt set, and re-run stability results are reported in [SECTION / SUPPLEMENT] and deposited at [REPOSITORY, IDENTIFIER].</p>
+<p>No AI tool is listed as an author. No AI tool generated or altered any figure, image, or data value in this article. No part of this manuscript was uploaded to a tool without an enterprise agreement disabling training on input.</p>
+</blockquote>
+<h3 id="53-grant-application">5.3 Grant application</h3>
+<p><strong>Minimal</strong></p>
+<blockquote>
+<p><strong>AI-use statement.</strong> [MODEL AND VERSION], a [TOOL CLASS] tool, was used on [DATE] to [TASK, e.g. shorten the applicant-written case for support to the word limit]. The applicant wrote and is responsible for the content of this application.</p>
+</blockquote>
+<p><strong>Full</strong></p>
+<blockquote>
+<p><strong>AI-use statement.</strong> The applicant used the following tools in preparing this application: [MODEL AND VERSION] ([TOOL CLASS]) on [DATE] to [TASK], and [MODEL AND VERSION] ([TOOL CLASS]) between [DATE] and [DATE] to [TASK]. Every claim, citation, figure, and costing in this application was written or checked by the applicant. No section of this application was substantially developed by an AI tool. [Where required by the funder: the sources surfaced with AI assistance and cited in this application are marked in the reference list.]</p>
+<p><strong>Drafting note.</strong> Check the funder's rule at the point of application, every time (Section 7). Where the funder requires nothing, keep the statement in the internal pre-award record and out of the application text. Unrequested text in a page-limited application is an unnecessary cost with no benefit.</p>
+</blockquote>
+<h3 id="54-conference-paper">5.4 Conference paper</h3>
+<p><strong>Minimal</strong></p>
+<blockquote>
+<p><strong>AI-use disclosure.</strong> [MODEL AND VERSION], a [TOOL CLASS] tool, was used on [DATE] to [TASK] in [SECTION]. [AUTHOR INITIALS] verified the output. The authors are responsible for the content of this paper and no AI tool is an author.</p>
+</blockquote>
+<p><strong>Full</strong></p>
+<blockquote>
+<p><strong>AI-use disclosure.</strong> The authors used [MODEL AND VERSION] ([TOOL CLASS]) between [DATE] and [DATE] for the following tasks, identified by section: [SECTION]: [TASK], and [SECTION]: [TASK]. Verification: [CHECK, BY WHOM, RESULT] for each. Where AI tools were used to generate or transform code, the generated code is marked in the repository at [IDENTIFIER] and was reviewed and tested by [NAME] before inclusion. Where AI tools were used in the analysis, model version, parameters, prompts, and re-run stability results are reported at [LOCATION]. No AI tool is an author of this paper. Any AI use in reviewing other submissions to this venue is governed by the venue's reviewer policy and is not covered by this statement.</p>
+</blockquote>
+<h3 id="55-dataset-or-code-release">5.5 Dataset or code release</h3>
+<p><strong>Minimal</strong></p>
+<blockquote>
+<p><strong>AI use in this release.</strong> [MODEL AND VERSION], a [TOOL CLASS] tool, was used on [DATE] to [TASK, e.g. generate the cleaning script at <code>/src/clean.py</code>]. All generated code was reviewed and tested by [NAME] before release. Generated segments are marked in the source.</p>
+</blockquote>
+<p><strong>Full</strong></p>
+<blockquote>
+<p><strong>AI use in this release.</strong></p>
+<p><em>Scope.</em> This statement covers AI use in producing the data, the code, and the documentation in this release.</p>
+<p><em>Tools.</em> [MODEL AND VERSION] ([TOOL CLASS]), [DATE] to [DATE], used to [TASK]. [MODEL AND VERSION] ([TOOL CLASS]), [DATE] to [DATE], used to [TASK].</p>
+<p><em>Where the AI output is.</em> AI-generated or AI-modified code is marked in the source with <code># AI-assisted: [MODEL AND VERSION], [DATE]</code> at the head of each affected block. AI-derived data values, where any exist, are flagged in the column <code>[COLUMN NAME]</code> of <code>[FILE]</code>. No data value in this release was generated by an AI tool other than as recorded there.</p>
+<p><em>Reproducing the AI steps.</em> Prompts: <code>[PATH]</code>. Parameters: temperature [VALUE], seed [VALUE or "not exposed"], retrieval corpus [DESCRIPTION or "none"]. Re-run stability: [NUMBER] runs, agreement [RESULT]. Users should expect approximate rather than exact reproduction of these steps: the model is not fully deterministic at these settings, and [MODEL AND VERSION] may be withdrawn by its provider.</p>
+<p><em>Verification.</em> [NAME] reviewed all generated code, ran the test suite at <code>[PATH]</code>, and confirmed [RESULT]. Machine-readable field: <code>ai_use: true</code> in <code>[METADATA FILE]</code>.</p>
+</blockquote>
+<h3 id="56-research-report">5.6 Research report</h3>
+<p><strong>Minimal</strong></p>
+<blockquote>
+<p><strong>AI use in this report.</strong> [MODEL AND VERSION], a [TOOL CLASS] tool, was used on [DATE] to [TASK]. [NAME] verified the output. [ORGANIZATION] is responsible for every factual claim, calculation, and recommendation in this report.</p>
+</blockquote>
+<p><strong>Full</strong></p>
+<blockquote>
+<p><strong>AI use in this report.</strong> This report was researched and written by [NAMES]. AI tools were used as set out below, and the authors are responsible for every factual claim, source interpretation, calculation, caveat, and recommendation.</p>
+<table>
+<thead>
+<tr>
+<th>Tool class</th>
+<th>Model and version</th>
+<th>Dates</th>
+<th>Used for</th>
+<th>Verified by, and how</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>[CLASS]</td>
+<td>[MODEL AND VERSION]</td>
+<td>[DATE] to [DATE]</td>
+<td>[TASK]</td>
+<td>[NAME], [CHECK], [RESULT]</td>
+</tr>
+<tr>
+<td>[CLASS]</td>
+<td>[MODEL AND VERSION]</td>
+<td>[DATE] to [DATE]</td>
+<td>[TASK]</td>
+<td>[NAME], [CHECK], [RESULT]</td>
+</tr>
+</tbody>
+</table>
+<p>Every source cited in this report was retrieved and read by a named author. No figure, chart, or image in this report was generated by an AI tool. Where AI tools contributed to analysis, the prompts, parameters, and stability results are at [LOCATION]. Where this report was prepared for [COMMISSIONING BODY], this statement satisfies clause [N] of the commissioning agreement.</p>
+<p><strong>Drafting note on setting the institutional floor.</strong> Set the <strong>minimal</strong> form as the floor where AI touched only labor tasks, and the <strong>full</strong> form as mandatory where AI touched analysis or judgment. If you mandate the full form for every minor use, you run directly into the noise problem described in Section 9. In short, a standard that takes too long to complete is a standard that nobody will follow.</p>
+</blockquote>
+<hr>
+<h2 id="section-6-how-this-interacts-with-publisher-policies">Section 6: How this interacts with publisher policies</h2>
+<p><strong>Clause 19: The destination's location rule governs, and the researcher checks it at submission.</strong> Publishers converged on substance and diverged on placement. For instance, Elsevier requires a section entitled "Declaration of Generative AI and AI-assisted technologies in the writing process" immediately above the references, while Cell Press requires the equivalent statement after the declaration of interests. Nature and Springer Nature place it in the Methods. Science requires it in three places: the cover letter, the acknowledgments, and the methods or supplementary materials. JAMA requires the Acknowledgment or Methods plus an answer to a submission-form question. The Association for Computing Machinery and the Institute of Electrical and Electronics Engineers place it in the Acknowledgments, with the Institute additionally requiring section-by-section identification. The Public Library of Science requires a dedicated section in the Methods. Wiley requires a cover-letter statement plus a dedicated appendix describing the AI-generated content. The British Medical Journal requires a contributor-section acknowledgment plus a fuller methods description where the use was in the research itself, and moved the question into a structured submission-form field (§3.3).</p>
+<p>The instruction to researchers is simple: <strong>read the destination's author instructions at submission, put the disclosure where they say, and include all five required fields whatever they ask for.</strong></p>
+<p><em>Evidence: The institution's submission-support guidance carries the location table, and the research office can produce it.</em></p>
+<p><strong>Clause 20: Where the publisher's threshold is lower than this standard, this standard governs, and where it is higher, the publisher governs.</strong> SAGE exempts assistive tools that improve the author's own work, Springer Nature exempts AI-assisted copy-editing, and the Association for Computing Machinery treats basic word processing systems as an exception. All three are consistent with Clause 6. Where a publisher requires disclosure of something Clause 6 exempts, the publisher's rule applies to that submission.</p>
+<p><strong>Clause 21: Three publisher rules are not disclosure rules at all, and disclosure does not satisfy them.</strong></p>
+<ul>
+<li><strong>AI cannot be an author.</strong> This rule is universal across the eighteen publishers and journal families in <a href="https://instats.org/publications/responsible-ai-in-academic-research">the report</a>'s sample, as well as across all three preprint servers. It is a fundamental rule about accountability, and no disclosure statement can cure a breach of it.</li>
+<li><strong>AI-generated data figures are prohibited at nine major publishers</strong>, outside a narrow exception where the AI system itself is the object of study. Disclosing an AI-generated microscopy image does not make it publishable.</li>
+<li><strong>Reviewers may not upload manuscripts to public AI tools.</strong> Sixteen of the eighteen publishers state this directly, framed as confidentiality rather than integrity, which is why it holds regardless of which national research-integrity code applies. The Public Library of Science goes further and requires a reviewer who used AI to disclose that use to the authors, not only to the editor.</li>
+</ul>
+<p><em>Evidence: The institution's reviewer guidance states the upload prohibition, and ethics-of-review training records show it is taught.</em></p>
+<p><strong>A note on sector speed, for [COMMITTEE].</strong> Every major publisher issued a substantively identical no-AI-co-author position within about three months of ChatGPT-3.5's broad public release, compared to the years comparable cross-publisher convergences have historically taken (§1.1, §3.3). Academic publishing can converge quickly when it decides to, which is why a university can comfortably adopt a disclosure standard now rather than waiting for one to be handed down from outside.</p>
+<hr>
+<h2 id="section-7-how-this-interacts-with-funder-requirements">Section 7: How this interacts with funder requirements</h2>
+<p><strong>Clause 22: Check the funder's rule at the point of application, every time.</strong> Across the fourteen national research funders surveyed for <a href="https://instats.org/publications/responsible-ai-in-academic-research">the report</a> (spanning eleven countries plus the European Research Council as a supranational entity), the applicant-side position runs from prohibition-adjacent to explicit non-requirement, across policies dated September 2023 to April 2026 (§3.1). Any general rule a researcher tries to carry in their head will inevitably be wrong for some funder.</p>
+<table>
+<thead>
+<tr>
+<th>Funder position</th>
+<th>Funders in the sample</th>
+<th>What the researcher does</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Disclosure or acknowledgment <strong>expected</strong></td>
+<td>UK Research and Innovation and its component councils, the German Research Foundation (which alone extends the duty to published results), the Netherlands Organization for Scientific Research (in the reference list), the Australian Research Council and the National Health and Medical Research Council, the Canadian tri-agency (conditional acknowledgment), and the European Research Council</td>
+<td>Use the Section 5.3 statement in the funder's specified field. Where the expectation is stated in principle rather than as a form field, put it in the section the funder names for methods or approach.</td>
+</tr>
+<tr>
+<td>Disclosure <strong>encouraged</strong></td>
+<td>The US National Science Foundation</td>
+<td>Use the minimal statement in the project description.</td>
+</tr>
+<tr>
+<td>A <strong>substantive originality bar</strong> rather than a disclosure rule</td>
+<td>The US National Institutes of Health: applications substantially developed by AI "are not considered the original ideas of applicants" and will not be considered</td>
+<td>Disclosure is not the operative question. The applicant must be able to show the intellectual content is theirs.</td>
+</tr>
+<tr>
+<td><strong>No disclosure requirement</strong></td>
+<td>The Swiss National Science Foundation, the Swedish Research Council ("you do not need to state whether you have used AI"), the Japan Society for the Promotion of Science, and Singapore's Agency for Science, Technology and Research</td>
+<td>Keep the statement in the internal pre-award record. Do not add it to the application.</td>
+</tr>
+<tr>
+<td><strong>No funder-specific policy located</strong> in <a href="https://instats.org/publications/responsible-ai-in-academic-research">the report</a>'s sample</td>
+<td>The Research Council of Norway</td>
+<td>Treat the position as unstated: keep the statement in the internal pre-award record and check the call conditions before each submission.</td>
+</tr>
+</tbody>
+</table>
+<div class="tablecaption">
+<p>Table 7. Sample funding agency disclosure positions and corresponding compliance actions for researchers.</p>
+</div>
+<p><em>Evidence: The research office maintains a funder-by-funder disclosure table with a review date, and it can produce the current version on request.</em></p>
+<p><strong>Clause 23: Almost no funder regulates AI use <em>inside</em> the funded research, so the institution must.</strong> Funders regulate the front and back of the grant lifecycle (application and assessment) and delegate the middle to host-institution research-integrity policy. The German Research Foundation is the single clear exception in <a href="https://instats.org/publications/responsible-ai-in-academic-research">the report</a>'s sample, as its disclosure duty extends to making results publicly available rather than stopping at the grant application. This regulatory gap is exactly why this standard must operate at the institutional level rather than relying on funding bodies to set the rules.</p>
+<p><em>Evidence: The institution's AI policy explicitly claims the funded-research surface, and the funder-delegation language is cited directly within it.</em></p>
+<p><strong>Clause 24: The assessment side is nearly universal and nearly absolute.</strong> Reviewers are prohibited from uploading proposals to external generative-AI tools at thirteen of the fourteen funders surveyed, framed as confidentiality and intellectual property rather than integrity. Staff who assess for funders, sit on panels, or review for journals must be informed of this separately from the author-side standard, because it binds them in an evaluative role that this standard does not otherwise cover.</p>
+<p><em>Evidence: The panel-member and peer-review briefing carries the prohibition, and the institution can name the last date it was issued.</em></p>
+<hr>
+<h2 id="section-8-a-good-disclosure-and-three-bad-examples">Section 8: A good disclosure and three bad examples</h2>
+<h3 id="a-bad-disclosure-the-empty-one">A bad disclosure: The empty one</h3>
+<blockquote>
+<p><em>"AI was used in the preparation of this manuscript."</em></p>
+</blockquote>
+<p><strong>Why it fails.</strong> It includes none of the five required fields, so a skeptical auditor cannot confirm or refute a single thing in it. There is no failure mode to look for, nothing to re-run, no model state to pin it to, no affected section to inspect, and no obligation recorded as discharged. This is what happens when a rule asks only whether AI was used, and it is the exact format that teaches editors to stop reading disclosure statements altogether.</p>
+<h3 id="a-bad-disclosure-the-flood">A bad disclosure: The flood</h3>
+<blockquote>
+<p><em>"The authors used AI assistance throughout the preparation of this manuscript, including grammar checking in Microsoft Word, spelling correction, predictive text, reference formatting in [manager], search-result ranking in [database], autocomplete in the code editor, transcription of two author meetings, language polishing of the abstract, introduction, methods, results and discussion, image cropping…"</em> (continues for 340 words)</p>
+</blockquote>
+<p><strong>Why it fails.</strong> Almost everything in it is exempt under Clause 6, and the one item that is not (language polishing that produced surviving text) is buried where no reader will find it. Disclosing too much is not a safe, harmless error. It simply dumps the sorting burden onto the reader, who knows far less about what happened than the researcher does.</p>
+<h3 id="a-bad-disclosure-the-one-that-discloses-a-prohibition">A bad disclosure: The one that discloses a prohibition</h3>
+<blockquote>
+<p><em>"Figures 2 and 3 were generated using [image model] from descriptions of our experimental results."</em></p>
+</blockquote>
+<p><strong>Why it fails.</strong> Nine major publishers prohibit AI-generated data figures as a category. The statement is complete, honest, and well-written, but it is still fatal to the submission because disclosure is not permission (Clause 7). The only correct action here was not to generate the figures with AI in the first place.</p>
+<h3 id="a-good-disclosure">A good disclosure</h3>
+<blockquote>
+<p><strong>Declaration of AI use.</strong> We used [model], version [dated endpoint], a retrieval-augmented research assistant, between 4 and 19 February [YEAR], to scope the literature on [TOPIC] and build a candidate reference list. Every reference cited in Section 2 was retrieved and read by SK at the publisher of record. Eleven candidate references returned by the tool did not resolve to a real source and were discarded.</p>
+<p>We used [model], version [dated endpoint], a large-language-model co-author tool, on 3 and 4 March [YEAR], to compress the Discussion from 1,900 to 1,200 words. The compressed text was written from our own draft. MR checked every retained sentence against the original for changed meaning, and restored four passages the tool had altered.</p>
+<p>We used [model], version [dated endpoint], to apply our published coding frame to 412 free-text survey responses (Section 4.3), at temperature 0, seed not exposed by the provider. The prompt set is at Supplement S2 and deposited at [repository, DOI]. We ran the classification five times: four responses out of 412 changed class between runs, and all four are listed in Supplement S3. SK independently hand-coded a 20 percent random sample, where agreement with the model was 94 percent. All 12 disagreements were adjudicated by SK and MR together, and were resolved in favor of the human hand coding.</p>
+<p>No AI tool is an author. No AI tool generated or altered any figure or data value. No unpublished participant data was entered into any tool outside our institutional enterprise tenancy with training on input disabled.</p>
+</blockquote>
+<p><strong>Why it works.</strong> All five fields appear for each use, and the reproducibility set appears for the use that touched the analysis. The verification is specific, attributed to a named person, and reports exact numbers rather than vague assurances, including numbers that do not flatter the tool. Eleven unresolvable references and four unstable classifications are exactly the facts a reader needs to know, and exactly the facts an anxious researcher might be tempted to omit. The whole statement is under 300 words, took only a few minutes to write because logs were kept during the research, and allows an auditor to check every claim against the deposit.</p>
+<hr>
+<h2 id="section-9-what-not-to-require">Section 9: What not to require</h2>
+<p>An overly broad rule does not produce better information. It produces noise, non-compliance, and usually both. Each of the following points binds the institution, not the researcher.</p>
+<p><strong>Clause 25: Do not require disclosure of no-trace uses.</strong> Clause 6 exists specifically for this reason. A rule that captures spellchecking captures everything, and a rule that captures everything quickly gets ignored.</p>
+<p><strong>Clause 26: Do not require prompt logs for every use.</strong> Require them only where the AI output entered the analysis (Clause 4). The Canadian tri-agency revised its guidance with the stated aim of increasing clarity and lowering researchers' administrative burden while acknowledging the increased complexity of monitoring and enforcing detailed AI disclosures. This was a major funder conceding publicly that strict disclosure rules are much harder to operationalize than they appear at the design stage.</p>
+<p><strong>Clause 27: Do not require anything the institution cannot check.</strong> An unverifiable requirement teaches researchers that the standard is merely decorative, and that cynicism quickly generalizes to the requirements that <em>are</em> checked. Before adopting any clause, [COMMITTEE] should clearly identify the artifact that proves compliance and the office responsible for reviewing it. If neither exists, the clause is not ready to be adopted.</p>
+<p><strong>Clause 28: Do not use AI-detection tools as evidence, and do not require researchers to run them.</strong> Seven detectors evaluated together showed 39.5 percent baseline accuracy falling to 17.4 percent under simple adversarial techniques, with documented bias against authors who are not native English speakers (Appendix C, Class 11). At least one Class D institution in <a href="https://instats.org/publications/responsible-ai-in-academic-research">the report</a>'s sample explicitly prohibits examiners from running a thesis through AI-detection software. Detection output should, at most, trigger a constructive conversation. It can never serve as proof of misconduct, because it treats surface authorship signals as a proxy for research validity, which they are not.</p>
+<p><strong>Clause 29: Do not route disclosures to the misconduct office by default.</strong> A disclosure is a routine research record. It belongs with the advisor, supervisor, editor, research office, or data steward, depending on the artifact. Only a disclosure describing an explicitly prohibited use should go anywhere else, and [INSTITUTION NAME] must define that escalation route clearly so that researchers can see the normal process is not punitive. Where the institution can state, as UK Research and Innovation does for grant applications, that disclosure will not affect assessment, it should say so plainly in the standard.</p>
+<p><strong>Clause 30: Do not require the contents of prompts that contain personal or confidential data.</strong> Require a pointer to a controlled-access deposit instead. A policy that pushes participant data into a public appendix in the name of transparency creates an immediate privacy breach in the name of research integrity. Data minimization applies to disclosure just as strictly as it applies to the research itself.</p>
+<p><strong>And one thing not to abolish.</strong> A negative attestation (a statement confirming that no AI was used) works well when it is attached to an instrument that already exists and carries legal weight, such as a doctoral affidavit or thesis declaration. It does not work as a new standalone form attached to every routine output, where it generates paperwork volume while proving nothing.</p>
+<hr>
+<h2 id="section-10-adoption-checklist">Section 10: Adoption checklist</h2>
+<p>For [COMMITTEE] at the point of adoption, and for annual review thereafter. Answers are <em>Yes</em>, <em>Partial</em>, or <em>No</em>, and each carries the artifact that would prove it.</p>
+<p><strong>A1.</strong> Has [INSTITUTION NAME] published a disclosure threshold that states both what must be disclosed and what need not be?</p>
+<fieldset class="answer answer-enhanced" id="p2_disclosure_standard-answer-1">
+<legend class="answer-legend visually-hidden">A1. Has [INSTITUTION NAME] published a disclosure threshold that states both what must be disclosed and what need not be?</legend>
+<div class="answer-options"><label class="answer-option" for="p2_disclosure_standard-answer-1-option-1"><input type="radio" id="p2_disclosure_standard-answer-1-option-1" name="p2_disclosure_standard-answer-1" value="Yes"> <span>Yes</span></label><label class="answer-option" for="p2_disclosure_standard-answer-1-option-2"><input type="radio" id="p2_disclosure_standard-answer-1-option-2" name="p2_disclosure_standard-answer-1" value="Partial"> <span>Partial</span></label><label class="answer-option" for="p2_disclosure_standard-answer-1-option-3"><input type="radio" id="p2_disclosure_standard-answer-1-option-3" name="p2_disclosure_standard-answer-1" value="No"> <span>No</span></label></div>
+</fieldset>
+<p><em>Evidence: Name the document and clause, provide the URL, and state both the last review date and the next scheduled review.</em></p>
+<p><strong>A2.</strong> Does the published standard require all five content fields: tool class, model and version, date, use, verification?</p>
+<fieldset class="answer answer-enhanced" id="p2_disclosure_standard-answer-2">
+<legend class="answer-legend visually-hidden">A2. Does the published standard require all five content fields: tool class, model and version, date, use, verification?</legend>
+<div class="answer-options"><label class="answer-option" for="p2_disclosure_standard-answer-2-option-1"><input type="radio" id="p2_disclosure_standard-answer-2-option-1" name="p2_disclosure_standard-answer-2" value="Yes"> <span>Yes</span></label><label class="answer-option" for="p2_disclosure_standard-answer-2-option-2"><input type="radio" id="p2_disclosure_standard-answer-2-option-2" name="p2_disclosure_standard-answer-2" value="Partial"> <span>Partial</span></label><label class="answer-option" for="p2_disclosure_standard-answer-2-option-3"><input type="radio" id="p2_disclosure_standard-answer-2-option-3" name="p2_disclosure_standard-answer-2" value="No"> <span>No</span></label></div>
+</fieldset>
+<p><em>Evidence: Quote the clause. A standard that omits the verification field scores a "No."</em></p>
+<p><strong>A3.</strong> Does the standard require the reproducibility set (prompts, parameters, re-run stability, deposit) where AI touched an analysis?</p>
+<fieldset class="answer answer-enhanced" id="p2_disclosure_standard-answer-3">
+<legend class="answer-legend visually-hidden">A3. Does the standard require the reproducibility set (prompts, parameters, re-run stability, deposit) where AI touched an analysis?</legend>
+<div class="answer-options"><label class="answer-option" for="p2_disclosure_standard-answer-3-option-1"><input type="radio" id="p2_disclosure_standard-answer-3-option-1" name="p2_disclosure_standard-answer-3" value="Yes"> <span>Yes</span></label><label class="answer-option" for="p2_disclosure_standard-answer-3-option-2"><input type="radio" id="p2_disclosure_standard-answer-3-option-2" name="p2_disclosure_standard-answer-3" value="Partial"> <span>Partial</span></label><label class="answer-option" for="p2_disclosure_standard-answer-3-option-3"><input type="radio" id="p2_disclosure_standard-answer-3-option-3" name="p2_disclosure_standard-answer-3" value="No"> <span>No</span></label></div>
+</fieldset>
+<p><em>Evidence: Quote the clause, and produce one research output from the last twelve months that includes it.</em></p>
+<p><strong>A4.</strong> Does the thesis declaration or equivalent submission instrument carry an AI clause?</p>
+<fieldset class="answer answer-enhanced" id="p2_disclosure_standard-answer-4">
+<legend class="answer-legend visually-hidden">A4. Does the thesis declaration or equivalent submission instrument carry an AI clause?</legend>
+<div class="answer-options"><label class="answer-option" for="p2_disclosure_standard-answer-4-option-1"><input type="radio" id="p2_disclosure_standard-answer-4-option-1" name="p2_disclosure_standard-answer-4" value="Yes"> <span>Yes</span></label><label class="answer-option" for="p2_disclosure_standard-answer-4-option-2"><input type="radio" id="p2_disclosure_standard-answer-4-option-2" name="p2_disclosure_standard-answer-4" value="Partial"> <span>Partial</span></label><label class="answer-option" for="p2_disclosure_standard-answer-4-option-3"><input type="radio" id="p2_disclosure_standard-answer-4-option-3" name="p2_disclosure_standard-answer-4" value="No"> <span>No</span></label></div>
+</fieldset>
+<p><em>Evidence: The current declaration text, and the completion rate at final submission for the most recent cohort.</em></p>
+<p><strong>A5.</strong> Does the standard bind staff as well as students, on the same terms?</p>
+<fieldset class="answer answer-enhanced" id="p2_disclosure_standard-answer-5">
+<legend class="answer-legend visually-hidden">A5. Does the standard bind staff as well as students, on the same terms?</legend>
+<div class="answer-options"><label class="answer-option" for="p2_disclosure_standard-answer-5-option-1"><input type="radio" id="p2_disclosure_standard-answer-5-option-1" name="p2_disclosure_standard-answer-5" value="Yes"> <span>Yes</span></label><label class="answer-option" for="p2_disclosure_standard-answer-5-option-2"><input type="radio" id="p2_disclosure_standard-answer-5-option-2" name="p2_disclosure_standard-answer-5" value="Partial"> <span>Partial</span></label><label class="answer-option" for="p2_disclosure_standard-answer-5-option-3"><input type="radio" id="p2_disclosure_standard-answer-5-option-3" name="p2_disclosure_standard-answer-5" value="No"> <span>No</span></label></div>
+</fieldset>
+<p><em>Evidence: The scope clause, plus at least one staff-authored output carrying a disclosure.</em></p>
+<p><strong>A6.</strong> Is there a named owner and a stated retention period for AI-use logs?</p>
+<fieldset class="answer answer-enhanced" id="p2_disclosure_standard-answer-6">
+<legend class="answer-legend visually-hidden">A6. Is there a named owner and a stated retention period for AI-use logs?</legend>
+<div class="answer-options"><label class="answer-option" for="p2_disclosure_standard-answer-6-option-1"><input type="radio" id="p2_disclosure_standard-answer-6-option-1" name="p2_disclosure_standard-answer-6" value="Yes"> <span>Yes</span></label><label class="answer-option" for="p2_disclosure_standard-answer-6-option-2"><input type="radio" id="p2_disclosure_standard-answer-6-option-2" name="p2_disclosure_standard-answer-6" value="Partial"> <span>Partial</span></label><label class="answer-option" for="p2_disclosure_standard-answer-6-option-3"><input type="radio" id="p2_disclosure_standard-answer-6-option-3" name="p2_disclosure_standard-answer-6" value="No"> <span>No</span></label></div>
+</fieldset>
+<p><em>Evidence: The records-retention schedule entry naming AI-use logs, the period, and the custodian.</em></p>
+<p><strong>A7.</strong> Does the institution maintain a current funder-by-funder disclosure table for the funders its researchers apply to?</p>
+<fieldset class="answer answer-enhanced" id="p2_disclosure_standard-answer-7">
+<legend class="answer-legend visually-hidden">A7. Does the institution maintain a current funder-by-funder disclosure table for the funders its researchers apply to?</legend>
+<div class="answer-options"><label class="answer-option" for="p2_disclosure_standard-answer-7-option-1"><input type="radio" id="p2_disclosure_standard-answer-7-option-1" name="p2_disclosure_standard-answer-7" value="Yes"> <span>Yes</span></label><label class="answer-option" for="p2_disclosure_standard-answer-7-option-2"><input type="radio" id="p2_disclosure_standard-answer-7-option-2" name="p2_disclosure_standard-answer-7" value="Partial"> <span>Partial</span></label><label class="answer-option" for="p2_disclosure_standard-answer-7-option-3"><input type="radio" id="p2_disclosure_standard-answer-7-option-3" name="p2_disclosure_standard-answer-7" value="No"> <span>No</span></label></div>
+</fieldset>
+<p><em>Evidence: The table, with its review date. A table older than twelve months scores Partial.</em></p>
+<p><strong>A8.</strong> Is the reviewer-side prohibition on uploading manuscripts and proposals to public AI tools issued separately to staff who review and assess?</p>
+<fieldset class="answer answer-enhanced" id="p2_disclosure_standard-answer-8">
+<legend class="answer-legend visually-hidden">A8. Is the reviewer-side prohibition on uploading manuscripts and proposals to public AI tools issued separately to staff who review and assess?</legend>
+<div class="answer-options"><label class="answer-option" for="p2_disclosure_standard-answer-8-option-1"><input type="radio" id="p2_disclosure_standard-answer-8-option-1" name="p2_disclosure_standard-answer-8" value="Yes"> <span>Yes</span></label><label class="answer-option" for="p2_disclosure_standard-answer-8-option-2"><input type="radio" id="p2_disclosure_standard-answer-8-option-2" name="p2_disclosure_standard-answer-8" value="Partial"> <span>Partial</span></label><label class="answer-option" for="p2_disclosure_standard-answer-8-option-3"><input type="radio" id="p2_disclosure_standard-answer-8-option-3" name="p2_disclosure_standard-answer-8" value="No"> <span>No</span></label></div>
+</fieldset>
+<p><em>Evidence: The briefing document and the date of its last issue.</em></p>
+<p><strong>A9.</strong> Are examiners briefed that they may ask about a declared AI use and may not run theses through detection software?</p>
+<fieldset class="answer answer-enhanced" id="p2_disclosure_standard-answer-9">
+<legend class="answer-legend visually-hidden">A9. Are examiners briefed that they may ask about a declared AI use and may not run theses through detection software?</legend>
+<div class="answer-options"><label class="answer-option" for="p2_disclosure_standard-answer-9-option-1"><input type="radio" id="p2_disclosure_standard-answer-9-option-1" name="p2_disclosure_standard-answer-9" value="Yes"> <span>Yes</span></label><label class="answer-option" for="p2_disclosure_standard-answer-9-option-2"><input type="radio" id="p2_disclosure_standard-answer-9-option-2" name="p2_disclosure_standard-answer-9" value="Partial"> <span>Partial</span></label><label class="answer-option" for="p2_disclosure_standard-answer-9-option-3"><input type="radio" id="p2_disclosure_standard-answer-9-option-3" name="p2_disclosure_standard-answer-9" value="No"> <span>No</span></label></div>
+</fieldset>
+<p><em>Evidence: The examiner briefing note, along with examiner reports from the last cycle demonstrating that the question was asked.</em></p>
+<p><strong>A10.</strong> Does the institution measure its own disclosure completion rate, and report it to [COMMITTEE]?</p>
+<fieldset class="answer answer-enhanced" id="p2_disclosure_standard-answer-10">
+<legend class="answer-legend visually-hidden">A10. Does the institution measure its own disclosure completion rate, and report it to [COMMITTEE]?</legend>
+<div class="answer-options"><label class="answer-option" for="p2_disclosure_standard-answer-10-option-1"><input type="radio" id="p2_disclosure_standard-answer-10-option-1" name="p2_disclosure_standard-answer-10" value="Yes"> <span>Yes</span></label><label class="answer-option" for="p2_disclosure_standard-answer-10-option-2"><input type="radio" id="p2_disclosure_standard-answer-10-option-2" name="p2_disclosure_standard-answer-10" value="Partial"> <span>Partial</span></label><label class="answer-option" for="p2_disclosure_standard-answer-10-option-3"><input type="radio" id="p2_disclosure_standard-answer-10-option-3" name="p2_disclosure_standard-answer-10" value="No"> <span>No</span></label></div>
+</fieldset>
+<p><em>Evidence: The most recent report, with the denominator stated. This is the item that separates established from leading on <code>D2-process</code>.</em></p>
+<hr>
+<h2 id="crosswalk-to-the-responsible-ai-framework">Crosswalk to the Responsible AI framework</h2>
+<table>
+<thead>
+<tr>
+<th>Section or clause of this instrument</th>
+<th>Report section</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>About this instrument (cells touched)</td>
+<td>§2.5 (the four axes), and Appendix A (D1 and D2 rows)</td>
+</tr>
+<tr>
+<td>Section 1: What disclosure is for</td>
+<td>§1.1 (the use-versus-disclosure gap and the BMJ rate), §1.2 (ethical, valid, reproducible, transparent), §2.2 (publishers converged at disclosure but do not test responsible conduct), and §2.4 (competency 2, non-determinism and model-version drift)</td>
+</tr>
+<tr>
+<td>Clauses 1 to 4: The three-part test and its triggers</td>
+<td>§2.1 (Dimension 1, labor versus judgment), and Appendix G (task taxonomy)</td>
+</tr>
+<tr>
+<td>Clause 5: The four AI-use modes applied</td>
+<td>§2.2 (search, co-author, validator, tutor), §2.4 (competencies 1 and 4), and Appendix C, Classes 1 to 4 and 6</td>
+</tr>
+<tr>
+<td>Clause 6: The no-trace exemption</td>
+<td>§3.3 (SAGE assistive threshold, Springer Nature copy-editing carve-out, ACM and IEEE exceptions), and Appendix G, rows 6 and 7</td>
+</tr>
+<tr>
+<td>Clause 7: Disclosure is not permission</td>
+<td>§3.3 (image-side category prohibitions), and Appendix C, Class 9</td>
+</tr>
+<tr>
+<td>Clause 8: Scope covers staff and students</td>
+<td>§1.3 (the plagiarism-policy ceiling, and Class A and B distribution)</td>
+</tr>
+<tr>
+<td>Clauses 9 to 12: The five required fields</td>
+<td>§2.2 (disclosure operationalization), §2.4 (competencies 1 and 2), §3.2 (institutional field requirements), and §3.3 (publisher content requirements)</td>
+</tr>
+<tr>
+<td>Clause 13: The reproducibility set</td>
+<td>§2.3 (reproducibility at a known model version and auditability), and §2.4 (competencies 2 and 3)</td>
+</tr>
+<tr>
+<td>Clause 14: Retention</td>
+<td>§2.3 (auditability via session logs), and §2.5 (systems axis)</td>
+</tr>
+<tr>
+<td>Clauses 15 to 18: Where the disclosure goes</td>
+<td>§2.5 (process axis: doctoral milestones), §3.2 (thesis-declaration and affidavit instruments), §3.3 (publisher locations), and §4.2 (Dimension 1 at <em>leading</em>)</td>
+</tr>
+<tr>
+<td>Section 5: Statement templates</td>
+<td>§2.2 (disclosure per the publisher convention applying to the destination), §4.2 (Dimension 2 at <em>leading</em>), and Appendix A (D2 <em>established</em>: institutional disclosure template aligned with publisher policy convention)</td>
+</tr>
+<tr>
+<td>Clauses 19 to 21: Publisher interaction</td>
+<td>§1.1 and §3.3 (the ten-week convergence, three convergences, two divergences, and disclosure locations)</td>
+</tr>
+<tr>
+<td>Clauses 22 to 24: Funder interaction</td>
+<td>§3.1 (the four-part funder shape, the NIH-to-Swedish variance, the DFG output-side duty, and the reviewer-upload prohibition)</td>
+</tr>
+<tr>
+<td>Section 8: Worked good and bad disclosures</td>
+<td>§2.2, §2.4 (competency 6, structured failure-mode reporting), and §3.3</td>
+</tr>
+<tr>
+<td>Clauses 25 to 30: What not to require</td>
+<td>§3.1 (the tri-agency burden concession), §2.4 (competency 1), Appendix C, Class 11 (AI-detection failure rates), and §2.3 (data-residency and privacy governance)</td>
+</tr>
+<tr>
+<td>Section 10: Adoption checklist</td>
+<td>Appendix A (D2 and D5 rows: <em>established</em> and <em>leading</em> criteria, including named owners per axis), and §4.2 (Dimension 5 at <em>leading</em>)</td>
+</tr>
+<tr>
+<td>Scope note</td>
+<td>§1.2 (the four properties of responsible use), §2.4 (Dimension 4), and §4.1 (dimensional interdependence)</td>
+</tr>
+</tbody>
+</table>
+<div class="tablecaption">
+<p>Table 8. Mapping between policy instrument sections and corresponding sections of <a href="https://instats.org/publications/responsible-ai-in-academic-research">the report</a>.</p>
+</div>
+<hr>
+<h2 id="scope-note">Scope note</h2>
+<p>This standard specifically governs disclosure. It does not decide which AI uses are permitted in the first place. That broader decision is the work of your institution's overall AI-in-research policy (P1) and, for an individual student project, the supervisor-student agreement (G1). In the same way, this standard does not evaluate whether a disclosed use was technically competent. That capability belongs to Dimension 4 (AI-literate humans). A university that adopts this standard on its own will establish honest provenance across its research outputs, but it will still need human-in-the-loop discipline, responsible use in practice, tooling that supports responsible use, AI-literate researchers, and an institutional benchmarking grid to ensure the work behind those outputs is genuinely sound.</p>
+<p>Requiring clear disclosure, done plainly and without punitive threats, is the most straightforward step in the framework and the one most institutions will likely adopt first. It is well worth adopting on its own, provided it is not mistaken for the entire job.</p>
+<hr>
+<p><a class="brand-mark-small" href="https://instats.org"><img alt="Instats" src="assets/instats_logo.png" width="1.0in"></a></p>
+<p><strong>Michael J. Zyphur, PhD</strong> · Professor and Director, Instats · <a href="https://instats.org">instats.org</a> · <a href="mailto:support@instats.org">support@instats.org</a></p>
+<p><em>Part of the Instats AI Readiness Pack · <a href="https://instats.org/publications/ai-readiness">instats.org/publications/ai-readiness</a> · CC BY 4.0 — adapt freely for institutional use, with attribution. Companion to</em> <a href="https://instats.org/publications/responsible-ai-in-academic-research">Responsible AI in Academic Research: A Competency Framework for Research Training</a> <em>(DOI 10.61700/t31oy23grr).</em></p>
+</div>
+
+<script>
+(function() {
+  // v0.22.31+: showHeader scroll-tracking removed along with the
+  // sticky-header element. Progress bar + sticky TOC remain.
+
+  const bar = document.getElementById('progress-bar');
+  if (bar) {
+    const update = () => {
+      const h = document.documentElement;
+      const max = h.scrollHeight - h.clientHeight;
+      bar.style.width = (max > 0 ? (h.scrollTop / max) * 100 : 0) + '%';
+    };
+    document.addEventListener('scroll', update, { passive: true });
+    update();
+  }
+  const tocEl = document.querySelector('#sticky-toc ol');
+  if (tocEl) {
+    // The rail is server-rendered at build time (per v2.2.0 design
+    // review §6 #1) — if it already has children, this JS only does
+    // scroll-spy `.active` highlighting on top. The legacy
+    // client-side populate runs ONLY as a fallback for HTML files
+    // built before the server-rendered TOC landed.
+    if (tocEl.children.length === 0) {
+      const skip = ['cover', 'colophon', 'toc', 'exec', 'abstract'];
+      const h2s = [...document.querySelectorAll('h2')].filter(h => {
+        let n = h.parentElement;
+        while (n) {
+          if (n.classList && skip.some(c => n.classList.contains(c))) return false;
+          n = n.parentElement;
+        }
+        return true;
+      });
+      h2s.forEach((h, idx) => {
+        if (!h.id) h.id = 'sec-' + idx;
+        const li = document.createElement('li');
+        const a = document.createElement('a');
+        a.href = '#' + h.id;
+        a.textContent = h.textContent.trim();
+        li.appendChild(a);
+        tocEl.appendChild(li);
+      });
+    }
+    const links = [...tocEl.querySelectorAll('a')];
+    const targets = links.map(a => document.getElementById(a.getAttribute('href').slice(1)));
+    const onScroll = () => {
+      const y = window.scrollY + 120;
+      let active = 0;
+      targets.forEach((t, i) => { if (t && t.offsetTop <= y) active = i; });
+      links.forEach((a, i) => a.classList.toggle('active', i === active));
+    };
+    document.addEventListener('scroll', onScroll, { passive: true });
+    onScroll();
+  }
+})();
+</script>
+
+</body>
+</html>

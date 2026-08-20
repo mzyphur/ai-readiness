@@ -1,0 +1,402 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>B4 — Briefing for Research-Integrity Committees and Graduate Studies Committees</title>
+  <link rel="stylesheet" href="b4_briefing_integrity.css">
+  <style id="instrument-html-enhancements">
+    .instrument-response-notice {
+      margin: 0 0 1.5rem;
+      padding: 0.85rem 1rem;
+      background: #F5F8FA;
+      border-left: 4px solid #3092B1;
+      color: #1F2024;
+      font-family: var(--sans, sans-serif);
+      font-size: 0.92rem;
+    }
+    fieldset.answer-enhanced {
+      min-inline-size: 0;
+      border: 0;
+      border-left: 3px solid #3092B1;
+    }
+    .answer-options {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.45rem 1rem;
+      letter-spacing: normal;
+      word-spacing: normal;
+    }
+    .answer-option {
+      display: inline-flex;
+      align-items: flex-start;
+      gap: 0.35rem;
+      cursor: pointer;
+    }
+    .answer-option input {
+      margin: 0.2em 0 0;
+      accent-color: #00547B;
+    }
+    .answer-text-input,
+    .answer-textarea {
+      box-sizing: border-box;
+      width: 100%;
+      border: 1px solid #AEB7BE;
+      border-radius: 3px;
+      background: #FFFFFF;
+      color: #1F2024;
+      font: inherit;
+      line-height: 1.45;
+    }
+    .answer-text-input {
+      min-height: 2.55rem;
+      padding: 0.55rem 0.65rem;
+    }
+    .answer-textarea {
+      min-height: 8rem;
+      padding: 0.65rem;
+      resize: vertical;
+    }
+    .answer-legend:not(.visually-hidden) {
+      margin: 0 0 0.45rem;
+      padding: 0;
+      color: #1F2024;
+      font-weight: 600;
+      letter-spacing: normal;
+      word-spacing: normal;
+    }
+    .answer-note {
+      margin: 0.45rem 0 0;
+      letter-spacing: normal;
+      word-spacing: normal;
+    }
+    .visually-hidden {
+      position: absolute !important;
+      width: 1px !important;
+      height: 1px !important;
+      padding: 0 !important;
+      margin: -1px !important;
+      overflow: hidden !important;
+      clip: rect(0, 0, 0, 0) !important;
+      white-space: nowrap !important;
+      border: 0 !important;
+    }
+  </style>
+</head>
+<body>
+
+
+<div id="progress-bar" class="web-only" aria-hidden="true"></div>
+<nav id="sticky-toc" class="sticky-toc web-only" aria-label="Table of contents">
+  <div class="sticky-toc-title">Contents</div>
+  <ol><li><a href="#about-this-instrument">About this instrument</a></li>
+  <li><a href="#the-argument-you-are-most-likely-to-disagree-with">The argument you are most likely to disagree with</a></li>
+  <li><a href="#what-is-genuinely-an-integrity-matter-and-what-is-not">What is genuinely an integrity matter, and what is not</a></li>
+  <li><a href="#the-five-decisions-committee-owns">The five decisions [COMMITTEE] owns</a></li>
+  <li><a href="#the-five-questions-to-ask">The five questions to ask</a></li>
+  <li><a href="#how-disclosure-standards-work-in-practice">How disclosure standards work in practice</a></li>
+  <li><a href="#a-proportionate-response">A proportionate response</a></li>
+  <li><a href="#why-detection-tooling-is-not-the-answer">Why detection tooling is not the answer</a></li>
+  <li><a href="#two-dates-and-one-note-for-australian-readers">Two dates, and one note for Australian readers</a></li>
+  <li><a href="#crosswalk-brief-section-to-report-section">Crosswalk: brief section to report section</a></li></ol>
+</nav>
+
+<section class="hero web-only" aria-label="Report at a glance">
+  <div class="hero-inner">
+    <div class="hero-series">Instats Policy Series</div>
+    <h1 class="hero-title">Briefing: Research-Integrity and Graduate Studies Committees</h1>
+
+    <p class="hero-finding">A university-wide assessment and implementation toolkit that connects institutional policy and priorities with the everyday practices, capabilities, and experiences of researchers and graduate students.</p>
+    <p class="hero-byline"><a class="hero-author-link" href="https://orcid.org/0000-0003-3237-7892" target="_blank" rel="noopener">Michael J. Zyphur, PhD</a> &middot; <span class="hero-author-bio">Director of Instats</span></p>
+    <div class="hero-actions">
+      <a class="hero-btn hero-btn-pdf" href="b4_briefing_integrity.pdf" download>PDF version</a>
+      <a class="hero-btn hero-btn-docx" href="b4_briefing_integrity.docx" download>Word version</a>
+      <a class="hero-btn hero-btn-repo" href="https://github.com/mzyphur/ai-readiness" target="_blank" rel="noopener">View GitHub</a>
+    </div>
+  </div>
+</section>
+
+<div class="wrap">
+<aside class="instrument-response-notice" role="note">These controls are for working through or printing this instrument. Responses are not submitted or saved.</aside>
+<p><a class="brand-mark" href="https://instats.org"><img alt="Instats" src="assets/instats_logo.png" width="1.45in"></a></p>
+<h1 id="b4-briefing-for-research-integrity-committees-and-graduate-studies-committees">B4 — Briefing for Research-Integrity Committees and Graduate Studies Committees</h1>
+<p><em>Responsible AI use in doctoral research is a research integrity question. Looking at AI purely through the lens of plagiarism misses central questions of validity, reproducibility, citation verification, and disclosure.</em></p>
+<h2 id="about-this-instrument">About this instrument</h2>
+<table>
+<tbody>
+<tr>
+<td><strong>Purpose</strong></td>
+<td>Give the committee that writes the institutional AI clause and hears cases a defensible framework, five decisions it owns, and five questions to ask this month.</td>
+</tr>
+<tr>
+<td><strong>Who it is for</strong></td>
+<td>Members of [COMMITTEE], such as the research integrity committee, graduate studies committee, or whatever it is called locally (including graduate research committee, doctoral board, board of graduate studies, or a joint body). Assumes no prior reading of the <a href="https://instats.org/publications/responsible-ai-in-academic-research">source report</a>.</td>
+</tr>
+<tr>
+<td><strong>Time required</strong></td>
+<td>8 minutes to read, and 45 minutes to work through the five decisions in a meeting.</td>
+</tr>
+<tr>
+<td><strong>Related report sections</strong></td>
+<td>§1.1, §1.2, §1.3, §2.2, §2.3, §2.4, §2.5, §3.3, §3.4, §4.2, §5.3, §5.4, Appendix C, Appendix G.</td>
+</tr>
+<tr>
+<td><strong>Grid cells touched</strong></td>
+<td>D1-policy, D1-process, D2-policy, D2-process, D3-policy, D3-systems, D4-people, D4-process, D5-policy, D5-process.</td>
+</tr>
+<tr>
+<td><strong>Companions</strong></td>
+<td><strong>P2</strong> disclosure standard · <strong>G1</strong> supervisor-student AI-use agreement · <strong>A1</strong> maturity self-assessment.</td>
+</tr>
+</tbody>
+</table>
+<div class="tablecaption">
+<p>Table 1. Summary of the purpose, scope, and key components of this policy guidance instrument.</p>
+</div>
+<hr>
+<h2 id="the-argument-you-are-most-likely-to-disagree-with">The argument you are most likely to disagree with</h2>
+<p>Your committee already has good machinery for one question: did this person present someone else's work as their own? Generative AI does not change or weaken that machinery. In fact, every major academic publisher concluded within about three months of ChatGPT's release that an AI system cannot be an author, because an AI tool cannot bear responsibility for the work. But four other questions now decide whether the research is actually sound. Are the citations real? Is the analysis valid? Can another researcher reproduce it? Was the tool's role disclosed specifically enough for an advisor, supervisor, or examiner (a dissertation committee member, in US usage) to assess? None of these questions is answered simply by asking who typed the words.</p>
+<p>In the most-cited primary study on this topic, 636 generated citations across 42 literature reviews were checked against Google Scholar, Scopus, and Web of Science: 55 percent of the GPT-3.5 citations and 18 percent of the GPT-4 citations did not exist. Among the citations that did exist, 43 percent and 24 percent respectively carried substantive errors (Walters and Wilder, 2023). A cross-model study in the medical literature found fabrication rates between 28.6 and 91.4 percent (Chelli et al., 2024). A fabricated citation is not plagiarism. Nothing was copied, and no original author was wronged. It is outright fabrication, which already sits at the top of every research integrity code. Meanwhile, the conduct that the plagiarism frame does catch, such as a graduate student polishing their own paragraph without saying so, is a disclosure omission at worst.</p>
+<p>The broader university sector has this same scoping problem. Across 38 top-tier doctoral universities in 15 countries and jurisdictions, 15 institutions stop at what I call the plagiarism ceiling, meaning their policies treat AI only as a question of student copying. Specifically, four handle AI only inside student conduct rules, while eleven have a dedicated AI policy whose scope ends at plagiarism. Seventeen universities extend their policies into research integrity and reproducibility. Six go even further, addressing AI literacy and examiner expectations. The Australian Research Council and the National Health and Medical Research Council state the operative standard clearly: <em>"AI-generated content must be verified and should not replace expert opinion or judgement"</em> (joint policy, April 2026). Verification is a fundamental research integrity duty, not simply a student conduct rule.</p>
+<h2 id="what-is-genuinely-an-integrity-matter-and-what-is-not">What is genuinely an integrity matter, and what is not</h2>
+<p><strong>Bring to [COMMITTEE] as an integrity matter:</strong></p>
+<ol>
+<li><strong>Fabricated content presented as real</strong>: citations, quotations, data, or figures that do not exist or were generated rather than observed. This is straightforward fabrication under your existing integrity code, so no new category is needed. Nine major publishers place category prohibitions on AI-generated or AI-altered images in submitted manuscripts, outside a narrow exception where the AI itself is the object of study.</li>
+<li><strong>Undisclosed use where a written standard required disclosure and the researcher was on notice of it.</strong> That final requirement is essential: if the institution had no published standard in place and the researcher was not on notice of it, there is no formal breach.</li>
+<li><strong>Confidential material placed in a third-party tool</strong>: unpublished data, participant-identifiable data, a manuscript under review, or a grant application under assessment. Sixteen of eighteen surveyed publishers treat a reviewer uploading a manuscript to a public AI tool as a confidentiality breach. In addition, thirteen of the fourteen national funders surveyed restrict or prohibit assessors from doing the same with proposals.</li>
+<li><strong>Concealment or falsification during an investigation.</strong> This is standard misconduct, and the presence of AI changes nothing about how it should be handled.</li>
+</ol>
+<p><strong>Handle through supervision, training, and curriculum, not a hearing:</strong></p>
+<ul>
+<li>Scoping the literature with an AI tool without verifying the sources, before the requirement to verify was explicitly written down and taught.</li>
+<li>Submitting a disclosure that names a tool but omits its version, the specific task performed, or what the human researcher verified, against an institutional standard that never specified those fields.</li>
+<li>Treating an AI system's agreement with the researcher's own argument as validation. This is known as the sycophancy problem, where an AI tool simply tells the researcher what they want to hear, and it represents a methods-training gap rather than bad intent.</li>
+<li>Failing to record the model version, parameters, and prompt used for an AI-assisted analysis. This is a reproducibility gap of the kind that study pre-registration was invented to close.</li>
+<li>Using a consumer-tier tool because [INSTITUTION NAME] provided no approved institutional alternative. That is an institutional procurement and training failure and may be mitigating context. It never excuses fabrication, concealment, confidentiality or privacy breaches, or other misconduct. The Samsung incident of March 2023, which involved three confidential leaks in twenty days followed by a corporate ban on consumer AI, clearly shows that tool choice is also an institutional responsibility.</li>
+</ul>
+<h2 id="the-five-decisions-committee-owns">The five decisions [COMMITTEE] owns</h2>
+<p><strong>1. Which instrument AI cases are adjudicated under</strong>: student conduct rules, the research integrity code, or both with a clearly stated boundary. Until this is settled at your institution, every case will be argued twice.</p>
+<fieldset class="answer answer-enhanced" id="b4_briefing_integrity-answer-1">
+<legend class="answer-legend visually-hidden">1. Which instrument AI cases are adjudicated under: student conduct rules, the research integrity code, or both with a clearly stated boundary. Until this is settled at your institution, every case will be argued twice.</legend>
+<div class="answer-options"><label class="answer-option" for="b4_briefing_integrity-answer-1-option-1"><input type="radio" id="b4_briefing_integrity-answer-1-option-1" name="b4_briefing_integrity-answer-1" value="Yes"> <span>Yes</span></label><label class="answer-option" for="b4_briefing_integrity-answer-1-option-2"><input type="radio" id="b4_briefing_integrity-answer-1-option-2" name="b4_briefing_integrity-answer-1" value="Partial"> <span>Partial</span></label><label class="answer-option" for="b4_briefing_integrity-answer-1-option-3"><input type="radio" id="b4_briefing_integrity-answer-1-option-3" name="b4_briefing_integrity-answer-1" value="No"> <span>No</span></label></div>
+<p class="answer-note">(<em>Evidence: the clause and its number, the instrument it sits in, and its last review date.</em>)</p>
+</fieldset>
+<p><strong>2. The case taxonomy and its evidentiary standards.</strong> Four distinct types of cases should not share one process: undisclosed use, disclosed-but-unverified use, AI-fabricated content, and AI-assisted misconduct. Without this distinction in place, a serious fabrication case risks being treated as a routine formatting lapse.</p>
+<fieldset class="answer answer-enhanced" id="b4_briefing_integrity-answer-2">
+<legend class="answer-legend visually-hidden">2. The case taxonomy and its evidentiary standards.</legend>
+<div class="answer-options"><label class="answer-option" for="b4_briefing_integrity-answer-2-option-1"><input type="radio" id="b4_briefing_integrity-answer-2-option-1" name="b4_briefing_integrity-answer-2" value="Yes"> <span>Yes</span></label><label class="answer-option" for="b4_briefing_integrity-answer-2-option-2"><input type="radio" id="b4_briefing_integrity-answer-2-option-2" name="b4_briefing_integrity-answer-2" value="Partial"> <span>Partial</span></label><label class="answer-option" for="b4_briefing_integrity-answer-2-option-3"><input type="radio" id="b4_briefing_integrity-answer-2-option-3" name="b4_briefing_integrity-answer-2" value="No"> <span>No</span></label></div>
+<p class="answer-note">(<em>Evidence: the adjudication framework, showing the standard of proof and remedy range for each case type.</em>)</p>
+</fieldset>
+<p><strong>3. The disclosure standard, and the date it starts.</strong> An institutional standard binds researchers from the date it is published and taught. It should not retrospectively reclassify conduct that was permitted when undertaken solely because the standard later changed, subject to continuing legal, ethical, contractual, confidentiality, funder, and publisher obligations. See <strong>P2</strong>.</p>
+<fieldset class="answer answer-enhanced" id="b4_briefing_integrity-answer-3">
+<legend class="answer-legend visually-hidden">3. The disclosure standard, and the date it starts.</legend>
+<div class="answer-options"><label class="answer-option" for="b4_briefing_integrity-answer-3-option-1"><input type="radio" id="b4_briefing_integrity-answer-3-option-1" name="b4_briefing_integrity-answer-3" value="Yes"> <span>Yes</span></label><label class="answer-option" for="b4_briefing_integrity-answer-3-option-2"><input type="radio" id="b4_briefing_integrity-answer-3-option-2" name="b4_briefing_integrity-answer-3" value="Partial"> <span>Partial</span></label><label class="answer-option" for="b4_briefing_integrity-answer-3-option-3"><input type="radio" id="b4_briefing_integrity-answer-3-option-3" name="b4_briefing_integrity-answer-3" value="No"> <span>No</span></label></div>
+<p class="answer-note">(<em>Evidence: the published standard, the thesis or dissertation declaration form, the effective date, and the record showing that graduate students, advisors, and supervisors were notified.</em>)</p>
+</fieldset>
+<p><strong>4. What examiners may and may not do</strong>: whether an examiner may run a thesis through a detection tool, whether any part of an unexamined thesis may enter an external AI tool at all, and what the oral examination (the viva, or thesis defense) may ask about AI use.</p>
+<fieldset class="answer answer-enhanced" id="b4_briefing_integrity-answer-4">
+<legend class="answer-legend visually-hidden">4. What examiners may and may not do: whether an examiner may run a thesis through a detection tool, whether any part of an unexamined thesis may enter an external AI tool at all, and what the oral examination (the viva, or thesis defense) may ask about AI use.</legend>
+<div class="answer-options"><label class="answer-option" for="b4_briefing_integrity-answer-4-option-1"><input type="radio" id="b4_briefing_integrity-answer-4-option-1" name="b4_briefing_integrity-answer-4" value="Yes"> <span>Yes</span></label><label class="answer-option" for="b4_briefing_integrity-answer-4-option-2"><input type="radio" id="b4_briefing_integrity-answer-4-option-2" name="b4_briefing_integrity-answer-4" value="Partial"> <span>Partial</span></label><label class="answer-option" for="b4_briefing_integrity-answer-4-option-3"><input type="radio" id="b4_briefing_integrity-answer-4-option-3" name="b4_briefing_integrity-answer-4" value="No"> <span>No</span></label></div>
+<p class="answer-note">(<em>Evidence: the examiner briefing note or appointment letter carrying the rule, and the relevant examination regulations clause.</em>)</p>
+</fieldset>
+<p><strong>5. What record will exist to adjudicate on.</strong> Without a clear record, every case comes down to one person's word against another. The practical options are session logs kept under a stated retention window, the thesis declaration, the supervisor-student agreement (<strong>G1</strong>), and pre-registered prompts and analysis plans.</p>
+<fieldset class="answer answer-enhanced" id="b4_briefing_integrity-answer-5">
+<legend class="answer-legend visually-hidden">5. What record will exist to adjudicate on.</legend>
+<div class="answer-options"><label class="answer-option" for="b4_briefing_integrity-answer-5-option-1"><input type="radio" id="b4_briefing_integrity-answer-5-option-1" name="b4_briefing_integrity-answer-5" value="Yes"> <span>Yes</span></label><label class="answer-option" for="b4_briefing_integrity-answer-5-option-2"><input type="radio" id="b4_briefing_integrity-answer-5-option-2" name="b4_briefing_integrity-answer-5" value="Partial"> <span>Partial</span></label><label class="answer-option" for="b4_briefing_integrity-answer-5-option-3"><input type="radio" id="b4_briefing_integrity-answer-5-option-3" name="b4_briefing_integrity-answer-5" value="No"> <span>No</span></label></div>
+<p class="answer-note">(<em>Evidence: the retention schedule naming AI session logs, and a supervisor-student agreement drawn at random from current enrollments.</em>)</p>
+</fieldset>
+<h2 id="the-five-questions-to-ask">The five questions to ask</h2>
+<ol>
+<li><strong>Under which instrument would we adjudicate an AI case brought today?</strong> <em>Evidence: name the policy and clause, and state its last review date.</em></li>
+<li><strong>Can our administration show us twelve months of AI-related cases classified by the four case types?</strong> <em>Evidence: the case register with a case-type field. If that field does not exist, that gives you the answer.</em></li>
+<li><strong>What exactly does our disclosure standard require of a doctoral student?</strong> <em>Evidence: the disclosure template and thesis declaration form side by side, showing the required fields.</em></li>
+<li><strong>What are examiners told, in writing, about AI tools and detection software?</strong> <em>Evidence: the briefing note actually sent for the most recent examination.</em></li>
+<li><strong>If a researcher or graduate student disputes an allegation, what objective record do we hold?</strong> <em>Evidence: the session-log retention schedule, a sample supervisor-student agreement, and the pre-registration record where the analysis was pre-registered.</em></li>
+</ol>
+<h2 id="how-disclosure-standards-work-in-practice">How disclosure standards work in practice</h2>
+<p>A disclosure standard is enforceable only if it clearly specifies four things: which uses require disclosure, where the disclosure appears, which specific fields it requires (the tool, the version or date, the task performed, and what the human verified), and who signs it. Established publisher practice provides useful examples for these formats: a declaration placed immediately above the references, a three-location rule affirming that the intellectual content is human, or a structured field on the submission form. Instrument <strong>P2</strong> in this pack provides institutional templates for these. In fact, the cleanest approach in <a href="https://instats.org/publications/responsible-ai-in-academic-research">the report</a>'s global sample is not brand new: German universities simply attached AI disclosure to the sworn declaration doctoral students already sign, allowing it to inherit that document's existing legal weight. If [INSTITUTION NAME] already uses a thesis declaration, that is exactly where this requirement belongs.</p>
+<p>You should expect low disclosure rates at first. For instance, when the British Medical Journal introduced a structured disclosure field in April 2024, only 5.7 percent of 25,114 submissions across 49 BMJ journals disclosed AI use over the following seven months. That low rate does not by itself establish deliberate concealment. A committee that assumes otherwise will set its disciplinary response at the wrong level and lose the cooperation it actually needs from researchers and students.</p>
+<h2 id="a-proportionate-response">A proportionate response</h2>
+<p>Your committee's response should be proportionate to what the AI use actually did to the <em>research</em>, rather than simply how much AI was used.</p>
+<table>
+<thead>
+<tr>
+<th>Finding</th>
+<th>Default response</th>
+<th>When it escalates</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Use not disclosed, no standard in force at the time</td>
+<td>Conversation with the advisor or supervisor, disclosure added to the record, and no formal case opened</td>
+<td>The researcher was on notice, or denied the use when asked</td>
+</tr>
+<tr>
+<td>Disclosure present but incomplete</td>
+<td>Correction to the declaration, a note to the advisor or supervisor, and the item added to training materials</td>
+<td>The omission conceals AI substitution for a human judgment task</td>
+</tr>
+<tr>
+<td>A few unverified or wrong citations, corrected on request</td>
+<td>Supervised verification pass over the full bibliography</td>
+<td>The pattern spans chapters, or survives an instruction to correct</td>
+</tr>
+<tr>
+<td>Fabricated citation, data or figure in submitted or examined work</td>
+<td>Research integrity investigation under [INSTITUTION NAME]'s code, because no lower tier exists for fabrication</td>
+<td>Repeated, or concealed when questioned</td>
+</tr>
+<tr>
+<td>Confidential or identifiable material in a third-party tool</td>
+<td>Contain first (data-protection officer, ethics approval holder, and the editor if a manuscript under review was involved), then investigate</td>
+<td>The material was identifiable or under contractual confidentiality</td>
+</tr>
+</tbody>
+</table>
+<div class="tablecaption">
+<p>Table 2. Default committee responses and escalation conditions corresponding to specific findings on AI use.</p>
+</div>
+<p>Across every row in this table, first classify the conduct and harm. Only then ask whether an approved institutional tool existed and whether the researcher was told about it. A missing approved tool is an institutional procurement and training failure and may mitigate the individual response, but it never excuses fabrication, concealment, confidentiality or privacy breaches, or other misconduct.</p>
+<h2 id="why-detection-tooling-is-not-the-answer">Why detection tooling is not the answer</h2>
+<p>AI detection software does not work well enough to support an integrity finding. In an evaluation of seven detection tools, researchers found a baseline accuracy of only 39.5 percent, which fell to 17.4 percent under simple evasion techniques. The authors concluded that the tools <em>cannot currently be recommended</em> for determining whether academic-integrity violations occurred (Perkins et al., 2024). An earlier test of fourteen detection tools found that most performed below 80 percent accuracy, with light paraphrasing pushing the undetected rate to roughly half (Weber-Wulff et al., 2023).</p>
+<p>These errors also fall disproportionately on those least able to absorb them. For example, a 2025 evaluation reported false-positive rates above 20 percent for writers who are not native English speakers. A false allegation against an international student or researcher carries severe visa, funding, and reputational consequences that a committee cannot easily undo.</p>
+<p>Even if a detector were completely accurate, it would still be answering the wrong question. It only tells you whether text has the surface statistical properties of machine writing. It cannot tell you whether the citations resolve, whether the analysis is valid, whether the tool's role was properly disclosed, or whether the graduate student understands their own thesis. In other words, detection tools treat surface authorship signals as a proxy for research validity, which they are not (Appendix C, Class 11).</p>
+<p>The instrument that answers the right question already exists, and this committee controls it: <strong>the oral examination</strong>. For example, the University of Toronto's School of Graduate Studies requires a doctoral student to describe and defend any use of generative AI, alongside the contents of the thesis, at the final oral examination. Similarly, King's College London instructs examiners not to upload any part of a thesis into a generative AI tool and not to use external AI-detection software when assessing it. This is a confidentiality rule as much as an accuracy rule, because an unexamined thesis is unpublished work, and uploading it is the exact act funders and publishers already prohibit for peer assessors. <em>If [COMMITTEE] adopts only one pair of rules from this brief, I recommend adopting that pair.</em></p>
+<h2 id="two-dates-and-one-note-for-australian-readers">Two dates, and one note for Australian readers</h2>
+<p>Two regulatory obligations are dated and need a named owner at your institution by [DATE].</p>
+<p>For institutions operating in or for the EU market, where the institution is a body governed by public law or a private entity providing public services and deploys a high-risk system under Article 6(2), the EU AI Act's Article 27 Fundamental Rights Impact Assessment applies from August 2, 2026. This applies to admissions, learning-outcome evaluation, education-level assignment within institutions, and proctoring.</p>
+<p>In Australia, the Privacy Act 1988 automated-decision-making transparency obligation commences on December 10, 2026. This requirement reaches private universities and the Australian National University, whereas most state and territory public universities are governed principally by their own jurisdiction's privacy law. Your committee might not conduct the technical assessment itself, but it does own the institutional policy language around it.</p>
+<p>For Australian readers: the Tertiary Education Quality and Standards Agency's <em>Gen AI strategies for research training: Emerging practice</em> (June 2025) sets out what the regulator expects across induction, guidance, and training, the research process, assessment and thesis examination, and publications and grant applications. This pack complements that checklist by supplying the practical instruments to run it, along with a structured way to measure how well those instruments work.</p>
+<p><em>Terminology note: "graduate student" and "doctoral student" both mean a person enrolled in a research degree, at any stage of enrollment, whatever the local name (such as PhD student or graduate student in the United States and much of Europe, research student in the United Kingdom, or higher degree by research student in Australia). "Advisors and supervisors" names one primary role across systems (advisor in North America, supervisor in the United Kingdom and Australia). "Thesis" means the thesis or dissertation. "Examiners" means the examiners, or the dissertation committee members in US usage. The "oral examination" is the final oral defense of the thesis (the viva or viva voce in the United Kingdom and Australia, or the thesis defense in the United States).</em></p>
+<hr>
+<h2 id="crosswalk-brief-section-to-report-section">Crosswalk: brief section to report section</h2>
+<table>
+<thead>
+<tr>
+<th>Section of this brief</th>
+<th>Report section</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>The argument you are most likely to disagree with</td>
+<td>The finding, §1.2, §1.3</td>
+</tr>
+<tr>
+<td>Citation-fabrication evidence (Walters and Wilder, Chelli et al.)</td>
+<td>§2.4, competency 1 (citation verification)</td>
+</tr>
+<tr>
+<td>Genuinely an integrity matter, items 1–4</td>
+<td>§5.4, §3.3, §2.3 (data residency, training-on-input)</td>
+</tr>
+<tr>
+<td>Supervision, training and curriculum matters</td>
+<td>§2.4, §5.3</td>
+</tr>
+<tr>
+<td>Decisions 1 and 2 (adjudicating instrument, and the four case types)</td>
+<td>§1.3 (Class A–D postures), §5.4</td>
+</tr>
+<tr>
+<td>Decision 3 (the disclosure standard and its start date)</td>
+<td>§2.2, §3.3</td>
+</tr>
+<tr>
+<td>Decision 4 (what examiners may and may not do)</td>
+<td>§4.2 (Dimension 1), Appendix G (examiner judgment at viva voce)</td>
+</tr>
+<tr>
+<td>Decision 5 (what record will exist)</td>
+<td>§2.3 (auditability via session logs), §2.5 (systems axis)</td>
+</tr>
+<tr>
+<td>The five questions to ask</td>
+<td>§2.5 (policy · people · systems · process), §5.4</td>
+</tr>
+<tr>
+<td>How disclosure standards work in practice</td>
+<td>§2.2, §3.3, §1.1 (measured disclosure rate)</td>
+</tr>
+<tr>
+<td>A proportionate response</td>
+<td>§5.4, Appendix G</td>
+</tr>
+<tr>
+<td>Why detection tooling is not the answer</td>
+<td>Appendix C, Class 11, §2.4</td>
+</tr>
+<tr>
+<td>Two dates, and one note for Australian readers</td>
+<td>§2.5 (regulatory pressure points), §3.4</td>
+</tr>
+</tbody>
+</table>
+<div class="tablecaption">
+<p>Table 3. Mapping of specific sections in this policy brief to corresponding report sections.</p>
+</div>
+<hr>
+<p><a class="brand-mark-small" href="https://instats.org"><img alt="Instats" src="assets/instats_logo.png" width="1.0in"></a></p>
+<p><strong>Michael J. Zyphur, PhD</strong> · Professor and Director, Instats · <a href="https://instats.org">instats.org</a> · <a href="mailto:support@instats.org">support@instats.org</a></p>
+<p><em>Part of the Instats AI Readiness Pack · <a href="https://instats.org/publications/ai-readiness">instats.org/publications/ai-readiness</a> · CC BY 4.0 — adapt freely for institutional use, with attribution. Companion to</em> <a href="https://instats.org/publications/responsible-ai-in-academic-research">Responsible AI in Academic Research: A Competency Framework for Research Training</a> <em>(DOI 10.61700/t31oy23grr).</em></p>
+</div>
+
+<script>
+(function() {
+  // v0.22.31+: showHeader scroll-tracking removed along with the
+  // sticky-header element. Progress bar + sticky TOC remain.
+
+  const bar = document.getElementById('progress-bar');
+  if (bar) {
+    const update = () => {
+      const h = document.documentElement;
+      const max = h.scrollHeight - h.clientHeight;
+      bar.style.width = (max > 0 ? (h.scrollTop / max) * 100 : 0) + '%';
+    };
+    document.addEventListener('scroll', update, { passive: true });
+    update();
+  }
+  const tocEl = document.querySelector('#sticky-toc ol');
+  if (tocEl) {
+    // The rail is server-rendered at build time (per v2.2.0 design
+    // review §6 #1) — if it already has children, this JS only does
+    // scroll-spy `.active` highlighting on top. The legacy
+    // client-side populate runs ONLY as a fallback for HTML files
+    // built before the server-rendered TOC landed.
+    if (tocEl.children.length === 0) {
+      const skip = ['cover', 'colophon', 'toc', 'exec', 'abstract'];
+      const h2s = [...document.querySelectorAll('h2')].filter(h => {
+        let n = h.parentElement;
+        while (n) {
+          if (n.classList && skip.some(c => n.classList.contains(c))) return false;
+          n = n.parentElement;
+        }
+        return true;
+      });
+      h2s.forEach((h, idx) => {
+        if (!h.id) h.id = 'sec-' + idx;
+        const li = document.createElement('li');
+        const a = document.createElement('a');
+        a.href = '#' + h.id;
+        a.textContent = h.textContent.trim();
+        li.appendChild(a);
+        tocEl.appendChild(li);
+      });
+    }
+    const links = [...tocEl.querySelectorAll('a')];
+    const targets = links.map(a => document.getElementById(a.getAttribute('href').slice(1)));
+    const onScroll = () => {
+      const y = window.scrollY + 120;
+      let active = 0;
+      targets.forEach((t, i) => { if (t && t.offsetTop <= y) active = i; });
+      links.forEach((a, i) => a.classList.toggle('active', i === active));
+    };
+    document.addEventListener('scroll', onScroll, { passive: true });
+    onScroll();
+  }
+})();
+</script>
+
+</body>
+</html>

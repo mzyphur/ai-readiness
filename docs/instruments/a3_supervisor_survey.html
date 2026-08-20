@@ -1,0 +1,785 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>A3 — Supervisor Survey</title>
+  <link rel="stylesheet" href="a3_supervisor_survey.css">
+  <style id="instrument-html-enhancements">
+    .instrument-response-notice {
+      margin: 0 0 1.5rem;
+      padding: 0.85rem 1rem;
+      background: #F5F8FA;
+      border-left: 4px solid #3092B1;
+      color: #1F2024;
+      font-family: var(--sans, sans-serif);
+      font-size: 0.92rem;
+    }
+    fieldset.answer-enhanced {
+      min-inline-size: 0;
+      border: 0;
+      border-left: 3px solid #3092B1;
+    }
+    .answer-options {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.45rem 1rem;
+      letter-spacing: normal;
+      word-spacing: normal;
+    }
+    .answer-option {
+      display: inline-flex;
+      align-items: flex-start;
+      gap: 0.35rem;
+      cursor: pointer;
+    }
+    .answer-option input {
+      margin: 0.2em 0 0;
+      accent-color: #00547B;
+    }
+    .answer-text-input,
+    .answer-textarea {
+      box-sizing: border-box;
+      width: 100%;
+      border: 1px solid #AEB7BE;
+      border-radius: 3px;
+      background: #FFFFFF;
+      color: #1F2024;
+      font: inherit;
+      line-height: 1.45;
+    }
+    .answer-text-input {
+      min-height: 2.55rem;
+      padding: 0.55rem 0.65rem;
+    }
+    .answer-textarea {
+      min-height: 8rem;
+      padding: 0.65rem;
+      resize: vertical;
+    }
+    .answer-legend:not(.visually-hidden) {
+      margin: 0 0 0.45rem;
+      padding: 0;
+      color: #1F2024;
+      font-weight: 600;
+      letter-spacing: normal;
+      word-spacing: normal;
+    }
+    .answer-note {
+      margin: 0.45rem 0 0;
+      letter-spacing: normal;
+      word-spacing: normal;
+    }
+    .visually-hidden {
+      position: absolute !important;
+      width: 1px !important;
+      height: 1px !important;
+      padding: 0 !important;
+      margin: -1px !important;
+      overflow: hidden !important;
+      clip: rect(0, 0, 0, 0) !important;
+      white-space: nowrap !important;
+      border: 0 !important;
+    }
+  </style>
+</head>
+<body>
+
+
+<div id="progress-bar" class="web-only" aria-hidden="true"></div>
+<nav id="sticky-toc" class="sticky-toc web-only" aria-label="Table of contents">
+  <div class="sticky-toc-title">Contents</div>
+  <ol><li><a href="#about-this-instrument">About this instrument</a></li>
+  <li><a href="#how-to-answer">How to answer</a></li>
+  <li><a href="#privacy-and-use-of-your-answers">Privacy and use of your answers</a></li>
+  <li><a href="#section-a-your-supervision-context">Section A — Your supervision context</a></li>
+  <li><a href="#section-b-what-you-have-agreed-with-your-doctoral-students">Section B — What you have agreed with your doctoral students</a></li>
+  <li><a href="#section-c-naming-your-institutions-rules">Section C — Naming your institution's rules</a></li>
+  <li><a href="#section-d-your-own-use-of-ai-in-supervision">Section D — Your own use of AI in supervision</a></li>
+  <li><a href="#section-e-finding-and-acting-on-an-unverified-ai-claim">Section E — Finding and acting on an unverified AI claim</a></li>
+  <li><a href="#section-f-what-you-have-been-trained-to-do">Section F — What you have been trained to do</a></li>
+  <li><a href="#section-g-what-your-institution-asks-of-you">Section G — What your institution asks of you</a></li>
+  <li><a href="#fielding-notes-for-committee">Fielding notes for [COMMITTEE]</a></li>
+  <li><a href="#how-this-instrument-feeds-the-grid">How this instrument feeds the grid</a></li>
+  <li><a href="#crosswalk-item-to-report-section">Crosswalk — item to report section</a></li>
+  <li><a href="#appendix-survey-platform-import-block">Appendix — Survey-platform import block</a></li></ol>
+</nav>
+
+<section class="hero web-only" aria-label="Report at a glance">
+  <div class="hero-inner">
+    <div class="hero-series">Instats Policy Series</div>
+    <h1 class="hero-title">Supervisor Survey</h1>
+
+    <p class="hero-finding">A university-wide assessment and implementation toolkit that connects institutional policy and priorities with the everyday practices, capabilities, and experiences of researchers and graduate students.</p>
+    <p class="hero-byline"><a class="hero-author-link" href="https://orcid.org/0000-0003-3237-7892" target="_blank" rel="noopener">Michael J. Zyphur, PhD</a> &middot; <span class="hero-author-bio">Director of Instats</span></p>
+    <div class="hero-actions">
+      <a class="hero-btn hero-btn-pdf" href="a3_supervisor_survey.pdf" download>PDF version</a>
+      <a class="hero-btn hero-btn-docx" href="a3_supervisor_survey.docx" download>Word version</a>
+      <a class="hero-btn hero-btn-repo" href="https://github.com/mzyphur/ai-readiness" target="_blank" rel="noopener">View GitHub</a>
+    </div>
+  </div>
+</section>
+
+<div class="wrap">
+<aside class="instrument-response-notice" role="note">These controls are for working through or printing this instrument. Responses are not submitted or saved.</aside>
+<p><a class="brand-mark" href="https://instats.org"><img alt="Instats" src="assets/instats_logo.png" width="1.45in"></a></p>
+<h1 id="a3-supervisor-survey">A3 — Supervisor Survey</h1>
+<p><em>What doctoral advisors and supervisors report permitting, forbidding, and doing regarding AI, examined alongside what students report in survey A2.</em></p>
+<hr>
+<h2 id="about-this-instrument">About this instrument</h2>
+<table>
+<tbody>
+<tr>
+<td><strong>Purpose</strong></td>
+<td>To collect supervisor-side evidence on AI in doctoral research at [INSTITUTION NAME] and make selected comparisons between the student and supervisor cohorts possible. Twelve of its twenty-six items address topics also covered in <strong>A2 — Researcher / Doctoral Student Survey</strong>, linked through A2's parallel-form key (<code>PAR-…</code>). Treat them as direct comparisons only where the referent, time period, denominator, and response scale align, and record any differences before analysis.</td>
+</tr>
+<tr>
+<td><strong>Who completes it</strong></td>
+<td>Every academic who advises or supervises a doctoral student at [INSTITUTION NAME], including anyone registered, accredited, or listed as a principal supervisor or co-supervisor. Responses are collected without direct identifiers and reported only in aggregates that meet the minimum cell size.</td>
+</tr>
+<tr>
+<td><strong>Time required</strong></td>
+<td>10–12 minutes.</td>
+</tr>
+<tr>
+<td><strong>Related report sections</strong></td>
+<td><em><a href="https://instats.org/publications/responsible-ai-in-academic-research">Responsible AI in Academic Research</a></em>, §§1.1, 1.3, 2.1–2.5, 3.1, 3.3, 4.1–4.3, Appendix C, and Appendix G.</td>
+</tr>
+<tr>
+<td><strong>Cells touched</strong></td>
+<td>Eleven of the twenty cells: D1-policy, D1-people, D1-process, D2-policy, D2-process, D3-policy, D3-systems, D4-people, D5-policy, D5-people, and D5-process.</td>
+</tr>
+<tr>
+<td><strong>Companion instruments</strong></td>
+<td>Field alongside <strong>A2</strong> in the same survey window. The results feed into <strong>A4 — Gap-Analysis Worksheet</strong>. Item S1 tests directly whether <strong>G1 — Supervisor–Student AI-Use Agreement</strong> is in active use.</td>
+</tr>
+<tr>
+<td><strong>What it is not</strong></td>
+<td>This is not a performance review, a competency test, or evidence for any research integrity or employment process. See the <em>Privacy and use of your answers</em> section below for full details.</td>
+</tr>
+</tbody>
+</table>
+<div class="tablecaption">
+<p>Table 1. Summary of the survey instrument specifications, purpose, and operational characteristics.</p>
+</div>
+<p><em>Terminology.</em> This instrument uses the term <strong>supervisor</strong> for the academic who directs the research and <strong>doctoral student</strong> for the person conducting it. In United States usage, read <em>supervisor</em> as <strong>advisor</strong>. Please note that the term "candidate" means different things in different university systems (for example, in the United States it is reserved for a student who has passed qualifying exams), so the items below apply to every doctoral student you supervise at any stage of their program. Local variants (such as a higher degree by research or HDR candidate in Australia, a PhD student in the United States, a research student in the United Kingdom, or a <em>Doktorand</em> in Germany) all refer to the same person here. Two other terms are used in their broadest sense throughout this document: <strong>thesis</strong> refers to the thesis or dissertation submitted for the doctoral degree, and <strong>examiners</strong> refers to the academics who assess it, which corresponds to dissertation committee members in United States usage.</p>
+<hr>
+<h2 id="how-to-answer">How to answer</h2>
+<p>Most direct operational items ask for a written artifact that another reviewer could inspect. Other items describe use, exposure, awareness, or an adverse event and are analyzed as diagnostic evidence. None asks you to rate your own performance or competence.</p>
+<table>
+<thead>
+<tr>
+<th>Answer</th>
+<th>Means</th>
+<th>Code for an eligible direct indicator</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Yes</strong></td>
+<td>This is true right now, and you can point to the specific artifact named in the evidence prompt.</td>
+<td>1.0</td>
+</tr>
+<tr>
+<td><strong>Partial</strong></td>
+<td>This is true for some of your students but not all of them. It also applies if the practice is in place, but the artifact is informal, undated, or not filed where the evidence prompt indicates.</td>
+<td>0.5</td>
+</tr>
+<tr>
+<td><strong>No</strong></td>
+<td>This is not true, or the relevant artifact does not exist.</td>
+<td>0.0</td>
+</tr>
+<tr>
+<td><strong>Not applicable</strong></td>
+<td>The condition in the question did not occur, so the practice could not be observed. Use this only where the item explicitly permits it.</td>
+<td>Excluded from the item denominator</td>
+</tr>
+<tr>
+<td><em>(blank)</em></td>
+<td><strong>Leave blank if you do not know or prefer not to answer.</strong> A blank is recorded as <em>unanswered</em>.</td>
+<td>Excluded from the item denominator and reported in item coverage</td>
+</tr>
+</tbody>
+</table>
+<div class="tablecaption">
+<p>Table 2. Response options, meanings, and analysis treatment.</p>
+</div>
+<p><strong>Evidence prompts.</strong> The italicized line under each item identifies the artifact that would confirm your answer. Pointing to a document title, a date, or a folder location is sufficient. You are not asked to upload or attach actual files.</p>
+<p><strong>Do not look anything up before answering Section C.</strong> Sections C and G are designed to measure what advisors and supervisors know without prompting. Please answer from memory. You are welcome to verify your answers afterward if you wish, and you can note in the evidence box where your initial answer was incorrect. That correction is often the single most informative response you can provide.</p>
+<p><strong>No single overall score.</strong> This survey does not produce an overall score for you or for [INSTITUTION NAME], and worksheet A4 does not compute one either. The real diagnostic value lies in the pattern of results across all five dimensions (see <a href="https://instats.org/publications/responsible-ai-in-academic-research">the report</a> §4.3).</p>
+<hr>
+<h2 id="privacy-and-use-of-your-answers">Privacy and use of your answers</h2>
+<p><em>Provide this statement in writing before the survey opens and honor it fully afterward. If this commitment is not clear and trusted, the responses to items S15 and S20 will be essentially worthless. This statement parallels the privacy guarantees provided to doctoral students in survey A2.</em></p>
+<ul>
+<li><strong>No direct identifiers.</strong> No names, employee numbers, or IP addresses are recorded. [SURVEY ADMINISTRATOR] holds the raw survey responses, and no one in your line-management chain will ever see them.</li>
+<li><strong>Reported in aggregate only.</strong> Results are reported only for groups of at least [MINIMUM CELL SIZE: 5 recommended, whereas A2 reports at 10]. Any breakdowns below that threshold are suppressed entirely rather than published with a caveat.</li>
+<li><strong>Never used for performance evaluation.</strong> Responses are never used in probation, promotion, performance reviews, workload allocation, supervisor registration or accreditation, or in any research-integrity or disciplinary process. [INSTITUTION NAME] provides this undertaking in writing at [POLICY REFERENCE].</li>
+<li><strong>Free text is de-identified.</strong> All free-text comments are de-identified before analysis. No verbatim response will be quoted if it could identify a supervisor, a student, or a specific project.</li>
+<li><strong>Retention.</strong> Raw response data will be destroyed on [DATE], and only aggregate summary tables will be retained.</li>
+<li><strong>Voluntary participation.</strong> You may leave any item blank and can stop taking the survey at any point.</li>
+<li><strong>Governance.</strong> Conducted under [ETHICS APPROVAL / QUALITY-ASSURANCE EXEMPTION REFERENCE].</li>
+</ul>
+<blockquote>
+<p><strong>Drafting note for [COMMITTEE].</strong> Items S15 and S20 ask supervisors to report practices that certain institutional, funder, or publisher rules restrict. These are two of the most informative items in the survey, but they are also the most vulnerable to under-reporting. If the confidentiality commitment above cannot be guaranteed and maintained, it is better to remove both items rather than field them, because an artificially suppressed response looks like full compliance.</p>
+</blockquote>
+<hr>
+<h2 id="section-a-your-supervision-context">Section A — Your supervision context</h2>
+<p><em>These four fields are not scored. They are used only to cross-tabulate results by academic discipline and supervisory experience (see <a href="https://instats.org/publications/responsible-ai-in-academic-research">the report</a> §4.3).</em></p>
+<p><strong>C1.</strong> School or college: <strong><em>_</em></strong><strong><em>_</em></strong>__</p>
+<p><strong>C2.</strong> Number of doctoral students you currently supervise, as principal or co-supervisor: <strong><em>_</em></strong>_</p>
+<p><strong>C3.</strong> The research mode closest to most of your supervision: ☐ Laboratory / experimental ☐ Computational / data-intensive ☐ Field / observational ☐ Archival / textual / interpretive ☐ Clinical / applied ☐ Mixed</p>
+<p><strong>C4.</strong> Number of doctoral students you have supervised to completion: <strong><em>_</em></strong>_</p>
+<hr>
+<h2 id="section-b-what-you-have-agreed-with-your-doctoral-students">Section B — What you have agreed with your doctoral students</h2>
+<p><em>Cells touched: D1-process and D2-process. See <a href="https://instats.org/publications/responsible-ai-in-academic-research">the report</a> §§2.1, 2.2, 2.5, and Appendix G.</em></p>
+<p><strong>S1.</strong> Have you and each of your current doctoral students agreed <strong>in writing</strong> which research tasks on their project AI may assist and which must remain the student's own unaided work?
+<em>(Pair: written task-level AI agreement exists · A2 <code>PAR-WRITTEN-AGREEMENT</code>)</em> · <em>Cell: D1-process</em></p>
+<fieldset class="answer answer-enhanced" id="a3_supervisor_survey-answer-1">
+<legend class="answer-legend visually-hidden">S1. Have you and each of your current doctoral students agreed in writing which research tasks on their project AI may assist and which must remain the student&#x27;s own unaided work? (Pair: written task-level AI agreement exists · A2 PAR-WRITTEN-AGREEMENT) · Cell: D1-process</legend>
+<div class="answer-options"><label class="answer-option" for="a3_supervisor_survey-answer-1-option-1"><input type="radio" id="a3_supervisor_survey-answer-1-option-1" name="a3_supervisor_survey-answer-1" value="Yes"> <span>Yes</span></label><label class="answer-option" for="a3_supervisor_survey-answer-1-option-2"><input type="radio" id="a3_supervisor_survey-answer-1-option-2" name="a3_supervisor_survey-answer-1" value="Partial"> <span>Partial</span></label><label class="answer-option" for="a3_supervisor_survey-answer-1-option-3"><input type="radio" id="a3_supervisor_survey-answer-1-option-3" name="a3_supervisor_survey-answer-1" value="No"> <span>No</span></label></div>
+</fieldset>
+<p><em>Evidence: name the document (such as a supervision-meeting record, an email, a signed agreement, or a lab protocol), give its date, and state where it is filed.</em></p>
+<p><strong>S2.</strong> Have you told your students, in a form they can re-read, which uses of AI you <strong>forbid outright</strong> on their project?
+<em>(Pair: prohibitions stated in re-readable form · A2 <code>PAR-TASK-RULES</code>)</em> · <em>Cell: D2-process</em></p>
+<fieldset class="answer answer-enhanced" id="a3_supervisor_survey-answer-2">
+<legend class="answer-legend visually-hidden">S2. Have you told your students, in a form they can re-read, which uses of AI you forbid outright on their project? (Pair: prohibitions stated in re-readable form · A2 PAR-TASK-RULES) · Cell: D2-process</legend>
+<div class="answer-options"><label class="answer-option" for="a3_supervisor_survey-answer-2-option-1"><input type="radio" id="a3_supervisor_survey-answer-2-option-1" name="a3_supervisor_survey-answer-2" value="Yes"> <span>Yes</span></label><label class="answer-option" for="a3_supervisor_survey-answer-2-option-2"><input type="radio" id="a3_supervisor_survey-answer-2-option-2" name="a3_supervisor_survey-answer-2" value="Partial"> <span>Partial</span></label><label class="answer-option" for="a3_supervisor_survey-answer-2-option-3"><input type="radio" id="a3_supervisor_survey-answer-2-option-3" name="a3_supervisor_survey-answer-2" value="No"> <span>No</span></label></div>
+</fieldset>
+<p><em>Evidence: name the email, supervision note, group protocol, or handbook section, and quote one prohibition exactly as you wrote it.</em></p>
+<p><strong>S3.</strong> In the last twelve months, has AI use been a <strong>recorded agenda item</strong> at a formal supervision meeting or a progress milestone (such as the first formal progress review, a mid-program review, or a completion seminar) for each of your students?
+<em>(Pair: AI recorded on the supervision or milestone record · A2 <code>PAR-SUPERVISION-DISCUSSED</code>)</em> · <em>Cell: D1-process</em></p>
+<fieldset class="answer answer-enhanced" id="a3_supervisor_survey-answer-3">
+<legend class="answer-legend visually-hidden">S3. In the last twelve months, has AI use been a recorded agenda item at a formal supervision meeting or a progress milestone (such as the first formal progress review, a mid-program review, or a completion seminar) for each of your students? (Pair: AI recorded on the supervision or milestone record · A2 PAR-SUPERVISION-DISCUSSED) · Cell: D1-process</legend>
+<div class="answer-options"><label class="answer-option" for="a3_supervisor_survey-answer-3-option-1"><input type="radio" id="a3_supervisor_survey-answer-3-option-1" name="a3_supervisor_survey-answer-3" value="Yes"> <span>Yes</span></label><label class="answer-option" for="a3_supervisor_survey-answer-3-option-2"><input type="radio" id="a3_supervisor_survey-answer-3-option-2" name="a3_supervisor_survey-answer-3" value="Partial"> <span>Partial</span></label><label class="answer-option" for="a3_supervisor_survey-answer-3-option-3"><input type="radio" id="a3_supervisor_survey-answer-3-option-3" name="a3_supervisor_survey-answer-3" value="No"> <span>No</span></label></div>
+</fieldset>
+<p><em>Evidence: name the meeting record or milestone form and the specific field where AI use is recorded.</em></p>
+<p><strong>S4.</strong> Has the AI-use agreement been <strong>revisited at a defined point</strong> since it was first made (such as at the first formal progress review, upon a change of research method, or at the start of writing up)?
+<em>(Pair: agreement revisited at a defined milestone · no A2 counterpart)</em> · <em>Cell: D2-process</em></p>
+<fieldset class="answer answer-enhanced" id="a3_supervisor_survey-answer-4">
+<legend class="answer-legend visually-hidden">S4. Has the AI-use agreement been revisited at a defined point since it was first made (such as at the first formal progress review, upon a change of research method, or at the start of writing up)? (Pair: agreement revisited at a defined milestone · no A2 counterpart) · Cell: D2-process</legend>
+<div class="answer-options"><label class="answer-option" for="a3_supervisor_survey-answer-4-option-1"><input type="radio" id="a3_supervisor_survey-answer-4-option-1" name="a3_supervisor_survey-answer-4" value="Yes"> <span>Yes</span></label><label class="answer-option" for="a3_supervisor_survey-answer-4-option-2"><input type="radio" id="a3_supervisor_survey-answer-4-option-2" name="a3_supervisor_survey-answer-4" value="Partial"> <span>Partial</span></label><label class="answer-option" for="a3_supervisor_survey-answer-4-option-3"><input type="radio" id="a3_supervisor_survey-answer-4-option-3" name="a3_supervisor_survey-answer-4" value="No"> <span>No</span></label></div>
+</fieldset>
+<p><em>Evidence: give the date of the subsequent review and the milestone it was attached to.</em></p>
+<p><strong>S5.</strong> Have you shown each student the institutional <strong>thesis AI-disclosure requirement</strong> and the exact place in the thesis where the disclosure must appear?
+<em>(Pair: shown the thesis disclosure requirement and its location · A2 <code>PAR-THESIS-DECLARE</code>)</em> · <em>Cell: D2-process</em></p>
+<fieldset class="answer answer-enhanced" id="a3_supervisor_survey-answer-5">
+<legend class="answer-legend visually-hidden">S5. Have you shown each student the institutional thesis AI-disclosure requirement and the exact place in the thesis where the disclosure must appear? (Pair: shown the thesis disclosure requirement and its location · A2 PAR-THESIS-DECLARE) · Cell: D2-process</legend>
+<div class="answer-options"><label class="answer-option" for="a3_supervisor_survey-answer-5-option-1"><input type="radio" id="a3_supervisor_survey-answer-5-option-1" name="a3_supervisor_survey-answer-5" value="Yes"> <span>Yes</span></label><label class="answer-option" for="a3_supervisor_survey-answer-5-option-2"><input type="radio" id="a3_supervisor_survey-answer-5-option-2" name="a3_supervisor_survey-answer-5" value="Partial"> <span>Partial</span></label><label class="answer-option" for="a3_supervisor_survey-answer-5-option-3"><input type="radio" id="a3_supervisor_survey-answer-5-option-3" name="a3_supervisor_survey-answer-5" value="No"> <span>No</span></label></div>
+</fieldset>
+<p><em>Evidence: name the declaration form or preliminary-pages template you used, along with the date you reviewed it with the student.</em></p>
+<hr>
+<h2 id="section-c-naming-your-institutions-rules">Section C — Naming your institution's rules</h2>
+<p><em>Please answer these items from memory. Cells touched: D1-policy, D2-policy, D3-policy, and D5-people. See <a href="https://instats.org/publications/responsible-ai-in-academic-research">the report</a> §§1.3, 2.1–2.3, and 2.5.</em></p>
+<p><strong>S6.</strong> Can you <strong>name</strong> the institutional document that governs AI use in doctoral research at [INSTITUTION NAME]?
+<em>(Pair: can name the governing document · A2 <code>PAR-POLICY-KNOWN</code> · <code>PAR-POLICY-LOCATE</code>)</em> · <em>Cell: D1-policy</em></p>
+<fieldset class="answer answer-enhanced" id="a3_supervisor_survey-answer-6">
+<legend class="answer-legend visually-hidden">S6. Can you name the institutional document that governs AI use in doctoral research at [INSTITUTION NAME]? (Pair: can name the governing document · A2 PAR-POLICY-KNOWN · PAR-POLICY-LOCATE) · Cell: D1-policy</legend>
+<div class="answer-options"><label class="answer-option" for="a3_supervisor_survey-answer-6-option-1"><input type="radio" id="a3_supervisor_survey-answer-6-option-1" name="a3_supervisor_survey-answer-6" value="Yes"> <span>Yes</span></label><label class="answer-option" for="a3_supervisor_survey-answer-6-option-2"><input type="radio" id="a3_supervisor_survey-answer-6-option-2" name="a3_supervisor_survey-answer-6" value="Partial"> <span>Partial</span></label><label class="answer-option" for="a3_supervisor_survey-answer-6-option-3"><input type="radio" id="a3_supervisor_survey-answer-6-option-3" name="a3_supervisor_survey-answer-6" value="No"> <span>No</span></label></div>
+</fieldset>
+<p><em>Evidence: write its exact title and its URL or intranet location. If your first answer was wrong when you checked, please say so. That discrepancy is an important finding rather than a personal failure.</em></p>
+<p><strong>S7.</strong> Does that document draw a <strong>task-level line</strong> between research work AI may carry and research judgment that must stay human, and can you point to the clause?
+<em>(Pair: task-level labour-vs-judgement clause · no A2 counterpart)</em> · <em>Cell: D1-policy</em></p>
+<fieldset class="answer answer-enhanced" id="a3_supervisor_survey-answer-7">
+<legend class="answer-legend visually-hidden">S7. Does that document draw a task-level line between research work AI may carry and research judgment that must stay human, and can you point to the clause? (Pair: task-level labour-vs-judgement clause · no A2 counterpart) · Cell: D1-policy</legend>
+<div class="answer-options"><label class="answer-option" for="a3_supervisor_survey-answer-7-option-1"><input type="radio" id="a3_supervisor_survey-answer-7-option-1" name="a3_supervisor_survey-answer-7" value="Yes"> <span>Yes</span></label><label class="answer-option" for="a3_supervisor_survey-answer-7-option-2"><input type="radio" id="a3_supervisor_survey-answer-7-option-2" name="a3_supervisor_survey-answer-7" value="Partial"> <span>Partial</span></label><label class="answer-option" for="a3_supervisor_survey-answer-7-option-3"><input type="radio" id="a3_supervisor_survey-answer-7-option-3" name="a3_supervisor_survey-answer-7" value="No"> <span>No</span></label></div>
+</fieldset>
+<p><em>Evidence: quote the clause and give its section number. A general statement that AI "must not replace expert judgment," without an explicit task-level demarcation, counts as "Partial" rather than "Yes".</em></p>
+<p><strong>S8.</strong> Does [INSTITUTION NAME] publish rules that <strong>differ by AI-use mode</strong> (such as search, co-author, validator, or tutor) rather than relying on a single general statement covering all AI use?
+<em>(Pair: mode-specific rules exist · no A2 counterpart)</em> · <em>Cell: D2-policy</em></p>
+<fieldset class="answer answer-enhanced" id="a3_supervisor_survey-answer-8">
+<legend class="answer-legend visually-hidden">S8. Does [INSTITUTION NAME] publish rules that differ by AI-use mode (such as search, co-author, validator, or tutor) rather than relying on a single general statement covering all AI use? (Pair: mode-specific rules exist · no A2 counterpart) · Cell: D2-policy</legend>
+<div class="answer-options"><label class="answer-option" for="a3_supervisor_survey-answer-8-option-1"><input type="radio" id="a3_supervisor_survey-answer-8-option-1" name="a3_supervisor_survey-answer-8" value="Yes"> <span>Yes</span></label><label class="answer-option" for="a3_supervisor_survey-answer-8-option-2"><input type="radio" id="a3_supervisor_survey-answer-8-option-2" name="a3_supervisor_survey-answer-8" value="Partial"> <span>Partial</span></label><label class="answer-option" for="a3_supervisor_survey-answer-8-option-3"><input type="radio" id="a3_supervisor_survey-answer-8-option-3" name="a3_supervisor_survey-answer-8" value="No"> <span>No</span></label></div>
+</fieldset>
+<p><em>Evidence: name the mode-specific clause for at least two of the four modes.</em></p>
+<p><strong>S9.</strong> Can you name the AI tools or deployments [INSTITUTION NAME] has <strong>approved for use with unpublished research material</strong> (such as draft chapters, participant data, interview audio, or unpublished figures)?
+<em>(Pair: can name the approved deployments · A2 <code>PAR-APPROVED-TOOLS</code>)</em> · <em>Cell: D3-policy</em></p>
+<fieldset class="answer answer-enhanced" id="a3_supervisor_survey-answer-9">
+<legend class="answer-legend visually-hidden">S9. Can you name the AI tools or deployments [INSTITUTION NAME] has approved for use with unpublished research material (such as draft chapters, participant data, interview audio, or unpublished figures)? (Pair: can name the approved deployments · A2 PAR-APPROVED-TOOLS) · Cell: D3-policy</legend>
+<div class="answer-options"><label class="answer-option" for="a3_supervisor_survey-answer-9-option-1"><input type="radio" id="a3_supervisor_survey-answer-9-option-1" name="a3_supervisor_survey-answer-9" value="Yes"> <span>Yes</span></label><label class="answer-option" for="a3_supervisor_survey-answer-9-option-2"><input type="radio" id="a3_supervisor_survey-answer-9-option-2" name="a3_supervisor_survey-answer-9" value="Partial"> <span>Partial</span></label><label class="answer-option" for="a3_supervisor_survey-answer-9-option-3"><input type="radio" id="a3_supervisor_survey-answer-9-option-3" name="a3_supervisor_survey-answer-9" value="No"> <span>No</span></label></div>
+</fieldset>
+<p><em>Evidence: name the approved list or procurement page and identify at least one deployment on it. Answering "Whatever the university has a license for" is a "No".</em></p>
+<p><strong>S10.</strong> Do you know <strong>by role</strong> (rather than just the name of an individual colleague you happen to know) who at [INSTITUTION NAME] settles a disputed AI-use question on a doctoral project?
+<em>(Pair: can name the role that settles a dispute · A2 <code>PAR-ESCALATION-OWNER</code>)</em> · <em>Cell: D5-people</em></p>
+<fieldset class="answer answer-enhanced" id="a3_supervisor_survey-answer-10">
+<legend class="answer-legend visually-hidden">S10. Do you know by role (rather than just the name of an individual colleague you happen to know) who at [INSTITUTION NAME] settles a disputed AI-use question on a doctoral project? (Pair: can name the role that settles a dispute · A2 PAR-ESCALATION-OWNER) · Cell: D5-people</legend>
+<div class="answer-options"><label class="answer-option" for="a3_supervisor_survey-answer-10-option-1"><input type="radio" id="a3_supervisor_survey-answer-10-option-1" name="a3_supervisor_survey-answer-10" value="Yes"> <span>Yes</span></label><label class="answer-option" for="a3_supervisor_survey-answer-10-option-2"><input type="radio" id="a3_supervisor_survey-answer-10-option-2" name="a3_supervisor_survey-answer-10" value="Partial"> <span>Partial</span></label><label class="answer-option" for="a3_supervisor_survey-answer-10-option-3"><input type="radio" id="a3_supervisor_survey-answer-10-option-3" name="a3_supervisor_survey-answer-10" value="No"> <span>No</span></label></div>
+</fieldset>
+<p><em>Evidence: state the official role and the responsible office, and provide the published webpage or document that names it.</em></p>
+<hr>
+<h2 id="section-d-your-own-use-of-ai-in-supervision">Section D — Your own use of AI in supervision</h2>
+<p><em>Cells touched: D1-process, D2-process, and D3-systems. See <a href="https://instats.org/publications/responsible-ai-in-academic-research">the report</a> §§2.1, 2.3, 3.1, 3.3, Appendix C (Classes 2, 3, and 10), and Appendix G.</em></p>
+<p><strong>S11.</strong> In the last twelve months, have you used an AI tool to help produce <strong>written feedback on a student's draft</strong> (such as comments, a review summary, or a suggested revision plan)?
+<em>(Pair: AI used to produce feedback on drafts · no A2 counterpart)</em> · <em>Cell: D3-systems</em></p>
+<fieldset class="answer answer-enhanced" id="a3_supervisor_survey-answer-11">
+<legend class="answer-legend visually-hidden">S11. In the last twelve months, have you used an AI tool to help produce written feedback on a student&#x27;s draft (such as comments, a review summary, or a suggested revision plan)? (Pair: AI used to produce feedback on drafts · no A2 counterpart) · Cell: D3-systems</legend>
+<div class="answer-options"><label class="answer-option" for="a3_supervisor_survey-answer-11-option-1"><input type="radio" id="a3_supervisor_survey-answer-11-option-1" name="a3_supervisor_survey-answer-11" value="Yes"> <span>Yes</span></label><label class="answer-option" for="a3_supervisor_survey-answer-11-option-2"><input type="radio" id="a3_supervisor_survey-answer-11-option-2" name="a3_supervisor_survey-answer-11" value="Partial"> <span>Partial</span></label><label class="answer-option" for="a3_supervisor_survey-answer-11-option-3"><input type="radio" id="a3_supervisor_survey-answer-11-option-3" name="a3_supervisor_survey-answer-11" value="No"> <span>No</span></label></div>
+</fieldset>
+<p><em>Evidence: name the tool class (see <a href="https://instats.org/publications/responsible-ai-in-academic-research">the report</a> Appendix C) and the deployment tier, such as an institutional enterprise tenancy or a personal consumer account.</em></p>
+<p><strong>S12.</strong> Have you <strong>told your students</strong> whether and how you use AI on their written work?
+<em>(Pair: student has been told about supervisor's AI use · no A2 counterpart)</em> · <em>Cell: D2-process</em></p>
+<fieldset class="answer answer-enhanced" id="a3_supervisor_survey-answer-12">
+<legend class="answer-legend visually-hidden">S12. Have you told your students whether and how you use AI on their written work? (Pair: student has been told about supervisor&#x27;s AI use · no A2 counterpart) · Cell: D2-process</legend>
+<div class="answer-options"><label class="answer-option" for="a3_supervisor_survey-answer-12-option-1"><input type="radio" id="a3_supervisor_survey-answer-12-option-1" name="a3_supervisor_survey-answer-12" value="Yes"> <span>Yes</span></label><label class="answer-option" for="a3_supervisor_survey-answer-12-option-2"><input type="radio" id="a3_supervisor_survey-answer-12-option-2" name="a3_supervisor_survey-answer-12" value="Partial"> <span>Partial</span></label><label class="answer-option" for="a3_supervisor_survey-answer-12-option-3"><input type="radio" id="a3_supervisor_survey-answer-12-option-3" name="a3_supervisor_survey-answer-12" value="No"> <span>No</span></label></div>
+</fieldset>
+<p><em>Evidence: name the email or supervision note in which you communicated this, and give the date.</em></p>
+<p><strong>S13.</strong> When you have put a student's <strong>unpublished</strong> text, data, audio, or figures into an AI tool, was that tool an institutionally contracted deployment with training-on-input disabled?
+<em>(Pair: unpublished material only in contracted deployments · A2 <code>PAR-DATA-ENTERED</code> · <code>PAR-DATA-CHECKED</code>)</em> · <em>Cell: D3-systems</em></p>
+<fieldset class="answer answer-enhanced" id="a3_supervisor_survey-answer-13">
+<legend class="answer-legend visually-hidden">S13. When you have put a student&#x27;s unpublished text, data, audio, or figures into an AI tool, was that tool an institutionally contracted deployment with training-on-input disabled? (Pair: unpublished material only in contracted deployments · A2 PAR-DATA-ENTERED · PAR-DATA-CHECKED) · Cell: D3-systems</legend>
+<div class="answer-options"><label class="answer-option" for="a3_supervisor_survey-answer-13-option-1"><input type="radio" id="a3_supervisor_survey-answer-13-option-1" name="a3_supervisor_survey-answer-13" value="Yes"> <span>Yes</span></label><label class="answer-option" for="a3_supervisor_survey-answer-13-option-2"><input type="radio" id="a3_supervisor_survey-answer-13-option-2" name="a3_supervisor_survey-answer-13" value="Partial"> <span>Partial</span></label><label class="answer-option" for="a3_supervisor_survey-answer-13-option-3"><input type="radio" id="a3_supervisor_survey-answer-13-option-3" name="a3_supervisor_survey-answer-13" value="No"> <span>No</span></label><label class="answer-option" for="a3_supervisor_survey-answer-13-option-4"><input type="radio" id="a3_supervisor_survey-answer-13-option-4" name="a3_supervisor_survey-answer-13" value="Not applicable: I have not put student material into an AI tool"> <span>Not applicable: I have not put student material into an AI tool</span></label></div>
+</fieldset>
+<p><em>Evidence: name the deployment along with the institutional tenancy or enterprise agreement that covers it. Using a personal or free-tier account is a "No". If you have never entered student material into an AI tool, select "Not applicable".</em></p>
+<p><strong>S14.</strong> Do you have the student's <strong>agreement, recorded somewhere</strong>, before putting their unpublished work into any AI tool?
+<em>(Pair: student was asked before their work was used · no A2 counterpart)</em> · <em>Cell: D2-process</em></p>
+<fieldset class="answer answer-enhanced" id="a3_supervisor_survey-answer-14">
+<legend class="answer-legend visually-hidden">S14. Do you have the student&#x27;s agreement, recorded somewhere, before putting their unpublished work into any AI tool? (Pair: student was asked before their work was used · no A2 counterpart) · Cell: D2-process</legend>
+<div class="answer-options"><label class="answer-option" for="a3_supervisor_survey-answer-14-option-1"><input type="radio" id="a3_supervisor_survey-answer-14-option-1" name="a3_supervisor_survey-answer-14" value="Yes"> <span>Yes</span></label><label class="answer-option" for="a3_supervisor_survey-answer-14-option-2"><input type="radio" id="a3_supervisor_survey-answer-14-option-2" name="a3_supervisor_survey-answer-14" value="Partial"> <span>Partial</span></label><label class="answer-option" for="a3_supervisor_survey-answer-14-option-3"><input type="radio" id="a3_supervisor_survey-answer-14-option-3" name="a3_supervisor_survey-answer-14" value="No"> <span>No</span></label><label class="answer-option" for="a3_supervisor_survey-answer-14-option-4"><input type="radio" id="a3_supervisor_survey-answer-14-option-4" name="a3_supervisor_survey-answer-14" value="Not applicable: I have not put student material into an AI tool"> <span>Not applicable: I have not put student material into an AI tool</span></label></div>
+</fieldset>
+<p><em>Evidence: state where that agreement is recorded, such as in the formal supervision record, the written AI-use agreement, or an email.</em></p>
+<p><strong>S15.</strong> In the last twelve months, have you used an AI tool to help <strong>assess or examine</strong> research (such as a thesis under examination, a progress report, a grant application you were reviewing, or a journal manuscript you were peer-reviewing)?
+<em>(Pair: AI used in assessment, examination, or peer review · no A2 counterpart)</em> · <em>Cell: D1-process</em></p>
+<fieldset class="answer answer-enhanced" id="a3_supervisor_survey-answer-15">
+<legend class="answer-legend visually-hidden">S15. In the last twelve months, have you used an AI tool to help assess or examine research (such as a thesis under examination, a progress report, a grant application you were reviewing, or a journal manuscript you were peer-reviewing)? (Pair: AI used in assessment, examination, or peer review · no A2 counterpart) · Cell: D1-process</legend>
+<div class="answer-options"><label class="answer-option" for="a3_supervisor_survey-answer-15-option-1"><input type="radio" id="a3_supervisor_survey-answer-15-option-1" name="a3_supervisor_survey-answer-15" value="Yes"> <span>Yes</span></label><label class="answer-option" for="a3_supervisor_survey-answer-15-option-2"><input type="radio" id="a3_supervisor_survey-answer-15-option-2" name="a3_supervisor_survey-answer-15" value="Partial"> <span>Partial</span></label><label class="answer-option" for="a3_supervisor_survey-answer-15-option-3"><input type="radio" id="a3_supervisor_survey-answer-15-option-3" name="a3_supervisor_survey-answer-15" value="No"> <span>No</span></label></div>
+</fieldset>
+<p><em>Evidence: state which of those research items you assessed, and name the institutional, funder, or publisher rule you checked before doing so. As noted in <a href="https://instats.org/publications/responsible-ai-in-academic-research">the report</a> (§§3.1 and 3.3), thirteen of fourteen national funders and sixteen of eighteen academic publishers prohibit reviewers from uploading proposals or manuscripts to external generative AI tools due to confidentiality and intellectual property protections. For example, King's College London's doctoral-assessment guidance specifies that examiners "must not upload any part of a student's thesis into a generative AI tool, or make use of external generative AI detection software when assessing the thesis."</em></p>
+<hr>
+<h2 id="section-e-finding-and-acting-on-an-unverified-ai-claim">Section E — Finding and acting on an unverified AI claim</h2>
+<p><em>Cells touched: D1-policy, D2-process, D3-systems, and D4-people. See <a href="https://instats.org/publications/responsible-ai-in-academic-research">the report</a> §§1.1, 1.3, 2.2, 2.4, Appendix C (Class 11), and Appendix G.</em></p>
+<p><strong>S16.</strong> In the last twelve months, have you checked <strong>at least one citation in each student's draft chapter</strong> against the primary source yourself?
+<em>(Pair: citations verified against the primary source · A2 <code>PAR-CITE-CHECK</code>)</em> · <em>Cell: D4-people (diagnostic only)</em></p>
+<fieldset class="answer answer-enhanced" id="a3_supervisor_survey-answer-16">
+<legend class="answer-legend visually-hidden">S16. In the last twelve months, have you checked at least one citation in each student&#x27;s draft chapter against the primary source yourself? (Pair: citations verified against the primary source · A2 PAR-CITE-CHECK) · Cell: D4-people (diagnostic only)</legend>
+<div class="answer-options"><label class="answer-option" for="a3_supervisor_survey-answer-16-option-1"><input type="radio" id="a3_supervisor_survey-answer-16-option-1" name="a3_supervisor_survey-answer-16" value="Yes"> <span>Yes</span></label><label class="answer-option" for="a3_supervisor_survey-answer-16-option-2"><input type="radio" id="a3_supervisor_survey-answer-16-option-2" name="a3_supervisor_survey-answer-16" value="Partial"> <span>Partial</span></label><label class="answer-option" for="a3_supervisor_survey-answer-16-option-3"><input type="radio" id="a3_supervisor_survey-answer-16-option-3" name="a3_supervisor_survey-answer-16" value="No"> <span>No</span></label><label class="answer-option" for="a3_supervisor_survey-answer-16-option-4"><input type="radio" id="a3_supervisor_survey-answer-16-option-4" name="a3_supervisor_survey-answer-16" value="Not applicable"> <span>Not applicable</span></label></div>
+</fieldset>
+<p><em>Evidence: name the annotated draft or the supervision record that documents the check. Select Not applicable if none of your students produced a draft chapter in the last twelve months. This item describes a supervisory checking practice. It does not test a D4 maturity criterion and does not share A2 Q16's denominator.</em></p>
+<p><strong>S17.</strong> Have you found a citation in a student's work that <strong>did not resolve</strong> to the source claimed (such as a reference that does not exist, or a real source that does not say what the student claimed it said)?
+<em>(Pair: has encountered a non-resolving citation · A2 <code>PAR-FAKE-REF-SEEN</code>)</em> · <em>Cell: D4-people (diagnostic only)</em></p>
+<div class="answer">
+<p>☐ Yes ☐ No ☐ I have not checked closely enough to know</p>
+</div>
+<p><em>Evidence: give the year and a one-line summary of how the issue was resolved. No identifying student details are needed or requested.</em></p>
+<p><strong>S18.</strong> Is there a <strong>written institutional procedure</strong> telling you what to do when you find an unverifiable AI-assisted claim in a student's work, and can you name it?
+<em>(Pair: knows the written procedure · no A2 counterpart)</em> · <em>Cell: D2-process</em></p>
+<fieldset class="answer answer-enhanced" id="a3_supervisor_survey-answer-18">
+<legend class="answer-legend visually-hidden">S18. Is there a written institutional procedure telling you what to do when you find an unverifiable AI-assisted claim in a student&#x27;s work, and can you name it? (Pair: knows the written procedure · no A2 counterpart) · Cell: D2-process</legend>
+<div class="answer-options"><label class="answer-option" for="a3_supervisor_survey-answer-18-option-1"><input type="radio" id="a3_supervisor_survey-answer-18-option-1" name="a3_supervisor_survey-answer-18" value="Yes"> <span>Yes</span></label><label class="answer-option" for="a3_supervisor_survey-answer-18-option-2"><input type="radio" id="a3_supervisor_survey-answer-18-option-2" name="a3_supervisor_survey-answer-18" value="Partial"> <span>Partial</span></label><label class="answer-option" for="a3_supervisor_survey-answer-18-option-3"><input type="radio" id="a3_supervisor_survey-answer-18-option-3" name="a3_supervisor_survey-answer-18" value="No"> <span>No</span></label></div>
+</fieldset>
+<p><em>Evidence: provide the procedure's title and section number. Answering "I would talk to the student" reflects your own personal judgment rather than an institutional procedure, so that counts as a "No".</em></p>
+<p><strong>S19.</strong> Does that procedure distinguish, <strong>in writing</strong>, between a student's unverified AI-assisted claim (a verification failure, to be corrected in supervision) and research misconduct (to be referred to a formal committee)?
+<em>(Pair: procedure distinguishes verification failure from misconduct · no A2 counterpart)</em> · <em>Cell: D1-policy</em></p>
+<fieldset class="answer answer-enhanced" id="a3_supervisor_survey-answer-19">
+<legend class="answer-legend visually-hidden">S19. Does that procedure distinguish, in writing, between a student&#x27;s unverified AI-assisted claim (a verification failure, to be corrected in supervision) and research misconduct (to be referred to a formal committee)? (Pair: procedure distinguishes verification failure from misconduct · no A2 counterpart) · Cell: D1-policy</legend>
+<div class="answer-options"><label class="answer-option" for="a3_supervisor_survey-answer-19-option-1"><input type="radio" id="a3_supervisor_survey-answer-19-option-1" name="a3_supervisor_survey-answer-19" value="Yes"> <span>Yes</span></label><label class="answer-option" for="a3_supervisor_survey-answer-19-option-2"><input type="radio" id="a3_supervisor_survey-answer-19-option-2" name="a3_supervisor_survey-answer-19" value="Partial"> <span>Partial</span></label><label class="answer-option" for="a3_supervisor_survey-answer-19-option-3"><input type="radio" id="a3_supervisor_survey-answer-19-option-3" name="a3_supervisor_survey-answer-19" value="No"> <span>No</span></label></div>
+</fieldset>
+<p><em>Evidence: quote the specific clause that draws this distinction, or answer "No". When an institution handles AI strictly under general student-conduct or plagiarism rules (which was the case for about 40 percent of the thirty-eight universities examined in <a href="https://instats.org/publications/responsible-ai-in-academic-research">the report</a>), this distinction usually does not exist (see <a href="https://instats.org/publications/responsible-ai-in-academic-research">the report</a> §1.3).</em></p>
+<p><strong>S20.</strong> In the last twelve months, have you used (or been asked to use) an <strong>AI-detection tool</strong> on a student's writing?
+<em>(Pair: AI-detection tool used on the student's writing · no A2 counterpart)</em> · <em>Cell: D3-systems</em></p>
+<fieldset class="answer answer-enhanced" id="a3_supervisor_survey-answer-20">
+<legend class="answer-legend visually-hidden">S20. In the last twelve months, have you used (or been asked to use) an AI-detection tool on a student&#x27;s writing? (Pair: AI-detection tool used on the student&#x27;s writing · no A2 counterpart) · Cell: D3-systems</legend>
+<div class="answer-options"><label class="answer-option" for="a3_supervisor_survey-answer-20-option-1"><input type="radio" id="a3_supervisor_survey-answer-20-option-1" name="a3_supervisor_survey-answer-20" value="Yes"> <span>Yes</span></label><label class="answer-option" for="a3_supervisor_survey-answer-20-option-2"><input type="radio" id="a3_supervisor_survey-answer-20-option-2" name="a3_supervisor_survey-answer-20" value="Partial"> <span>Partial</span></label><label class="answer-option" for="a3_supervisor_survey-answer-20-option-3"><input type="radio" id="a3_supervisor_survey-answer-20-option-3" name="a3_supervisor_survey-answer-20" value="No"> <span>No</span></label></div>
+</fieldset>
+<p><em>Evidence: name the tool class and the institutional policy that permits or forbids using it. Class 11 in Appendix C of <a href="https://instats.org/publications/responsible-ai-in-academic-research">the report</a> outlines the evidence on high false-positive rates and the documented bias against authors who write in English as an additional language.</em></p>
+<hr>
+<h2 id="section-f-what-you-have-been-trained-to-do">Section F — What you have been trained to do</h2>
+<p><em>Cells touched: D1-people and D4-people. See <a href="https://instats.org/publications/responsible-ai-in-academic-research">the report</a> §§2.4 and 4.2.</em></p>
+<p><strong>S21.</strong> Have you completed any <strong>institutional training</strong> on AI in research or research supervision?
+<em>(Pair: has completed institutional AI training · no A2 counterpart)</em> · <em>Cell: D4-people</em></p>
+<fieldset class="answer answer-enhanced" id="a3_supervisor_survey-answer-21">
+<legend class="answer-legend visually-hidden">S21. Have you completed any institutional training on AI in research or research supervision? (Pair: has completed institutional AI training · no A2 counterpart) · Cell: D4-people</legend>
+<div class="answer-options"><label class="answer-option" for="a3_supervisor_survey-answer-21-option-1"><input type="radio" id="a3_supervisor_survey-answer-21-option-1" name="a3_supervisor_survey-answer-21" value="Yes"> <span>Yes</span></label><label class="answer-option" for="a3_supervisor_survey-answer-21-option-2"><input type="radio" id="a3_supervisor_survey-answer-21-option-2" name="a3_supervisor_survey-answer-21" value="Partial"> <span>Partial</span></label><label class="answer-option" for="a3_supervisor_survey-answer-21-option-3"><input type="radio" id="a3_supervisor_survey-answer-21-option-3" name="a3_supervisor_survey-answer-21" value="No"> <span>No</span></label></div>
+</fieldset>
+<p><em>Evidence: give the course name, the training provider, and the completion date, or point to the record in [LEARNING MANAGEMENT SYSTEM].</em></p>
+<p><strong>S22.</strong> Was that training specific to <strong>research supervision and examination</strong>, as distinct from general staff AI-awareness or teaching-and-learning training?
+<em>(Pair: training was research-specific, not coursework-integrity · no A2 counterpart)</em> · <em>Cell: D4-people</em></p>
+<fieldset class="answer answer-enhanced" id="a3_supervisor_survey-answer-22">
+<legend class="answer-legend visually-hidden">S22. Was that training specific to research supervision and examination, as distinct from general staff AI-awareness or teaching-and-learning training? (Pair: training was research-specific, not coursework-integrity · no A2 counterpart) · Cell: D4-people</legend>
+<div class="answer-options"><label class="answer-option" for="a3_supervisor_survey-answer-22-option-1"><input type="radio" id="a3_supervisor_survey-answer-22-option-1" name="a3_supervisor_survey-answer-22" value="Yes"> <span>Yes</span></label><label class="answer-option" for="a3_supervisor_survey-answer-22-option-2"><input type="radio" id="a3_supervisor_survey-answer-22-option-2" name="a3_supervisor_survey-answer-22" value="Partial"> <span>Partial</span></label><label class="answer-option" for="a3_supervisor_survey-answer-22-option-3"><input type="radio" id="a3_supervisor_survey-answer-22-option-3" name="a3_supervisor_survey-answer-22" value="No"> <span>No</span></label><label class="answer-option" for="a3_supervisor_survey-answer-22-option-4"><input type="radio" id="a3_supervisor_survey-answer-22-option-4" name="a3_supervisor_survey-answer-22" value="Not applicable: I have not completed institutional AI training"> <span>Not applicable: I have not completed institutional AI training</span></label></div>
+</fieldset>
+<p><em>Evidence: name the specific module and at least one of its stated learning outcomes.</em></p>
+<p><strong>S23.</strong> The framework names six competencies for AI-augmented research: <strong>citation verification, model-and-parameter specification, prompt-as-fork-in-the-garden discipline, model-heterogeneity in adversarial review, sycophancy detection and human-as-verifier discipline, and structured failure-mode reporting</strong>. Have you <strong>taught or required at least three</strong> of them with your students in the last twelve months?
+<em>(Pair: six competencies taught or required · A2 <code>PAR-COMP-1</code> to <code>PAR-COMP-6</code>, where the gap is computed competency by competency)</em> · <em>Cell: D4-people</em></p>
+<fieldset class="answer answer-enhanced" id="a3_supervisor_survey-answer-23">
+<legend class="answer-legend visually-hidden">S23. The framework names six competencies for AI-augmented research: citation verification, model-and-parameter specification, prompt-as-fork-in-the-garden discipline, model-heterogeneity in adversarial review, sycophancy detection and human-as-verifier discipline, and structured failure-mode reporting. Have you taught or required at least three of them with your students in the last twelve months? (Pair: six competencies taught or required · A2 PAR-COMP-1 to PAR-COMP-6, where the gap is computed competency by competency) · Cell: D4-people</legend>
+<div class="answer-options"><label class="answer-option" for="a3_supervisor_survey-answer-23-option-1"><input type="radio" id="a3_supervisor_survey-answer-23-option-1" name="a3_supervisor_survey-answer-23" value="Yes"> <span>Yes</span></label><label class="answer-option" for="a3_supervisor_survey-answer-23-option-2"><input type="radio" id="a3_supervisor_survey-answer-23-option-2" name="a3_supervisor_survey-answer-23" value="Partial"> <span>Partial</span></label><label class="answer-option" for="a3_supervisor_survey-answer-23-option-3"><input type="radio" id="a3_supervisor_survey-answer-23-option-3" name="a3_supervisor_survey-answer-23" value="No"> <span>No</span></label></div>
+</fieldset>
+<p><em>Evidence: check the ones you have taught or required, and state where that took place, such as during a supervision meeting, a lab group meeting, a methods seminar, or in written comments on a draft.</em></p>
+<fieldset class="answer answer-enhanced" id="a3_supervisor_survey-answer-24">
+<legend class="answer-legend visually-hidden">S23. The framework names six competencies for AI-augmented research: citation verification, model-and-parameter specification, prompt-as-fork-in-the-garden discipline, model-heterogeneity in adversarial review, sycophancy detection and human-as-verifier discipline, and structured failure-mode reporting. Have you taught or required at least three of them with your students in the last twelve months? (Pair: six competencies taught or required · A2 PAR-COMP-1 to PAR-COMP-6, where the gap is computed competency by competency) · Cell: D4-people</legend>
+<div class="answer-options"><label class="answer-option" for="a3_supervisor_survey-answer-24-option-1"><input type="checkbox" id="a3_supervisor_survey-answer-24-option-1" name="a3_supervisor_survey-answer-24" value="Citation verification"> <span>Citation verification</span></label><label class="answer-option" for="a3_supervisor_survey-answer-24-option-2"><input type="checkbox" id="a3_supervisor_survey-answer-24-option-2" name="a3_supervisor_survey-answer-24" value="Model-and-parameter specification"> <span>Model-and-parameter specification</span></label><label class="answer-option" for="a3_supervisor_survey-answer-24-option-3"><input type="checkbox" id="a3_supervisor_survey-answer-24-option-3" name="a3_supervisor_survey-answer-24" value="Prompt-as-fork-in-the-garden discipline"> <span>Prompt-as-fork-in-the-garden discipline</span></label><label class="answer-option" for="a3_supervisor_survey-answer-24-option-4"><input type="checkbox" id="a3_supervisor_survey-answer-24-option-4" name="a3_supervisor_survey-answer-24" value="Model-heterogeneity in adversarial review"> <span>Model-heterogeneity in adversarial review</span></label><label class="answer-option" for="a3_supervisor_survey-answer-24-option-5"><input type="checkbox" id="a3_supervisor_survey-answer-24-option-5" name="a3_supervisor_survey-answer-24" value="Sycophancy detection and human-as-verifier discipline"> <span>Sycophancy detection and human-as-verifier discipline</span></label><label class="answer-option" for="a3_supervisor_survey-answer-24-option-6"><input type="checkbox" id="a3_supervisor_survey-answer-24-option-6" name="a3_supervisor_survey-answer-24" value="Structured failure-mode reporting"> <span>Structured failure-mode reporting</span></label></div>
+</fieldset>
+<p><strong>S24.</strong> <em>Written response: recorded, not scored.</em> Without looking anything up, write the rule in two sentences that you would give to a first-year doctoral student in your discipline for using AI on a literature review.
+<em>(Pair: the rule given for AI in a literature review · A2 <code>PAR-CONFIDENCE</code>, where the student self-reports the same capability rather than demonstrating it, so record that difference before comparing)</em> · <em>Cell: D1-people</em></p>
+<fieldset class="answer answer-enhanced" id="a3_supervisor_survey-answer-25">
+<legend class="answer-legend visually-hidden">S24. Written response: recorded, not scored. Without looking anything up, write the rule in two sentences that you would give to a first-year doctoral student in your discipline for using AI on a literature review. (Pair: the rule given for AI in a literature review · A2 PAR-CONFIDENCE, where the student self-reports the same capability rather than demonstrating it, so record that difference before comparing) · Cell: D1-people</legend>
+<label class="visually-hidden" for="a3_supervisor_survey-answer-25-text">S24. Written response: recorded, not scored. Without looking anything up, write the rule in two sentences that you would give to a first-year doctoral student in your discipline for using AI on a literature review. (Pair: the rule given for AI in a literature review · A2 PAR-CONFIDENCE, where the student self-reports the same capability rather than demonstrating it, so record that difference before comparing) · Cell: D1-people</label>
+<textarea class="answer-textarea" id="a3_supervisor_survey-answer-25-text" name="a3_supervisor_survey-answer-25" rows="5"></textarea>
+</fieldset>
+<p><em>Evidence: your written answer serves as the artifact. [COMMITTEE] compares the full set of responses against the institution's published guidelines. Substantial variation across supervisors within the same school or department is an important diagnostic finding, regardless of what any individual response says.</em></p>
+<hr>
+<h2 id="section-g-what-your-institution-asks-of-you">Section G — What your institution asks of you</h2>
+<p><em>Cells touched: D5-policy and D5-process. See <a href="https://instats.org/publications/responsible-ai-in-academic-research">the report</a> §§2.5 and 4.1.</em></p>
+<p><strong>S25.</strong> Does [INSTITUTION NAME] place a <strong>written duty on you as supervisor</strong> to record AI-use decisions on each student's file?
+<em>(Pair: written duty on the supervisor to record AI decisions · no A2 counterpart)</em> · <em>Cell: D5-policy</em></p>
+<fieldset class="answer answer-enhanced" id="a3_supervisor_survey-answer-26">
+<legend class="answer-legend visually-hidden">S25. Does [INSTITUTION NAME] place a written duty on you as supervisor to record AI-use decisions on each student&#x27;s file? (Pair: written duty on the supervisor to record AI decisions · no A2 counterpart) · Cell: D5-policy</legend>
+<div class="answer-options"><label class="answer-option" for="a3_supervisor_survey-answer-26-option-1"><input type="radio" id="a3_supervisor_survey-answer-26-option-1" name="a3_supervisor_survey-answer-26" value="Yes"> <span>Yes</span></label><label class="answer-option" for="a3_supervisor_survey-answer-26-option-2"><input type="radio" id="a3_supervisor_survey-answer-26-option-2" name="a3_supervisor_survey-answer-26" value="Partial"> <span>Partial</span></label><label class="answer-option" for="a3_supervisor_survey-answer-26-option-3"><input type="radio" id="a3_supervisor_survey-answer-26-option-3" name="a3_supervisor_survey-answer-26" value="No"> <span>No</span></label></div>
+</fieldset>
+<p><em>Evidence: quote the clause that places this responsibility on the supervisor, and name the document. If you believe the duty exists but cannot find it in writing, select "Partial" and explain that.</em></p>
+<p><strong>S26.</strong> In the last twenty-four months, has anyone at [INSTITUTION NAME] asked you for <strong>evidence about how AI is being used</strong> on the projects you supervise (such as for a program review, an internal audit, a committee report, or a benchmarking exercise)?
+<em>(Pair: asked for evidence about AI use in the last 24 months · no A2 counterpart)</em> · <em>Cell: D5-process</em></p>
+<fieldset class="answer answer-enhanced" id="a3_supervisor_survey-answer-27">
+<legend class="answer-legend visually-hidden">S26. In the last twenty-four months, has anyone at [INSTITUTION NAME] asked you for evidence about how AI is being used on the projects you supervise (such as for a program review, an internal audit, a committee report, or a benchmarking exercise)? (Pair: asked for evidence about AI use in the last 24 months · no A2 counterpart) · Cell: D5-process</legend>
+<div class="answer-options"><label class="answer-option" for="a3_supervisor_survey-answer-27-option-1"><input type="radio" id="a3_supervisor_survey-answer-27-option-1" name="a3_supervisor_survey-answer-27" value="Yes"> <span>Yes</span></label><label class="answer-option" for="a3_supervisor_survey-answer-27-option-2"><input type="radio" id="a3_supervisor_survey-answer-27-option-2" name="a3_supervisor_survey-answer-27" value="Partial"> <span>Partial</span></label><label class="answer-option" for="a3_supervisor_survey-answer-27-option-3"><input type="radio" id="a3_supervisor_survey-answer-27-option-3" name="a3_supervisor_survey-answer-27" value="No"> <span>No</span></label></div>
+</fieldset>
+<p><em>Evidence: name the specific request, the office that made it, and the date.</em></p>
+<hr>
+<h2 id="fielding-notes-for-committee">Fielding notes for [COMMITTEE]</h2>
+<ol>
+<li><strong>Field surveys A2 and A3 in the exact same time window.</strong> Keep both open for three weeks, opening and closing on the same dates. If the surveys are fielded at different times, the cohort responses cannot be cleanly compared.</li>
+<li><strong>Do not circulate a policy reminder before or during either survey.</strong> Sections C and G are designed to measure what advisors and supervisors know unprompted. If you issue a reminder while the survey is in the field, the responses no longer provide an unprompted baseline.</li>
+<li><strong>Send the survey to every registered supervisor.</strong> Be sure to include adjunct, honorary, and external co-supervisors. External co-supervisors are often the group that institutional training has not reached, and excluding them obscures an important finding.</li>
+<li><strong>Recommended response-rate target is 60 percent.</strong> Treat this as an attempted census of the registered supervisor population. Aim for 60 percent overall, with no individual school or college falling below 40 percent, and report the actual response rate alongside every result. Meeting these targets does not establish representativeness or reveal the direction of nonresponse bias. Do not describe respondents as representative without comparing their composition with the eligible supervisor register by school or college, supervisory load, and other available characteristics relevant to the analysis.</li>
+<li><strong>Coverage rule.</strong> Report item-specific eligible numbers, missingness, and the proportion of returned surveys with at least 80 percent of applicable items completed. Low supervisor-side coverage makes those survey findings indicative. It does not change the A1 documentary-coverage verdict from Final to Provisional.</li>
+<li><strong>Publish aggregate results to supervisors early.</strong> Share aggregate numbers with supervisors before presenting them to [COMMITTEE]. This gives participants timely feedback and may support participation in subsequent rounds.</li>
+<li><strong>Free-text handling.</strong> Item S24 is the only free-text item by design. De-identify responses before anyone outside [SURVEY ADMINISTRATOR] reads them, and analyze them as a collective set rather than as individual comments.</li>
+</ol>
+<hr>
+<h2 id="how-this-instrument-feeds-the-grid">How this instrument feeds the grid</h2>
+<p><em>To help you read the cell identifiers used throughout this document, the framework evaluates five dimensions:</em> <strong>D1</strong> human-in-the-loop discipline, <strong>D2</strong> responsible use in practice, <strong>D3</strong> tooling that promotes responsible use, <strong>D4</strong> AI-literate humans, and <strong>D5</strong> institutional benchmarking grid. Each dimension is scored across four operational axes (<strong>policy, people, systems, and process</strong>) at one of four maturity levels: <strong>absent, nascent, established, and leading</strong>.</p>
+<p><strong>Survey A3 supplies respondent evidence, but it does not assign maturity levels on its own.</strong> Document A1 sets the initial documentary level for each of the twenty cells. A3 tests selected claims about whether a documented practice reaches supervisors or operates in supervision. It also supplies context that helps [COMMITTEE] interpret gaps.</p>
+<p>This follows directly from how the maturity grid is defined. To reach the <em>established</em> level, an institution must have policy, people, systems, and processes in place and functioning at a regular, reviewable cadence (see <a href="https://instats.org/publications/responsible-ai-in-academic-research">the report</a> §4.1). A4 therefore tests each operational criterion against directly aligned A3 evidence, using thresholds and response-rate floors recorded before fielding. It does not apply a separate A3 threshold or average every item carrying the same cell tag.</p>
+<p>Three practical consequences follow from this setup:</p>
+<ul>
+<li><strong>A dimension is determined by its weakest axis.</strong> <a href="https://instats.org/publications/responsible-ai-in-academic-research">The report</a> requires policy, people, systems, and process to be in place and operating for the <em>established</em> level. This pack operationalizes that requirement by assigning a dimension its lowest axis level and calls the limiting axis the <em>binding axis</em>. For example, if three axes are <em>established</em> but one is <em>nascent</em>, the dimension as a whole remains at <em>nascent</em>. You should always report this binding constraint alongside the dimension level.</li>
+<li><strong>Progress across maturity levels is cumulative.</strong> You cannot jump to advanced practices without first mastering the basics. In Appendix A, all five <em>leading</em> cells specify that an institution must fulfill all requirements of the <em>established</em> level before qualifying for <em>leading</em>. An institution cannot be considered <em>leading</em> on a dimension if it fails to meet the <em>established</em> standard on any single operational axis.</li>
+<li><strong>Avoid reducing the institution to a single overall score.</strong> Instead of producing a single, uninformative aggregate number, present the five distinct dimension levels, identify the binding axis that constrains each dimension, and highlight the overall binding dimension for the institution (see <a href="https://instats.org/publications/responsible-ai-in-academic-research">the report</a> §4.3).</li>
+</ul>
+<p><strong>Analyzing the supervisor-to-student gap.</strong> A4 compares anonymous student and supervisor cohorts rather than matched pairs. Use a parallel-form key only when the two items share the same referent, time frame, denominator, and interpretable response direction. A3 generally reports the proportion of supervisors for whom a practice applies to all or some students, while A2 reports the proportion of individual students describing their own experience. Show those rates side by side. Do not subtract them or describe their difference as a numerical gap unless a predeclared analysis gives them a common weighted denominator. Policy-existence, system, and supervisor-only items should also be shown side by side rather than collapsed into one rate. Where the groups differ, investigate whether the cause is communication, uneven implementation, wording, coverage, or a genuine difference in experience before choosing the remedy.</p>
+<hr>
+<h2 id="crosswalk-item-to-report-section">Crosswalk — item to report section</h2>
+<p><em>The cell column records conceptual relevance, not an instruction to score every item into that cell. Items describing prevalence, exposure, adverse events, or context remain diagnostic unless A4 identifies a directly aligned operational criterion and predeclares its direction.</em></p>
+<table>
+<thead>
+<tr>
+<th>Item</th>
+<th>Pair label (the join key)</th>
+<th>A2 parallel-form key</th>
+<th>Cell</th>
+<th>Report section</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>C1–C4</td>
+<td><em>(context, not scored)</em></td>
+<td><em>(none)</em></td>
+<td>—</td>
+<td>§4.3</td>
+</tr>
+<tr>
+<td>S1</td>
+<td>Written task-level AI agreement exists</td>
+<td><code>PAR-WRITTEN-AGREEMENT</code></td>
+<td>D1-process</td>
+<td>§2.1, Appendix G</td>
+</tr>
+<tr>
+<td>S2</td>
+<td>Prohibitions stated in re-readable form</td>
+<td><code>PAR-TASK-RULES</code></td>
+<td>D2-process</td>
+<td>§2.2, Appendix G</td>
+</tr>
+<tr>
+<td>S3</td>
+<td>AI recorded on the supervision or milestone record</td>
+<td><code>PAR-SUPERVISION-DISCUSSED</code></td>
+<td>D1-process</td>
+<td>§2.1, §2.5</td>
+</tr>
+<tr>
+<td>S4</td>
+<td>Agreement revisited at a defined milestone</td>
+<td><em>(none)</em></td>
+<td>D2-process</td>
+<td>§2.2, §2.5</td>
+</tr>
+<tr>
+<td>S5</td>
+<td>Shown the thesis disclosure requirement and its location</td>
+<td><code>PAR-THESIS-DECLARE</code></td>
+<td>D2-process</td>
+<td>§2.2, §3.3</td>
+</tr>
+<tr>
+<td>S6</td>
+<td>Can name the governing document</td>
+<td><code>PAR-POLICY-KNOWN</code>, <code>PAR-POLICY-LOCATE</code></td>
+<td>D1-policy</td>
+<td>§1.3, §2.1</td>
+</tr>
+<tr>
+<td>S7</td>
+<td>Task-level labour-vs-judgement clause</td>
+<td><em>(none)</em></td>
+<td>D1-policy</td>
+<td>§2.1, Appendix G</td>
+</tr>
+<tr>
+<td>S8</td>
+<td>Mode-specific rules exist</td>
+<td><em>(none)</em></td>
+<td>D2-policy</td>
+<td>§2.2</td>
+</tr>
+<tr>
+<td>S9</td>
+<td>Can name the approved deployments</td>
+<td><code>PAR-APPROVED-TOOLS</code></td>
+<td>D3-policy</td>
+<td>§2.3</td>
+</tr>
+<tr>
+<td>S10</td>
+<td>Can name the role that settles a dispute</td>
+<td><code>PAR-ESCALATION-OWNER</code></td>
+<td>D5-people</td>
+<td>§2.5</td>
+</tr>
+<tr>
+<td>S11</td>
+<td>AI used to produce feedback on drafts</td>
+<td><em>(none, supervisor only)</em></td>
+<td>D3-systems</td>
+<td>§2.3, Appendix C</td>
+</tr>
+<tr>
+<td>S12</td>
+<td>Student has been told about supervisor's AI use</td>
+<td><em>(none)</em></td>
+<td>D2-process</td>
+<td>§2.2</td>
+</tr>
+<tr>
+<td>S13</td>
+<td>Unpublished material only in contracted deployments</td>
+<td><code>PAR-DATA-ENTERED</code>, <code>PAR-DATA-CHECKED</code></td>
+<td>D3-systems</td>
+<td>§2.3</td>
+</tr>
+<tr>
+<td>S14</td>
+<td>Student was asked before their work was used</td>
+<td><em>(none)</em></td>
+<td>D2-process</td>
+<td>§2.2, §2.5</td>
+</tr>
+<tr>
+<td>S15</td>
+<td>AI used in assessment, examination, or peer review</td>
+<td><em>(none, supervisor and examiner only)</em></td>
+<td>D1-process</td>
+<td>§2.1, §3.1, §3.3, Appendix G</td>
+</tr>
+<tr>
+<td>S16</td>
+<td>Citations verified against the primary source <em>(diagnostic)</em></td>
+<td><code>PAR-CITE-CHECK</code></td>
+<td>D4-people</td>
+<td>§2.4, Appendix G</td>
+</tr>
+<tr>
+<td>S17</td>
+<td>Has encountered a non-resolving citation <em>(diagnostic)</em></td>
+<td><code>PAR-FAKE-REF-SEEN</code></td>
+<td>D4-people</td>
+<td>§1.1, §2.4</td>
+</tr>
+<tr>
+<td>S18</td>
+<td>Knows the written procedure</td>
+<td><em>(none)</em></td>
+<td>D2-process</td>
+<td>§2.2, §2.5</td>
+</tr>
+<tr>
+<td>S19</td>
+<td>Procedure distinguishes verification failure from misconduct</td>
+<td><em>(none)</em></td>
+<td>D1-policy</td>
+<td>§1.3, Appendix C</td>
+</tr>
+<tr>
+<td>S20</td>
+<td>AI-detection tool used on the student's writing</td>
+<td><em>(none)</em></td>
+<td>D3-systems</td>
+<td>§2.3, Appendix C (Class 11)</td>
+</tr>
+<tr>
+<td>S21</td>
+<td>Has completed institutional AI training</td>
+<td><em>(none)</em></td>
+<td>D4-people</td>
+<td>§2.4</td>
+</tr>
+<tr>
+<td>S22</td>
+<td>Training was research-specific, not coursework-integrity</td>
+<td><em>(none)</em></td>
+<td>D4-people</td>
+<td>§2.4, §4.2</td>
+</tr>
+<tr>
+<td>S23</td>
+<td>Six competencies taught or required</td>
+<td><code>PAR-COMP-1</code> … <code>PAR-COMP-6</code></td>
+<td>D4-people</td>
+<td>§2.4</td>
+</tr>
+<tr>
+<td>S24</td>
+<td>The rule given for AI in a literature review <em>(written)</em></td>
+<td><code>PAR-CONFIDENCE</code> <em>(measurement differs)</em></td>
+<td>D1-people</td>
+<td>§2.1, Appendix G</td>
+</tr>
+<tr>
+<td>S25</td>
+<td>Written duty on the supervisor to record AI decisions</td>
+<td><em>(none)</em></td>
+<td>D5-policy</td>
+<td>§2.5</td>
+</tr>
+<tr>
+<td>S26</td>
+<td>Asked for evidence about AI use in the last 24 months</td>
+<td><em>(none)</em></td>
+<td>D5-process</td>
+<td>§2.5, §4.1</td>
+</tr>
+</tbody>
+</table>
+<div class="tablecaption">
+<p>Table 3. Mapping of survey items to pair labels, parallel keys, cells, and report sections.</p>
+</div>
+<blockquote>
+<p><strong>Drafting note on the A2 references.</strong> Always use A2's parallel-form key as the join key rather than a question number. The two survey instruments are maintained separately, and institutions may adjust A2's item numbering locally. Worksheet A4 reconciles data using these specific keys and will flag any item it cannot match. Fourteen items in A3 do not have a matching A2 key because the student survey does not measure those specific supervisor practices. These items provide standalone supervisor-side evidence and are excluded from the supervisor-to-student gap computation. You can freely renumber items in either survey as long as you keep the parallel-form keys identical, which ensures that none of the downstream analysis breaks.</p>
+</blockquote>
+<hr>
+<h2 id="appendix-survey-platform-import-block">Appendix — Survey-platform import block</h2>
+<p><em>This section is machine-readable and is not counted toward the instrument's page length. Delete this section before circulating the survey to supervisors.</em></p>
+<p>Each eligible direct item creates two linked questions in [SURVEY PLATFORM]. The first is a single-answer multiple-choice question containing the item stem, and the second is an optional text-entry field containing the evidence prompt. Item S24 is a single text-entry question. Context fields C1 through C4 are excluded from criterion checks. Forced response must be turned <strong>off</strong> for every question. A blank is unanswered and excluded from the item denominator, while its frequency is reported as item coverage.</p>
+<p>Qualtrics advanced-format TXT header and the per-item template:</p>
+<pre><code>[[AdvancedFormat]]
+[[Block:A3 Section B (What you have agreed with your doctoral students)]]
+
+[[Question:MC:SingleAnswer]]
+[[ID:S1]]
+{{ stem (column 6 of row S1 in the item bank) }}
+[[Choices]]
+Yes
+Partial
+No
+
+[[Question:TE:Essay]]
+[[ID:S1_ev]]
+{{ evidence_prompt (column 7 of row S1 in the item bank) }}
+</code></pre>
+<p>Add a <strong>Not applicable</strong> option where the stem is conditional, including S13 when no student material was entered into an AI tool. Keep it distinct from both No and blank.</p>
+<p>Repeat that question pair for every row of the item bank below in order, creating a new <code>[[Block:...]]</code> at each section boundary. If you are using REDCap, import the bank as a data dictionary using <code>field_type = radio</code> and <code>choices = 1, Yes | 0.5, Partial | 0, No</code>, followed by a <code>notes</code> text field for each row. For LimeSurvey, import each item as a list-radio question with a matching short free-text sub-question.</p>
+<p><strong>Item bank (complete).</strong> Pipe-delimited. Columns: <code>item_id | pair_label | a2_key | cell | scale | stem | evidence_prompt</code>. <code>YNNK</code> means Yes | No | I have not checked closely enough to know.</p>
+<pre><code>S1|Written task-level AI agreement exists|PAR-WRITTEN-AGREEMENT|D1-process|YPN|Have you and each of your current doctoral students agreed in writing which research tasks on their project AI may assist and which must remain the student's own unaided work?|Name the document (such as a supervision-meeting record, an email, a signed agreement, or a lab protocol), give its date, and state where it is filed.
+S2|Prohibitions stated in re-readable form|PAR-TASK-RULES|D2-process|YPN|Have you told your students, in a form they can re-read, which uses of AI you forbid outright on their project?|Name the email, supervision note, group protocol, or handbook section, and quote one prohibition as you wrote it.
+S3|AI recorded on the supervision or milestone record|PAR-SUPERVISION-DISCUSSED|D1-process|YPN|In the last twelve months, has AI use been a recorded agenda item at a formal supervision meeting or a progress milestone (such as the first formal progress review, a mid-program review, or a completion seminar) for each of your students?|Name the meeting record or milestone form and the field on it where AI use appears.
+S4|Agreement revisited at a defined milestone|none|D2-process|YPN|Has the AI-use agreement been revisited at a defined point since it was first made (such as at the first formal progress review, on a change of method, or at the start of writing up)?|Give the date of the second entry and the milestone it was attached to.
+S5|Shown the thesis disclosure requirement and its location|PAR-THESIS-DECLARE|D2-process|YPN|Have you shown each student the institutional thesis AI-disclosure requirement and the exact place in the thesis where the disclosure must appear?|Name the declaration form or preliminary-pages template you used and the date you went through it.
+S6|Can name the governing document|PAR-POLICY-KNOWN, PAR-POLICY-LOCATE|D1-policy|YPN|Can you name the institutional document that governs AI use in doctoral research at [INSTITUTION NAME]?|Write its exact title and its URL or intranet location. If your first answer was wrong when you checked, say so. That is a finding, not a failure.
+S7|Task-level labour-vs-judgement clause|none|D1-policy|YPN|Does that document draw a task-level line between research work AI may carry and research judgment that must stay human, and can you point to the clause?|Quote the clause and give its section number. A general statement that AI must not replace expert judgment, without a task-level demarcation, is Partial.
+S8|Mode-specific rules exist|none|D2-policy|YPN|Does [INSTITUTION NAME] publish rules that differ by AI-use mode (search, co-author, validator, tutor) rather than a single general statement covering all AI use?|Name the mode-specific clause for at least two of the four modes.
+S9|Can name the approved deployments|PAR-APPROVED-TOOLS|D3-policy|YPN|Can you name the AI tools or deployments [INSTITUTION NAME] has approved for use with unpublished research material (draft chapters, participant data, interview audio, unpublished figures)?|Name the approved list or procurement page and one deployment on it. &quot;Whatever the university has a license for&quot; is No.
+S10|Can name the role that settles a dispute|PAR-ESCALATION-OWNER|D5-people|YPN|Do you know by role (rather than just the name of an individual colleague you happen to know) who at [INSTITUTION NAME] settles a disputed AI-use question on a doctoral project?|State the role and the office, and give the published page that names it.
+S11|AI used to produce feedback on drafts|none|D3-systems|YPN|In the last twelve months, have you used an AI tool to help produce written feedback on a student's draft (comments, a review summary, a suggested revision plan)?|Name the tool class and the deployment tier, such as an institutional enterprise tenancy or a personal consumer account.
+S12|Student has been told about supervisor's AI use|none|D2-process|YPN|Have you told your students whether and how you use AI on their written work?|Name the email or supervision note in which you said so, and give the date.
+S13|Unpublished material only in contracted deployments|PAR-DATA-ENTERED, PAR-DATA-CHECKED|D3-systems|YPN-NA|When you have put a student's unpublished text, data, audio, or figures into an AI tool, was that tool an institutionally contracted deployment with training-on-input disabled?|Name the deployment and the institutional tenancy or agreement that covers it. A personal or free-tier account is No. If you have never done this, select Not applicable.
+S14|Student was asked before their work was used|none|D2-process|YPN-NA|Do you have the student's agreement, recorded somewhere, before putting their unpublished work into any AI tool?|Say where the agreement is recorded, such as in the supervision record, the written AI-use agreement, or an email. If you have never put student material into an AI tool, select Not applicable.
+S15|AI used in assessment, examination, or peer review|none|D1-process|YPN|In the last twelve months, have you used an AI tool to help assess or examine research (a thesis under examination, a progress or milestone report, a grant application you were reviewing, or a manuscript you were peer-reviewing)?|State which of those, and name the rule (institutional, funder, or publisher) that you checked before doing so.
+S16|Citations verified against the primary source|PAR-CITE-CHECK|D4-people|YPN-NA|In the last twelve months, have you checked at least one citation in each student's draft chapter against the primary source yourself?|Name the annotated draft or supervision record. Select Not applicable if none of your students produced a draft chapter in the period. Diagnostic only; do not use as a D4 maturity criterion.
+S17|Has encountered a non-resolving citation|PAR-FAKE-REF-SEEN|D4-people|YNNK|Have you found a citation in a student's work that did not resolve to the source claimed (a reference that does not exist, or a real source that does not say what it was cited for)?|Give the year and one line on how it was resolved. No identifying detail is needed or wanted.
+S18|Knows the written procedure|none|D2-process|YPN|Is there a written institutional procedure telling you what to do when you find an unverifiable AI-assisted claim in a student's work, and can you name it?|Give the procedure's title and section. Answering &quot;I would talk to the student&quot; reflects personal judgment rather than an institutional procedure, so that is No.
+S19|Procedure distinguishes verification failure from misconduct|none|D1-policy|YPN|Does that procedure distinguish, in writing, between a student's unverified AI-assisted claim (a verification failure, to be corrected in supervision) and research misconduct (to be referred)?|Quote the clause that draws the distinction, or answer No.
+S20|AI-detection tool used on the student's writing|none|D3-systems|YPN|In the last twelve months, have you used (or been asked to use) an AI-detection tool on a student's writing?|Name the tool class and the institutional rule that permits or forbids it.
+S21|Has completed institutional AI training|none|D4-people|YPN|Have you completed any institutional training on AI in research or research supervision?|Give the course name, the provider, and the completion date, or the record in [LEARNING MANAGEMENT SYSTEM].
+S22|Training was research-specific, not coursework-integrity|none|D4-people|YPN-NA|Was that training specific to research supervision and examination, as distinct from general staff AI-awareness or teaching-and-learning training?|Name the module and one of its stated learning outcomes. If you have not completed institutional AI training, select Not applicable.
+S23|Six competencies taught or required|PAR-COMP-1;PAR-COMP-2;PAR-COMP-3;PAR-COMP-4;PAR-COMP-5;PAR-COMP-6|D4-people|YPN|The framework names six competencies for AI-augmented research: citation verification, model-and-parameter specification, prompt-as-fork-in-the-garden discipline, model-heterogeneity in adversarial review, sycophancy detection and human-as-verifier discipline, and structured failure-mode reporting. Have you taught or required at least three of them with your students in the last twelve months?|Check the ones you have taught or required, and say where it happened: a supervision meeting, a group meeting, a methods session, or a written comment on a draft.
+S24|The rule given for AI in a literature review|PAR-CONFIDENCE|D1-people|TEXT|Without looking it up, write in two sentences the rule you would give a first-year doctoral student in your discipline for using AI on a literature review.|Recorded, not scored. [COMMITTEE] compares the set of answers against the published demarcation. Survey A2 self-reports the same capability rather than demonstrating it, so record that difference before comparing.
+S25|Written duty on the supervisor to record AI decisions|none|D5-policy|YPN|Does [INSTITUTION NAME] place a written duty on you as supervisor to record AI-use decisions on each student's file?|Quote the clause that places the duty on the supervisor, and name the document. If you believe the duty exists but cannot find it in writing, answer Partial and say so.
+S26|Asked for evidence about AI use in the last 24 months|none|D5-process|YPN|In the last twenty-four months, has anyone at [INSTITUTION NAME] asked you for evidence about how AI is being used on the projects you supervise (for a review, an audit, a committee report, or a benchmarking exercise)?|Name the request, the office that made it, and the date.
+</code></pre>
+<p><strong>Analysis map for survey platform export:</strong> use <code>Yes = 1.0</code>, <code>Partial = 0.5</code>, and <code>No = 0.0</code> only for a directionally aligned direct operational criterion predeclared in A4. Blank and Not applicable are excluded from the item denominator and reported separately. Treat S11, S15–S17, S20, S24, S25, and S26 as diagnostic items rather than positive-readiness scores. For S13 and S16, report results among applicable respondents and report the Not applicable group separately. Analyze the six S23 competency checkboxes individually. Its three-of-six summary is diagnostic and does not establish a common competence scale. Context fields C1 through C4 are excluded from criterion checks. Export one row per respondent with the item IDs as column headings. Worksheet A4 reads that exported file directly.</p>
+<hr>
+<p><a class="brand-mark-small" href="https://instats.org"><img alt="Instats" src="assets/instats_logo.png" width="1.0in"></a></p>
+<p><strong>Michael J. Zyphur, PhD</strong> · Professor and Director, Instats · <a href="https://instats.org">instats.org</a> · <a href="mailto:support@instats.org">support@instats.org</a></p>
+<p><em>Part of the Instats AI Readiness Pack · <a href="https://instats.org/publications/ai-readiness">instats.org/publications/ai-readiness</a> · CC BY 4.0 — adapt freely for institutional use, with attribution. Companion to</em> <a href="https://instats.org/publications/responsible-ai-in-academic-research">Responsible AI in Academic Research: A Competency Framework for Research Training</a> <em>(DOI 10.61700/t31oy23grr).</em></p>
+</div>
+
+<script>
+(function() {
+  // v0.22.31+: showHeader scroll-tracking removed along with the
+  // sticky-header element. Progress bar + sticky TOC remain.
+
+  const bar = document.getElementById('progress-bar');
+  if (bar) {
+    const update = () => {
+      const h = document.documentElement;
+      const max = h.scrollHeight - h.clientHeight;
+      bar.style.width = (max > 0 ? (h.scrollTop / max) * 100 : 0) + '%';
+    };
+    document.addEventListener('scroll', update, { passive: true });
+    update();
+  }
+  const tocEl = document.querySelector('#sticky-toc ol');
+  if (tocEl) {
+    // The rail is server-rendered at build time (per v2.2.0 design
+    // review §6 #1) — if it already has children, this JS only does
+    // scroll-spy `.active` highlighting on top. The legacy
+    // client-side populate runs ONLY as a fallback for HTML files
+    // built before the server-rendered TOC landed.
+    if (tocEl.children.length === 0) {
+      const skip = ['cover', 'colophon', 'toc', 'exec', 'abstract'];
+      const h2s = [...document.querySelectorAll('h2')].filter(h => {
+        let n = h.parentElement;
+        while (n) {
+          if (n.classList && skip.some(c => n.classList.contains(c))) return false;
+          n = n.parentElement;
+        }
+        return true;
+      });
+      h2s.forEach((h, idx) => {
+        if (!h.id) h.id = 'sec-' + idx;
+        const li = document.createElement('li');
+        const a = document.createElement('a');
+        a.href = '#' + h.id;
+        a.textContent = h.textContent.trim();
+        li.appendChild(a);
+        tocEl.appendChild(li);
+      });
+    }
+    const links = [...tocEl.querySelectorAll('a')];
+    const targets = links.map(a => document.getElementById(a.getAttribute('href').slice(1)));
+    const onScroll = () => {
+      const y = window.scrollY + 120;
+      let active = 0;
+      targets.forEach((t, i) => { if (t && t.offsetTop <= y) active = i; });
+      links.forEach((a, i) => a.classList.toggle('active', i === active));
+    };
+    document.addEventListener('scroll', onScroll, { passive: true });
+    onScroll();
+  }
+})();
+</script>
+
+</body>
+</html>

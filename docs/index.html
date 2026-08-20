@@ -1,0 +1,2052 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>The Institutional AI Readiness Pack: Self-Assessment and Implementation Tools for Responsible AI in Academic Research</title>
+  <meta name="description" content="A university-wide assessment and implementation toolkit for responsible AI in research, spanning practice, people, policy, systems, procurement, data, disclosure, and oversight.">
+  <meta property="og:title" content="The Institutional AI Readiness Pack — Instats Policy Series">
+  <meta property="og:description" content="A 20-cell institutional self-assessment, researcher and supervisor surveys, model policies, and a supervisor–student AI-use agreement. CC BY 4.0 — adapt freely for institutional use.">
+  <meta property="og:image" content="assets/instats_logo.png">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://mzyphur.github.io/ai-readiness/">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" type="image/png" href="assets/instats_logo.png">
+  <link rel="stylesheet" href="report.css">
+</head>
+<body>
+
+
+<div id="progress-bar" class="web-only" aria-hidden="true"></div>
+
+<nav id="sticky-toc" class="sticky-toc web-only" aria-label="Table of contents">
+  <div class="sticky-toc-title">Contents</div>
+  <ol><li><a href="#11-the-rung-nobody-has-reached">1.1 The rung nobody has reached</a></li>
+  <li><a href="#12-the-problem-an-institution-cannot-currently-answer">1.2 The problem an institution cannot currently answer</a></li>
+  <li><a href="#13-what-this-pack-is-and-what-it-is-not">1.3 What this pack is, and what it is not</a></li>
+  <li><a href="#21-the-five-dimensions">2.1 The five dimensions</a></li>
+  <li><a href="#22-the-four-axes">2.2 The four axes</a></li>
+  <li><a href="#23-the-four-levels">2.3 The four levels</a></li>
+  <li><a href="#24-the-twenty-cell-grid">2.4 The twenty-cell grid</a></li>
+  <li><a href="#25-the-three-substantive-lists-modes-properties-competencies">2.5 The three substantive lists: modes, properties, competencies</a></li>
+  <li><a href="#31-the-triangulation-design-and-why-the-gap-is-the-finding">3.1 The triangulation design, and why the gap is the finding</a></li>
+  <li><a href="#32-who-to-convene">3.2 Who to convene</a></li>
+  <li><a href="#33-what-it-costs-and-how-long-it-takes">3.3 What it costs and how long it takes</a></li>
+  <li><a href="#34-how-to-keep-it-honest">3.4 How to keep it honest</a></li>
+  <li><a href="#35-six-ways-this-goes-wrong">3.5 Six ways this goes wrong</a></li>
+  <li><a href="#41-the-cumulative-scoring-rule-the-maturity-ratchet">4.1 The cumulative scoring rule (the maturity ratchet)</a></li>
+  <li><a href="#42-the-dimension-is-the-minimum-of-its-axes">4.2 The dimension is the minimum of its axes</a></li>
+  <li><a href="#43-the-binding-axis">4.3 The binding axis</a></li>
+  <li><a href="#44-the-binding-dimension">4.4 The binding dimension</a></li>
+  <li><a href="#45-the-dimension-5-interlock">4.5 The Dimension 5 interlock</a></li>
+  <li><a href="#46-coverage-and-the-difference-between-final-and-provisional">4.6 Coverage, and the difference between Final and Provisional</a></li>
+  <li><a href="#47-why-there-is-no-single-institutional-score">4.7 Why there is no single institutional score</a></li>
+  <li><a href="#48-class-ad-placement-is-a-separate-measurement">4.8 Class A–D placement is a separate measurement</a></li>
+  <li><a href="#51-module-a-the-assessment-suite">5.1 Module A — the assessment suite</a></li>
+  <li><a href="#52-module-b-the-briefings">5.2 Module B — the briefings</a></li>
+  <li><a href="#53-module-g-the-agreement">5.3 Module G — the agreement</a></li>
+  <li><a href="#54-module-p-the-policy-library">5.4 Module P — the policy library</a></li>
+  <li><a href="#55-how-the-modules-connect">5.5 How the modules connect</a></li>
+  <li><a href="#61-the-institution">6.1 The institution</a></li>
+  <li><a href="#62-the-twenty-cells-scored">6.2 The twenty cells, scored</a></li>
+  <li><a href="#63-the-dimensional-profile">6.3 The dimensional profile</a></li>
+  <li><a href="#64-triangulation-what-the-surveys-changed">6.4 Triangulation: what the surveys changed</a></li>
+  <li><a href="#65-class-ad-placement">6.5 Class A–D placement</a></li>
+  <li><a href="#66-the-three-work-packages-northgate-should-complete-first">6.6 The three work packages Northgate should complete first</a></li>
+  <li><a href="#67-what-the-profile-looks-like-twelve-weeks-later">6.7 What the profile looks like twelve weeks later</a></li>
+  <li><a href="#71-the-invitation">7.1 The invitation</a></li>
+  <li><a href="#72-what-attribution-looks-like-in-practice">7.2 What attribution looks like in practice</a></li>
+  <li><a href="#73-translation-and-local-adaptation">7.3 Translation and local adaptation</a></li>
+  <li><a href="#74-two-things-to-avoid">7.4 Two things to avoid</a></li>
+  <li><a href="#the-crosswalk">The crosswalk</a></li>
+  <li><a href="#using-the-two-together">Using the two together</a></li>
+  <li><a href="#citing-the-pack">Citing the pack</a></li>
+  <li><a href="#what-this-pack-draws-on">What this pack draws on</a></li></ol>
+</nav>
+
+<section class="hero web-only" aria-label="Report at a glance">
+  <div class="hero-inner">
+    <div class="hero-series">Instats Policy Series</div>
+    <h1 class="hero-title">The Institutional AI Readiness Pack</h1>
+    <p class="hero-subtitle">Self-Assessment and Implementation Tools for Responsible AI in Academic Research</p>
+    <p class="hero-finding">A university-wide assessment and implementation toolkit that connects institutional policy and priorities with the everyday practices, capabilities, and experiences of researchers and graduate students.</p>
+    <p class="hero-byline"><a class="hero-author-link" href="https://orcid.org/0000-0003-3237-7892" target="_blank" rel="noopener">Michael J. Zyphur, PhD</a> &middot; <span class="hero-author-bio">Director of Instats</span></p>
+    <div class="hero-actions">
+      <a class="hero-btn hero-btn-pdf" href="Instats - The Institutional AI Readiness Pack.pdf" download>PDF version</a>
+      <a class="hero-btn hero-btn-docx" href="Instats - The Institutional AI Readiness Pack.docx" download>Word version</a>
+      <a class="hero-btn hero-btn-repo" href="https://github.com/mzyphur/ai-readiness" target="_blank" rel="noopener">View GitHub</a>
+    </div>
+  </div>
+</section>
+
+<div class="wrap">
+<div class="cover">
+<p><a class="cover-logo" href="https://instats.org"><img alt="Instats" src="assets/instats_logo.png" width="2.1in"></a></p>
+<div class="kicker">
+<p>INSTATS POLICY SERIES &nbsp;·&nbsp; August 2026</p>
+</div>
+<h1 id="the-institutional-ai-readiness-pack">The Institutional AI Readiness Pack</h1>
+<h2 id="self-assessment-and-implementation-tools-for-responsible-ai-in-academic-research"><em>Self-Assessment and Implementation Tools for Responsible AI in Academic Research</em></h2>
+<div class="abstract">
+<p>The Institutional AI Readiness Pack is a university-wide assessment and implementation toolkit for responsible AI in research, spanning practice, people, policy, systems, procurement, data, disclosure, and oversight. It accompanies <em><a href="https://instats.org/publications/responsible-ai-in-academic-research">Responsible AI in Academic Research: A Competency Framework for Research Training</a></em>, which defines five dimensions of institutional readiness and the capabilities that underpin them. The pack turns that framework into instruments a university can use to get an evidence-based picture of how AI is actually used and governed across its research environment, along with ways to track that picture as it changes over time. In doing so, it connects institutional policy and strategic priorities directly with the everyday practices, capabilities, and experiences of researchers and graduate students.</p>
+</div>
+<div class="author">
+<p><strong>Michael J. Zyphur, PhD</strong>
+Instats &nbsp;·&nbsp; <a href="https://instats.org">instats.org</a> &nbsp;·&nbsp; <a href="mailto:support@instats.org">support@instats.org</a></p>
+</div>
+<div class="cover-band">
+<p>INSTATS-PS-2026-05</p>
+</div>
+</div>
+<div class="pagebreak"></div>
+
+<div class="colophon">
+<p><strong>Citation.</strong> Zyphur, M. J. (2026). <em>The Institutional AI Readiness Pack: Self-Assessment and Implementation Tools for Responsible AI in Academic Research.</em> Instats Policy Series. DOI: <a href="https://doi.org/10.61700/bv2nulyhht">10.61700/bv2nulyhht</a>. <a href="https://github.com/mzyphur/ai-readiness">github.com/mzyphur/ai-readiness</a>. ORCID: <a href="https://orcid.org/0000-0003-3237-7892">0000-0003-3237-7892</a>.</p>
+<p><strong><a href="https://instats.org/publications/responsible-ai-in-academic-research">Companion report</a>.</strong> Zyphur, M. J. (2026). <em><a href="https://instats.org/publications/responsible-ai-in-academic-research">Responsible AI in Academic Research: A Competency Framework for Research Training</a>.</em> Instats Policy Series. DOI: <a href="https://doi.org/10.61700/t31oy23grr">10.61700/t31oy23grr</a>. This pack operationalizes that report and refers to it throughout as <em><a href="https://instats.org/publications/responsible-ai-in-academic-research">the report</a></em>.</p>
+<p><strong>License.</strong> © 2026 Instats. Licensed under <strong>Creative Commons Attribution 4.0 International (CC BY 4.0)</strong>. You may adapt, rewrite, shorten, extend, translate, and redistribute every instrument in this pack, including commercially, with attribution. You may embed the text directly into institutional policy, handbooks, AI-use agreements, and survey platforms without asking for permission. The Instats name and logo are excluded. The <a href="https://instats.org/publications/responsible-ai-in-academic-research">companion report</a> is separately licensed CC BY-NC-ND 4.0.</p>
+</div>
+<div class="pagebreak"></div>
+
+<div class="exec">
+<h1 id="executive-summary">Executive summary</h1>
+<p>Universities increasingly have AI policies, but many still lack an evidence-based picture of how AI is actually used and governed across their research environments. Without that picture, they cannot reliably identify gaps across policy, people, systems, and process, nor can they determine how to strengthen the institutional capabilities that enable rigorous and responsible AI use in research.</p>
+<p>That is the gap this pack closes. The <a href="https://instats.org/publications/responsible-ai-in-academic-research">companion report</a> surveyed institutional AI policies at thirty-eight top-tier doctoral universities across fifteen countries and jurisdictions. It found that the typical institutional posture is an AI policy whose substantive scope ends at plagiarism. Only six of the thirty-eight published AI policies extend past research integrity into AI literacy and valid research practices. Meanwhile, the major academic publishers converged on a common position within about three months of the public release of ChatGPT-3.5, beginning with Nature and Springer Nature on 24 January 2023 and the ICMJE following in May. National research funders converged unevenly across three years, and research practice moved faster than either. The institutions that actually train researchers have not caught up.</p>
+<p><a href="https://instats.org/publications/responsible-ai-in-academic-research">The report</a>'s answer is a five-dimension competency framework: human-in-the-loop discipline, responsible use in practice, tooling that promotes responsible use, AI-literate humans, and an institutional benchmarking grid. <a href="https://instats.org/publications/responsible-ai-in-academic-research">The report</a> requires policy, people, systems, and process to operate together at the applicable maturity level. This pack operationalizes that requirement as twenty dimension-axis cells, assigns each dimension the level of its lowest axis, and calls the limiting axis the binding axis. <a href="https://instats.org/publications/responsible-ai-in-academic-research">The report</a>'s conclusion on the fifth dimension is the primary reason this pack exists: no university in the sample published its own scoring against the framework, so <em>leading</em> on Dimension 5 is "a forward-looking standard that the framework's adopters can elect to populate" (<a href="https://instats.org/publications/responsible-ai-in-academic-research">the report</a> §4.2). In this framework, the gap analysis lists improvements in order, like climbing a ladder, and each individual improvement is a rung. In other words, <a href="https://instats.org/publications/responsible-ai-in-academic-research">the report</a> describes a rung that nobody has reached yet. This pack provides the tools for an institution to reach it.</p>
+<p><strong>What the pack contains.</strong> Thirteen instruments organized into four modules. The assessment suite (A1 to A5) scores the twenty cells against documentary evidence, tests those scores against what graduate students and their advisors and supervisors actually report, converts the results into concrete work packages with named owners, and reports the findings to a governing body on a single page. The briefings (B1 to B5) present the core decisions each leadership group owns in a concise ten-to-fifteen-minute read. The agreement (G1) is the flagship instrument: a thirty-minute conversation where a doctoral student and their advisor or supervisor decide, task by task, where AI may assist with the work and where judgment must remain strictly human, putting that agreement in writing. The policy library (P1, P2) supplies an adoptable institutional AI-in-research policy template alongside a disclosure standard with ready-to-use statement templates.</p>
+<p>The <a href="https://mzyphur.github.io/ai-readiness/instruments.html">online instrument catalogue</a> lists every document and provides each available HTML, Word, PDF, and spreadsheet file.</p>
+<p><strong>What the assessment produces.</strong> Five dimension levels, the binding axis holding each dimension back, the overall binding dimension for the institution, a documentary data-coverage percentage, and an assessment verdict of <em>Final</em> or <em>Provisional</em>. That verdict describes the completeness of the A1 documentary assessment. It is not a claim that every survey inference has been independently validated. The assessment does not produce a single institutional score, and no adaptation should attempt to do so. <a href="https://instats.org/publications/responsible-ai-in-academic-research">The report</a> explains that the diagnostic value of the grid lies in the dimensional pattern rather than a single summary number (§4.3). Reducing the assessment to a single number hides the specific capability bottlenecks and invites unhelpful comparisons between institutions with completely different disciplinary profiles and regulatory environments.</p>
+<p><strong>What it costs.</strong> Roughly twenty-two to twenty-five person-days across one quarter, plus ten minutes from each graduate student and supervisor who completes the surveys. It requires no new software, no procurement, and no external spending, unless the institution later chooses external peer benchmarking as part of pursuing the <em>leading</em> level on Dimension 5. A faster version also exists: answering four to six questions per dimension in an hour will give you a rough sense of where you sit, while the full version produces verifiable evidence suitable for a governing council.</p>
+<p><strong>Why now, and not next year.</strong> Two regulatory obligations with fixed compliance dates sit inside the fifth dimension. The EU AI Act's Article 27 Fundamental Rights Impact Assessment obligation applies from 2 August 2026 to institutions within Article 2's territorial scope that are bodies governed by public law or private entities providing public services and deploy a high-risk system under Article 6(2) touching admissions, evaluation of learning outcomes, assignment of education levels, or proctoring. The Australian Privacy Act 1988 automated-decision-making transparency obligation commences on 10 December 2026. This reaches private universities and the Australian National University, whereas most state and territory public universities are governed principally by their own jurisdiction's privacy legislation. Other jurisdictions carry equivalent requirements. In both cases, the first question an auditor will ask is who owns the obligation and by what date it will be met. Answering that question requires an asset register that most institutions have not yet built.</p>
+<p><strong>How to get started immediately.</strong> I recommend taking two immediate steps. First, appoint a single person to own the institution's AI-readiness benchmarking cycle, publish their mandate and review schedule, and set a firm date for their first score. That appointment supplies evidence toward <code>D5-people → nascent</code> only if the mandate also makes that person accountable for the AI-in-research policy and its periodic review. Dimension 5 reaches <em>nascent</em> only after a complete rescore confirms that all four D5 cells qualify at that level. Second, send the five questions in briefing B1 to the five designated leaders and ask for written responses with supporting documentation attached. If those artifacts are readily available, you already hold most of the evidence base and completing the assessment becomes a straightforward scheduling exercise. If they are not available, you have an immediate answer about where the institution stands, and your gap analysis has already begun.</p>
+<p>The framework is deliberately non-prescriptive about which level an institution should occupy. Academic scope, discipline mix, jurisdiction, and available resources legitimately differ. For example, a small humanities-focused doctoral program and a major medical research university operating across multiple jurisdictions can both defensibly sit at <em>established</em> on the same dimension with materially different implementations. Nobody outside your university is grading this exercise. There is no prize for a high score and no penalty for a low one. The only real risk is relying on an inaccurate one.</p>
+</div>
+<div class="pagebreak"></div>
+
+<div class="toc">
+<h1 id="contents">Contents</h1>
+<h4 id="toc-executive-summary"><a href="#executive-summary">Executive summary</a></h4>
+<h4 id="toc-part-1"><a href="#part-1-why-this-pack-exists">Part 1 — Why this pack exists</a></h4>
+<ul>
+<li><a href="#11-the-rung-nobody-has-reached">1.1 The rung nobody has reached</a></li>
+<li><a href="#12-the-problem-an-institution-cannot-currently-answer">1.2 The problem an institution cannot currently answer</a></li>
+<li><a href="#13-what-this-pack-is-and-what-it-is-not">1.3 What this pack is, and what it is not</a></li>
+</ul>
+<h4 id="toc-part-2"><a href="#part-2-the-framework-restated-for-practitioners">Part 2 — The framework restated for practitioners</a></h4>
+<ul>
+<li><a href="#21-the-five-dimensions">2.1 The five dimensions</a></li>
+<li><a href="#22-the-four-axes">2.2 The four axes</a></li>
+<li><a href="#23-the-four-levels">2.3 The four levels</a></li>
+<li><a href="#24-the-twenty-cell-grid">2.4 The twenty-cell grid</a></li>
+<li><a href="#25-the-three-substantive-lists-modes-properties-competencies">2.5 The three substantive lists: modes, properties, competencies</a></li>
+</ul>
+<h4 id="toc-part-3"><a href="#part-3-how-to-run-the-assessment">Part 3 — How to run the assessment</a></h4>
+<ul>
+<li><a href="#31-the-triangulation-design-and-why-the-gap-is-the-finding">3.1 The triangulation design, and why the gap is the finding</a></li>
+<li><a href="#32-who-to-convene">3.2 Who to convene</a></li>
+<li><a href="#33-what-it-costs-and-how-long-it-takes">3.3 What it costs and how long it takes</a></li>
+<li><a href="#34-how-to-keep-it-honest">3.4 How to keep it honest</a></li>
+<li><a href="#35-six-ways-this-goes-wrong">3.5 Six ways this goes wrong</a></li>
+</ul>
+<h4 id="toc-part-4"><a href="#part-4-reading-your-results">Part 4 — Reading your results</a></h4>
+<ul>
+<li><a href="#41-the-cumulative-scoring-rule-the-maturity-ratchet">4.1 The cumulative scoring rule (the maturity ratchet)</a></li>
+<li><a href="#42-the-dimension-is-the-minimum-of-its-axes">4.2 The dimension is the minimum of its axes</a></li>
+<li><a href="#43-the-binding-axis">4.3 The binding axis</a></li>
+<li><a href="#44-the-binding-dimension">4.4 The binding dimension</a></li>
+<li><a href="#45-the-dimension-5-interlock">4.5 The Dimension 5 interlock</a></li>
+<li><a href="#46-coverage-and-the-difference-between-final-and-provisional">4.6 Coverage, and the difference between Final and Provisional</a></li>
+<li><a href="#47-why-there-is-no-single-institutional-score">4.7 Why there is no single institutional score</a></li>
+<li><a href="#48-class-ad-placement-is-a-separate-measurement">4.8 Class A–D placement is a separate measurement</a></li>
+</ul>
+<h4 id="toc-part-5"><a href="#part-5-the-modules">Part 5 — The modules</a></h4>
+<ul>
+<li><a href="#51-module-a-the-assessment-suite">5.1 Module A — the assessment suite</a></li>
+<li><a href="#52-module-b-the-briefings">5.2 Module B — the briefings</a></li>
+<li><a href="#53-module-g-the-agreement">5.3 Module G — the agreement</a></li>
+<li><a href="#54-module-p-the-policy-library">5.4 Module P — the policy library</a></li>
+<li><a href="#55-how-the-modules-connect">5.5 How the modules connect</a></li>
+</ul>
+<h4 id="toc-part-6"><a href="#part-6-a-worked-example-northgate-university">Part 6 — A worked example: Northgate University</a></h4>
+<ul>
+<li><a href="#61-the-institution">6.1 The institution</a></li>
+<li><a href="#62-the-twenty-cells-scored">6.2 The twenty cells, scored</a></li>
+<li><a href="#63-the-dimensional-profile">6.3 The dimensional profile</a></li>
+<li><a href="#64-triangulation-what-the-surveys-changed">6.4 Triangulation: what the surveys changed</a></li>
+<li><a href="#65-class-ad-placement">6.5 Class A–D placement</a></li>
+<li><a href="#66-the-three-work-packages-northgate-should-complete-first">6.6 The three work packages Northgate should complete first</a></li>
+<li><a href="#67-what-the-profile-looks-like-twelve-weeks-later">6.7 What the profile looks like twelve weeks later</a></li>
+</ul>
+<h4 id="toc-part-7"><a href="#part-7-adapting-the-pack">Part 7 — Adapting the pack</a></h4>
+<ul>
+<li><a href="#71-the-invitation">7.1 The invitation</a></li>
+<li><a href="#72-what-attribution-looks-like-in-practice">7.2 What attribution looks like in practice</a></li>
+<li><a href="#73-translation-and-local-adaptation">7.3 Translation and local adaptation</a></li>
+<li><a href="#74-two-things-to-avoid">7.4 Two things to avoid</a></li>
+</ul>
+<h4 id="toc-appendix-a"><a href="#appendix-a-instrument-catalogue">Appendix A — Instrument catalogue</a></h4>
+<h4 id="toc-appendix-b"><a href="#appendix-b-teqsa-crosswalk">Appendix B — TEQSA crosswalk</a></h4>
+<ul>
+<li><a href="#the-crosswalk">The crosswalk</a></li>
+<li><a href="#using-the-two-together">Using the two together</a></li>
+</ul>
+<h4 id="toc-appendix-c"><a href="#appendix-c-ai-assistance-disclosure-for-this-pack">Appendix C — AI-assistance disclosure for this pack</a></h4>
+<h4 id="toc-appendix-d"><a href="#appendix-d-how-to-cite-this-pack-and-the-sources-it-draws-on">Appendix D — How to cite this pack, and the sources it draws on</a></h4>
+<ul>
+<li><a href="#citing-the-pack">Citing the pack</a></li>
+<li><a href="#what-this-pack-draws-on">What this pack draws on</a></li>
+</ul>
+<h4 id="toc-appendix-e-crosswalk"><a href="#appendix-e-crosswalk-this-document-to-the-report">Appendix E — Crosswalk to the companion framework</a></h4>
+</div>
+<div class="pagebreak"></div>
+<h1 id="part-1-why-this-pack-exists">Part 1 — Why this pack exists</h1>
+<h2 id="11-the-rung-nobody-has-reached">1.1 The rung nobody has reached</h2>
+<p>In the <a href="https://instats.org/publications/responsible-ai-in-academic-research">companion report</a>, §4.2 concludes its discussion of the fifth dimension with a straightforward observation:</p>
+<blockquote>
+<p>"No university in the sample publishes its own scoring against this framework as of mid-2026, because the framework has just been published in this report, so <em>leading</em> on Dimension 5 is, for now, a forward-looking standard that the framework's adopters can elect to populate." (<a href="https://instats.org/publications/responsible-ai-in-academic-research">the report</a> §4.2.)</p>
+</blockquote>
+<p>I encourage you to read that as an open invitation rather than a qualification. <a href="https://instats.org/publications/responsible-ai-in-academic-research">The report</a> describes what <em>leading</em> on institutional benchmarking looks like: regular self-scoring against a published framework, a designated owner for each axis of every dimension, a documented plan for applicable regulatory deadlines, published scoring with an explicit methodology, and external peer benchmarking or auditing. It then notes that no university currently does this, for the simple reason that the framework was not previously available.</p>
+<p>That standard is available now. Establishing that position does not require a large capital investment. Publishing a scored institutional profile with a clearly stated methodology requires a committee review cycle and a web page, not an expensive program. However, this opportunity to lead will not remain open indefinitely, because academic sectors can converge quickly once expectations are defined. For example, major academic publishers established a consistent no-AI-co-author policy across the sector in roughly three months. Universities have not yet converged in the same way, which means the institutions that state a clear position now will help shape the standards that eventually emerge across higher education.</p>
+<p>This pack provides the necessary tools to take that leadership position. Its thirteen instruments give an institution everything it needs to evaluate itself honestly, verify those scores against the experiences of researchers and students, translate the findings into concrete projects with named owners, and publish the results in a form that external peers can verify.</p>
+<h2 id="12-the-problem-an-institution-cannot-currently-answer">1.2 The problem an institution cannot currently answer</h2>
+<p>Most universities can produce an AI policy document on request. Very few, however, are likely to be able to answer the harder practical question: what actually happens when a doctoral student's AI software generates a convincing list of citations on a Tuesday afternoon?</p>
+<p>The gap between having a written policy and understanding daily practice is the central problem this pack addresses. In my view, this problem stems from three main issues.</p>
+<p><strong>First, there is a fundamental category error about the nature of the problem.</strong> Treating AI use in doctoral research primarily as a plagiarism issue frames student conduct and writing as the main concern, rather than focusing on the validity, reproducibility, and ethical rigor of AI-assisted research. A fabricated citation is not an act of plagiarism because nothing was copied from another scholar and no original author was deprived of credit. It is data fabrication, which sits at the very top of research misconduct codes worldwide. In a widely cited primary study, researchers evaluated 636 AI-generated citations across 42 literature reviews against three academic databases. They found that 55 percent of the citations generated by GPT-3.5 and 18 percent of those from GPT-4 did not exist at all. Among the citations that were real, 43 percent and 24 percent respectively contained substantive factual errors. A broader cross-model study in medical literature found citation fabrication rates ranging from 28.6 to 91.4 percent. When an institution files these issues under student conduct, the problem gets routed to the wrong office, investigated under inappropriate evidentiary standards, and handled using automated detection tools that simply do not work. In testing, seven commercial detection tools showed an average baseline accuracy of only 39.5 percent, which dropped to 17.4 percent under simple evasion techniques, alongside a documented bias against non-native English writers.</p>
+<p><strong>Second, "responsible use" has rarely been operationalized.</strong> The phrase appears in nearly every funder mandate, publisher guideline, university policy, and competency framework in the <a href="https://instats.org/publications/responsible-ai-in-academic-research">companion report</a>'s evidence base, but its operational meaning is almost never defined in practical detail. For example, the Australian Research Council and the National Health and Medical Research Council state the requirement in a single sentence: "AI-generated content must be verified and should not replace expert opinion or judgement." That principle is entirely sound, but it does not give anyone practical instructions. It does not tell a graduate student how to handle their analysis on a day-to-day basis, nor does it tell a supervisor what specific checks to perform before approving an analysis chapter.</p>
+<p><strong>Third, a policy document represents only one component of institutional capability.</strong> The most common institutional response has been to publish a single AI guidance document and treat the matter as resolved. True institutional capability, however, spans four distinct axes: the policy document itself, the people designated to enact it, the technology systems that support it, and the administrative processes that integrate AI expectations into supervision, milestones, and thesis examination. An institution can have a well-crafted policy that lacks assigned owners, retrievable records, or required workflow checkpoints. Under this framework, that configuration receives a low score, which accurately reflects its operational vulnerability.</p>
+<p>Putting these three issues together highlights the core challenge this pack addresses: <em>almost any university can quote its AI policy, but very few know what their researchers and graduate students are actually doing in practice.</em></p>
+<h2 id="13-what-this-pack-is-and-what-it-is-not">1.3 What this pack is, and what it is not</h2>
+<p><strong>It is a self-diagnostic and implementation toolkit.</strong> The instruments are structured so that every answer can be verified directly from documentary records. Each indicator explicitly names the supporting artifact required. The standard applied throughout is straightforward: <em>could an independent, skeptical auditor verify or refute this claim using the available documents?</em> If the honest answer is that an auditor would have to rely on informal assurances, the indicator is not satisfied.</p>
+<p><strong>It is not an external audit, accreditation, or ranking system.</strong> No outside agency receives your completed assessment. No regulator requires you to complete it, and no external body mandates its use. The framework is deliberately non-prescriptive about which maturity level an institution should target, because institutional contexts and missions vary legitimately. What the framework provides is methodological consistency, ensuring that the criteria used to evaluate maturity are transparent and applied consistently.</p>
+<p><strong>It is not a substitute for the <a href="https://instats.org/publications/responsible-ai-in-academic-research">companion report</a>.</strong> This document restates the core framework in Part 2 in sufficient detail to guide working assessment sessions. However, the comprehensive evidence base (including funder policies, institutional audits, publisher standards, literature on research competencies, and detailed tool taxonomies) lives in the <a href="https://instats.org/publications/responsible-ai-in-academic-research">companion report</a>. I recommend reading <a href="https://instats.org/publications/responsible-ai-in-academic-research">the report</a> once before conducting the assessment, and keeping this pack on hand during working sessions.</p>
+<p><strong>It complements sector guidance rather than replacing it.</strong> When national regulators or sector bodies issue guidance on generative AI in research training, they generally describe <em>what institutions should achieve</em>. This pack provides the operational tools to <em>implement those recommendations and measure your progress</em>. Appendix B demonstrates this alignment in detail for the Australian higher education context, which currently offers the most comprehensive national guidance available.</p>
+<hr>
+<h1 id="part-2-the-framework-restated-for-practitioners">Part 2 — The framework restated for practitioners</h1>
+<p>This section restates the core framework so you can conduct working sessions without needing <a href="https://instats.org/publications/responsible-ai-in-academic-research">the report</a> open. Each subsection cross-references the corresponding section of the <a href="https://instats.org/publications/responsible-ai-in-academic-research">companion report</a> where the detailed evidence is documented and identifies the operational method introduced by this pack.</p>
+<h2 id="21-the-five-dimensions">2.1 The five dimensions</h2>
+<p>The five dimensions follow a deliberate sequence because each builds directly on the ones before it. An institution that has not established clear boundaries for human oversight cannot define what responsible use means in daily practice. Without an operational definition of responsible use, evaluating whether a software tool supports or undermines good practice is impossible. Without approved tools and operational standards, an AI literacy curriculum lacks concrete substance. Finally, without those four foundational elements, an institutional benchmarking grid has no solid evidence base to evaluate. This ordering becomes essential when resolving ties to identify an institution's binding constraint.</p>
+<table>
+<thead>
+<tr>
+<th>Key</th>
+<th>Dimension</th>
+<th>What it asks</th>
+<th><a href="https://instats.org/publications/responsible-ai-in-academic-research">the report</a> §</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>D1</strong></td>
+<td><strong>Human-in-the-loop discipline</strong></td>
+<td>Which research judgements stay human, why those, and how do you know?</td>
+<td>§2.1</td>
+</tr>
+<tr>
+<td><strong>D2</strong></td>
+<td><strong>Responsible use in practice</strong></td>
+<td>What does responsible use mean, task by task, in each of the four AI-use modes?</td>
+<td>§2.2</td>
+</tr>
+<tr>
+<td><strong>D3</strong></td>
+<td><strong>Tooling that promotes responsible use</strong></td>
+<td>Do the tools your researchers actually use make responsible use easier or harder?</td>
+<td>§2.3</td>
+</tr>
+<tr>
+<td><strong>D4</strong></td>
+<td><strong>AI-literate humans</strong></td>
+<td>Do graduate students, their advisors and supervisors, and examiners (dissertation committee members, in US usage) hold the competencies the work now requires?</td>
+<td>§2.4</td>
+</tr>
+<tr>
+<td><strong>D5</strong></td>
+<td><strong>Institutional benchmarking grid</strong></td>
+<td>Do you know where you stand, who owns each part of it, and when you look again?</td>
+<td>§2.5</td>
+</tr>
+</tbody>
+</table>
+<div class="tablecaption">
+<p>Table 1. The five evaluation dimensions, their guiding diagnostic questions, and corresponding report sections.</p>
+</div>
+<p><strong>Dimension 1 — Human-in-the-loop discipline.</strong> This dimension reflects an institution's commitment that the core judgment steps defining academic research must remain human. Routine labor tasks may be augmented by AI, but fundamental intellectual judgments cannot be outsourced to software without compromising the scholarly integrity of the work. Labor tasks are suitable for AI assistance because errors are readily visible and straightforward to correct. Examples include polishing the prose of researcher-written text, transcribing verified audio interviews, formatting citations, or cleaning up programming code. In contrast, judgment tasks silently degrade research quality if delegated to automated systems. These include formulating research questions, interpreting unexpected results, identifying outliers, synthesizing contested literature, and determining whether findings withstand critical scrutiny. The essential institutional step is to <em>publish</em> a task-level demarcation between labor and judgment, and then enforce it through advising, supervision, and thesis examination. Appendix G of the <a href="https://instats.org/publications/responsible-ai-in-academic-research">companion report</a> provides a starter catalogue of twenty-one research tasks that academic departments can expand for their specific fields.</p>
+<p><em>The evidence anchor:</em> a formal document classifying research tasks, an enforceable mechanism (such as an institutional research integrity code, a sworn declaration, or a thesis submission declaration form), and a documented history of regular reviews.</p>
+<p><strong>Dimension 2: Responsible use in practice.</strong><sup id="fnref:d2naming"><a class="footnote-ref" href="#fn:d2naming">1</a></sup> This dimension operationalizes "responsible use" from an abstract concept into specific research workflows across four AI-use modes: <em>search</em>, <em>co-author</em>, <em>validator</em>, and <em>tutor</em>. Academic publishers have generally focused on disclosure, research funders have emphasized transparency in grant applications, and competency frameworks have focused on high-level principles. However, none of these sources specifies what a responsible literature synthesis workflow looks like, what an analysis disclosure should contain for a specific tool, or what a supervisor should verify before accepting an AI-assisted dissertation chapter. Dimension 2 provides those practical specifications.</p>
+<p><em>The evidence anchor:</em> published guidance covering each of the four modes, a disclosure template aligned with current publisher requirements, and an active supervisory or examination checkpoint that verifies disclosures against actual research practice.</p>
+<p><strong>Dimension 3 — Tooling that promotes responsible use.</strong> This dimension addresses an institution's commitment to procure and deploy AI tools that support responsible research practices by design. Relying solely on vendor marketing is insufficient. For instance, the <a href="https://instats.org/publications/responsible-ai-in-academic-research">companion report</a> examines an independent evaluation of three commercial legal research tools that showed hallucination rates between 17 and 33 percent, despite vendor claims that retrieval grounding eliminated false citations. Retrieval augmentation can reduce hallucinations, but it does not eliminate them. Instead, it often shifts the failure mode from a completely fabricated citation to a misattributed real source, which is much harder to catch. Software procurement standards should therefore evaluate six observable technical properties, listed in §2.5 below.</p>
+<p><em>The evidence anchor:</em> a published procurement policy evaluating all six technical properties, a maintained inventory of AI tools used in research, clear data residency and training-on-input terms for each platform, a defined log retention schedule, and completed regulatory impact assessments.</p>
+<p><strong>Dimension 4 — AI-literate humans.</strong> This dimension ensures that graduate students, researchers, advisors, supervisors, and dissertation examiners develop the specific competencies required for AI-augmented research. The critical competency is not simply knowing how to operate a given software interface. Rather, it is knowing which research tasks can be safely delegated to AI, which must remain human, and how to verify any AI-generated output. Specific software tools change rapidly, but underlying research judgment remains constant. In §2.5 below, I outline six foundational competencies. These skills are essential <em>additions</em> to traditional research methods and reproducibility standards, not replacements for them.</p>
+<p><em>The evidence anchor:</em> the six competencies formally integrated into doctoral methods training, corresponding professional development for supervisors, examiner training on verification methods, and verifiable completion records for individuals rather than unmonitored optional resources.</p>
+<p><strong>Dimension 5: Institutional benchmarking grid.</strong> This dimension measures an institution's capacity to evaluate its standing across the first four dimensions and act systematically on the findings. Dimension 5 provides the overarching governance structure. While the first four dimensions address substantive research activities, the fifth establishes the management processes needed to review and maintain them over time. This is also where formal compliance with upcoming regulatory deadlines belongs. The operational test is whether every applicable legal obligation has an assigned owner and a scheduled compliance plan.</p>
+<p><em>The evidence anchor:</em> a formal commitment to regular benchmarking, completed assessments using a recognized framework on a set schedule, assigned owners for all twenty cells of the grid, a centralized repository of compliance artifacts, and assessment results formally presented to the university council, faculty research committees, and the research integrity board.</p>
+<h2 id="22-the-four-axes">2.2 The four axes</h2>
+<p>Every dimension is evaluated across the same four operational axes. These are not arbitrary weightings or mere categories of evidence. Instead, they represent four practical conditions that must all be satisfied before an institutional capability can function effectively.</p>
+<table>
+<thead>
+<tr>
+<th>Axis</th>
+<th>What it is</th>
+<th>The characteristic failure</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>policy</strong></td>
+<td>The formal document, including its substantive scope, official approval, and scheduled review cycle.</td>
+<td>The policy does not exist in writing, leading to inconsistent standards across different academic departments.</td>
+</tr>
+<tr>
+<td><strong>people</strong></td>
+<td>The designated roles accountable for enacting the policy, along with the training provided to them.</td>
+<td>A formal policy exists on paper, but no one is assigned responsibility for implementing it.</td>
+</tr>
+<tr>
+<td><strong>systems</strong></td>
+<td>The supporting technology and records, including procurement controls, tool registers, and training logs.</td>
+<td>Rules exist, but compliance records cannot be retrieved to answer internal questions or external audits.</td>
+</tr>
+<tr>
+<td><strong>process</strong></td>
+<td>The administrative workflows that integrate AI checks into supervision, milestone reviews, and examination.</td>
+<td>Comprehensive documentation exists centrally, but it never impacts daily research or student supervision.</td>
+</tr>
+</tbody>
+</table>
+<div class="tablecaption">
+<p>Table 2. The four operational axes with their definitions and characteristic institutional failure modes.</p>
+</div>
+<p>These four axes apply across all jurisdictions. While specific local regulations may vary, these structural requirements remain consistent.</p>
+<h2 id="23-the-four-levels">2.3 The four levels</h2>
+<p>The maturity levels describe verifiable institutional practices rather than aspirational goals.</p>
+<table>
+<thead>
+<tr>
+<th>Level</th>
+<th>Definition</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Absent</strong></td>
+<td>The institution has not established a formal position on the dimension. The relevant policy, designated role, technical system, or administrative process does not exist.</td>
+</tr>
+<tr>
+<td><strong>Nascent</strong></td>
+<td>A position has been articulated but not fully operationalized. For example, a policy exists but lacks designated owners or processes, or owners are named but lack supporting systems.</td>
+</tr>
+<tr>
+<td><strong>Established</strong></td>
+<td>Policy, people, systems, and processes are <strong>all</strong> fully in place and operating on a regular, reviewable schedule. The institution can readily demonstrate who does what, with which tools, and through which workflows.</td>
+</tr>
+<tr>
+<td><strong>Leading</strong></td>
+<td>The institution meets all <em>established</em> requirements and provides verifiable evidence of impact, such as published evaluation metrics, external peer audits, and documented continuous improvement cycles.</td>
+</tr>
+</tbody>
+</table>
+<div class="tablecaption">
+<p>Table 3. Definitions and institutional characteristics of the four assessment maturity levels.</p>
+</div>
+<p>Two key principles govern this scale. First, the scale is strictly <strong>cumulative</strong>. In the full maturity grid, every <em>leading</em> cell begins with the requirement "All of <em>established</em>, plus...", meaning an institution cannot be classified as <em>leading</em> if it fails to satisfy the baseline requirements for <em>established</em>. Second, <a href="https://instats.org/publications/responsible-ai-in-academic-research">the report</a> defines the <em>established</em> level conjunctively, requiring policy, people, systems, and process to be in place simultaneously. This pack operationalizes that requirement by assigning each dimension the maturity level of its lowest axis.</p>
+<h2 id="24-the-twenty-cell-grid">2.4 The twenty-cell grid</h2>
+<p>For this pack, the core unit of assessment is the intersection of a dimension and an operational axis. Evaluating five dimensions across four axes yields twenty distinct cells, with each cell scored at one of the four maturity levels.</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th><strong>policy</strong></th>
+<th><strong>people</strong></th>
+<th><strong>systems</strong></th>
+<th><strong>process</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>D1</strong> Human-in-the-loop discipline</td>
+<td>D1-policy</td>
+<td>D1-people</td>
+<td>D1-systems</td>
+<td>D1-process</td>
+</tr>
+<tr>
+<td><strong>D2</strong> Responsible use in practice</td>
+<td>D2-policy</td>
+<td>D2-people</td>
+<td>D2-systems</td>
+<td>D2-process</td>
+</tr>
+<tr>
+<td><strong>D3</strong> Tooling that promotes responsible use</td>
+<td>D3-policy</td>
+<td>D3-people</td>
+<td>D3-systems</td>
+<td>D3-process</td>
+</tr>
+<tr>
+<td><strong>D4</strong> AI-literate humans</td>
+<td>D4-policy</td>
+<td>D4-people</td>
+<td>D4-systems</td>
+<td>D4-process</td>
+</tr>
+<tr>
+<td><strong>D5</strong> Institutional benchmarking grid</td>
+<td>D5-policy</td>
+<td>D5-people</td>
+<td>D5-systems</td>
+<td>D5-process</td>
+</tr>
+</tbody>
+</table>
+<div class="tablecaption">
+<p>Table 4. Matrix of twenty assessment cells formed by intersecting five dimensions and four operational axes.</p>
+</div>
+<p>These cell codes are used consistently across all instruments in the pack, allowing you to link survey items, audit indicators, policy clauses, and action items directly to the same cell. Within each cell, individual indicators follow a standard naming convention, such as <code>D1-policy-N1</code>, <code>D3-systems-E2</code>, or <code>D4-people-L1</code> (identifying the cell, the target level where N is nascent, E is established, and L is leading, and an indicator number). The <em>absent</em> level has no standalone indicators because a cell is classified as absent whenever its nascent requirements are not met.</p>
+<p>The summary grid below outlines the criteria for each dimension across the maturity levels. The <em>leading</em> column highlights what an institution must demonstrate in addition to the <em>established</em> baseline.</p>
+<table>
+<thead>
+<tr>
+<th>Dimension</th>
+<th>Absent</th>
+<th>Nascent</th>
+<th>Established</th>
+<th>Leading (adds)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>D1 Human-in-the-loop discipline</strong></td>
+<td>No published institutional position, leaving task boundaries to individual supervisors.</td>
+<td>Stated as a broad principle in policy, but without a detailed task-level demarcation.</td>
+<td>Published task demarcation, integrated into methods training, and verified in supervision and examination.</td>
+<td>+ published evaluation scores, outcome data, and external peer benchmarking.</td>
+</tr>
+<tr>
+<td><strong>D2 Responsible use in practice</strong></td>
+<td>Limited to standard student conduct rules, with no specific guidance on AI research use.</td>
+<td>A generic disclosure template exists, but lacks operational guidance for the four AI-use modes.</td>
+<td>Comprehensive rules for all four modes, actively taught, disclosed, and systematically verified.</td>
+<td>+ annual compliance data and published sector-level benchmarking.</td>
+</tr>
+<tr>
+<td><strong>D3 Tooling that promotes responsible use</strong></td>
+<td>No procurement review, leaving software choices entirely to individual researchers.</td>
+<td>Procurement review exists but relies on vendor claims, with inconsistent citation verification checks.</td>
+<td>Formal procurement standard covering all six properties, regular output auditing, and completed rights assessments.</td>
+<td>+ scheduled technical audits, independent validation of vendor claims, and an ongoing improvement cycle.</td>
+</tr>
+<tr>
+<td><strong>D4 AI-literate humans</strong></td>
+<td>Treated merely as informal software skills, with no structured curriculum or training.</td>
+<td>Isolated training options exist (such as optional library guides), but remain voluntary and uncoordinated.</td>
+<td>The six core competencies are formal curriculum outcomes, with mandatory training for supervisors and examiners.</td>
+<td>+ published evidence on provision, reach, and selected aligned performance outcomes, with a documented curriculum review process.</td>
+</tr>
+<tr>
+<td><strong>D5 Institutional benchmarking grid</strong></td>
+<td>No institutional benchmarking, with unassigned operational axes and unmanaged regulatory deadlines.</td>
+<td>Benchmarking recognized in principle, but only the policy axis has an assigned owner.</td>
+<td>Regular self-assessment on a set schedule, named owners for all axes, a regulatory plan, and committee oversight.</td>
+<td>+ published assessment results, external peer reviews, and contributions to sector standards.</td>
+</tr>
+</tbody>
+</table>
+<div class="tablecaption">
+<p>Table 5. Maturity criteria for each dimension across absent, nascent, established, and leading levels.</p>
+</div>
+<p>Appendix A of the <a href="https://instats.org/publications/responsible-ai-in-academic-research">companion report</a> expands every cell into its complete set of observable criteria. In this pack, Instrument A1 translates those criteria into sixty-eight concrete indicators that an institution evaluates using documentary evidence.</p>
+<h2 id="25-the-three-substantive-lists-modes-properties-competencies">2.5 The three substantive lists: modes, properties, competencies</h2>
+<p>Three core lists contain the practical substance of Dimensions 2, 3, and 4. They appear throughout this toolkit and are summarized below for convenient reference during assessment sessions.</p>
+<p><strong>The four AI-use modes (Dimension 2).</strong></p>
+<table>
+<thead>
+<tr>
+<th>Mode</th>
+<th>What responsible use requires</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>search</strong></td>
+<td>Use tools for initial scoping. Verify every identified citation against the primary source before citing it. Evaluate tools based on empirically measured error rates rather than vendor marketing claims.</td>
+</tr>
+<tr>
+<td><strong>co-author</strong></td>
+<td>Allow AI assistance for refining researcher-generated text, such as stylistic polishing, formatting, or length adjustment. Prohibit AI generation of text that the researcher cannot independently explain and defend. Disclose AI assistance in accordance with target publisher standards.</td>
+</tr>
+<tr>
+<td><strong>validator</strong></td>
+<td>Use AI critiques as prompts for critical thinking, not as automated validation that replaces human peer review. Conduct validation using models from a different family than the model used to generate the original text. Recognize that an AI agreeing with your argument is often a sign of sycophancy rather than scientific validity.</td>
+</tr>
+<tr>
+<td><strong>tutor</strong></td>
+<td>Prioritize corpus-grounded tutoring tools (retrieving information from approved reading lists or institutional repositories) over unconstrained chatbots. Require graduate students to demonstrate independent mastery of core concepts before treating AI-assisted progress as evidence of learning.</td>
+</tr>
+</tbody>
+</table>
+<div class="tablecaption">
+<p>Table 6. The four AI use modes and requirements for their responsible application.</p>
+</div>
+<p><strong>The six tool properties (Dimension 3): procurement criteria.</strong></p>
+<ol>
+<li><strong>Verifiable citation and resolvability</strong>, tested on representative sample queries during procurement rather than accepted from vendor documentation.</li>
+<li><strong>Data residency and training-on-input controls</strong>, requiring enterprise-managed or locally hosted environments with training on user prompts disabled for any confidential or unpublished research data.</li>
+<li><strong>Uncertainty reporting</strong>, providing explicit confidence metrics as a standard output rather than masking uncertainty behind confident text generation.</li>
+<li><strong>Reproducibility at a known model version</strong>, including date-stamped model checkpoints or weights, fixed parameters, and defined stability tolerances for non-deterministic tools.</li>
+<li><strong>Auditability</strong>, supported by secure retention of user prompt and session logs for a defined retention period.</li>
+<li><strong>Open-source and local deployment options</strong>, where required by research data sensitivity or computational reproducibility needs.</li>
+</ol>
+<p><strong>The six competencies (Dimension 4).</strong></p>
+<ol>
+<li><strong>Citation verification</strong>: verifying every citation produced in an AI workflow against the original primary source before publication.</li>
+<li><strong>Model-and-parameter specification</strong>: documenting the model version, temperature, random seed (where exposed), prompt structure, and stability testing for any AI-mediated analysis.</li>
+<li><strong>Prompt-as-fork-in-the-garden discipline</strong>: recognizing prompt selection as a researcher degree of freedom, managed through pre-registered prompt templates and prompt-sensitivity evaluations.</li>
+<li><strong>Model-heterogeneity in adversarial review</strong>: ensuring that automated critique utilizes models from different model families, avoiding self-evaluation where the same underlying parameters generate both the work and the critique.</li>
+<li><strong>Sycophancy detection and human-as-verifier discipline</strong>: treating uncritical AI agreement as a potential failure mode, and viewing AI disagreements as flags requiring human intellectual evaluation rather than automated resolution.</li>
+<li><strong>Structured failure-mode reporting</strong>: documenting the evaluation protocol, threat model, testing setup, and failure-discovery rates alongside AI-assisted research results.</li>
+</ol>
+<p>The unifying principle across all six competencies is rigorous validity reasoning. Researchers must treat AI systems as tools with specific, predictable failure modes (such as hallucination, prompt sensitivity, non-determinism, model drift, and sycophancy) and apply the same critical scrutiny they traditionally apply to p-hacking, publication bias, and other methodological threats.</p>
+<hr>
+<h1 id="part-3-how-to-run-the-assessment">Part 3 — How to run the assessment</h1>
+<h2 id="31-the-triangulation-design-and-why-the-gap-is-the-finding">3.1 The triangulation design, and why the gap is the finding</h2>
+<p>This assessment collects three independent perspectives across the twenty cells, and the primary diagnostic value lies in analyzing where these perspectives disagree.</p>
+<p><strong>A1: What leadership can document.</strong> Instrument A1 evaluates what the university has formally documented, approved, published, and reviewed. Its evidence base consists of concrete artifacts, such as policies, committee minutes, form templates, training records, procurement contracts, and regulatory impact assessments. It is completed by the administrative leaders who manage those records.</p>
+<p><strong>A2: What graduate students report.</strong> Instrument A2 asks doctoral students about their actual experiences: what guidance they received, what training was provided, what their supervisors discussed with them, what forms they completed, and what occurred during milestone reviews. Students experience the daily reality of these policies. A2 deliberately omits the five policy-axis cells because whether a policy exists is a documentary question answered by A1. Instead, A2 answers whether that policy actually reached the student body.</p>
+<p><strong>A3: What supervisors report.</strong> Instrument A3 gathers corresponding data from faculty: what training they completed, what standards they expect from students, what checks they perform, and what records they maintain. Twelve of its twenty-six questions address topics also covered in A2. Treat them as direct cohort comparisons only after checking that the referent, time period, denominator, and response scale align.</p>
+<p>None of these three instruments can stand alone. A1 establishes what the institution can support from documentary records. A2 and A3 provide criterion-specific respondent evidence only for predeclared claims that are directly aligned with an item and observable to that respondent group. They are anonymous cohort surveys, not ground truth and not matched student-supervisor dyads. The framework defines the <em>established</em> level as having policy, people, systems, and process all in place <strong>and operating on a regular schedule</strong>. Document review alone cannot establish every recipient-facing experience, while respondent evidence cannot establish that a policy or system exists.</p>
+<p>When these three perspectives diverge, three core reconciliation rules apply (detailed in Instrument A4):</p>
+<ul>
+<li><strong>Only predeclared, directly aligned respondent evidence may test a criterion at <em>established</em> or above.</strong> The item must measure the same observable claim, population, referent, and time period. Training exposure, knowledge, confidence, and contextual items remain diagnostic unless a separate criterion explicitly calls for them.</li>
+<li><strong>Student evidence takes priority only for the same recipient-facing experience.</strong> If supervisors report that a discussion occurred but the intended student recipients report that it did not reach them, the student evidence governs that recipient-facing criterion. For policy facts, system facts, supervisor-development records, and other differences without the same referent, report the two cohorts side by side and adjudicate the discrepancy. Neither cohort receives general priority.</li>
+<li><strong>When surveys show widespread local practice that lacks formal documentation in A1, retain the A1 documentary level and flag a practice/codification gap.</strong> Respondent evidence does not promote a cell. Unwritten practices cannot be audited, cannot be defended to external regulators, cannot survive staff turnover, and cannot be applied equitably across departments.</li>
+</ul>
+<p>Triangulation identifies five reporting statuses: a <em>paper gap</em> (where formal policy runs ahead of actual practice), a <em>practice gap</em> (where good practice exists locally but has never been codified in policy), a <em>transmission gap</em> (where supervisors report providing guidance but students report not receiving it), an <em>aligned</em> status (where the available sightlines agree), and <em>documentary-only / not tested</em> where no directly aligned respondent item tests the criterion.</p>
+<h2 id="32-who-to-convene">3.2 Who to convene</h2>
+<p>This assessment will fail if delegated to a single administrative office, because no single department holds all the necessary evidence. In fact, four of the twenty cells fall outside the research portfolio entirely. I recommend convening a working group consisting of the following roles or their local equivalents.</p>
+<table>
+<thead>
+<tr>
+<th>Role</th>
+<th>What they hold</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Executive Sponsor</strong> (e.g., Vice-President for Research, Deputy Vice-Chancellor Research, or Provost)</td>
+<td>Chairs the initial session or formally delegates the chair.</td>
+</tr>
+<tr>
+<td><strong>Dean of Graduate Studies</strong> or Associate Dean (Doctoral Training)</td>
+<td>Admissions, milestone reviews, supervisory allocation, and thesis examination records.</td>
+</tr>
+<tr>
+<td><strong>Director of Research Integrity</strong></td>
+<td>Institutional research policies, integrity training records, and case adjudication histories.</td>
+</tr>
+<tr>
+<td><strong>Associate Dean for Research</strong> (from a major faculty or school)</td>
+<td>Practical disciplinary evidence on whether central policies reflect local reality.</td>
+</tr>
+<tr>
+<td><strong>Lead for Doctoral Supervisor Development</strong></td>
+<td>Supervisor training curricula, attendance records, and professional development resources.</td>
+</tr>
+<tr>
+<td><strong>Academic Integrity Officer</strong></td>
+<td>Misconduct reporting data and current classifications of AI-related cases.</td>
+</tr>
+<tr>
+<td><strong>Research Librarian / Information Specialist</strong></td>
+<td>AI literacy workshops, citation verification instruction, and reference management support.</td>
+</tr>
+<tr>
+<td><strong>Chief Information Security Officer</strong> or delegate</td>
+<td>Enterprise software tenancies, log retention configurations, and software registers.</td>
+</tr>
+<tr>
+<td><strong>Data Protection Officer / Privacy Officer</strong></td>
+<td>Data privacy assessments, records of processing, and regulatory compliance timelines.</td>
+</tr>
+<tr>
+<td><strong>IT Procurement Lead</strong></td>
+<td>Software evaluation processes, vendor contracts, and enterprise licensing terms.</td>
+</tr>
+<tr>
+<td><strong>Doctoral Student Representative</strong></td>
+<td>Student perspectives across the entire session, ensuring transparent evaluation.</td>
+</tr>
+<tr>
+<td><strong>Independent Facilitator</strong></td>
+<td>Guides the scoring process objectively without a vested interest in the outcome.</td>
+</tr>
+</tbody>
+</table>
+<div class="tablecaption">
+<p>Table 7. Recommended working group roles and the institutional evidence or responsibilities each role holds.</p>
+</div>
+<blockquote>
+<p><strong>Drafting note on group size.</strong> A working group of eight to twelve people is manageable for a half-day session, whereas larger groups often become unproductive. If certain roles overlap at your institution, combine them. If a specific role does not exist, record that absence as a finding, as several indicators in Dimensions 3 and 5 explicitly evaluate whether these responsibilities are assigned.</p>
+</blockquote>
+<h2 id="33-what-it-costs-and-how-long-it-takes">3.3 What it costs and how long it takes</h2>
+<table>
+<thead>
+<tr>
+<th>Step</th>
+<th>Who</th>
+<th>Effort</th>
+<th>When</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Appoint the benchmarking lead, publish the mandate and schedule</td>
+<td>Executive Sponsor</td>
+<td>1 hour</td>
+<td>Week 1</td>
+</tr>
+<tr>
+<td>Assemble supporting documentation against A1</td>
+<td>Benchmarking lead and research analyst</td>
+<td>~10 person-days</td>
+<td>Weeks 2 to 6</td>
+</tr>
+<tr>
+<td>Administer surveys A2 and A3</td>
+<td>Graduate School administrator</td>
+<td>~2 person-days (10 min per respondent)</td>
+<td>Weeks 3 to 6 (parallel)</td>
+</tr>
+<tr>
+<td>Score the twenty cells in a facilitated session</td>
+<td>Working group (8 to 12 participants)</td>
+<td>Half-day session (~5 person-days total)</td>
+<td>Week 8</td>
+</tr>
+<tr>
+<td>Perform gap analysis and assign action items (A4)</td>
+<td>Core working group</td>
+<td>Half-day session (~3 person-days total)</td>
+<td>Week 10</td>
+</tr>
+<tr>
+<td>Prepare governing board summary and public position (A5)</td>
+<td>Benchmarking lead, signed by Sponsor</td>
+<td>~2 person-days</td>
+<td>Weeks 11 to 13</td>
+</tr>
+</tbody>
+</table>
+<div class="tablecaption">
+<p>Table 8. Implementation schedule showing steps, responsible roles, estimated effort, and expected timeline.</p>
+</div>
+<p><strong>In total, this requires roughly twenty-two to twenty-five person-days of effort over one academic quarter</strong>, alongside ten minutes from each survey respondent. It requires no new software investments or external consulting fees, unless the university decides to pursue external peer benchmarking as part of qualifying for the <em>leading</em> level on Dimension 5.</p>
+<p>The facilitated scoring workshop takes approximately four hours: fifteen minutes to review the evidence rules, ten minutes to confirm the scope of assessment, 175 minutes to evaluate the five dimensions, a fifteen-minute break, fifteen minutes to determine the policy classification (Classes A to D), and ten minutes to assign owners and deadlines to any unresolved items.</p>
+<p><strong>Confirm and record the unit of assessment before beginning.</strong> By default, evaluate the central university administration unless you explicitly decide otherwise. Many institutions have pockets of excellent practice within specific departments while central governance remains weak. Averaging these together produces an uninformative score that describes neither setting accurately. If an individual school has developed local tools that the central administration lacks, record those tools in the notes column and score the central institution based on central evidence. Individual schools can also run the assessment on their own, and comparing a department's profile against the university-wide profile often provides valuable insights.</p>
+<h2 id="34-how-to-keep-it-honest">3.4 How to keep it honest</h2>
+<p>Four core rules will keep the assessment rigorous and productive.</p>
+<p><strong>The evidence rule.</strong> Acceptable evidence includes published policy documents with explicit clause references, live system workflows or forms, official training completion registers, formal committee minutes, signed administrative procedures, dated register entries, official reports delivered to governance bodies, contract clauses, and completed regulatory impact assessments. In contrast, informal intentions, unapproved drafts, undocumented pilots, personal recollections, one-off presentation slides, undated web pages, and vendor marketing claims do not count as evidence.</p>
+<p><strong>Park items when documentation is missing rather than guessing.</strong> If supporting documentation is not available during the session, mark the indicator as <em>parked</em> rather than assuming a positive answer. Only the designated holder of the artifact should answer for that item. If participants disagree about what a document states, examine the document directly. A thorough scoring session will generate detailed documentation, so expect to record explanatory notes for roughly one out of every five indicators. Parked items should be resolved within two weeks following the session. Any item that remains unresolved stays unanswered and reduces documentary coverage. It contributes no points and blocks confirmation of its rung, but it is not evidence that the underlying practice is absent.</p>
+<p><strong>Avoid the "Partial" trap.</strong> In my experience, <em>Partial</em> is the response most frequently misused because it feels comfortable. You should only use <em>Partial</em> when a capability genuinely exists but does not fully satisfy all specified criteria. Examples include a published policy that addresses only two of the four AI-use modes, supervisor training that is implemented in only one faculty, or an asset register that has not been updated in eighteen months. <strong>A 'Partial' response never advances an institution to a higher maturity level.</strong> A maturity rung is achieved only when every indicator within it is verified as <em>Yes</em>. If a rung contains some <em>Partial</em> ratings and no <em>No</em> or unanswered items, it is classified as <em>in progress</em>. This is valuable for internal planning, but it does not raise the cell's official level. Above all, do not use <em>Partial</em> to represent future intentions. An unfulfilled intention is recorded as a "No".</p>
+<p><strong>Why guessing high (optimistically) defeats the purpose.</strong> Inflating your scores undermines the value of this assessment in three distinct ways. First, the primary output is an operational action plan. Every "No" and "Partial" response becomes a specific project on the improvement ladder in Instrument A4. If you artificially inflate an answer, you remove that project from your plan, meaning the underlying gap will not receive attention or funding. Second, the resulting profile is designed to diagnose structural constraints rather than serve as an institutional report card. Inflating the score of your weakest dimension conceals the exact bottleneck holding back your entire institution. Third, published maturity claims are verifiable. If an institution publishes an exaggerated rating, it creates an inaccurate public claim that cannot be substantiated upon inspection. It is far safer, and much more useful, to publish an honest <em>nascent</em> rating accompanied by a dated action plan than to claim an <em>established</em> rating without the documentary evidence to support it.</p>
+<h2 id="35-six-ways-this-goes-wrong">3.5 Six ways this goes wrong</h2>
+<ol>
+<li><strong>Delegating the entire assessment to a single person or office.</strong> This is the most common failure mode. No single office holds the evidence across all twenty cells. An assessment completed by the research office alone will score its own areas accurately and rely on assumptions for everything else. You must convene the cross-functional group.</li>
+<li><strong>Scoring aspirational goals rather than current reality.</strong> Evaluating the institution you hope to build rather than the one currently operating produces an unhelpful assessment. A clear sign of this problem is a scoring session that produces no parked items and no explanatory notes.</li>
+<li><strong>Treating the self-assessment as a high-stakes performance audit.</strong> If participants believe the results reflect negatively on them personally, they will defend their departments rather than report candidly, leading to an artificially inflated profile. Make clear at the start that the framework is non-prescriptive, that no external body evaluates the score, and that the goal is to build a practical work plan.</li>
+<li><strong>Skipping the student and supervisor surveys (A2 and A3).</strong> Relying solely on A1 produces a documentary review without testing selected recipient-facing and operational claims against respondent evidence. Completing A1 alone is an acceptable initial step under tight time constraints, but the resulting profile should be described as documentary only.</li>
+<li><strong>Averaging scores across operational axes.</strong> Averaging an absent axis with an established one produces an artificial middle score that conceals the exact bottleneck the framework is designed to identify. A dimension's score is always determined by its lowest axis score.</li>
+<li><strong>Procuring software before defining institutional rules.</strong> Dimension 3 evaluates whether tools support responsible research practices as defined in Dimensions 1 and 2. Procuring AI software before establishing use policies means evaluating tools against vendor marketing rather than institutional research requirements.</li>
+</ol>
+<h1 id="part-4-reading-your-results">Part 4 — Reading your results</h1>
+<h2 id="41-the-cumulative-scoring-rule-the-maturity-ratchet">4.1 The cumulative scoring rule (the maturity ratchet)</h2>
+<p>Each cell contains indicators across three sequential rungs: nascent, established, and leading. A rung is <strong>met</strong> when every indicator on it is verified as <em>Yes</em>. It is classified as <strong>in progress</strong> when at least one indicator is <em>Yes</em> or <em>Partial</em>, none is <em>No</em> or unanswered, and the full rung is not yet met. A rung is <strong>not met</strong> when documentary evidence supports at least one <em>No</em>. It is <strong>unresolved</strong> when an unanswered indicator prevents a determination and no documented <em>No</em> already establishes that the rung is not met.</p>
+<p>An institution's level within a cell is the highest rung for which that rung <strong>and every preceding rung</strong> is fully met.</p>
+<table>
+<thead>
+<tr>
+<th>Cell level</th>
+<th>Condition</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Absent</strong></td>
+<td>The nascent rung is documented as not met or is in progress.</td>
+</tr>
+<tr>
+<td><strong>Nascent</strong></td>
+<td>The nascent rung is met, but the established rung is not met.</td>
+</tr>
+<tr>
+<td><strong>Established</strong></td>
+<td>Both the nascent and established rungs are fully met.</td>
+</tr>
+<tr>
+<td><strong>Leading</strong></td>
+<td>All three rungs (nascent, established, and leading) are fully met.</td>
+</tr>
+</tbody>
+</table>
+<div class="tablecaption">
+<p>Table 9. Cumulative scoring conditions required to achieve each maturity level within an assessment cell.</p>
+</div>
+<p>This cumulative structure operates like a ratchet, ensuring that an institution cannot jump ahead without establishing the necessary foundations. In Appendix A of the <a href="https://instats.org/publications/responsible-ai-in-academic-research">companion report</a>, every <em>leading</em> cell begins with the requirement "All of <em>established</em>, plus...". Consequently, satisfying a leading indicator while failing an established one does not raise the cell's maturity level. You should still record the leading practice in your evidence register because it provides useful context and will shorten your implementation work later, but it does not move the institution's location within a given cell.</p>
+<p>If an unanswered indicator prevents the nascent rung from being demonstrated, mark the cell <strong>Unresolved/not demonstrated</strong> alongside the provisional documentary profile rather than assigning <em>absent</em> on the basis of a blank. This is an evidence-status notation, not a fifth maturity level. For an unresolved higher rung, retain the highest lower level fully demonstrated and mark the next rung unresolved.</p>
+<h2 id="42-the-dimension-is-the-minimum-of-its-axes">4.2 The dimension is the minimum of its axes</h2>
+<p><strong>This pack assigns each dimension the lowest score among its four constituent axes.</strong> It is not the mean, not the median nor the mode, and not the highest score. This is how the pack operationalizes <a href="https://instats.org/publications/responsible-ai-in-academic-research">the report</a>'s conjunctive requirement that policy, people, systems, and process must all be in place and operating on a regular schedule. Therefore, a dimension with three cells at <em>established</em> and one at <em>nascent</em> remains at <em>nascent</em> for that dimension. Advancing along a dimension requires every cell to reach that level.</p>
+<p>If any axis cell is <strong>Unresolved/not demonstrated</strong> at the nascent rung, report the dimension as <strong>Unresolved/not demonstrated</strong> in the provisional profile and list the unresolved axes. Do not assign a binding axis or binding dimension until the missing evidence is resolved, unless another documented cell already fixes the dimension at a lower level independently. This is separate from documentary coverage. A coverage verdict of Final does not make an unresolved maturity result final.</p>
+<p>In my experience, this is the rule most frequently violated when institutions adapt maturity rubrics, and doing so undermines the diagnostic value of the assessment. Calculating an average turns an absent capability into a misleading, comfortable middle score, effectively hiding the exact institutional bottleneck the grid is designed to uncover.</p>
+<h2 id="43-the-binding-axis">4.3 The binding axis</h2>
+<p><strong>This pack calls the lowest-scoring axis within a dimension the binding axis.</strong> It represents the specific bottleneck holding that dimension back. I recommend naming the binding axis whenever you report a dimension score. For example, stating that "Dimension 3 is at <em>nascent</em>, with a binding axis of <em>systems</em>" provides clear, actionable information, whereas simply stating that "Dimension 3 is at <em>nascent</em>" does not.</p>
+<p>If two or more axes share the lowest score, all tied axes are classified as binding and should be reported.</p>
+<p>Identifying the binding axis is one of the most practical outputs of the assessment because it translates an evaluation score into a concrete operational task. The four axes fail in distinct ways and require different corrective actions:</p>
+<table>
+<thead>
+<tr>
+<th>Binding axis</th>
+<th>What it means</th>
+<th>The remedy</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>policy</strong></td>
+<td>Staff and students are conducting research without a formal policy defining institutional expectations.</td>
+<td>Formalize existing good practices into policy. This is typically a six-to-ten-week drafting task and yields a better policy than drafting from scratch.</td>
+</tr>
+<tr>
+<td><strong>people</strong></td>
+<td>A formal policy exists, but no designated role has been assigned to implement and oversee it.</td>
+<td>Assign formal ownership to a specific role. This requires no capital expenditure and quickly unblocks progress across multiple cells.</td>
+</tr>
+<tr>
+<td><strong>systems</strong></td>
+<td>Policies and roles exist, but compliance data and tool inventories cannot be systematically retrieved.</td>
+<td>Construct the necessary data registers. This is often the most time-consuming task and should be started early since other reporting depends on it.</td>
+</tr>
+<tr>
+<td><strong>process</strong></td>
+<td>Central documentation exists, but requirements are not integrated into supervision, milestones, or examination.</td>
+<td>Embed requirements into existing milestones (such as thesis proposals or annual reviews) rather than creating separate administrative burdens.</td>
+</tr>
+</tbody>
+</table>
+<div class="tablecaption">
+<p>Table 10. Operational meanings and recommended corrective remedies for each binding axis failure.</p>
+</div>
+<p>Four characteristic institutional profiles tend to recur, each suggesting a distinct strategic priority:</p>
+<ul>
+<li><strong>Uniformly absent or nascent across all five dimensions.</strong> This is a common starting point for universities beginning structured AI governance. The priority is to sequence work in dimensional order, focusing initial efforts on establishing foundational policies and assigning responsible roles.</li>
+<li><strong>Policy running significantly ahead of all other axes.</strong> This is the most common pattern across the sector: a comprehensive AI policy published on a website, but lacking assigned owners, retrievable records, or milestone checkpoints. In this situation, compliance is usually limited to individual departments that take local initiative, and misconduct cases are evaluated against rules that students were never taught. The solution is not to write more policy. The institution is already proficient at drafting documents, and creating another policy will feel like progress while changing very little in practice.</li>
+<li><strong>Strong governance in Dimensions 1 and 2, but weak technical controls in Dimension 3.</strong> In this profile, task demarcations and use rules are well defined, but the software tools provided to researchers do not support those standards. Core principles cannot be implemented at scale until robust procurement standards and technical registers are established.</li>
+<li><strong>Extensive departmental innovation alongside weak central governance.</strong> This decentralized pattern frequently appears in large research universities. Central governance scores poorly, but the university as a whole possesses significant pockets of good practice. The strategic task is to document these local innovations and adopt them as institution-wide standards.</li>
+</ul>
+<h2 id="44-the-binding-dimension">4.4 The binding dimension</h2>
+<p><strong>The binding dimension is the lowest-numbered dimension sitting at the institution's lowest maturity level.</strong> This prioritization is based on the functional sequence of the framework: the five dimensions represent a chain of dependencies. For example, if both D2 and D4 sit at the minimum level, D2 is designated as the binding dimension because developing an AI literacy curriculum (D4) requires first establishing clear rules for responsible research use (D2).</p>
+<p>Evaluating the binding dimension first identifies your primary institutional constraint. Directing resources toward other dimensions before addressing the binding dimension will yield limited practical returns.</p>
+<p>There is, however, an important practical distinction to keep in mind, as explained in Instrument A4. The binding dimension identifies the primary institutional constraint, but it does not always represent the <em>first action item to complete</em>. Rungs in Dimension 4 (such as curriculum approvals and supervisor development programs) often require extended academic-year governance cycles, and their success cannot be formally verified without the records systems established in Dimension 5. When the rungs of a binding dimension require long timelines, it is often sensible to implement faster foundational tasks in other dimensions (such as establishing an evidence register) while launching the longer curriculum initiatives in parallel.</p>
+<h2 id="45-the-dimension-5-interlock">4.5 The Dimension 5 interlock</h2>
+<p>The <a href="https://instats.org/publications/responsible-ai-in-academic-research">companion report</a> identifies a fundamental consistency requirement: an institution cannot defensibly claim an <em>established</em> rating on Dimensions 1 through 4 while remaining at <em>nascent</em> on Dimension 5 (§4.1). This is because maintaining verifiable documentation and regular oversight is itself necessary to demonstrate that practices are actively operating rather than merely asserted.</p>
+<p>This requirement is applied as a formal validation check. <strong>If Dimension 5 is scored below <em>established</em>, any claim of an <em>established</em> or <em>leading</em> rating on Dimensions 1 through 4 must be recorded as <em>unassured</em>.</strong> Unassured ratings may be used for internal strategic planning, but they should not be published externally, quoted to research funders, or submitted for academic accreditation until Dimension 5 reaches <em>established</em>.</p>
+<p>This check addresses a very common finding: universities that have developed genuine, effective practices in Dimensions 1 and 2 often cannot substantiate them to an external auditor because no central office maintains the verification records.</p>
+<h2 id="46-coverage-and-the-difference-between-final-and-provisional">4.6 Coverage, and the difference between Final and Provisional</h2>
+<p>Documentary data coverage represents the proportion of the sixty-eight A1 indicators that are definitively answered as <em>Yes</em>, <em>Partial</em>, or <em>No</em> based on verifiable documentation. Parked or unanswered items do not count toward data coverage. An inability to locate evidence is not proof that the underlying practice is absent.</p>
+<ul>
+<li><strong>Documentary coverage of 80 percent or higher:</strong> the A1 assessment receives a verdict of <strong>Final</strong>, reported alongside the exact coverage percentage.</li>
+<li><strong>Documentary coverage below 80 percent:</strong> the A1 assessment receives a verdict of <strong>Provisional</strong>. The institution reports its provisional levels, notes the specific cells containing unanswered items, and establishes a target date for completing the documentary review.</li>
+</ul>
+<p>A Provisional rating is a normal and constructive outcome for a first-year assessment. It should be reported transparently as a baseline measurement of how readily the university can retrieve its own governance records, which provides immediate, actionable feedback for improving systems in Dimension 5.</p>
+<p>Institutions should also establish a minimum response threshold for surveys A2 and A3 before fielding them, below which survey findings are treated as indicative rather than level-changing. One possible starting rule is a response rate of 25 percent of the eligible population, with no individual school contributing fewer than ten responses. <strong>I strongly recommend recording these response thresholds before opening the surveys rather than adjusting them after data collection.</strong></p>
+<p><strong>Measurement and validation status.</strong> This pack is a criterion-referenced, source-anchored operational toolkit. It has not been field-calibrated as a psychometric scale. The maturity categories are ordinal, and the distance between adjacent levels should not be treated as equal. Training exposure and self-reported confidence are not proof of individual competence without a direct, aligned performance measure. Longitudinal comparisons require the same assessment unit, instrument version, survey populations, fielding window, and coding rules. The pack should not be used to rank institutions or interpret score differences as precise quantities.</p>
+<h2 id="47-why-there-is-no-single-institutional-score">4.7 Why there is no single institutional score</h2>
+<p>This toolkit deliberately avoids calculating an overall institutional score, percentage, star rating, or letter grade, and I strongly advise against adapting it to do so. In the <a href="https://instats.org/publications/responsible-ai-in-academic-research">companion report</a>, analysis of institutional case studies showed that readiness is almost never uniform across all five dimensions. As noted in §4.3 of <a href="https://instats.org/publications/responsible-ai-in-academic-research">the report</a>, the primary diagnostic value of the framework lies in identifying the specific pattern across dimensions rather than generating a single summary number. For instance, the worked example of a UK university scored near the top of the sample on Dimension 1 (human-in-the-loop discipline) while remaining at <em>nascent</em> on Dimension 3 (procurement and tooling). Calculating a single average score would erase both of those critical findings and describe an institution that does not exist. More importantly, an aggregated score conceals the specific operational bottlenecks that university leaders need to address. Identifying those precise bottlenecks is the entire practical purpose of this assessment.</p>
+<p>A single institutional score is also misleading for university governance. It encourages unhelpful comparisons between institutions that have completely different academic disciplines, student demographics, and regulatory exposures. It also tempts leadership to optimize a single overall number rather than fix the specific structural weaknesses identified in the weakest cells.</p>
+<p>The assessment produces exactly six reportable outputs:</p>
+<ol>
+<li>Twenty recorded cell levels.</li>
+<li>Five individual dimension levels.</li>
+<li>The named binding axis for each dimension.</li>
+<li>The overarching binding dimension for the institution.</li>
+<li>The assurance status derived from the Dimension 5 interlock check.</li>
+<li>The final verdict status (<em>Final</em> or <em>Provisional</em>), alongside the data coverage percentage.</li>
+</ol>
+<p>If senior leadership or a governing council asks for a single summary metric, provide them with the five dimension levels and the binding dimension. These can be presented clearly on a single line.</p>
+<h2 id="48-class-ad-placement-is-a-separate-measurement">4.8 Class A–D placement is a separate measurement</h2>
+<p>The <a href="https://instats.org/publications/responsible-ai-in-academic-research">companion report</a> also classifies university AI policies based on their <strong>substantive scope</strong>, grouping them into four distinct classes. This classification evaluates policy scope rather than operational maturity, and it is evaluated independently of the maturity grid.</p>
+<table>
+<thead>
+<tr>
+<th>Class</th>
+<th>Substantive scope</th>
+<th>In <a href="https://instats.org/publications/responsible-ai-in-academic-research">the report</a>'s sample</th>
+<th>Share</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>A</strong></td>
+<td>Generic student conduct policy with a brief AI clause added.</td>
+<td>4 of 38</td>
+<td>approx. 11 percent</td>
+</tr>
+<tr>
+<td><strong>B</strong></td>
+<td>Dedicated AI policy whose scope is limited to plagiarism and authorship rules.</td>
+<td>11 of 38</td>
+<td>approx. 29 percent</td>
+</tr>
+<tr>
+<td><strong>C</strong></td>
+<td>Dedicated AI policy extending into research integrity, validity, and reproducibility.</td>
+<td>17 of 38</td>
+<td>approx. 45 percent</td>
+</tr>
+<tr>
+<td><strong>D</strong></td>
+<td>Comprehensive policy addressing AI literacy, core competencies, and thesis examination rules.</td>
+<td>6 of 38</td>
+<td>approx. 16 percent</td>
+</tr>
+</tbody>
+</table>
+<div class="tablecaption">
+<p>Table 11. Policy classification categories by substantive scope, sample counts, and percentage distribution.</p>
+</div>
+<p>Class C represents the most common institutional approach, with Classes C and D together accounting for twenty-three of the thirty-eight universities in the <a href="https://instats.org/publications/responsible-ai-in-academic-research">companion report</a>'s audit (approximately 60 percent). The remaining 40 percent maintain policies that do not extend beyond basic plagiarism rules.</p>
+<p>Policy scope and operational maturity are independent measurements, and both variations occur in practice. An institution with a sophisticated Class C policy may sit at <em>nascent</em> on Dimension 3 because it lacks technical procurement controls. Conversely, an institution with a basic Class B policy may achieve an <em>established</em> rating on Dimension 3 due to robust central IT security and software management. Both metrics should be recorded without inferring one from the other. Section 6 of Instrument A1 provides eleven straightforward questions to determine an institution's policy class directly from its policy text.</p>
+<p>Two additional points are worth noting. First, the practical difference between Class C and Class D involves three specific elements: defining clear competency expectations for students and supervisors, formalizing training pathways, and establishing explicit examination procedures for oral defenses and thesis declarations. These are drafting and workflow updates rather than expensive capital projects, making Class D an achievable goal for any Class C institution. Second, policy classifications vary widely within national jurisdictions (with institutions in the same country sitting simultaneously at Class B and Class D), meaning that choosing peer comparison institutions based on general reputation rather than published policy scope will lead to misleading conclusions.</p>
+<hr>
+<h1 id="part-5-the-modules">Part 5 — The modules</h1>
+<p>The pack contains thirteen instruments organized across four modules. This section outlines the purpose of each instrument, who completes it, the required time commitment, and how it connects to the rest of the toolkit. Appendix A provides this information in a consolidated reference table.</p>
+<h2 id="51-module-a-the-assessment-suite">5.1 Module A — the assessment suite</h2>
+<p>Five instruments that produce, test, interpret, and report the institutional readiness profile.</p>
+<h3 id="a1-institutional-ai-readiness-maturity-self-assessment">A1 — Institutional AI-Readiness Maturity Self-Assessment</h3>
+<p><em>The primary instrument.</em> Sixty-eight evidence-based indicators evaluating the twenty cells of the grid, alongside eleven questions to determine the Class A to D policy classification. This is the only instrument in the pack that evaluates the complete grid.</p>
+<p>Every indicator evaluates practices that an external auditor could verify or refute from documentary records, and each includes an explicit prompt identifying the expected artifact. For example, one indicator asks: <em>"Does that document publish a task-level demarcation (a named catalogue of research tasks classed as work AI may carry and work AI may not substitute for) rather than a statement of principle alone?"</em> with the required evidence specified as: <em>"attach the task table or list with its clause reference, and state how many research tasks it classifies."</em> The instrument contains no subjective self-ratings.</p>
+<p><strong>Who completes it:</strong> a cross-functional working group convened by the executive sponsor (see §3.2). <strong>Time:</strong> three to four weeks of document collection, a half-day facilitated workshop, and a two-week window to verify parked items. <strong>Outputs:</strong> twenty cell levels, five dimension levels, five binding axes, the overall binding dimension, a binary Dimension 5 assurance status, a documentary coverage percentage, an assessment verdict, and a policy classification. <strong>Connections:</strong> feeds data directly into A4, where selected operational claims are tested against survey evidence, and is summarized for governance in A5.</p>
+<p>The instrument is accompanied by a calculation spreadsheet that records indicator responses and automatically computes rung completions, cell scores, dimension levels, binding axes, the binary Dimension 5 assurance status, and data coverage rates. Printable scoring worksheets are also included in the instrument.</p>
+<h3 id="a2-researcher-and-doctoral-student-survey">A2 — Researcher and Doctoral-Student Survey</h3>
+<p>Forty-two closed questions, one short-text item, and two optional open-comment questions across ten sections, examining self-reported research practices, exposure, knowledge, and context. It asks which AI tools researchers report using, what guidance they have received, what verification checks they report performing, how they handle disclosures, what formal training they completed, what discussions occurred with supervisors, and what data types they report entering into AI platforms. A twenty-four-question short form can be completed in five minutes.</p>
+<p>The survey provides conceptually relevant evidence across nine of the twenty cells. It intentionally omits the five policy-axis cells because whether a policy exists is a documentary question answered by A1. A2 evaluates whether those policies actively influence daily student research.</p>
+<p><strong>Who completes it:</strong> all enrolled doctoral candidates, invited through an attempted institutional census. It can also be extended to post-doctoral and contract research staff if desired. <strong>Time:</strong> ten minutes. <strong>Connections:</strong> feeds directly into Instrument A4, where directly aligned operational items can test selected A1 claims and the remaining items provide context for interpretation and planning. The instrument includes clean text formatted for easy import into standard survey platforms, while administrative analysis keys and crosswalk tables are included in the appendix for the analyst.</p>
+<h3 id="a3-supervisor-survey">A3 — Supervisor Survey</h3>
+<p>Twenty-six questions across seven sections, with twelve questions linked to related topics in A2. These support direct comparison only where the referent, time period, denominator, and response scale align. Otherwise, the two cohort results are reported side by side. The survey covers supervisory workloads, agreed AI research protocols, faculty knowledge of institutional policies, AI tools used in supervision, actions taken when unverified AI claims are identified, and completed professional development.</p>
+<p>Two design elements are important to note. Sections C and G ask supervisors to answer from memory before checking policy references, providing a realistic measure of baseline policy awareness. Additionally, question S1 evaluates whether Instrument G1 (the supervisor-student agreement) is actively utilized in supervision.</p>
+<p><strong>Who completes it:</strong> all faculty members currently registered as doctoral supervisors, completed anonymously. <strong>Time:</strong> ten to twelve minutes. <strong>Connections:</strong> administered concurrently with A2, feeding directly into the reconciliation analysis in A4.</p>
+<h3 id="a4-gap-analysis-worksheet-and-action-ladder">A4 — Gap-Analysis Worksheet and Action Ladder</h3>
+<p>Organized into two main sections. <strong>Part 1</strong> provides the analytical framework: it establishes the A1 documentary level, tests directly observable operational criteria against predeclared A2 and A3 evidence, preserves disagreements, applies the reconciliation rules, identifies binding axes and the binding dimension, and executes the Dimension 5 assurance check. It does not average unlike survey items into cell scores. It includes a twenty-row triangulation table, an institutional reporting profile, and an assurance checklist.</p>
+<p><strong>Part 2</strong> contains a sixty-work-package action ladder. Each of the twenty cells has three priority work packages organized around the target transitions from <em>absent to nascent</em>, <em>nascent to established</em>, and <em>established to leading</em>. These are planning packages, not a one-to-one crosswalk to the A1 criteria. Completing one work package is not, by itself, proof of a level transition. Before commissioning it, the institution names the exact A1 indicators it intends to rescore. After any package, it must conduct a fresh A1 rescore of every applicable indicator at the target rung and below for the named cell. The cell advances only when all are Yes, and the dimension advances only when all four cells qualify at the target level. Partial-rung work remains supporting rather than level-completing. Each package has a designated owner, a required evidence artifact, and an estimated timeframe. A representative entry reads: <em>"Build and publish a register of the AI tools actually used in research, assembled from expenditure data, tenant sign-in logs, and a short return from each school and college. Record for each entry: the tool class, the owner, the tier, the data classes it touches, and where the data resides."</em> (Assigned to the Chief Information Officer and Faculty Associate Deans for Research, supported by a published register containing those five fields, with an estimated timeframe of six to ten weeks).</p>
+<p>The instrument also provides ninety-day and twelve-month implementation roadmaps for the standard institutional profile, customized sequences for policy-heavy or decentralized universities, and a summary of common implementation pitfalls.</p>
+<p><strong>Who completes it:</strong> the designated benchmarking owner in collaboration with the graduate school, research integrity office, and IT leadership. <strong>Time:</strong> three to four hours for Part 1 with completed assessments in hand, and fifteen minutes per selected action item in Part 2. <strong>Connections:</strong> synthesizes data from A1, A2, and A3, and generates the executive data for A5.</p>
+<h3 id="a5-board-council-reporting-one-pager">A5 — Board / Council Reporting One-Pager</h3>
+<p>A single-page executive summary designed for university governing bodies. It presents the institutional profile in a clean five-row table displaying each dimension's score, its binding axis, progress since the previous reporting cycle, and a concise summary of the primary bottleneck. It also highlights the overall binding dimension, outlines three concrete resource requests, reviews regulatory compliance timelines, and provides a brief note explaining why maturity is not reduced to a single score. A dedicated progress column supports consistent reporting across regular governance cycles.</p>
+<p><strong>Who completes it:</strong> the designated Dimension 5 owner, countersigned by the reporting executive. <strong>Time:</strong> thirty minutes once A4 is completed, as this document summarizes the reconciled profile rather than generating new data.</p>
+<h2 id="52-module-b-the-briefings">5.2 Module B — the briefings</h2>
+<p>Five concise briefings tailored for specific leadership roles, each addressing three core questions: why this issue matters to your role, which specific decisions you uniquely own, and what questions you should ask your team this month. Each briefing is designed to be read independently without requiring prior study of the <a href="https://instats.org/publications/responsible-ai-in-academic-research">companion report</a>. They explicitly reference the relevant grid cells and cross-reference corresponding sections in <a href="https://instats.org/publications/responsible-ai-in-academic-research">the report</a>.</p>
+<p>These briefings serve as an effective entry point for institutional engagement. In practice, universities often circulate B1 to executive leadership, B2 to faculty deans, B3 to graduate school leadership, B4 to research integrity committees, and B5 to graduate student associations, initiating the broader assessment process from the resulting discussions.</p>
+<table>
+<thead>
+<tr>
+<th>Briefing</th>
+<th>Audience</th>
+<th>Read time</th>
+<th>Core decisions addressed</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>B1</strong></td>
+<td>Vice-Presidents for Research, Deputy Vice-Chancellors, Provosts</td>
+<td>10 min</td>
+<td>Deciding whether AI in research is governed under research integrity or student conduct, appointing the benchmarking owner, establishing enterprise software gates for unpublished research data, approving foundational budgets, and establishing public compliance positions for upcoming regulatory audits.</td>
+</tr>
+<tr>
+<td><strong>B2</strong></td>
+<td>Faculty Deans, Associate Deans for Research, Department Chairs</td>
+<td>15 min</td>
+<td>Defining task-level rules for academic disciplines, establishing faculty-specific task schedules, routing department software through procurement gates, integrating AI competencies into local curricula, and evaluating departmental maturity against university-wide baselines.</td>
+</tr>
+<tr>
+<td><strong>B3</strong></td>
+<td>Deans of Graduate Studies, Directors of Doctoral Colleges</td>
+<td>15 min</td>
+<td>Establishing graduate school policies with explicit examination rules, integrating the six core competencies into doctoral training, delivering supervisor professional development, and requiring supervisor-student AI agreements.</td>
+</tr>
+<tr>
+<td><strong>B4</strong></td>
+<td>Research Integrity and Graduate Studies Committees</td>
+<td>12 min</td>
+<td>Defining genuine research integrity violations in AI usage, establishing adjudication frameworks for AI misconduct cases, setting practical disclosure standards, and explaining why automated detection tools cannot replace human verification.</td>
+</tr>
+<tr>
+<td><strong>B5</strong></td>
+<td>Graduate Student Associations and Student Leaders</td>
+<td>15 min</td>
+<td>Identifying six reasonable expectations graduate students should have regarding AI governance, highlighting key academic risks facing students, defining student advocacy priorities, and using published maturity standards to evaluate university support.</td>
+</tr>
+</tbody>
+</table>
+<div class="tablecaption">
+<p>Table 12. Module B briefing documents with target audiences, estimated reading times, and core governance decisions.</p>
+</div>
+<p>Briefing B4 opens directly with the core challenge facing integrity committees: explaining why procedures built for traditional plagiarism often fail to catch the data fabrication and citation errors most commonly generated by AI systems. Briefing B5 is written from the student perspective, noting that since universities are not legally required to run these assessments, having published, transparent maturity rubrics gives student representatives a valuable tool for constructive advocacy.</p>
+<h2 id="53-module-g-the-agreement">5.3 Module G — the agreement</h2>
+<h3 id="g1-supervisorstudent-ai-use-agreement">G1 — Supervisor–Student AI-Use Agreement</h3>
+<p>The flagship operational instrument, designed to embed institutional standards directly into everyday research supervision. While many university policies state high-level principles regarding human oversight, very few clarify where that line falls for a specific doctoral project in a specific discipline. Central policy cannot anticipate the nuances of every research methodology. That determination is best made collaboratively by the student and supervisor who understand the project.</p>
+<p>Instrument G1 is completed in a single thirty-minute discussion, followed by brief ten-minute check-ins during scheduled milestone reviews. At its core is a <strong>task schedule</strong> containing twenty-one standard research tasks organized across six phases (literature search, study design, data collection and analysis, manuscript drafting, figures and visualizations, and final thesis defense), alongside blank rows for discipline-specific tasks. For each task, the student and supervisor select one of three protocols: <em>AI-assisted, with disclosure</em>, <em>Human-only</em>, or <em>Negotiated per instance</em>. Certain fundamental tasks are designated as permanently human-only by the framework: supervisor approval of analysis chapters, examiner evaluation at the oral defense, authorship determinations, and peer review assessments, as these represent points where human scholars must take personal responsibility for academic claims.</p>
+<p>The agreement also includes six operational sections: confirming which institutional policies outrank the agreement, establishing a ten-field prompt and output logging protocol, signing an explicit list of confidential data that must never be uploaded to external tools, scheduling regular milestone reviews, defining a dispute resolution process, and clarifying thesis submission requirements. It concludes with a sign-off section and a fully worked example.</p>
+<p><strong>Who completes it:</strong> the doctoral student and principal supervisor together, with co-supervisors countersigning. <strong>Outputs:</strong> a signed research protocol, a designated log repository, and an agreed review schedule (three concrete artifacts suitable for graduate school audits). <strong>Evaluates:</strong> <code>D1-process</code>, <code>D1-people</code>, <code>D2-process</code>, <code>D2-people</code>, <code>D3-systems</code>, and <code>D4-people</code>.</p>
+<p>Two key design choices are worth emphasizing. First, the <em>Negotiated per instance</em> option allows students to use AI for brainstorming or exploring alternatives (such as generating counter-arguments or reviewing code structure) while ensuring that the final analytical decisions remain entirely their own. The framework prohibits delegating final scientific decisions to software, but encourages using tools to support human critical thinking. Second, G1 is structured to protect both the student and the university. Agreed, logged, and verified AI usage has no automatic retroactive effect under a later policy change, subject to applicable law, ethics, contractual, confidentiality, funder, publisher, or other binding requirements. The agreement gives the student clear documentation to support their thesis defense.</p>
+<p>Instrument G1 was authored independently based on the task taxonomy in Appendix G of the <a href="https://instats.org/publications/responsible-ai-in-academic-research">companion report</a>. Prior published work, notably the University of New Hampshire's <em>Collaboration Agreement for Use of Generative AI in a Research Project Template</em> (April 2026), is acknowledged as the closest prior example, though G1 adopts an independent structure and operational phrasing.</p>
+<h2 id="54-module-p-the-policy-library">5.4 Module P — the policy library</h2>
+<h3 id="p1-model-institutional-ai-in-research-policy">P1 — Model Institutional AI-in-Research Policy</h3>
+<p>A complete, adoptable institutional policy template comprising fifteen clauses and four operational schedules, drafted so university legal counsel and research offices can adapt it into formal governance without starting from scratch. Its structure covers: institutional purpose, scope and application, definitions, core principles, human-in-the-loop requirements, permitted and restricted uses by research activity, disclosure requirements, data security classifications and tool tiers, procurement controls, supervision and doctoral training expectations, thesis examination procedures, publication and grant submission standards, administrative roles and responsibilities, proportionate misconduct responses, and regular policy review schedules.</p>
+<p><strong>The template is drafted to satisfy Class D standards</strong>, synthesizing the actual practices of the six Class D universities identified in the <a href="https://instats.org/publications/responsible-ai-in-academic-research">companion report</a>'s audit. If an institution prefers to target a Class C scope, it can adopt the template while omitting the specific competency and examiner clauses. This is an entirely legitimate strategic choice, but it should be made deliberately rather than through drafting oversights.</p>
+<p>Every clause includes two annotations: a <strong>drafting note</strong> explaining the rationale behind the language and suggesting local adaptations, and a <strong>framework crosswalk</strong> identifying the corresponding grid cells, <a href="https://instats.org/publications/responsible-ai-in-academic-research">companion report</a> sections, and specific audit artifacts required to demonstrate that the clause is actively functioning. Jurisdictional notes highlight where specific phrasing should be tailored to local legislation. These annotations are intended for the drafting committee and are removed prior to publication.</p>
+<p><strong>An important note on maturity levels:</strong> adopting P1 supplies evidence toward <code>D1-policy</code> through <code>D5-policy</code> at the <em>established</em> rung. It does not establish a cell or dimension. A fresh A1 assessment determines cell levels, and a rescore across all four cells determines each dimension's level. Reaching the <em>leading</em> level requires published evaluation data, verified outcome metrics, and external peer benchmarking, as evaluated in Instruments A1, A4, and A5.</p>
+<h3 id="p2-ai-use-disclosure-standard">P2 — AI-Use Disclosure Standard</h3>
+<p>A standardized institutional policy defining when AI usage must be disclosed, what information the disclosure must contain, and where disclosures belong across various research outputs (including dissertations, journal articles, grant proposals, conference presentations, datasets, software code, and technical reports), complete with customizable statement templates.</p>
+<p>Its underlying approach addresses two common misconceptions about disclosure. First, disclosure exists solely to ensure research reproducibility and provenance. <strong>Disclosure is not an admission of error or a disciplinary penalty</strong>, and the standard states this explicitly. When disclosure is perceived as risky, compliance drops dramatically. For example, a study in the <em>BMJ</em> identified an initial disclosure rate of only 5.7 percent across 25,114 submissions to 49 medical journals after introducing a mandatory disclosure field, during a period when AI tools were already widely used for literature reviews, editing, and coding. Researchers will not provide transparent disclosures if the process is cumbersome or perceived as punitive.</p>
+<p>Second, the standard emphasizes that disclosure alone does not validate research findings. While disclosure provides necessary transparency, true scientific validity depends on rigorous verification against primary sources, which remains an independent research obligation.</p>
+<p><strong>Who adopts it:</strong> the relevant university academic board or research committee as a binding standard. <strong>Time:</strong> forty-five minutes to review local adaptations, ninety minutes of committee discussion to adopt, and three minutes for a researcher to prepare a standard disclosure statement. <strong>Connections:</strong> represents the operational disclosure clause of P1 published as a standalone standard. While G1 establishes what research uses are permitted, P2 defines how those uses are formally recorded.</p>
+<h2 id="55-how-the-modules-connect">5.5 How the modules connect</h2>
+<p>The toolkit follows an integrated implementation sequence across one academic quarter:</p>
+<ol>
+<li><strong>Leadership briefings are circulated.</strong> Briefing B1 goes to executive leadership, while B2 through B5 are distributed concurrently to deans, graduate school leaders, integrity committees, and student representatives.</li>
+<li><strong>A benchmarking lead is appointed</strong> and the institutional mandate is published. This supplies evidence toward <code>D5-people → nascent</code> and takes less than an hour of executive time. It does not move the cell or dimension by itself. A fresh A1 rescore determines the cell, and Dimension 5 advances only when all four D5 cells qualify at the target level.</li>
+<li><strong>Documentation is collected and A1 is scored</strong> in a facilitated workshop, while student (A2) and supervisor (A3) surveys are administered in parallel.</li>
+<li><strong>Instrument A4 reconciles the three evidence streams</strong>, establishing recorded cell levels, identifying binding constraints, executing the Dimension 5 assurance check, and generating a prioritized twelve-month action plan with assigned owners.</li>
+<li><strong>Findings are reported to governance bodies</strong> using the A5 executive template, and the university determines what information to publish.</li>
+<li><strong>Policy templates P1 and P2 provide the formal text</strong> to address identified gaps on the policy axis.</li>
+<li><strong>Agreement G1 is deployed across doctoral programs</strong>, establishing clear supervisor-student protocols that are subsequently measured in future survey cycles through question S1 in A3.</li>
+</ol>
+<p>Universities operating on compressed timelines can complete steps 1, 2, 3, and 5 initially, deferring the remaining steps. However, institutions facing near-term regulatory deadlines should prioritize building their software registers and completing impact assessments early, as scoping an impact assessment requires first having an accurate inventory of the AI tools currently used across research projects. Building that inventory typically requires six to ten weeks of administrative effort.</p>
+<hr>
+<h1 id="part-6-a-worked-example-northgate-university">Part 6 — A worked example: Northgate University</h1>
+<p><em>Northgate University is an illustrative case study. Its institutional profile is designed to reflect typical sector challenges rather than an idealized institution, and all data points are internally consistent with the scoring logic in the companion calculation workbook.</em></p>
+<h2 id="61-the-institution">6.1 The institution</h2>
+<p>Northgate University is a comprehensive, research-intensive institution comprising six faculties, including a medical school, with 1,430 enrolled doctoral candidates and 947 registered doctoral supervisors. It co-operates a joint doctoral program with an EU partner university and utilizes an automated screening tool to process doctoral scholarship applications, which places at least one of its operational systems within the high-risk education classification governed by Article 27 of the EU AI Act from 2 August 2026.</p>
+<p>Northgate previously published <em>Generative AI in Research and Research Training</em> (2025), a standalone guidance document issued by its central Research Committee, distinct from its general student conduct rules. Substantive research integrity expectations are set out in its Research Integrity Framework 2025. The university completed the readiness assessment during the third quarter using an eleven-person working group facilitated by the University Secretary's office, fielding surveys A2 and A3 during the same period.</p>
+<p>Survey participation reached <strong>511 of 1,430 doctoral students (36 percent)</strong> and <strong>268 of 947 supervisors (28 percent)</strong>. Both cohorts exceeded Northgate's pre-established response threshold of 25 percent overall with at least ten responses per faculty, making the results eligible for the predeclared criterion-specific checks. Eligibility did not make every survey item level-changing.</p>
+<h2 id="62-the-twenty-cells-scored">6.2 The twenty cells, scored</h2>
+<p>Across the sixty-eight indicators in Instrument A1, Northgate recorded <strong>25 Yes, 3 Partial, 33 No, and 7 unanswered</strong> responses at the two-week resolution deadline. The unanswered indicators contributed no points and blocked confirmation of their rungs, but they were not recoded as No. Their affected cells were marked unresolved at the relevant rung.</p>
+<p><strong>A1 documentary coverage: 61 of 68 indicators = about 90 percent. Documentary verdict: Final.</strong></p>
+<table>
+<thead>
+<tr>
+<th>Cell</th>
+<th>Nascent rung</th>
+<th>Established rung</th>
+<th>Leading rung</th>
+<th><strong>Cell level</strong></th>
+<th>Binding evidence gap</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>D1-policy</td>
+<td>met</td>
+<td>met</td>
+<td>unresolved</td>
+<td><strong>Established</strong></td>
+<td>Leading-level evaluation evidence unresolved at the deadline.</td>
+</tr>
+<tr>
+<td>D1-people</td>
+<td>met</td>
+<td>met</td>
+<td>unresolved</td>
+<td><strong>Established</strong></td>
+<td>Leading-level publication and improvement evidence unresolved at the deadline.</td>
+</tr>
+<tr>
+<td>D1-systems</td>
+<td>met</td>
+<td>not met</td>
+<td>unresolved</td>
+<td><strong>Nascent</strong></td>
+<td>Thesis declaration is unformatted text rather than structured task categories. Leading evidence unresolved.</td>
+</tr>
+<tr>
+<td>D1-process</td>
+<td>met</td>
+<td>met</td>
+<td>unresolved</td>
+<td><strong>Established</strong></td>
+<td>Leading-level audit evidence unresolved at the deadline.</td>
+</tr>
+<tr>
+<td>D2-policy</td>
+<td>met</td>
+<td>met</td>
+<td>unresolved</td>
+<td><strong>Established</strong></td>
+<td>Leading-level compliance and review evidence unresolved at the deadline.</td>
+</tr>
+<tr>
+<td>D2-people</td>
+<td>met</td>
+<td>not met</td>
+<td>unresolved</td>
+<td><strong>Nascent</strong></td>
+<td>Four-mode rules distributed only as an unmonitored PDF guide. Leading evidence unresolved.</td>
+</tr>
+<tr>
+<td>D2-systems</td>
+<td>met</td>
+<td>not met</td>
+<td>unresolved</td>
+<td><strong>Nascent</strong></td>
+<td>AI disclosures stored only as unstructured text within thesis files. Leading evidence unresolved.</td>
+</tr>
+<tr>
+<td>D2-process</td>
+<td>met</td>
+<td>not met</td>
+<td>not met</td>
+<td><strong>Nascent</strong></td>
+<td>No formal verification of disclosures during thesis submission.</td>
+</tr>
+<tr>
+<td>D3-policy</td>
+<td>met</td>
+<td>not met</td>
+<td>not met</td>
+<td><strong>Nascent</strong></td>
+<td>Procurement policy evaluates only two of six properties and lacks the required exception protocol.</td>
+</tr>
+<tr>
+<td>D3-people</td>
+<td>met</td>
+<td>not met</td>
+<td>not met</td>
+<td><strong>Nascent</strong></td>
+<td>No software evaluation panel, and privacy and integrity officers are omitted from reviews.</td>
+</tr>
+<tr>
+<td>D3-systems</td>
+<td><strong>not met</strong></td>
+<td>not met</td>
+<td>not met</td>
+<td><strong>Absent</strong></td>
+<td>No centralized inventory of AI tools used in research.</td>
+</tr>
+<tr>
+<td>D3-process</td>
+<td>met</td>
+<td>not met</td>
+<td>not met</td>
+<td><strong>Nascent</strong></td>
+<td>Article 27 impact assessment for the admissions screening tool not completed.</td>
+</tr>
+<tr>
+<td>D4-policy</td>
+<td>met</td>
+<td>in progress</td>
+<td>not met</td>
+<td><strong>Nascent</strong></td>
+<td>Policy specifies only four of the six core competencies as learning outcomes.</td>
+</tr>
+<tr>
+<td>D4-people</td>
+<td><strong>not met</strong></td>
+<td>not met</td>
+<td>not met</td>
+<td><strong>Absent</strong></td>
+<td>No institutional training offering or designated academic lead is in place.</td>
+</tr>
+<tr>
+<td>D4-systems</td>
+<td>met</td>
+<td>not met</td>
+<td>not met</td>
+<td><strong>Nascent</strong></td>
+<td>Supported delivery lacks versioned curriculum content, aligned assessments, and retrievable completion records.</td>
+</tr>
+<tr>
+<td>D4-process</td>
+<td>met</td>
+<td>not met</td>
+<td>not met</td>
+<td><strong>Nascent</strong></td>
+<td>No scheduled review cycle for research methods curricula.</td>
+</tr>
+<tr>
+<td>D5-policy</td>
+<td>met</td>
+<td>not met</td>
+<td>not met</td>
+<td><strong>Nascent</strong></td>
+<td>Assessment not conducted against a recognized published framework.</td>
+</tr>
+<tr>
+<td>D5-people</td>
+<td>met</td>
+<td>not met</td>
+<td>not met</td>
+<td><strong>Nascent</strong></td>
+<td>No assigned ownership map across the twenty grid cells.</td>
+</tr>
+<tr>
+<td>D5-systems</td>
+<td><strong>not met</strong></td>
+<td>not met</td>
+<td>not met</td>
+<td><strong>Absent</strong></td>
+<td>Compliance records gathered manually from disparate offices on request.</td>
+</tr>
+<tr>
+<td>D5-process</td>
+<td>met</td>
+<td>not met</td>
+<td>not met</td>
+<td><strong>Nascent</strong></td>
+<td>Assessment reports not formally tabled at council or faculty boards.</td>
+</tr>
+</tbody>
+</table>
+<div class="tablecaption">
+<p>Table 13. Scoring results across twenty cells showing rung attainment, overall cell level, and evidence gaps.</p>
+</div>
+<p>The seven unresolved indicators affected <code>D1-policy</code>, <code>D1-people</code>, <code>D1-systems</code>, <code>D1-process</code>, <code>D2-policy</code>, <code>D2-people</code>, and <code>D2-systems</code>. Each is shown as unresolved at the relevant leading rung. Where a documented No already prevented an earlier rung, the unresolved leading item did not change the demonstrated lower cell level.</p>
+<p>Three cells produced particularly important diagnostic findings:</p>
+<p><strong>D3-policy is classified as <em>not met</em> at the established level.</strong> Northgate's software procurement guidelines evaluate only two of the six required technical properties: data residency and log auditability. They do not evaluate citation verification, uncertainty reporting, reproducibility at fixed model versions, or local open-source deployment options, and they lack the required exception protocol. Under A1, that documented No makes the rung <em>not met</em>. Identifying the missing criteria in the evidence register still provides a clear, manageable drafting task.</p>
+<p><strong>D4-policy is similarly classified as <em>in progress</em>.</strong> Northgate's doctoral regulations list four of the six competencies as learning outcomes (citation verification, model specification, sycophancy detection, and structured failure reporting), but omit prompt sensitivity management and model heterogeneity in adversarial review. This also results in a <em>Partial</em> rating, identifying another straightforward policy update.</p>
+<p><strong>D1-systems illustrates a very common disconnect.</strong> Northgate's electronic thesis submission portal has included a generative AI declaration field since 2025. However, it is an unstructured free-text box that does not require candidates to categorize usage against the task schedule published in the university's own Research Integrity Framework. The policy schedule and the technical form both exist, but they have never been connected.</p>
+<h2 id="63-the-dimensional-profile">6.3 The dimensional profile</h2>
+<table>
+<thead>
+<tr>
+<th>Dimension</th>
+<th>policy</th>
+<th>people</th>
+<th>systems</th>
+<th>process</th>
+<th><strong>Level (minimum)</strong></th>
+<th><strong>Binding axis</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>D1</strong> Human-in-the-loop discipline</td>
+<td>Established</td>
+<td>Established</td>
+<td><strong>Nascent</strong></td>
+<td>Established</td>
+<td><strong>Nascent</strong></td>
+<td>systems</td>
+</tr>
+<tr>
+<td><strong>D2</strong> Responsible use in practice</td>
+<td>Established</td>
+<td><strong>Nascent</strong></td>
+<td><strong>Nascent</strong></td>
+<td><strong>Nascent</strong></td>
+<td><strong>Nascent</strong></td>
+<td>people, systems, process</td>
+</tr>
+<tr>
+<td><strong>D3</strong> Tooling that promotes responsible use</td>
+<td>Nascent</td>
+<td>Nascent</td>
+<td><strong>Absent</strong></td>
+<td>Nascent</td>
+<td><strong>Absent</strong></td>
+<td>systems</td>
+</tr>
+<tr>
+<td><strong>D4</strong> AI-literate humans</td>
+<td>Nascent</td>
+<td><strong>Absent</strong></td>
+<td>Nascent</td>
+<td>Nascent</td>
+<td><strong>Absent</strong></td>
+<td>people</td>
+</tr>
+<tr>
+<td><strong>D5</strong> Institutional benchmarking grid</td>
+<td>Nascent</td>
+<td>Nascent</td>
+<td><strong>Absent</strong></td>
+<td>Nascent</td>
+<td><strong>Absent</strong></td>
+<td>systems</td>
+</tr>
+</tbody>
+</table>
+<div class="tablecaption">
+<p>Table 14. Dimensional profile showing axis ratings, minimum maturity levels, and identified binding axes.</p>
+</div>
+<p><strong>Binding dimension: D3 (Tooling that promotes responsible use).</strong> Three dimensions share the minimum score of <em>absent</em>: D3, D4, and D5. Applying the framework's sequencing rules resolves the tie in favor of the lowest-numbered dimension (D3). This prioritization makes practical sense: Northgate cannot effectively design its AI literacy curriculum (D4) or finalize its compliance benchmarking (D5) without first knowing which AI tools its researchers are using.</p>
+<p><strong>Dimension 5 assurance check: not satisfied.</strong> Because D5 sits at <em>absent</em>, well below the required <em>established</em> baseline, all four of Northgate's documented <em>established</em> cells (D1-policy, D1-people, D1-process, and D2-policy) must be recorded as <strong>unassured</strong>. Northgate may use these scores internally, but it cannot publish them or quote them in accreditation reviews until central governance reaches <em>established</em>.</p>
+<p>This finding was particularly valuable for Northgate's leadership. The university has done solid work on Dimension 1: it published a detailed task schedule, integrated task boundaries into supervisor training (achieving a 78 percent completion rate among active supervisors), updated external examiner guidelines, and established clear procedures for thesis evaluations. However, it cannot readily substantiate these achievements to an external auditor because it lacks a centralized records register. The underlying capability exists, but formal assurance does not.</p>
+<p><strong>Analyzing the institutional profile.</strong> Northgate exhibits the most common pattern across higher education: formal policy running well ahead of administrative execution. This is especially clear in Dimension 2, where policy is <em>established</em> while people, systems, and processes remain <em>nascent</em>. In this environment, effective practice depends entirely on individual departmental initiative, and the university cannot identify where compliance is strong or weak. Drafting another policy document will not resolve this bottleneck. Northgate already excels at policy drafting, and adding more documentation would create an illusion of progress without improving operational practice.</p>
+<h2 id="64-triangulation-what-the-surveys-changed">6.4 Triangulation: what the surveys changed</h2>
+<p>Northgate predeclared criterion-specific survey checks for directly observable claims at the <em>established</em> level. Policy-existence findings remained documentary questions. The table below is a screening summary. Where it does not identify an exact criterion-specific reconciliation record, the survey result is treated as contextual and cannot support an alignment claim or change the documented level.</p>
+<table>
+<thead>
+<tr>
+<th>Cell</th>
+<th>Documented level</th>
+<th>A2 student evidence</th>
+<th>A3 supervisor evidence</th>
+<th>Survey reading</th>
+<th>Reconciled level</th>
+<th>Gap type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>D1-policy</td>
+<td>Established</td>
+<td><em>not surveyed</em></td>
+<td>76% policy awareness</td>
+<td>Not tested against survey evidence</td>
+<td><strong>Established</strong></td>
+<td>Documentary-only / not tested</td>
+</tr>
+<tr>
+<td>D1-people</td>
+<td>Established</td>
+<td><strong>31% recipient report</strong></td>
+<td>68% supervisor report</td>
+<td>Not directly aligned with the A1 supervisor-development and attendance criterion</td>
+<td><strong>Established</strong></td>
+<td>Transmission diagnostic</td>
+</tr>
+<tr>
+<td>D1-process</td>
+<td>Established</td>
+<td>71%</td>
+<td>79%</td>
+<td>Context only; the criterion-specific record is not shown</td>
+<td><strong>Established</strong></td>
+<td>Documentary-only / not tested</td>
+</tr>
+<tr>
+<td>D2-policy</td>
+<td>Established</td>
+<td><em>not surveyed</em></td>
+<td>72% policy awareness</td>
+<td>Not tested against survey evidence</td>
+<td><strong>Established</strong></td>
+<td>Documentary-only / not tested</td>
+</tr>
+</tbody>
+</table>
+<div class="tablecaption">
+<p>Table 15. Reconciliation of documented cell levels with criterion-specific student and supervisor evidence.</p>
+</div>
+<p>No cell changed as a result of the criterion-specific checks. The D1-people documentary level remained <em>established</em> because the student item could not directly test whether the supervisor-development program included the required content and maintained attendance records.</p>
+<p>The 31 percent student result and 68 percent supervisor result still identify a clear transmission diagnostic. They concern whether guidance reached its intended recipients, not whether the A1 D1-people supervisor-development and attendance criterion was satisfied. Northgate therefore reported the two anonymous cohorts side by side. If the institution uses this comparison to change a level in a future cycle, it must first tie it to a separate, predeclared recipient-facing process criterion with the same referent and time period.</p>
+<p>Northgate's reconciled profile following triangulation:</p>
+<table>
+<thead>
+<tr>
+<th>Dimension</th>
+<th>Level</th>
+<th>Binding axis</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>D1</strong> Human-in-the-loop discipline</td>
+<td>Nascent</td>
+<td><strong>systems</strong></td>
+</tr>
+<tr>
+<td><strong>D2</strong> Responsible use in practice</td>
+<td>Nascent</td>
+<td><strong>people, systems, process</strong></td>
+</tr>
+<tr>
+<td><strong>D3</strong> Tooling that promotes responsible use</td>
+<td><strong>Absent</strong></td>
+<td><strong>systems</strong></td>
+</tr>
+<tr>
+<td><strong>D4</strong> AI-literate humans</td>
+<td><strong>Absent</strong></td>
+<td><strong>people</strong></td>
+</tr>
+<tr>
+<td><strong>D5</strong> Institutional benchmarking grid</td>
+<td><strong>Absent</strong></td>
+<td><strong>systems</strong></td>
+</tr>
+</tbody>
+</table>
+<div class="tablecaption">
+<p>Table 16. Reconciled dimensional profile showing maturity levels and binding axes after survey triangulation.</p>
+</div>
+<p><strong>Binding dimension: D3 (unchanged). Documentary verdict: Final (90 percent A1 coverage). Assurance status: unassured</strong> (due to D5 remaining below <em>established</em>).</p>
+<p>Triangulation revealed two strategic insights that were not apparent from the document review alone. First, the <em>systems</em> axis is the binding constraint across three of the five dimensions, making it the university's primary technical priority for resource allocation. Second, the 31 percent and 68 percent results identify a transmission diagnostic for a future recipient-facing process check, while the documented binding axis in Dimension 1 remains <em>systems</em> because the thesis submission portal fails to record structured task data.</p>
+<h2 id="65-class-ad-placement">6.5 Class A–D placement</h2>
+<p>Evaluated directly from policy documentation across eleven standardized diagnostic questions:</p>
+<table>
+<thead>
+<tr>
+<th>Gate</th>
+<th>Diagnostic question</th>
+<th>Answer</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>1</strong></td>
+<td>Does a dedicated AI policy exist, distinct from general student conduct rules?</td>
+<td>Yes (<em>Generative AI in Research and Research Training</em>, 2025).</td>
+</tr>
+<tr>
+<td><strong>1</strong></td>
+<td>Does the policy apply specifically to doctoral research rather than coursework alone?</td>
+<td>Yes (Scope clause 1.2).</td>
+</tr>
+<tr>
+<td><strong>1</strong></td>
+<td>Was it issued by central university governance or the graduate school?</td>
+<td>Yes (Research Committee).</td>
+</tr>
+<tr>
+<td><strong>2</strong></td>
+<td>Does the policy address research validity and reproducibility, rather than attribution alone?</td>
+<td>Yes.</td>
+</tr>
+<tr>
+<td><strong>2</strong></td>
+<td>Does it explicitly address citation fabrication and require verification against primary sources?</td>
+<td>Yes.</td>
+</tr>
+<tr>
+<td><strong>2</strong></td>
+<td>Does it address AI as an analytical validator, distinct from writing assistance?</td>
+<td>Yes.</td>
+</tr>
+<tr>
+<td><strong>2</strong></td>
+<td>Does it require disclosure across research outputs, rather than assessed coursework alone?</td>
+<td>Yes.</td>
+</tr>
+<tr>
+<td><strong>3</strong></td>
+<td>Does it define explicit competency standards for graduate students?</td>
+<td>Yes (four competencies specified).</td>
+</tr>
+<tr>
+<td><strong>3</strong></td>
+<td>Does it define explicit competency standards for supervisors?</td>
+<td><strong>Partial</strong> (phrased only as general aspirations).</td>
+</tr>
+<tr>
+<td><strong>3</strong></td>
+<td>Does it reference a formal curriculum or required training pathway?</td>
+<td><strong>No</strong> (relies entirely on voluntary library resources).</td>
+</tr>
+<tr>
+<td><strong>3</strong></td>
+<td>Does it define explicit examination rules for oral defenses and thesis declarations?</td>
+<td><strong>Partial</strong> (provides general defense expectations, but lacks mandatory verification requirements or examiner report fields).</td>
+</tr>
+</tbody>
+</table>
+<div class="tablecaption">
+<p>Table 17. Diagnostic gate questions and evaluation answers used for policy classification placement.</p>
+</div>
+<p><strong>Classification: Class C</strong> (Gate 3 requirements not fully satisfied).</p>
+<p>Northgate sits within the most common national policy category (Class C, representing 45 percent of the <a href="https://instats.org/publications/responsible-ai-in-academic-research">companion report</a>'s audit sample) while three of its five operational dimensions remain <em>absent</em>. This divergence illustrates why policy scope and operational maturity must be evaluated separately. Northgate has developed a respectable policy on paper, but lacks the administrative systems to execute it effectively.</p>
+<p>This classification also identifies Northgate's most cost-effective path to policy leadership. Moving from Class C to Class D requires three specific updates: defining precise competency expectations for supervisors, establishing a formal training pathway, and adding structured AI verification fields to thesis examination forms. These are administrative and drafting tasks that can be completed within standard governance cycles.</p>
+<h2 id="66-the-three-work-packages-northgate-should-complete-first">6.6 The three work packages Northgate should complete first</h2>
+<p>Three specific cells hold entire dimensions at <em>absent</em>: <code>D3-systems</code>, <code>D4-people</code>, and <code>D5-systems</code>. These represent Northgate's immediate operational priorities and can be pursued concurrently.</p>
+<p>Each item below is a priority work package toward the named target rung, not proof of a completed transition. Northgate must conduct a fresh A1 rescore of every applicable indicator at that rung and below after the work is completed. The named cell advances only when all are Yes, and its dimension advances only when all four cells qualify at the target level. Partial-rung work remains supporting.</p>
+<p><strong>Work package 1 (toward <code>D5-systems → nascent</code>): establish a central evidence register.</strong>
+Construct a centralized register documenting the specific artifact, location, designated owner, and review date for each of the twenty grid cells.
+<em>Owner:</em> Director of Research Integrity. <em>Required artifact:</em> an active register with all twenty rows completed. <em>Estimated timeframe:</em> four to eight weeks.
+<em>Why first:</em> this is the most straightforward task and provides the underlying evidence repository needed for Northgate eventually to clear the Dimension 5 assurance check. Moving <code>D5-systems</code> to <em>nascent</em> does not clear that check, which requires all four D5 cells to reach <em>established</em>.</p>
+<p><strong>Work package 2 (toward <code>D3-systems → nascent</code>): construct the research AI tool inventory.</strong>
+Build and maintain an inventory of AI tools used across research activities, compiled from IT licensing records, single-sign-on logs, and departmental returns. For each tool, document its functional category, designated owner, licensing tier (consumer or enterprise), data sensitivity classification, and data residency location.
+<em>Owner:</em> Chief Information Officer, in collaboration with Faculty Associate Deans for Research. <em>Required artifact:</em> a published software register containing all five fields, with an established update schedule. <em>Estimated timeframe:</em> six to ten weeks.
+<em>Why second:</em> this represents the binding axis of the primary binding dimension (D3) and sits on the critical path for regulatory compliance. Scoping the EU AI Act Article 27 impact assessment for the scholarship screening tool requires first having an accurate inventory of deployed systems.</p>
+<p><strong>Work package 3 (toward <code>D4-people → nascent</code>): appoint an academic lead for AI research training.</strong>
+Appoint a designated academic lead for AI research competencies, supported by a formal time allocation within the institutional workload model. An unresourced voluntary role will produce limited practical results.
+<em>Owner:</em> Vice-President for Research, in consultation with the Dean of Graduate Studies. <em>Required artifact:</em> an approved role description, formal workload allocation, and an official appointment record. <em>Estimated timeframe:</em> six to ten weeks.
+<em>Why third:</em> while Dimension 4 is an important long-term priority, formal curriculum changes operate on multi-year academic cycles and cannot be verified without the evidence register established in Rung 1. Appointing the academic lead establishes leadership for that work, but it does not advance <code>D4-people</code> while the institutional training offering required by the same nascent criterion is not present.</p>
+<p><strong>What Northgate should avoid this quarter.</strong> It should not draft additional policy documents, as its policy axis is already well developed. It should not procure new AI software tools until its procurement standards are finalized in Dimensions 1 and 2. Finally, it should not attempt to jump directly from <em>absent</em> to <em>established</em> in a single step, as establishing working systems requires first creating the foundational nascent artifacts.</p>
+<h2 id="67-what-the-profile-looks-like-twelve-weeks-later">6.7 What the profile looks like twelve weeks later</h2>
+<p>Completing these three foundational work packages requires roughly ten weeks of administrative coordination, a single academic appointment, and no capital expenditure. The table shows the result only after Northgate rescored the applicable A1 indicators.</p>
+<table>
+<thead>
+<tr>
+<th>Dimension</th>
+<th>Before</th>
+<th>After</th>
+<th>Binding axis after</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>D1</strong> Human-in-the-loop discipline</td>
+<td>Nascent</td>
+<td>Nascent</td>
+<td>systems</td>
+</tr>
+<tr>
+<td><strong>D2</strong> Responsible use in practice</td>
+<td>Nascent</td>
+<td>Nascent</td>
+<td>people, systems, process</td>
+</tr>
+<tr>
+<td><strong>D3</strong> Tooling that promotes responsible use</td>
+<td><strong>Absent</strong></td>
+<td><strong>Nascent</strong></td>
+<td>all four axes tied</td>
+</tr>
+<tr>
+<td><strong>D4</strong> AI-literate humans</td>
+<td><strong>Absent</strong></td>
+<td><strong>Absent</strong></td>
+<td>people</td>
+</tr>
+<tr>
+<td><strong>D5</strong> Institutional benchmarking grid</td>
+<td><strong>Absent</strong></td>
+<td><strong>Nascent</strong></td>
+<td>all four axes tied</td>
+</tr>
+</tbody>
+</table>
+<div class="tablecaption">
+<p>Table 18. Comparison of institutional dimensional maturity levels and binding axes before the work packages and after the A1 rescore.</p>
+</div>
+<p><strong>Two dimensions advance after the rescore.</strong> D3 and D5 move from <em>absent</em> to <em>nascent</em> because the work packages satisfy the applicable cell criteria and the remaining cells in each dimension were already at <em>nascent</em>. D4 remains <em>absent</em> because appointing the academic lead alone does not satisfy <code>D4-people</code> while the training offering is missing. The new evidence register can still support the next cycle of work in D1, including connecting the task schedule to the thesis submission portal and examining whether supervisory guidance reaches students through a separately defined recipient-facing process criterion.</p>
+<p>The Dimension 5 assurance check will continue to apply until all four D5 cells reach <em>established</em>. Clearing it will require completing the twenty-cell ownership map, formally adopting the framework within institutional policy, establishing the required systems evidence, and presenting regular assessment reports to the university council and faculty boards. On Northgate's governance calendar, this represents a realistic nine-to-twelve-month work plan toward assured <em>established</em> and <em>leading</em> claims in Dimensions 1 to 4.</p>
+<hr>
+<h1 id="part-7-adapting-the-pack">Part 7 — Adapting the pack</h1>
+<h2 id="71-the-invitation">7.1 The invitation</h2>
+<p><strong>I encourage you to adapt these instruments to fit your institution's specific needs.</strong> That flexibility is the explicit purpose of releasing this pack under an open license.</p>
+<p>The toolkit is licensed under Creative Commons Attribution 4.0 International (CC BY 4.0). You are free to copy, share, modify, translate, incorporate into internal policies, use within commercial training or consulting, and redistribute every instrument in this pack, provided you include appropriate attribution. You do not need to seek permission or notify Instats, though I welcome feedback and case studies at <a href="mailto:support@instats.org">support@instats.org</a>.</p>
+<p>This permissive license is intentional because these instruments are most effective when tailored to local contexts. For example, an institution with an existing thesis declaration should integrate these AI disclosure fields directly into that form rather than creating a separate document. A computational biology department might expand G1's task schedule with rows for protein structure prediction, while a history department might add rows for archival transcriptions. Similarly, universities operating in jurisdictions without specific AI legislation should adapt the regulatory indicators to reflect their local standards. The core capability this framework evaluates is the institutional discipline of defining clear expectations for your own researchers, rather than adhering rigidly to the templates in this pack.</p>
+<h2 id="72-what-attribution-looks-like-in-practice">7.2 What attribution looks like in practice</h2>
+<p>Under the CC BY 4.0 license, attribution simply means ensuring that readers can identify the original source and recognize where modifications have been made. In practice, this involves three basic elements:</p>
+<ol>
+<li><strong>Acknowledge the original source, author, and license.</strong></li>
+<li><strong>Provide a link to the original materials</strong> where feasible.</li>
+<li><strong>Indicate that modifications were made</strong>, if applicable.</li>
+</ol>
+<p>A standard attribution statement in a document footer or colophon satisfies these requirements:</p>
+<blockquote>
+<p><em>Adapted from</em> The Institutional AI Readiness Pack <em>by Michael J. Zyphur (Instats), licensed under CC BY 4.0, available at <a href="https://instats.org/publications/ai-readiness">instats.org/publications/ai-readiness</a>. Modified for use at [INSTITUTION NAME]. The task schedule was customized for local discipline requirements, and log retention schedules and escalation pathways were established in accordance with institutional policies.</em></p>
+</blockquote>
+<p>For an instrument used without significant changes, a shorter statement is sufficient:</p>
+<blockquote>
+<p><em>Source:</em> The Institutional AI Readiness Pack <em>by Michael J. Zyphur (Instats), CC BY 4.0, <a href="https://instats.org/publications/ai-readiness">instats.org/publications/ai-readiness</a>.</em></p>
+</blockquote>
+<p>For translated materials:</p>
+<blockquote>
+<p><em>Translated from</em> The Institutional AI Readiness Pack <em>by Michael J. Zyphur (Instats), CC BY 4.0. Translation prepared by [TRANSLATOR / INSTITUTION NAME] and not reviewed by the original author.</em></p>
+</blockquote>
+<p>Every document in this pack includes a standard attribution footer. Retaining that footer is the simplest way to satisfy licensing requirements. If you remove the footer, simply include an equivalent attribution note.</p>
+<p>Two practical points: attribution does not require repeating full license text inside individual policy clauses (a single note in your policy history or administrative colophon is entirely sufficient), and attribution does not imply that Instats has formally reviewed or endorsed your institution's specific policies.</p>
+<h2 id="73-translation-and-local-adaptation">7.3 Translation and local adaptation</h2>
+<p>I strongly encourage translations and regional adaptations. The framework evaluates standards applicable across fifteen countries, but the initial instruments are published in English with common Anglophone administrative titles. Adapting these materials for other languages and governance structures is essential for broader adoption.</p>
+<p>Four guidelines for translators and regional adapters:</p>
+<p><strong>Maintain consistent terminology within your adaptation.</strong> The core vocabulary (including the five dimension titles, four operational axes, four maturity levels, four AI-use modes, six tool properties, and six core competencies) appears across the thirteen instruments and Start Here. Use consistent terms throughout your translation, and include a brief glossary mapping your terms to the original English definitions so readers can easily reference the <a href="https://instats.org/publications/responsible-ai-in-academic-research">companion report</a>.</p>
+<p><strong>Preserve the standard cell codes.</strong> Identifiers such as <code>D1-policy</code>, <code>D3-systems</code>, and <code>D5-process</code> are language-neutral codes that link survey items, policy clauses, and action items directly to the same grid cell. Translate the descriptive text, but retain the cell identifiers.</p>
+<p><strong>Adapt regulatory references to your local legal context rather than omitting them.</strong> This pack references specific European and Australian regulations because they carry firm compliance deadlines. If those specific laws do not apply to your institution, substitute the applicable national laws, privacy standards, or voluntary sector frameworks in your jurisdiction. The indicators evaluate whether your institution has assigned ownership and established timelines for its legal compliance, regardless of which specific statutes apply.</p>
+<p><strong>Use your institution's actual administrative titles.</strong> The instruments use standard titles (such as Vice-President for Research, Dean of Graduate Studies, or Research Integrity Officer) alongside common international equivalents. Substitute your university's actual role titles before distributing briefings or surveys, as materials addressed to unfamiliar job titles are less likely to engage busy colleagues.</p>
+<h2 id="74-two-things-to-avoid">7.4 Two things to avoid</h2>
+<p><strong>Do not calculate a single, aggregated institutional score.</strong> Creating an overall summary score undermines the primary diagnostic value of the assessment, which is to identify the specific operational bottlenecks holding an institution back. If senior leadership requests a high-level summary, provide the five dimension scores and the binding dimension, which fits clearly on a single line and points directly to actionable priorities.</p>
+<p><strong>Do not present modified instruments as the original, unedited framework.</strong> Label adaptations clearly so reviewers, peer institutions, and student representatives know which version they are evaluating. Transparent benchmarking depends on everyone using the same stated criteria.</p>
+<div class="longtable">
+<h1 id="appendix-a-instrument-catalogue">Appendix A — Instrument catalogue</h1>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Instrument</th>
+<th>Purpose</th>
+<th>Who completes or reads it</th>
+<th>Length</th>
+<th>Time</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>A1</strong></td>
+<td>Institutional AI-Readiness Maturity Self-Assessment</td>
+<td>Scores the twenty cells using documentary evidence and determines dimension levels, binding constraints, and policy classification (Classes A to D).</td>
+<td>Cross-functional working group convened by the Vice-President for Research or Provost.</td>
+<td>15–20pp + workbook</td>
+<td>3–4 weeks for document collection, a half-day scoring workshop, and a 2-week resolution period.</td>
+</tr>
+<tr>
+<td><strong>A2</strong></td>
+<td>Researcher and Doctoral-Student Survey</td>
+<td>Collects student evidence on daily research practices, training exposure, knowledge, and context across 42 closed questions, 1 short-text item, and 2 optional open-comment questions.</td>
+<td>All enrolled doctoral candidates, invited through an attempted institutional census.</td>
+<td>6–8pp</td>
+<td>10 minutes (5 minutes for the 24-question short form).</td>
+</tr>
+<tr>
+<td><strong>A3</strong></td>
+<td>Supervisor Survey</td>
+<td>Gathers supervisor reporting on training, supervision practices, and policy awareness across 26 questions, including 12 linked to related A2 topics.</td>
+<td>All registered doctoral supervisors, completed anonymously.</td>
+<td>4–6pp</td>
+<td>10–12 minutes.</td>
+</tr>
+<tr>
+<td><strong>A4</strong></td>
+<td>Gap-Analysis Worksheet and Action Ladder</td>
+<td>Reconciles the three evidence streams, identifies binding constraints, executes validation checks, and selects from sixty supporting work packages.</td>
+<td>Designated benchmarking lead, in consultation with graduate school, integrity, and IT leads.</td>
+<td>10–14pp</td>
+<td>Part 1: 3–4 hours. Part 2: 15 minutes per selected action item.</td>
+</tr>
+<tr>
+<td><strong>A5</strong></td>
+<td>Board / Council Reporting One-Pager</td>
+<td>Summarizes the reconciled institutional profile, binding constraints, and resource requests for university governing bodies without aggregating to a single score.</td>
+<td>Designated Dimension 5 owner, countersigned by the reporting executive.</td>
+<td>1–2pp</td>
+<td>30 minutes once A4 is completed.</td>
+</tr>
+<tr>
+<td><strong>B1</strong></td>
+<td>Briefing: executive research leadership</td>
+<td>Reviews five core decisions owned by executive leadership, immediate diagnostic questions, and resource requirements.</td>
+<td>Vice-Presidents for Research, Deputy Vice-Chancellors, Provosts.</td>
+<td>2–3pp</td>
+<td>10 minutes.</td>
+</tr>
+<tr>
+<td><strong>B2</strong></td>
+<td>Briefing: deans and associate deans of research</td>
+<td>Addresses faculty-level governance, local research workflows, and managing disciplinary differences effectively.</td>
+<td>Deans, Associate Deans for Research, Department Chairs.</td>
+<td>2–3pp</td>
+<td>15 minutes.</td>
+</tr>
+<tr>
+<td><strong>B3</strong></td>
+<td>Briefing: graduate school leadership</td>
+<td>Identifies key touchpoints where AI intersects doctoral supervision, research training curricula, and thesis examinations.</td>
+<td>Deans of Graduate Studies, Directors of Doctoral Colleges.</td>
+<td>2–3pp</td>
+<td>15 minutes.</td>
+</tr>
+<tr>
+<td><strong>B4</strong></td>
+<td>Briefing: research-integrity and graduate studies committees</td>
+<td>Defines genuine research integrity risks in AI usage, outlines a four-part case adjudication model, and reviews detection limits.</td>
+<td>Members of research integrity boards and graduate studies committees.</td>
+<td>2–3pp</td>
+<td>12 minutes.</td>
+</tr>
+<tr>
+<td><strong>B5</strong></td>
+<td>Briefing: graduate-student associations</td>
+<td>Outlines six reasonable student expectations, evaluates key academic risks, and provides constructive advocacy tools.</td>
+<td>Graduate student associations and student governance representatives.</td>
+<td>2–3pp</td>
+<td>15 minutes.</td>
+</tr>
+<tr>
+<td><strong>G1</strong></td>
+<td>Supervisor–Student AI-Use Agreement</td>
+<td>A structured protocol for students and supervisors to agree upon task-by-task AI usage boundaries, logging rules, and review schedules.</td>
+<td>Doctoral candidates and principal supervisors collaboratively, with co-supervisors countersigning.</td>
+<td>3–4pp</td>
+<td>30 minutes for initial completion and 10 minutes per milestone review.</td>
+</tr>
+<tr>
+<td><strong>P1</strong></td>
+<td>Model Institutional AI-in-Research Policy</td>
+<td>A comprehensive Class D policy template comprising 15 clauses and 4 schedules, complete with legal and framework annotations.</td>
+<td>Research office and legal counsel, in consultation with graduate school and integrity leads.</td>
+<td>8–12pp</td>
+<td>2–3 drafting sessions plus one standard institutional review cycle.</td>
+</tr>
+<tr>
+<td><strong>P2</strong></td>
+<td>AI-Use Disclosure Standard</td>
+<td>A standardized institutional rule governing disclosure across all research output types, complete with statement templates.</td>
+<td>Formally adopted by academic board and implemented by researchers, supervisors, and students.</td>
+<td>4–6pp</td>
+<td>45 minutes to review and 90 minutes of committee discussion to adopt.</td>
+</tr>
+<tr>
+<td><strong>—</strong></td>
+<td><strong>The Institutional AI Readiness Pack</strong> (this document)</td>
+<td>The comprehensive citable overview: restating the framework, methodology, interpretation rules, worked case study, and catalogue.</td>
+<td>University leaders and working groups planning and conducting institutional assessments.</td>
+<td>50–70pp</td>
+<td>45 minutes to read, with Parts 3, 4, and 6 serving as active working sections.</td>
+</tr>
+</tbody>
+</table>
+<div class="tablecaption">
+<p>Table 19. Catalog of assessment pack instruments listing purpose, target audience, document length, and completion time.</p>
+</div>
+</div>
+<hr>
+<h1 id="appendix-b-teqsa-crosswalk">Appendix B — TEQSA crosswalk</h1>
+<p>Australia's Tertiary Education Quality and Standards Agency (TEQSA) has issued some of the most comprehensive sector guidance on generative AI in higher education, and Australian universities should use this pack in conjunction with those materials. This appendix maps the pack to TEQSA's frameworks. While drafted for Australian institutions, this alignment logic applies equally to other jurisdictions with comparable national quality standards.</p>
+<p><strong>Distinguishing between the two TEQSA toolkits.</strong> TEQSA has released two distinct publications:</p>
+<ul>
+<li><strong><em>Gen AI strategies for Australian higher education: Emerging practice</em></strong> (November 2024) is the broader sector-wide toolkit developed following an information request to all Australian higher education providers. It focuses primarily on academic integrity, coursework assessment, and teaching and learning, <strong>introducing the Process / People / Practice framework.</strong></li>
+<li><strong><em>Gen AI strategies for research training: Emerging practice</em></strong> (June 2025, 26 pages) focuses specifically on doctoral education, organized into four operational sections with binary compliance checklists and institutional case studies.</li>
+</ul>
+<p><strong>Framework alignment and distinct contributions.</strong> The Process / People / Practice model in TEQSA's November 2024 toolkit aligns closely with the four governance axes in the <a href="https://instats.org/publications/responsible-ai-in-academic-research">companion report</a> (policy, people, systems, and process). This independent structural convergence reinforces the validity of both models. The <a href="https://instats.org/publications/responsible-ai-in-academic-research">companion report</a>'s framework builds on this foundation by adding an explicit <strong>policy</strong> axis and distinguishing between <strong>systems</strong> (underlying technical infrastructure and data registers) and <strong>process</strong> (supervisory and administrative workflows), recognizing that technical and administrative failures require different solutions and owners.</p>
+<p><strong>How the toolkits work together: TEQSA defines what Australian institutions should achieve. This pack provides the practical tools to implement those practices and assess institutional maturity.</strong> The two frameworks are complementary. TEQSA's research training toolkit provides an excellent checklist and case study collection, but does not include scoring rubrics, maturity grids, survey instruments, or policy templates. This pack provides those operational instruments, enabling institutions to establish documentary levels, test selected operational claims against respondent evidence, and manage structured improvement plans.</p>
+<h2 id="the-crosswalk">The crosswalk</h2>
+<table>
+<thead>
+<tr>
+<th>TEQSA research training checklist section (June 2025)</th>
+<th>Checklist expectations</th>
+<th>Corresponding pack instruments</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>1. Induction, guidance and training</strong></td>
+<td>Inducting candidates and supervisors into AI expectations, providing accessible guidance, and delivering structured training.</td>
+<td><strong>G1</strong> (structured supervisor-student agreement) · <strong>P1</strong> cl. 10 (supervisory and training obligations) · <strong>A1</strong> indicators for D4-people, D4-process, and D1-process · <strong>A2</strong> §6–§7 and <strong>A3</strong> §F (verifying training delivery) · <strong>A4</strong> action rungs for <code>D4-people</code> and <code>D1-process</code> · <strong>B3</strong> (graduate school briefing).</td>
+</tr>
+<tr>
+<td><strong>2. The research process</strong></td>
+<td>Governing AI usage in research conduct, including data protection, methodological rigor, analysis, and primary verification.</td>
+<td><strong>P1</strong> cl. 5, 6, and 8 (human oversight, permitted uses, data classification, tool tiers) · <strong>G1</strong> §4B–§4C and §6 (task schedules and restricted data lists) · <strong>A1</strong> D1 (all axes), D2-process, D3-systems, D3-process · <strong>A2</strong> §2, §4, §8 (student tool usage, checks, and data inputs) · <strong>A4</strong> rungs for <code>D1-policy</code> and <code>D3-systems</code>.</td>
+</tr>
+<tr>
+<td><strong>3. Assessment and thesis examination</strong></td>
+<td>Aligning examination practices with AI realities, including candidate declarations, examiner guidelines, and oral defense expectations.</td>
+<td><strong>P1</strong> cl. 11 (thesis examination standards) · <strong>G1</strong> §9 (submission and defense protocols) · <strong>P2</strong> §4 (disclosure locations by output type) · <strong>A1</strong> D1-systems, D1-process, D2-process (declaration fields, examiner packs, report forms) · <strong>A3</strong> §E · <strong>B4</strong> (integrity committee briefing) · <strong>A4</strong> action rungs for <code>D1-systems</code> and <code>D2-process</code>.</td>
+</tr>
+<tr>
+<td><strong>4. Publications and grant applications</strong></td>
+<td>Ensuring transparent disclosure in publications and grant proposals aligned with publisher and research funder requirements.</td>
+<td><strong>P2</strong> in full (disclosure thresholds, required elements, output locations, and customizable statement templates) · <strong>P1</strong> cl. 7 and cl. 12 · <strong>A1</strong> D2-policy, D2-systems · <strong>A4</strong> action rungs for <code>D2-policy</code> and <code>D2-systems</code>.</td>
+</tr>
+</tbody>
+</table>
+<div class="tablecaption">
+<p>Table 20. Mapping of regulatory research training checklist sections and expectations to corresponding pack instruments.</p>
+</div>
+<h2 id="using-the-two-together">Using the two together</h2>
+<p>Australian universities can efficiently utilize both frameworks within the same review cycle. The most effective approach is to review the TEQSA checklist first to identify which broad areas the university currently addresses, complete Instrument A1 to establish documentary maturity levels across the twenty cells, and then administer surveys A2 and A3 to test directly observable operational claims and describe daily practice. The TEQSA checklist confirms broad policy coverage, while this pack evaluates operational maturity and assurance.</p>
+<p>Australian institutions should also note that the Australian Privacy Act 1988 automated-decision-making transparency requirements commence on 10 December 2026 for private universities and the Australian National University. This statutory obligation is distinct from TEQSA guidelines and spans <code>D5-policy</code> (a documented plan and owner) and <code>D5-process</code> (deadline recognition and formal governance review).</p>
+<hr>
+<h1 id="appendix-c-ai-assistance-disclosure-for-this-pack">Appendix C — AI-assistance disclosure for this pack</h1>
+<p>This disclosure documents the use of AI assistance in preparing this pack, following the transparency standards established in Appendix D of the <a href="https://instats.org/publications/responsible-ai-in-academic-research">companion report</a>.</p>
+<p><strong>AI assistance.</strong> This report used assistance from three model families while I drafted and edited the pack. Naming them precisely is the standard P2 asks institutions to meet, so this disclosure does the same.</p>
+<table>
+<thead>
+<tr>
+<th>Tool</th>
+<th>Version and setting</th>
+<th>Used for</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Anthropic Claude</td>
+<td>Opus 5, at extra and maximum reasoning effort</td>
+<td>Initial drafting of the instruments, structural design of the assessment, and orchestration of the work</td>
+</tr>
+<tr>
+<td>OpenAI Codex</td>
+<td>GPT-5.6-sol, at high and extra-high reasoning effort</td>
+<td>Adversarial review, claim checking against sources with web search enabled, and verification of cross-document consistency</td>
+</tr>
+<tr>
+<td>Google Gemini</td>
+<td>3.7 Flash, at high reasoning effort</td>
+<td>Copy-editing, voice and readability revision, and review of the rendered page layouts</td>
+</tr>
+</tbody>
+</table>
+<div class="tablecaption">
+<p>Table 21. Disclosure of artificial intelligence tools, version configurations, and specific drafting applications used.</p>
+</div>
+<p>Draft materials were developed across the thirteen instruments and Start Here, and aligned with the controlled terminology and scoring logic defined in the <a href="https://instats.org/publications/responsible-ai-in-academic-research">companion report</a>.</p>
+<p><strong>Scope of AI tool usage.</strong> Tools were used to generate initial drafts from detailed structural outlines, to verify that indicators and cell codes matched across the thirteen instruments and Start Here, to confirm cross-references to the <a href="https://instats.org/publications/responsible-ai-in-academic-research">companion report</a>, to check the internal calculations in the case study, and to copy-edit. A later pass revised the prose of every document for readability, removing constructions that read as machine-written rather than human-written.</p>
+<p><strong>Activities excluded from AI delegation.</strong> No empirical claims, interpretations of literature, statistical figures, compliance dates, or citations were generated by AI tools without direct verification against the <a href="https://instats.org/publications/responsible-ai-in-academic-research">companion report</a> and primary evidence dossiers. I authored the core framework architecture, maturity criteria, reconciliation methodology, licensing decisions, and strategic analysis directly.</p>
+<p><strong>Author responsibility.</strong> I take full responsibility for all factual statements, source interpretations, calculations, analytical conclusions, and final phrasing across this document and the thirteen accompanying instruments.</p>
+<p><strong>Conflict-of-interest statement.</strong> My professional role at Instats involves research methods training. I developed this framework and toolkit independently of Instats' commercial operations and publish them as an open contribution to the international higher education community. The pack is licensed under CC BY 4.0 so institutions can adopt and modify these instruments freely without any commercial engagement with Instats.</p>
+<hr>
+<h1 id="appendix-d-how-to-cite-this-pack-and-the-sources-it-draws-on">Appendix D — How to cite this pack, and the sources it draws on</h1>
+<h2 id="citing-the-pack">Citing the pack</h2>
+<p><strong>To cite the complete toolkit:</strong></p>
+<blockquote>
+<p>Zyphur, M. J. (2026). <em>The Institutional AI Readiness Pack: Self-Assessment and Implementation Tools for Responsible AI in Academic Research.</em> Instats Policy Series. <a href="https://instats.org/publications/ai-readiness">instats.org/publications/ai-readiness</a>. DOI: <a href="https://doi.org/10.61700/bv2nulyhht">10.61700/bv2nulyhht</a>.</p>
+</blockquote>
+<p><strong>To cite an individual instrument:</strong></p>
+<blockquote>
+<p>Zyphur, M. J. (2026). <em>A1 — Institutional AI-Readiness Maturity Self-Assessment.</em> In <em>The Institutional AI Readiness Pack.</em> Instats Policy Series. <a href="https://instats.org/publications/ai-readiness">instats.org/publications/ai-readiness</a>.</p>
+</blockquote>
+<p><strong>To cite the <a href="https://instats.org/publications/responsible-ai-in-academic-research">companion report</a></strong>, containing the full evidence base and theoretical framework:</p>
+<blockquote>
+<p>Zyphur, M. J. (2026). <em><a href="https://instats.org/publications/responsible-ai-in-academic-research">Responsible AI in Academic Research: A Competency Framework for Research Training</a>.</em> Instats Policy Series. DOI: 10.61700/t31oy23grr.</p>
+</blockquote>
+<p>If you are citing the overall theoretical model (the five dimensions, four axes, four maturity levels, and twenty cells), cite the <a href="https://instats.org/publications/responsible-ai-in-academic-research">companion report</a>. If you are citing a specific diagnostic instrument, indicator, or implementation action item, cite this pack.</p>
+<h2 id="what-this-pack-draws-on">What this pack draws on</h2>
+<p>The substantive foundations of this pack derive from the <a href="https://instats.org/publications/responsible-ai-in-academic-research">companion report</a>, which provides the formal definitions, scoring criteria, and empirical evidence summarized here. Key mappings include:</p>
+<table>
+<thead>
+<tr>
+<th>Element of the pack</th>
+<th>Report source</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>The five dimensions and core definitions</td>
+<td>Part 2, §2.1–§2.5</td>
+</tr>
+<tr>
+<td>The four operational axes</td>
+<td>§2.5</td>
+</tr>
+<tr>
+<td>The four maturity levels and criteria</td>
+<td>§4.1</td>
+</tr>
+<tr>
+<td>The twenty-cell maturity grid</td>
+<td>Appendix A</td>
+</tr>
+<tr>
+<td>The cumulative scoring rule</td>
+<td>Appendix A (<em>leading</em> criteria build on <em>established</em>)</td>
+</tr>
+<tr>
+<td>The dimension-as-minimum scoring rule</td>
+<td>§4.1 (conjunctive definition of <em>established</em>)</td>
+</tr>
+<tr>
+<td>The rationale against single summary scores</td>
+<td>§4.3</td>
+</tr>
+<tr>
+<td>The Dimension 5 validation check</td>
+<td>§4.1</td>
+</tr>
+<tr>
+<td>The Class A to D policy taxonomy</td>
+<td>§1.3, §3.2</td>
+</tr>
+<tr>
+<td>The research task schedule (behind G1 and D1)</td>
+<td>Appendix G</td>
+</tr>
+<tr>
+<td>The AI tool classifications (behind D3 and P1)</td>
+<td>Appendix C</td>
+</tr>
+<tr>
+<td>The four AI-use modes</td>
+<td>§2.2</td>
+</tr>
+<tr>
+<td>The six technical tool properties</td>
+<td>§2.3</td>
+</tr>
+<tr>
+<td>The six core competencies</td>
+<td>§2.4</td>
+</tr>
+<tr>
+<td>Fixed-date regulatory requirements</td>
+<td>§2.5, §4.2</td>
+</tr>
+<tr>
+<td>The forward-looking standard for Dimension 5</td>
+<td>§4.2</td>
+</tr>
+<tr>
+<td>Leadership briefing recommendations (B1 to B5)</td>
+<td>§5.1–§5.5</td>
+</tr>
+<tr>
+<td>Regional adaptation principles</td>
+<td>Appendix F</td>
+</tr>
+</tbody>
+</table>
+<div class="tablecaption">
+<p>Table 22. Mapping of assessment pack components to foundational sections in the <a href="https://instats.org/publications/responsible-ai-in-academic-research">companion report</a>.</p>
+</div>
+<p>The <a href="https://instats.org/publications/responsible-ai-in-academic-research">companion report</a>'s empirical findings rest on eight primary evidence dossiers covering national research funder policies, university AI regulations, competency models, publisher and journal standards, AI tool taxonomies, international data privacy legislation, research reproducibility literature, and automated adversarial review studies. Every key empirical finding in <a href="https://instats.org/publications/responsible-ai-in-academic-research">the report</a> is linked to primary sources with archived snapshot dates.</p>
+<p><strong>Prior published work.</strong> The University of New Hampshire's <em>Collaboration Agreement for Use of Generative AI in a Research Project Template</em> (April 2026) is acknowledged as an early institutional example of a supervisor-student agreement. Instrument G1 was authored independently using the task schedule in Appendix G of the <a href="https://instats.org/publications/responsible-ai-in-academic-research">companion report</a>. The two documents maintain independent structures and are licensed separately.</p>
+<p><strong>Sector guidance.</strong> When referencing guidance from national regulators or sector bodies (such as the TEQSA analysis in Appendix B), this pack cites the official titles and publication dates. Institutions using external guidance for legal or accreditation compliance should always consult the original regulatory publications directly.</p>
+<hr>
+<h1 id="appendix-e-crosswalk-this-document-to-the-report">Appendix E — Crosswalk to the Responsible AI framework</h1>
+<p>Every section in this document maps directly to corresponding sections in the companion report, <em><a href="https://instats.org/publications/responsible-ai-in-academic-research">Responsible AI in Academic Research: A Competency Framework for Research Training</a></em>.</p>
+<table>
+<thead>
+<tr>
+<th>Section of this document</th>
+<th><a href="https://instats.org/publications/responsible-ai-in-academic-research">Companion report</a> section</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Executive summary: baseline findings and policy audit</td>
+<td>Executive Summary; §1.1; §1.3; §3.2</td>
+</tr>
+<tr>
+<td>Executive summary: Dimension 5 leadership standard</td>
+<td>§4.2</td>
+</tr>
+<tr>
+<td>Executive summary: rationale against single scores</td>
+<td>§4.3</td>
+</tr>
+<tr>
+<td>Executive summary: regulatory compliance timelines</td>
+<td>§2.5</td>
+</tr>
+<tr>
+<td>1.1 The rung nobody has reached</td>
+<td>§4.2; §2.5</td>
+</tr>
+<tr>
+<td>1.2 The problem an institution cannot currently answer</td>
+<td>Executive Summary; §1.2; §1.3; Appendix C (Class 11 detection tools)</td>
+</tr>
+<tr>
+<td>1.3 What this pack is, and what it is not</td>
+<td>§4.1; §4.3; Appendix F</td>
+</tr>
+<tr>
+<td>2.1 The five dimensions</td>
+<td>Part 2 Introduction; §2.1; §2.2; §2.3; §2.4; §2.5</td>
+</tr>
+<tr>
+<td>2.1 Footnote on Dimension 2 naming</td>
+<td>§2.2 heading; §4.1 table; Appendix A row 2</td>
+</tr>
+<tr>
+<td>2.2 The four axes</td>
+<td>§2.5</td>
+</tr>
+<tr>
+<td>2.3 The four levels</td>
+<td>§4.1; Appendix A</td>
+</tr>
+<tr>
+<td>2.4 The twenty-cell grid</td>
+<td>§4.1; Part 2 summary table; Appendix A</td>
+</tr>
+<tr>
+<td>2.5 The four AI-use modes</td>
+<td>§2.2</td>
+</tr>
+<tr>
+<td>2.5 The six tool properties</td>
+<td>§2.3</td>
+</tr>
+<tr>
+<td>2.5 The six competencies</td>
+<td>§2.4</td>
+</tr>
+<tr>
+<td>3.1 Triangulation methodology</td>
+<td>§4.1 (operational definitions); Appendix A</td>
+</tr>
+<tr>
+<td>3.2 Working group composition</td>
+<td>§2.5 (people axis); §5.1–§5.4</td>
+</tr>
+<tr>
+<td>3.3 Resource requirements and timelines</td>
+<td>§4.1 (rapid review methods); §5.1</td>
+</tr>
+<tr>
+<td>3.3 Defining the unit of assessment</td>
+<td>§4.3; §5.2</td>
+</tr>
+<tr>
+<td>3.4 Evidence rules and verification standards</td>
+<td>§4.1; §2.3 (evaluating vendor claims)</td>
+</tr>
+<tr>
+<td>3.5 Common implementation pitfalls</td>
+<td>§4.1; §4.3; §2.3</td>
+</tr>
+<tr>
+<td>4.1 The cumulative scoring rule</td>
+<td>Appendix A (cumulative criteria)</td>
+</tr>
+<tr>
+<td>4.2 The dimension-as-minimum rule</td>
+<td>§4.1; §2.5</td>
+</tr>
+<tr>
+<td>4.3 Identifying the binding axis</td>
+<td>§2.5; §4.3</td>
+</tr>
+<tr>
+<td>4.3 Four common institutional profile patterns</td>
+<td>§4.3 (case study analyses)</td>
+</tr>
+<tr>
+<td>4.4 Identifying the binding dimension</td>
+<td>Part 2 Introduction (precondition sequence); §4.3</td>
+</tr>
+<tr>
+<td>4.5 The Dimension 5 validation check</td>
+<td>§4.1</td>
+</tr>
+<tr>
+<td>4.6 Data coverage, Final and Provisional status</td>
+<td>§4.1 (reviewable schedules); Appendix A</td>
+</tr>
+<tr>
+<td>4.7 Rationale against single summary scores</td>
+<td>§4.3</td>
+</tr>
+<tr>
+<td>4.8 Class A to D policy classification</td>
+<td>§1.3; §3.2</td>
+</tr>
+<tr>
+<td>5.1 Module A (assessment instruments)</td>
+<td>Part 4; Appendix A (survey methodology)</td>
+</tr>
+<tr>
+<td>5.2 Module B (leadership briefings)</td>
+<td>§5.1; §5.2; §5.3; §5.4; §5.5</td>
+</tr>
+<tr>
+<td>5.3 Module G (supervisor-student agreement)</td>
+<td>§2.1; §2.2; Appendix G; §5.3</td>
+</tr>
+<tr>
+<td>5.4 Module P (policy templates and disclosure standards)</td>
+<td>§1.3; Part 2; §2.2; §3.1; §3.3; Appendix C; Appendix G</td>
+</tr>
+<tr>
+<td>5.5 Implementation workflow</td>
+<td>§5.1; §4.2</td>
+</tr>
+<tr>
+<td>6.1–6.3 Worked case study: scoring and profiles</td>
+<td>§4.1; §4.3; Appendix A</td>
+</tr>
+<tr>
+<td>6.4 Triangulation analysis</td>
+<td>§4.1</td>
+</tr>
+<tr>
+<td>6.5 Policy classification evaluation</td>
+<td>§1.3</td>
+</tr>
+<tr>
+<td>6.6–6.7 Action prioritization and twelve-week progress</td>
+<td>§5.1; §5.3; §2.3; §2.5</td>
+</tr>
+<tr>
+<td>7.1–7.4 Adapting and translating the toolkit</td>
+<td>Appendix F (fidelity, currency, attribution)</td>
+</tr>
+<tr>
+<td>Appendix A: Instrument catalogue</td>
+<td>Part 4; Part 5</td>
+</tr>
+<tr>
+<td>Appendix B: TEQSA sector crosswalk</td>
+<td>§3.4</td>
+</tr>
+<tr>
+<td>Appendix C: AI assistance disclosure</td>
+<td>Appendix D (transparency model)</td>
+</tr>
+<tr>
+<td>Appendix D: Citation guidelines and primary sources</td>
+<td>Appendix D; Appendix E</td>
+</tr>
+</tbody>
+</table>
+<div class="tablecaption">
+<p>Table 23. Comprehensive crosswalk mapping sections of this document to corresponding <a href="https://instats.org/publications/responsible-ai-in-academic-research">companion report</a> sections.</p>
+</div>
+<hr>
+<blockquote>
+<p><em>Part of the Instats AI Readiness Pack · <a href="https://instats.org/publications/ai-readiness">instats.org/publications/ai-readiness</a> · CC BY 4.0 — adapt freely for institutional use, with attribution. Companion to</em> <a href="https://instats.org/publications/responsible-ai-in-academic-research">Responsible AI in Academic Research: A Competency Framework for Research Training</a> <em>(DOI 10.61700/t31oy23grr).</em></p>
+</blockquote>
+<div class="footnote">
+<hr>
+<ol>
+<li id="fn:d2naming">
+<p>The <a href="https://instats.org/publications/responsible-ai-in-academic-research">companion report</a> refers to this dimension using two slightly different titles. The heading in §2.2 reads "Responsible use across the four AI-use modes," while the Part 4 summary table, Appendix A, and the project repository use "Responsible use in practice." In this pack, I use <strong>Responsible use in practice</strong> consistently across all instruments and crosswalks so readers always know which dimension is being discussed.&#160;<a class="footnote-backref" href="#fnref:d2naming" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+</ol>
+</div>
+</div>
+
+<script>
+(function() {
+  // v0.22.31+: showHeader scroll-tracking removed along with the
+  // sticky-header element. Progress bar + sticky TOC remain.
+
+  // Progress bar
+  const bar = document.getElementById('progress-bar');
+  if (bar) {
+    const update = () => {
+      const h = document.documentElement;
+      const scrolled = h.scrollTop;
+      const max = h.scrollHeight - h.clientHeight;
+      const pct = max > 0 ? (scrolled / max) * 100 : 0;
+      bar.style.width = pct + '%';
+    };
+    document.addEventListener('scroll', update, { passive: true });
+    update();
+  }
+
+  // Sticky TOC — server-rendered at build time per v2.2.0 design
+  // review §6 #1. If the rail already has children, this JS does
+  // scroll-spy `.active` highlighting only. The legacy client-side
+  // populate runs only as a fallback for HTML built before the
+  // server-rendered TOC landed.
+  const tocEl = document.querySelector('#sticky-toc ol');
+  if (tocEl) {
+    if (tocEl.children.length === 0) {
+      const skip = ['cover', 'colophon', 'toc', 'exec', 'abstract'];
+      const h2s = [...document.querySelectorAll('h2')].filter(h => {
+        let n = h.parentElement;
+        while (n) {
+          if (n.classList && skip.some(c => n.classList.contains(c))) return false;
+          n = n.parentElement;
+        }
+        return true;
+      });
+      h2s.forEach((h, idx) => {
+        if (!h.id) h.id = 'sec-' + idx;
+        const li = document.createElement('li');
+        const a = document.createElement('a');
+        a.href = '#' + h.id;
+        a.textContent = h.textContent.trim();
+        li.appendChild(a);
+        tocEl.appendChild(li);
+      });
+    }
+
+    // Highlight the current section as the reader scrolls
+    const links = [...tocEl.querySelectorAll('a')];
+    const targets = links.map(a => document.getElementById(a.getAttribute('href').slice(1)));
+    const onScroll = () => {
+      const y = window.scrollY + 120;
+      let active = 0;
+      targets.forEach((t, i) => { if (t && t.offsetTop <= y) active = i; });
+      links.forEach((a, i) => a.classList.toggle('active', i === active));
+    };
+    document.addEventListener('scroll', onScroll, { passive: true });
+    onScroll();
+  }
+})();
+</script>
+</body>
+</html>
