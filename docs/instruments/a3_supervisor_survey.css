@@ -1649,3 +1649,13 @@ pre code {
 .tablecaption p {
   margin: 0;
 }
+
+.hero-finding a.title-roman {
+  color: inherit;
+  text-decoration-color: rgba(255, 255, 255, 0.62);
+  text-underline-offset: 0.14em;
+}
+.hero-finding a.title-roman:hover {
+  color: #FFFFFF;
+  text-decoration-color: #FFFFFF;
+}
