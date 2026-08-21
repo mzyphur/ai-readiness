@@ -7,46 +7,70 @@
 <meta name="description" content="Every instrument in The Institutional AI Readiness Pack, available in HTML, Word and PDF under CC BY 4.0.">
 <link rel="stylesheet" href="report.css">
 <style>
-  body { margin:0; background:#fff; }
-  .cat { max-width: 62rem; margin: 0 auto; padding: 2.5rem 1.25rem 5rem; }
-  .cat h1 { color:#00547B; margin:0 0 .35em; }
-  .cat .lede { font-size:1.06rem; color:#333; max-width:46rem; }
-  .cat h2 { color:#00547B; margin:2.4rem 0 .2rem; padding-top:1.2rem; border-top:2px solid #00547B; }
-  .cat h2 + p { margin:.15rem 0 1.2rem; color:#555; font-style:italic; }
-  .card { display:grid; grid-template-columns: 4.5rem 1fr auto; gap:1rem; align-items:start;
-           padding:1rem 1.1rem; border:1px solid #e3e3e6; border-radius:8px; margin-bottom:.7rem;
-           background:#fff; }
-  .card .id { font-weight:700; color:#3092B1; font-size:1.05rem; }
-  .card .name { font-weight:600; color:#111; }
-  .card .meta { color:#666; font-size:.9rem; margin-top:.2rem; }
-  .dl { display:flex; gap:.4rem; flex-wrap:wrap; }
-  .dl a { display:inline-block; padding:.3rem .7rem; border-radius:5px; text-decoration:none;
-           font-size:.82rem; font-weight:600; background:#00547B; color:#fff; }
-  .dl a.alt { background:#3092B1; }
-  .licence { background:#F5F5F7; border-left:4px solid #3092B1; padding:1.1rem 1.3rem;
-              border-radius:0 6px 6px 0; margin:2.5rem 0 0; }
-  .licence strong { color:#00547B; }
-  .back { display:inline-block; margin-bottom:1.5rem; color:#3092B1; text-decoration:none; font-weight:600; }
+  :root { --cat-navy:#00547B; --cat-teal:#3092B1; --cat-panel:#F5F5F7; }
+  body { margin:0; background:#f6f8fa; color:#20252b; }
+  .cat-hero { background:linear-gradient(135deg,#003c59 0%,var(--cat-navy) 58%,#117b9f 100%);
+               color:#fff; box-shadow:0 8px 28px rgba(0,43,63,.18); }
+  .hero-inner,.cat { max-width:68rem; margin:0 auto; padding-left:1.5rem; padding-right:1.5rem; }
+  .hero-inner { padding-top:1.4rem; padding-bottom:3.25rem; }
   .brand { display:flex; align-items:center; justify-content:space-between; gap:1rem;
-            padding-bottom:1.1rem; margin-bottom:1.6rem; border-bottom:3px solid #00547B; flex-wrap:wrap; }
-  .brand img { height:44px; width:auto; display:block; }
-  .brand .series { font-size:.78rem; letter-spacing:.09em; text-transform:uppercase;
-                    color:#3092B1; font-weight:700; }
+            padding-bottom:2.5rem; flex-wrap:wrap; }
+  .brand-logo { display:inline-flex; padding:.55rem .75rem; background:#fff; border-radius:10px;
+                 box-shadow:0 4px 18px rgba(0,0,0,.12); }
+  .brand img { height:42px; width:auto; display:block; }
+  .brand .series { font-size:.76rem; letter-spacing:.12em; text-transform:uppercase;
+                    color:#d7f1f8; font-weight:700; }
+  .context { margin:0 0 .8rem; font-family:Georgia,serif; font-size:1.03rem; color:#d7f1f8; }
+  .context a { color:#fff; text-decoration-thickness:1px; text-underline-offset:3px; }
+  .cat-hero h1 { color:#fff; margin:0 0 .35rem; font-size:clamp(2.25rem,6vw,4.3rem);
+                  letter-spacing:-.035em; line-height:1.02; }
+  .cat-hero .lede { margin:.9rem 0 0; max-width:49rem; font-family:Georgia,serif;
+                     font-size:clamp(1.05rem,2.4vw,1.28rem); line-height:1.55; color:#ecf8fb; }
+  .cat { padding-top:2.25rem; padding-bottom:5rem; }
+  .cat h2 { color:var(--cat-navy); margin:2.6rem 0 .25rem; padding-top:1.1rem;
+             border-top:2px solid #c9dbe3; }
+  .cat h2:first-child { margin-top:0; border-top:0; padding-top:0; }
+  .cat h2 + p { margin:.2rem 0 1.15rem; color:#58636b; font-style:italic; }
+  .card { display:grid; grid-template-columns:4.5rem minmax(0,1fr) auto; gap:1.15rem; align-items:center;
+           padding:1.15rem 1.25rem; border:1px solid #dfe7eb; border-radius:12px; margin-bottom:.8rem;
+           background:#fff; box-shadow:0 3px 12px rgba(0,55,80,.05);
+           transition:transform .15s ease,box-shadow .15s ease,border-color .15s ease; }
+  .card:hover { transform:translateY(-1px); border-color:#b8d2dd; box-shadow:0 8px 22px rgba(0,55,80,.09); }
+  .card .id { display:inline-flex; align-items:center; justify-content:center; width:3.2rem; min-height:2.15rem;
+               border-radius:999px; background:#e7f4f8; font-weight:800; color:var(--cat-navy); font-size:.92rem; }
+  .card .name { font-weight:700; color:#18252c; line-height:1.35; }
+  .card .meta { color:#69747b; font-size:.86rem; margin-top:.3rem; }
+  .dl { display:flex; gap:.45rem; flex-wrap:wrap; justify-content:flex-end; }
+  .dl a { display:inline-block; padding:.45rem .75rem; border-radius:7px; text-decoration:none;
+           font-size:.8rem; font-weight:700; background:var(--cat-navy); color:#fff;
+           border:1px solid var(--cat-navy); }
+  .dl a:hover { filter:brightness(1.08); }
+  .dl a.view { background:#fff; color:var(--cat-navy); }
+  .dl a.alt { background:var(--cat-teal); border-color:var(--cat-teal); }
+  .licence { background:var(--cat-panel); border-left:4px solid var(--cat-teal); padding:1.2rem 1.4rem;
+              border-radius:0 9px 9px 0; margin:2.75rem 0 0; }
+  .licence strong { color:#00547B; }
   @media (max-width: 640px) {
-    .card { grid-template-columns: 1fr; }
+    .hero-inner,.cat { padding-left:1rem; padding-right:1rem; }
+    .brand { padding-bottom:2rem; }
+    .card { grid-template-columns:1fr; align-items:start; }
+    .dl { justify-content:flex-start; }
   }
 </style>
 </head>
 <body>
-<div class="cat">
-  <div class="brand">
-    <a href="https://instats.org"><img src="assets/instats_logo.svg" alt="Instats"></a>
-    <span class="series">INSTATS POLICY SERIES</span>
+<header class="cat-hero">
+  <div class="hero-inner">
+    <div class="brand">
+      <a class="brand-logo" href="https://instats.org"><img src="assets/instats_logo.svg" alt="Instats"></a>
+      <span class="series">INSTATS POLICY SERIES</span>
+    </div>
+    <p class="context">Resources for <a href="https://instats.org/publications/the-institutional-ai-readiness-pack"><em>The Institutional AI Readiness Pack</em></a></p>
+    <h1>Instruments and downloads</h1>
+    <p class="lede">Read any instrument in your browser, download an editable Word copy, or use the PDF for circulation. The full collection is open for institutional adaptation under CC BY 4.0.</p>
   </div>
-  <a class="back" href="index.html">&larr; Back to the pack</a>
-  <h1>Instruments</h1>
-  <p class="lede">Every instrument in The Institutional AI Readiness Pack. Read the HTML version in your browser, download
-  the Word version to edit, or download the PDF to read and circulate. All are licensed CC BY 4.0.</p>
+</header>
+<main class="cat">
   <h2>Start here</h2>
   <p>One page on what the pack contains and where to begin. Read this first.</p>
   <div class="card">
@@ -148,6 +172,6 @@
     <p style="margin-bottom:0">Suggested line: <em>Adapted from The Institutional AI Readiness Pack
     (Instats, 2026), CC BY 4.0.</em></p>
   </div>
-</div>
+</main>
 </body>
 </html>

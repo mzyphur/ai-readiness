@@ -5,7 +5,7 @@
 
 assets/instats_logo.png  ->  https://mzyphur.github.io/ai-readiness/assets/instats_logo.png
 assets/instats_logo.png  ->  https://mzyphur.github.io/ai-readiness/assets/instats_logo.png
-report.instats.css?v=114b7ca752b9  ->  https://mzyphur.github.io/ai-readiness/report.instats.css?v=114b7ca752b9
+report.instats.css?v=3fe83c76f561  ->  https://mzyphur.github.io/ai-readiness/report.instats.css?v=3fe83c76f561
 assets/instats_logo.png  ->  https://mzyphur.github.io/ai-readiness/assets/instats_logo.png
 Instats - The Institutional AI Readiness Pack.pdf  ->  https://mzyphur.github.io/ai-readiness/Instats - The Institutional AI Readiness Pack.pdf
 Instats - The Institutional AI Readiness Pack.docx  ->  https://mzyphur.github.io/ai-readiness/Instats - The Institutional AI Readiness Pack.docx

@@ -3,27 +3,27 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500&family=Montserrat:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400;1,8..60,500&display=swap");
 
 .instats-report {
-
-  --instats-primary:   #00547B;
-  --instats-secondary: #3092B1;
-  --instats-bg:        #F5F5F7;
-  --instats-tag:       #F1F0F1;
+  
+  --instats-primary:   #00547B;   
+  --instats-secondary: #3092B1;   
+  --instats-bg:        #F5F5F7;   
+  --instats-tag:       #F1F0F1;   
   --instats-primary-dk: #003F5C;
   --instats-secondary-lt: #BFE0EC;
 
-
+  
   --ink:        #212529;
   --ink-soft:   #495057;
   --paper:      var(--instats-bg);
   --cover-bg:   #FFFFFF;
-  --accent:     #C5283D;
+  --accent:     #C5283D;  
   --rule:       #DEE2E6;
   --rule-soft:  var(--instats-tag);
   --highlight:  #FFF7E6;
   --quote-bar:  var(--instats-secondary);
   --code-bg:    var(--instats-tag);
 
-
+  
   --serif:      "Source Serif 4", "Charter", "Iowan Old Style", "Georgia", "Times New Roman", serif;
   --sans:       "Montserrat", "Inter", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   --meta:       "Inter", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
@@ -31,7 +31,7 @@
   --mono:       "JetBrains Mono", "SF Mono", "Menlo", monospace;
   --measure:    68ch;
 
-
+  
   --type-display-xl-size:    54px;
   --type-display-xl-lh:      1.05;
   --type-display-xl-weight:  700;
@@ -86,9 +86,9 @@
   background: var(--paper);
   margin: 0;
   line-height: 1.65;
-
+  
   font-optical-sizing: auto;
-
+  
   font-variant-numeric: oldstyle-nums;
   hanging-punctuation: first last;
 }
@@ -101,7 +101,7 @@
 
 .instats-report p, .instats-report li, .instats-report blockquote, .instats-report dd {
   text-wrap: pretty;
-
+  
   hyphens: manual;
 }
 .instats-report h1, .instats-report h2, .instats-report h3, .instats-report h4 {
@@ -119,7 +119,7 @@
 
 .instats-report .cover {
   background: var(--cover-bg);
-
+  
   padding: 0 56px;
   margin-bottom: 0;
   border-top: 6px solid var(--instats-primary);
@@ -178,7 +178,7 @@
 
 .instats-report .cover h2 {
   font-family: var(--serif);
-  font-size: 1.55rem;
+  font-size: 1.55rem;            
   font-style: italic;
   line-height: 1.3;
   color: var(--instats-secondary);
@@ -193,7 +193,7 @@
 .instats-report .cover .abstract {
   font-family: var(--serif);
   font-style: italic;
-  font-size: 1.12rem;
+  font-size: 1.12rem;            
   line-height: 1.55;
   color: var(--ink-soft);
   max-width: 60ch;
@@ -202,6 +202,8 @@
   border-left: 2px solid var(--instats-primary);
 }
 .instats-report .cover .abstract p { max-width: none; margin: 0; font-family: inherit; font-style: inherit; font-size: inherit; color: inherit; }
+
+.instats-report .title-roman { font-style: normal; }
 
 
 .instats-report .cover .author {
@@ -249,7 +251,7 @@
   margin: 20px -36px 28px -36px;
   border-left: 3px solid var(--instats-secondary);
   font-family: var(--sans);
-  font-size: 0.81rem;
+  font-size: 0.81rem;           
   color: var(--ink-soft);
   line-height: 1.55;
 }
@@ -274,7 +276,7 @@
 
 .instats-report .exec {
   background: var(--paper-tint, var(--instats-bg));
-  margin: 28px -52px 52px;
+  margin: 28px -52px 52px;       
   padding: 36px 52px 40px;
   border-top: 1px solid var(--rule);
   border-bottom: 1px solid var(--rule);
@@ -288,7 +290,7 @@
 }
 
 .instats-report .exec > h2:first-of-type {
-
+  
   font-family: var(--sans);
   font-weight: 700;
   font-size: 11px;
@@ -390,12 +392,12 @@
   position: relative;
   font-family: var(--serif);
   font-style: italic;
-  font-size: 1.55rem;
+  font-size: 1.55rem;          
   line-height: 1.35;
   color: var(--ink);
   margin: 40px 10% 40px 0;
   padding: 4px 0 4px 24px;
-  border-left: 0;
+  border-left: 0;               
   background: transparent;
   max-width: none;
 }
@@ -405,8 +407,8 @@
   content: "";
   position: absolute;
   left: 0;
-  top: 0.2em;
-  width: 4px;
+  top: 0.2em;                   
+  width: 4px;                   
   height: 1.5em;
   background: var(--instats-primary);
 }
@@ -438,7 +440,7 @@
 .instats-report .toc h1 {
   font-family: var(--display);
   font-weight: 700;
-  font-size: 0.85rem;
+  font-size: 0.85rem;            
   letter-spacing: 0.14em;
   text-transform: uppercase;
   color: var(--instats-primary);
@@ -512,7 +514,7 @@
 .instats-report h2 {
   font-family: var(--sans);
   font-weight: 700;
-  font-size: 1.13rem;
+  font-size: 1.13rem;            
   color: var(--instats-primary);
   margin: 36px 0 12px 0;
   padding-bottom: 6px;
@@ -525,7 +527,7 @@
 .instats-report h3 {
   font-family: var(--sans);
   font-weight: 700;
-  font-size: 1.0rem;
+  font-size: 1.0rem;             
   color: var(--instats-secondary);
   margin: 26px 0 9px 0;
   line-height: 1.3;
@@ -706,7 +708,7 @@
   text-decoration: none;
   padding: 0 2px;
   font-weight: 600;
-
+  
   display: inline-block;
   line-height: 1;
 }
@@ -746,7 +748,7 @@
   font-family: var(--meta);
   font-size: 0.83rem;
   color: var(--ink-soft);
-  line-height: 1.44;
+  line-height: 1.44;        
   margin-top: 80px;
   padding-top: 32px;
   border-top: 1px solid var(--rule);
@@ -781,7 +783,7 @@
 }
 
 @media print {
-
+  
   .instats-report {
     font-size: 11pt;
     line-height: 1.5;
@@ -793,15 +795,15 @@
     print-color-adjust: exact;
   }
 
-
+  
   .instats-report .sticky-toc, .instats-report .progress-bar, .instats-report .site-nav, .instats-report nav.navbar, .instats-report .web-only {
     display: none !important;
   }
 
-
+  
   .instats-report .wrap { padding: 0; max-width: none; }
 
-
+  
   .instats-report h1 { break-before: auto; }
   .instats-report .exec > h1:first-of-type {
     break-before: auto;
@@ -813,16 +815,16 @@
     break-inside: avoid;
   }
 
-
+  
   .instats-report .pagebreak + .pagebreak, .instats-report .pagebreak + hr, .instats-report hr + .pagebreak, .instats-report hr + hr { display: none; }
 
-
+  
   .instats-report a {
     color: var(--ink);
     text-decoration: underline;
     text-decoration-thickness: 0.5px;
   }
-
+  
   .instats-report a[href^="http"]::after { content: none; }
 }
 
@@ -834,7 +836,7 @@
   left: 0;
   right: 0;
   height: 56px;
-
+  
   background: #FFFFFF;
   border-bottom: 1px solid var(--rule-soft);
   display: flex;
@@ -918,18 +920,18 @@
   top: 0;
   left: 0;
   height: 3px;
-  width: 0;
+  width: 0;                          
   background: var(--instats-primary);
-  z-index: 100;
+  z-index: 100;                      
   transition: width 0.06s linear;
   pointer-events: none;
 }
 
 .instats-report .sticky-toc {
-  display: none;
+  display: none;                     
   position: fixed;
   top: 80px;
-
+  
   left: max(16px, calc((100% - 880px) / 2 - 280px));
   width: 240px;
   max-height: calc(100vh - 160px);
@@ -995,7 +997,7 @@
   text-align: center;
 }
 .instats-report .hero-series {
-
+  
   font-family: var(--display, var(--sans));
   font-size: 0.78rem;
   font-weight: 700;
@@ -1005,7 +1007,7 @@
   margin-bottom: 20px;
 }
 .instats-report .hero-title {
-
+  
   font-family: var(--display, var(--sans));
   font-size: 2.75rem;
   line-height: 1.06;
@@ -1014,11 +1016,11 @@
   color: #FFFFFF;
   margin: 0 auto 8px auto;
   max-width: 22ch;
-  border-bottom: none;
+  border-bottom: none;     
   padding-bottom: 0;
 }
 .instats-report .hero-subtitle {
-
+  
   font-family: var(--serif);
   font-size: 1.55rem;
   line-height: 1.3;
@@ -1030,9 +1032,9 @@
   max-width: 38ch;
 }
 .instats-report .hero-finding {
-
+  
   font-family: var(--serif);
-  font-size: 1.18rem;
+  font-size: 1.18rem;            
   line-height: 1.55;
   font-style: italic;
   font-weight: 400;
@@ -1041,10 +1043,10 @@
   margin: 0 auto 32px auto;
   padding: 6px 0 6px 22px;
   border-left: 2px solid var(--instats-secondary, #3092B1);
-  text-align: left;
+  text-align: left;             
 }
 .instats-report .hero-byline {
-
+  
   font-family: var(--meta);
   font-size: 0.84rem;
   line-height: 1.5;
@@ -1119,7 +1121,7 @@
   background: transparent;
   color: #FFFFFF;
   border: 1px solid rgba(255, 255, 255, 0.6);
-  padding: 10px 19px;
+  padding: 10px 19px;       
 }
 .instats-report .hero-btn-repo:hover {
   background: #FFFFFF;
@@ -1162,12 +1164,12 @@
 
 
 @media print {
-
+  
   .instats-report figure, .instats-report table, .instats-report blockquote, .instats-report .colophon, .instats-report .toc { page-break-inside: avoid; }
   .instats-report h1 { page-break-before: auto; }
   .instats-report .exec > h1:first-of-type { page-break-before: auto; }
   .instats-report h2, .instats-report h3 { page-break-after: avoid; }
-
+  
   .instats-report .hero { display: none !important; }
 }
 
@@ -1262,7 +1264,8 @@
   outline-offset: 3px;
 }
 
-
+/* Download Word variant — Instats secondary (teal) so the two
+   download buttons sit side-by-side as visibly distinct affordances. */
 .instats-docx-download,
 .instats-report .instats-docx-download {
   background: var(--instats-secondary, #3092B1) !important;
@@ -1277,7 +1280,9 @@
   border-color: var(--instats-primary, #00547B);
 }
 
-
+/* GitHub repo button — outlined-on-white so it subordinates to the
+   two download buttons. The repo is the secondary destination
+   (sources, dossiers) for readers who want to audit the report. */
 .instats-repo-link,
 .instats-report .instats-repo-link {
   background: #FFFFFF !important;
