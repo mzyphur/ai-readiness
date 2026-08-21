@@ -77,8 +77,8 @@ institution whose policy axis scores well and whose people axis does not has a p
 living by — and it will not discover that by asking itself.
 
 Scoring follows the report's own rules. Each of the twenty cells resolves to one of four levels. A
-dimension is only as mature as its weakest axis. And the pack deliberately refuses to produce a
-single institutional score, because the report is explicit that *"the diagnostic value of the grid is
+dimension is only as mature as its weakest axis. The pack does not produce a single institutional
+score, because the report is explicit that *"the diagnostic value of the grid is
 the dimensional pattern, not a single score."*
 
 ---
