@@ -206,6 +206,7 @@ h1, h2, h3, h4 {
 .cover .abstract p { max-width: none; margin: 0; font-family: inherit; font-style: inherit; font-size: inherit; color: inherit; }
 
 .title-roman { font-style: normal; }
+.cover .abstract a.title-roman { text-decoration: underline !important; }
 
 
 .cover .author {
@@ -1059,6 +1060,7 @@ pre code {
 }
 .hero-finding a.title-roman {
   color: inherit;
+  text-decoration: underline;
   text-decoration-color: rgba(255, 255, 255, 0.62);
   text-underline-offset: 0.14em;
 }

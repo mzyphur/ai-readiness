@@ -204,6 +204,7 @@
 .instats-report .cover .abstract p { max-width: none; margin: 0; font-family: inherit; font-style: inherit; font-size: inherit; color: inherit; }
 
 .instats-report .title-roman { font-style: normal; }
+.instats-report .cover .abstract a.title-roman { text-decoration: underline !important; }
 
 
 .instats-report .cover .author {
@@ -1047,6 +1048,7 @@
 }
 .instats-report .hero-finding a.title-roman {
   color: inherit;
+  text-decoration: underline;
   text-decoration-color: rgba(255, 255, 255, 0.62);
   text-underline-offset: 0.14em;
 }
