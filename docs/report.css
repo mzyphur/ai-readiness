@@ -1058,12 +1058,14 @@ pre code {
   border-left: 2px solid var(--instats-secondary, #3092B1);
   text-align: left;             
 }
+.hero-finding a.abstract-link,
 .hero-finding a.title-roman {
   color: inherit;
   text-decoration: underline;
-  text-decoration-color: rgba(255, 255, 255, 0.62);
+  text-decoration-color: rgba(255, 255, 255, 0.72);
   text-underline-offset: 0.14em;
 }
+.hero-finding a.abstract-link:hover,
 .hero-finding a.title-roman:hover {
   color: #FFFFFF;
   text-decoration-color: #FFFFFF;

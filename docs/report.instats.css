@@ -1046,12 +1046,14 @@
   border-left: 2px solid var(--instats-secondary, #3092B1);
   text-align: left;
 }
+.instats-report .hero-finding a.abstract-link,
 .instats-report .hero-finding a.title-roman {
   color: inherit;
   text-decoration: underline;
-  text-decoration-color: rgba(255, 255, 255, 0.62);
+  text-decoration-color: rgba(255, 255, 255, 0.72);
   text-underline-offset: 0.14em;
 }
+.instats-report .hero-finding a.abstract-link:hover,
 .instats-report .hero-finding a.title-roman:hover {
   color: #FFFFFF;
   text-decoration-color: #FFFFFF;
